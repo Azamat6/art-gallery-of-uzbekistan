@@ -48,16 +48,24 @@ const Footer: React.FC = () => {
             <div className="about-footer">
               <h3 className="title">Галерея</h3>
               <div className="text">
-                <a href="/src/about/about.html">О нас</a>
+                <a href="/art-gallery-of-uzbekistan/src/about/about.html">
+                  О нас
+                </a>
               </div>
               <div className="text">
-                <a href="/src/concept/concept.html">Концепция экспозиции</a>
+                <a href="/art-gallery-of-uzbekistan/src/concept/concept.html">
+                  Концепция экспозиции
+                </a>
               </div>
               <div className="text">
-                <a href="/src/collection/collection.html">Коллекция</a>
+                <a href="/art-gallery-of-uzbekistan/src/collection/collection.html">
+                  Коллекция
+                </a>
               </div>
               <div className="text">
-                <a href="/src/coins/coins.html">Древние монеты</a>
+                <a href="/art-gallery-of-uzbekistan/src/coins/coins.html">
+                  Древние монеты
+                </a>
               </div>
             </div>
 
@@ -67,10 +75,14 @@ const Footer: React.FC = () => {
               <div className="visitors-left">
                 <h3 className="title">Посетителям</h3>
                 <div className="text">
-                  <a href="/src/planVisit/planVisit.html">Спланировать визит</a>
+                  <a href="/art-gallery-of-uzbekistan/src/planVisit/planVisit.html">
+                    Спланировать визит
+                  </a>
                 </div>
                 <div className="text">
-                  <a href="/src/exhibition/exhibition.html">Выставки</a>
+                  <a href="/art-gallery-of-uzbekistan/src/exhibition/exhibition.html">
+                    Выставки
+                  </a>
                 </div>
                 <div className="text">
                   {/* add here */}
@@ -82,7 +94,7 @@ const Footer: React.FC = () => {
                   </a>
                 </div>
                 <div className="text">
-                  <a href="/src/history/history.html">
+                  <a href="/art-gallery-of-uzbekistan/src/history/history.html">
                     История искусств Узбекистана
                   </a>
                 </div>

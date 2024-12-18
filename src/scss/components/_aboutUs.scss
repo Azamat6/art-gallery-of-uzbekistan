@@ -78,20 +78,5 @@
             }
         }
     }
-    .hidden{
-        opacity: 0;
-        transform: translateX(-20%);
-        transition: all 1.2s ease-in-out;
-    }
-    .show{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@media(prefers-reduced-motion) {
-    .hidden{
-        transition: none;
-    }
 }
 

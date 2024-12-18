@@ -126,7 +126,7 @@ const PagesHeader: React.FC<PagesHeaderProps> = ({
         <div className="container">
           <div className="row navbar">
             <a
-              href="/index.html"
+              href="/art-gallery-of-uzbekistan/index.html"
               className={isScrolled ? "logo col-4 logo-scrolled" : "logo col-4"}
             >
               <div className={isScrolled ? "line line-scrolled" : "line"}></div>
@@ -219,7 +219,10 @@ const PagesHeader: React.FC<PagesHeaderProps> = ({
                         <div className="navbar col-12">
                           <div className="container">
                             <div className="row">
-                              <a href="/index.html" className="logo col-4">
+                              <a
+                                href="/art-gallery-of-uzbekistan/index.html"
+                                className="logo col-4"
+                              >
                                 <div className="line"></div>
                                 <h2>
                                   <span>Art Gallery</span> Uzbekistan
@@ -255,32 +258,34 @@ const PagesHeader: React.FC<PagesHeaderProps> = ({
                           <div className="overlay-content-links col-12">
                             <div className="overlay-gallery overlay-l col-4">
                               <div className="overlay-link">
-                                <a href="/src/about/about.html">О нас</a>
+                                <a href="/art-gallery-of-uzbekistan/src/about/about.html">
+                                  О нас
+                                </a>
                               </div>
                               <div className="overlay-link">
-                                <a href="/src/concept/concept.html">
+                                <a href="/art-gallery-of-uzbekistan/src/concept/concept.html">
                                   Концепция экспозиции
                                 </a>
                               </div>
                               <div className="overlay-link">
-                                <a href="/src/collection/collection.html">
+                                <a href="/art-gallery-of-uzbekistan/src/collection/collection.html">
                                   Коллекция
                                 </a>
                               </div>
                               <div className="overlay-link">
-                                <a href="/src/coins/coins.html">
+                                <a href="/art-gallery-of-uzbekistan/src/coins/coins.html">
                                   Древние монеты
                                 </a>
                               </div>
                             </div>
                             <div className="overlay-visitors overlay-l col-4">
                               <div className="overlay-link">
-                                <a href="/src/planVisit/planVisit.html">
+                                <a href="/art-gallery-of-uzbekistan/src/planVisit/planVisit.html">
                                   Спланировать визит
                                 </a>
                               </div>
                               <div className="overlay-link">
-                                <a href="/src/exhibition/exhibition.html">
+                                <a href="/art-gallery-of-uzbekistan/src/exhibition/exhibition.html">
                                   Выставки
                                 </a>
                               </div>
@@ -294,18 +299,18 @@ const PagesHeader: React.FC<PagesHeaderProps> = ({
                                 </a>
                               </div>
                               <div className="overlay-link">
-                                <a href="/src/history/history.html">
+                                <a href="/art-gallery-of-uzbekistan/src/history/history.html">
                                   История искусств Узбекистана
                                 </a>
                               </div>
                             </div>
                             <div className="overlay-contacts overlay-l col-4">
                               <div className="overlay-link">
-                                <a href="/src/contact/contact.html">
+                                <a href="/art-gallery-of-uzbekistan/src/contact/contact.html">
                                   Связаться с нами
                                 </a>
                                 <div className="overlay-link">
-                                  <a href="/src/japan/japan.html">
+                                  <a href="/art-gallery-of-uzbekistan/src/japan/japan.html">
                                     Контакты общества дружбы «Узбекистан-Япония»
                                   </a>
                                 </div>

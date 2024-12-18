@@ -17,7 +17,10 @@ const VirtualConcept: React.FC = () => {
           </div>
         </div>
       </a>
-      <a href="/src/concept/concept.html" className="museumConcept">
+      <a
+        href="/art-gallery-of-uzbekistan/src/concept/concept.html"
+        className="museumConcept"
+      >
         <div className="container">
           <div className="row">
             <h3 className="title">

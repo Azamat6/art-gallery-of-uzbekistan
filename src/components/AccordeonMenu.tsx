@@ -17,31 +17,52 @@ const AccordionMenu: React.FC = () => {
     {
       title: "Галерея",
       content: [
-        { name: "О нас", link: "/src/about/about.html" },
-        { name: "Концепция экспозиции", link: "/src/concept/concept.html" },
-        { name: "Коллекция", link: "/src/collection/collection.html" },
-        { name: "Древние монеты", link: "/src/coins/coins.html" },
+        {
+          name: "О нас",
+          link: "/art-gallery-of-uzbekistan/src/about/about.html",
+        },
+        {
+          name: "Концепция экспозиции",
+          link: "/art-gallery-of-uzbekistan/src/concept/concept.html",
+        },
+        {
+          name: "Коллекция",
+          link: "/art-gallery-of-uzbekistan/src/collection/collection.html",
+        },
+        {
+          name: "Древние монеты",
+          link: "/art-gallery-of-uzbekistan/src/coins/coins.html",
+        },
       ],
     },
     {
       title: "Посетителям",
       content: [
-        { name: "Спланировать визит", link: "/src/planVisit/planVisit.html" },
-        { name: "Выставки", link: "/src/exhibition/exhibition.html" },
+        {
+          name: "Спланировать визит",
+          link: "/art-gallery-of-uzbekistan/src/planVisit/planVisit.html",
+        },
+        {
+          name: "Выставки",
+          link: "/art-gallery-of-uzbekistan/src/exhibition/exhibition.html",
+        },
         {
           name: "Виртуальный тур",
           link: "https://art-gallery-of-uzbekistan-virtual.netlify.app",
         },
         {
           name: "История искусств Узбекистана",
-          link: "/src/history/history.html",
+          link: "/art-gallery-of-uzbekistan/src/history/history.html",
         },
       ],
     },
     {
       title: "Контакты",
       content: [
-        { name: "Связаться с нами", link: "/src/contact/contact.html" },
+        {
+          name: "Связаться с нами",
+          link: "/art-gallery-of-uzbekistan/src/contact/contact.html",
+        },
         { name: "Адрес", link: "https://maps.app.goo.gl/bHYkEgAhmko3a8WC8" },
         { name: "NBU.uz", link: "https://nbu.uz" },
       ],

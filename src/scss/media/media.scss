@@ -764,7 +764,6 @@
             }
         }
         .whatsnew{
-            bottom: 62%;
             a.btext{
                 font-size: 1.9rem;
             }
@@ -959,6 +958,34 @@
             }
         }
     }
+
+    .curtains-left{
+        display: none;
+        opacity: 0;
+        left: -100%;
+    }
+
+    .curtains-right{
+        display: none;
+        opacity: 0;
+        right: -100%;
+    }
+
+    .loaded-left{
+        transform: translateX(0);
+        opacity: 0;
+      }
+      .loaded-right{
+        transform: translateX(0);
+        opacity: 0;
+      }
+
+    .headerBg{
+        object-fit: contain;
+    }
+    .Parallax{
+        object-fit: contain;
+    }
         
 
 }
@@ -974,6 +1001,8 @@
 
 //Main
 @media (max-width: 768px) {
+
+    
 
     section.japan{
         div.order1{
@@ -1363,7 +1392,6 @@
             padding: 0;
         }
         .whatsnew{
-            bottom: 68%;
             a.btext{
                 font-weight: 500;
                 font-size: 1.7rem;

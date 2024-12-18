@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { resolve } from 'path'
-// import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 
 
@@ -9,14 +9,14 @@ import { resolve } from 'path'
 export default defineConfig({
   plugins: [
     react(),
-    // ViteImageOptimizer({
-    //   png: {
-    //     quality: 40,
-    //   },
-    //   jpg: {
-    //     quality: 30,
-    //   },
-    // }),
+    ViteImageOptimizer({
+      png: {
+        quality: 20,
+      },
+      jpg: {
+        quality: 15,
+      },
+    }),
   ],
   assetsInclude: ['**/*.jpg', '**/*.JPG', '**/*.png'],
   build: {

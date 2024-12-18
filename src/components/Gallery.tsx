@@ -217,7 +217,10 @@ const Gallery: React.FC = () => {
         </CustomCarousel>
       </div>
       <div className="link">
-        <a href="/src/collection/collection.html" className="readmore">
+        <a
+          href="/art-gallery-of-uzbekistan/src/collection/collection.html"
+          className="readmore"
+        >
           Вся коллекция <IoIosArrowForward className="arrow" />
         </a>
       </div>
