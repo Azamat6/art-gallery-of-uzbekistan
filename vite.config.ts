@@ -44,5 +44,5 @@ export default defineConfig({
       }
     }
   },
-  base: "/art-gallery-of-uzbekistan/",
+  base: "/art-gallery-of-uzbekistan",
 })
