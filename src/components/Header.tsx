@@ -347,7 +347,10 @@ const Header: React.FC = () => {
                   </p>
                 </div>
               </div>
-              <a href="/src/planVisit/planVisit.html" className="link_cost">
+              <a
+                href="/art-gallery-of-uzbekistan/src/planVisit/planVisit.html"
+                className="link_cost"
+              >
                 Спланировать визит
               </a>
             </div>
@@ -399,7 +402,10 @@ const Header: React.FC = () => {
                 </a>
               </div>
               <div className="right">
-                <a className="readmore" href="/src/exhibition/exhibition.html">
+                <a
+                  className="readmore"
+                  href="/art-gallery-of-uzbekistan/src/exhibition/exhibition.html"
+                >
                   Показать еще
                 </a>
               </div>
