@@ -1,0 +1,228 @@
+section.Ex{
+    width: 100%;
+    background-color: #fff;
+    padding: 5% 0 0 0;
+
+        .tabs {
+          display: flex;
+          width: 100%;
+          transition: all 0.4s;
+          border-bottom: 1px var(--footerLight) solid;
+          padding-left: 0;
+      
+          button {
+            margin-left: 0;
+            border: none;
+            cursor: pointer;
+            color: #646464;
+            letter-spacing: 0;
+            font-size: 1.5rem;
+            line-height: 1.15;
+            font-weight: 500;
+            font-family: var(--nunito);
+            width: 160px;
+            padding-bottom: 12px;
+            border-bottom: 5px transparent solid;
+
+      
+            &.active {
+                color: var(--dark);
+                border-bottom: 5px var(--almostDark) solid;
+            }
+      
+            &:hover {
+              color: var(--dark);
+            }
+          }
+        }
+      
+        .cards {
+        display: flex;
+        border-radius: 0;
+        flex-wrap: wrap;
+          .card {
+            background: white;
+            overflow: hidden;
+            border-radius: 0;
+            border: 0;
+            position: relative;
+            transition: all 0.3s linear;
+            // &:nth-child(odd){
+                
+            //   }
+            .title{
+            display: block;
+            font-family: var(--nunito);
+            color: var(--almostDark);
+            font-size: 0.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0 0 10px 0;
+            }
+
+           
+            &:hover{
+              filter: brightness(90%)
+            }
+
+
+
+            .img{
+                height: 500px;
+                width: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  }
+            }
+            
+      
+            .info {
+                padding: 20px 0 30px;
+              
+      
+              .info-title {
+                font-family: var(--nunito);
+                color: var(--dark);
+                font-weight: 600;
+                font-size: 1.4rem;
+                line-height: 1.9rem;
+                text-decoration: none;
+                cursor: pointer;
+                &:hover{
+                    text-decoration: underline;
+                    text-underline-offset: 5px;
+                    text-decoration-thickness: 2px;
+                }
+              }
+      
+      
+              span {
+                color: var(--almostdark);
+                font-size: 1rem;
+                font-weight: 500;
+                font-family: var(--nunito);
+                letter-spacing: 0;
+                line-height: 1.6rem;
+                display: block;
+                margin-top: 0.5rem;
+              }
+            }
+          }
+        }
+      
+    .empty-message{
+        color: var(--almostDark);
+        font-size: 1.3rem;
+        font-weight: 400;
+        font-family: var(--inter);
+        letter-spacing: 0;
+        text-indent: 20px;
+        line-height: 1.6rem;
+        margin-top: 1rem;
+    }
+}
+
+p.list{
+    color: var(--almostDark);
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: var(--inter);
+    letter-spacing: 0;
+    text-indent: 20px;
+    line-height: 1.6rem;
+    span{
+        display: block;
+    }
+}
+
+.info-for-previous{
+  width: 100%;
+  padding: 5% 0;
+  
+  p{
+    color: var(--almostDark);
+      font-size: 1.1rem;
+      font-weight: 400;
+      font-family: var(--inter);
+      letter-spacing: 0;
+      line-height: 1.6rem;
+      width: 100%;
+      border-top: 1px var(almostLight) solid;
+    a{
+      color: var(--almostDark);
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
+  }
+}
+
+
+//2024 exhibitions
+
+
+.WomenOfUzbImg{
+    width: 100%;
+    height: 20svh;
+    background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.3), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%, rgba(34, 34, 34, 0.3)), url("/src/assets/images/exhibitions/2024/WomenOfUzb/Content.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1.5rem 0 4rem;
+}
+.UmarRadjabovImg{
+  width: 100%;
+  height: 20svh;
+  background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.3), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%, rgba(34, 34, 34, 0.3)), url("/src/assets/images/exhibitions/2024/UmarRadjabov/Content.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1.5rem 0 4rem;
+}
+.devonovImg{
+  width: 100%;
+  height: 20svh;
+  background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.3), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%, rgba(34, 34, 34, 0.3)), url("/src/assets/images/exhibitions/2024/XudoyberganDevonov/Content.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1.5rem 0 4rem;
+}
+.synapseImg{
+  width: 100%;
+  height: 20svh;
+  background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.3), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%, rgba(34, 34, 34, 0.3)), url("/src/assets/images/exhibitions/2024/Synapse/Content.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1.5rem 0 4rem;
+}
+.mirtajiyevImg{
+  width: 100%;
+  height: 20svh;
+  background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.3), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%, rgba(34, 34, 34, 0.3)), url("/src/assets/images/exhibitions/2024/DjalolidinMirtajiev/Content.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1.5rem 0 4rem;
+}
+.eastImg{
+  width: 100%;
+  height: 20svh;
+  background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.3), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%, rgba(34, 34, 34, 0.3)), url("/src/assets/images/exhibitions/2024/EastMotives/Content.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1.5rem 0 4rem;
+}
+.memoryImg{
+  width: 100%;
+  height: 20svh;
+  background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.3), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%, rgba(34, 34, 34, 0.3)), url("/src/assets/images/exhibitions/2024/TunnelOfMemory/Content.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1.5rem 0 4rem;
+}

@@ -1,0 +1,112 @@
+.language-selector {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    z-index: 69;
+
+    .language{
+        align-items: center;
+        transition: all 0.4s linear;
+        gap: 1rem;
+        display: flex;
+        border: none;
+        cursor: pointer;
+        background: none;
+        
+        .menu-text {
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            position: relative;
+            transition: all 0.4s linear;
+            color: #fff;
+            font-family: var(--nunito);
+            cursor: pointer;
+            letter-spacing: 1px;
+
+      
+            // Underline animation on hover
+            &::after {
+              content: '';
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              height: 1px;
+              background-color: #D3D3D3;
+              transform: scaleX(0);
+              transform-origin: left;
+              transition: transform 0.1s ease;
+            }
+      
+            &:hover::after {
+              transform: scaleX(1);
+            }
+          }
+      
+          // Hover effect for both icon and text
+          &:hover .menu-text::after,
+          &:hover .menu-text {
+            transform: scaleX(1);
+          }
+
+        .nav-icon{
+            color: #fff;
+            font-size: 1.6rem;
+            font-weight: 600;
+            border: none;
+            padding: 0;
+            background: none;
+            transition: all 0.4s linear;
+        }
+    }
+
+    .dropdown__menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 11%;
+        background-color: #fff;
+        border-radius: 4px;
+        z-index: 2;
+        box-shadow: 0 -1px #d3d3d3;
+
+      .dropdown__item {
+        padding: 15px 20px;
+        text-decoration: none;
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        position: relative;
+        color: var(--dark);
+        letter-spacing: 1px;
+        text-align: center;
+    
+       a{
+        text-decoration: none;
+        color: var(--dark);
+        font-family: var(--title);
+        
+        &:hover{
+            color: #696969;
+        }
+       }
+      }
+      .pt{
+        padding-top: 0;
+      }
+    }
+    .language span.menu-text-scrolled{
+      color: var(--dark);
+    }
+
+    .language span.menu-text-scrolled::after{
+      background-color: #696969;
+    }   
+    .language .nav-icon-scrolled{
+      color: var(--dark);
+    }
+}
+
+

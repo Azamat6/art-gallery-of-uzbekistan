@@ -1,0 +1,2402 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--projecttitle--><title>VirtualTour</title><!--projecttitle-end-->
+		<!--projectdescription--><meta name="description" content="New 3Sixty Virtual Tour Project"><!--projectdescription-end-->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, shrink-to-fit=no">
+		
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<!-- Insert this line above script imports  -->
+		<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+		
+		<script src="imagedata.js" type="module"></script>
+		<script src="jquery.js" type="module"></script>
+		<script src="three.min.js" type="module"></script>
+		<script src="panolens.min.js" type="module"></script>
+		
+		<!-- Insert this line after script imports -->
+		<script>if (window.module) module = window.module;</script>
+		
+		<style>
+		
+			
+						
+			/* SCROLLBAR STYLING */
+			/* width */
+			::-webkit-scrollbar {
+				width: 0.25em;
+				height: 0.25em;
+			}
+			/* Track */
+			::-webkit-scrollbar-track {
+				background: #2c3643; 
+			}
+			/* Handle */
+			::-webkit-scrollbar-thumb {
+				background: #0d9e59; 
+				transition: background .5s;
+			}
+			/* Handle on hover */
+			::-webkit-scrollbar-thumb:hover {
+				background: #00e075; 
+			}
+
+
+			html, body {
+				margin: 0;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				background-color: #000;
+				color: black;
+			}
+
+			a:link, a:visited{
+				color: #bdc3c7;	
+			}
+
+			.fullwrapper{
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: black;
+			}
+			
+			#container {
+                width: 100%;
+                height: 100%;
+            }
+			
+			#tmp{
+				position: fixed;
+				top: 0;
+				left: 0; 
+				right: 0;
+				bottom: 0;
+				padding: 3em;
+				background-color: rgba(0,0,0,.5);
+				backdrop-filter: blur(5px);
+				display: none;
+			}
+		</style>
+	</head>
+	<body id="body">
+	    <div id="container" style="color: black;"></div>
+    	
+		
+		
+		<!--customhtml--><div class='customhotspot' id='Main'></div><div class='customhotspot' id='MainCenter'></div><div class='customhotspot' id='MainLeftClose'></div><div class='customhotspot' id='MainLeft'></div><div class='customhotspot' id='MainLeftColumn'></div><div class='customhotspot' id='MainRightColumn'></div><div class='customhotspot' id='MainRightStairs'></div><div class='customhotspot' id='MainRightClose'></div><div class='customhotspot' id='MainLeftOnStairs'></div><div class='customhotspot' id='MainRightOnStairs'></div><div class='customhotspot' id='Center'></div><div class='customhotspot' id='Left'></div><div class='customhotspot' id='LeftTwo'></div><div class='customhotspot' id='LeftThreeDoor'></div><div class='customhotspot' id='LeftFour'></div><div class='customhotspot' id='LeftFive'></div><div class='customhotspot' id='CoinsEntrance'></div><div class='customhotspot' id='RightFive'></div><div class='customhotspot' id='RightFour'></div><div class='customhotspot' id='RightThreeDoor'></div><div class='customhotspot' id='RightTwo'></div><div class='customhotspot' id='Right'></div><div class='customhotspot' id='CoinsLeft'></div><div class='customhotspot' id='CoinsBack'></div><div class='customhotspot' id='CoinsRight'></div><div class='customhotspot' id='CoinsEtoRoom'></div><div class='customhotspot' id='OneE'></div><div class='customhotspot' id='OneEnd'></div><div class='customhotspot' id='OneLeftE'></div><div class='customhotspot' id='OneLeftEnd'></div><div class='customhotspot' id='MuslimEntra'></div><div class='customhotspot' id='MuslimEnd'></div><div class='customhotspot' id='FavEntrance'></div><div class='customhotspot' id='FavEnd'></div><div class='customhotspot' id='FavRightEntr'></div><div class='customhotspot' id='FavRightEnd'></div><div class='customhotspot' id='LineFirstE'></div><div class='customhotspot' id='LineFirstEnd'></div><div class='customhotspot' id='LineSecondE'></div><div class='customhotspot' id='LineSecondEnd'></div><div class='customhotspot' id='LineBSecondThird'></div><div class='customhotspot' id='LineThirdE'></div><div class='customhotspot' id='LineThirdEnd'></div><div class='customhotspot' id='LineBThirdForth'></div><div class='customhotspot' id='LineForthE'></div><div class='customhotspot' id='LineForthEnd'></div><div class='customhotspot' id='LineFifthEnd'></div><div class='customhotspot' id='LineFifthE'></div><!--customhtml-end-->
+		
+		<div id="tmp">
+			<div style="width: 100%; height: 100%; overflow: hidden; overflow-y: auto; box-sizing: border-box; position: relative;" id="tmpcontent"></div>
+			<div class="mediaclosebutton" onclick="hideTemp()"><i class="fa fa-times-circle"></i></div>
+		</div>
+
+
+		<div id="loading" class="fullwrapper" style="display: table; width: 100%; height: 100%;">
+    		<div style="display: table-cell; vertical-align: middle; text-align: center; color: white; font-size: 30px; padding: 50px;">
+    			<!--loadingtext-->Loading...<!--loadingtext-end-->
+				<div id="loadingperc" style="font-size:12px;"></div>
+    		</div>
+    	</div>
+		
+    	<script>
+			
+            var container = document.querySelector( '#container' );
+			/*panolens*/
+
+var viewer = new PANOLENS.Viewer( { container: container , controlBar: false,  output: 'console' , autoHideInfospot: false, } );
+
+/*panolens-end*/
+			
+			viewer.addUpdateCallback(function(){});
+			
+			/*panoramas*/
+
+var Main = new PANOLENS.ImagePanorama( "panoramas/Main.jpg" );
+			Main.addEventListener('progress', onProgress);
+			Main.addEventListener('load', function(e){
+				endLoading();
+			});
+			Main.addEventListener('enter', function(e){
+				endLoading();
+			});
+			Main.addEventListener('click', function(e){
+			});
+
+
+var infospotMain0 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotMain0.position.set( 4921.92, -751.14, 385.27 );
+					Main.add(infospotMain0);
+
+infospotMain0.addEventListener('click', function(){
+
+ChangePanorama('MainCenter');
+
+});
+
+var infospotMain1 = new PANOLENS.Infospot( 512, hotspotIcons[5].data, true );
+					infospotMain1.position.set( 3082.83, 306.84, 3913.07 );
+					Main.add(infospotMain1);
+
+infospotMain1.addEventListener('click', function(){
+
+ChangePanorama('MainLeftOnStairs');
+
+});
+
+var infospotMain2 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotMain2.position.set( 1643.79, -1224.93, -4552.21 );
+					Main.add(infospotMain2);
+
+infospotMain2.addEventListener('click', function(){
+
+ChangePanorama('MainRightClose');
+
+});
+
+var infospotMain3 = new PANOLENS.Infospot( 512, hotspotIcons[5].data, true );
+					infospotMain3.position.set( 3724.73, 310.15, -3315.20 );
+					Main.add(infospotMain3);
+
+infospotMain3.addEventListener('click', function(){
+
+ChangePanorama('MainRightOnStairs');
+
+});
+
+var infospotMain4 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotMain4.position.set( 832.23, -1146.99, 4787.97 );
+					Main.add(infospotMain4);
+
+infospotMain4.addEventListener('click', function(){
+
+ChangePanorama('MainLeftClose');
+
+});
+
+viewer.add( Main );
+
+var MainCenter = new PANOLENS.ImagePanorama( "panoramas/MainCenter.jpg" );
+			MainCenter.addEventListener('progress', onProgress);
+			MainCenter.addEventListener('load', function(e){
+				endLoading();
+			});
+			MainCenter.addEventListener('enter', function(e){
+				endLoading();
+			});
+			MainCenter.addEventListener('click', function(e){
+			});
+
+
+var infospotMainCenter0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotMainCenter0.position.set( -4883.63, -985.34, -274.78 );
+					MainCenter.add(infospotMainCenter0);
+
+infospotMainCenter0.addEventListener('click', function(){
+
+ChangePanorama('Main');
+
+});
+
+var infospotMainCenter1 = new PANOLENS.Infospot( 512, hotspotIcons[5].data, true );
+					infospotMainCenter1.position.set( 4955.71, 495.98, 316.92 );
+					MainCenter.add(infospotMainCenter1);
+
+infospotMainCenter1.addEventListener('click', function(){
+
+ChangePanorama('Center');
+
+});
+
+var infospotMainCenter2 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotMainCenter2.position.set( 3654.91, -997.71, 3255.04 );
+					MainCenter.add(infospotMainCenter2);
+
+infospotMainCenter2.addEventListener('click', function(){
+
+ChangePanorama('MainLeftColumn');
+
+});
+
+var infospotMainCenter3 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotMainCenter3.position.set( 3986.03, -943.53, -2858.13 );
+					MainCenter.add(infospotMainCenter3);
+
+infospotMainCenter3.addEventListener('click', function(){
+
+ChangePanorama('MainRightColumn');
+
+});
+
+var infospotMainCenter4 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotMainCenter4.position.set( -245.85, -853.71, -4911.33 );
+					MainCenter.add(infospotMainCenter4);
+
+infospotMainCenter4.addEventListener('click', function(){
+
+ChangePanorama('MainRightStairs');
+
+});
+
+var infospotMainCenter5 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotMainCenter5.position.set( 772.65, -900.62, 4846.95 );
+					MainCenter.add(infospotMainCenter5);
+
+infospotMainCenter5.addEventListener('click', function(){
+
+ChangePanorama('MainLeft');
+
+});
+
+viewer.add( MainCenter );
+
+var MainLeftClose = new PANOLENS.ImagePanorama( "panoramas/MainLeftClose.jpg" );
+			MainLeftClose.addEventListener('progress', onProgress);
+			MainLeftClose.addEventListener('load', function(e){
+				endLoading();
+			});
+			MainLeftClose.addEventListener('enter', function(e){
+				endLoading();
+			});
+			MainLeftClose.addEventListener('click', function(e){
+			});
+
+
+var infospotMainLeftClose0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotMainLeftClose0.position.set( 1210.66, -1367.14, -4643.77 );
+					MainLeftClose.add(infospotMainLeftClose0);
+
+infospotMainLeftClose0.addEventListener('click', function(){
+
+ChangePanorama('Main');
+
+});
+
+var infospotMainLeftClose1 = new PANOLENS.Infospot( 512, hotspotIcons[5].data, true );
+					infospotMainLeftClose1.position.set( 4063.59, 695.34, 2816.41 );
+					MainLeftClose.add(infospotMainLeftClose1);
+
+infospotMainLeftClose1.addEventListener('click', function(){
+
+ChangePanorama('MainLeftOnStairs');
+
+});
+
+var infospotMainLeftClose2 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotMainLeftClose2.position.set( 2625.55, -903.75, 4146.50 );
+					MainLeftClose.add(infospotMainLeftClose2);
+
+infospotMainLeftClose2.addEventListener('click', function(){
+
+ChangePanorama('MainLeft');
+
+});
+
+viewer.add( MainLeftClose );
+
+var MainLeft = new PANOLENS.ImagePanorama( "panoramas/MainLeft.jpg" );
+			MainLeft.addEventListener('progress', onProgress);
+			MainLeft.addEventListener('load', function(e){
+				endLoading();
+			});
+			MainLeft.addEventListener('enter', function(e){
+				endLoading();
+			});
+			MainLeft.addEventListener('click', function(e){
+			});
+
+
+var infospotMainLeft0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotMainLeft0.position.set( 1855.78, -868.46, -4551.81 );
+					MainLeft.add(infospotMainLeft0);
+
+infospotMainLeft0.addEventListener('click', function(){
+
+ChangePanorama('MainLeftClose');
+
+});
+
+var infospotMainLeft1 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotMainLeft1.position.set( 4910.91, -858.88, -234.28 );
+					MainLeft.add(infospotMainLeft1);
+
+infospotMainLeft1.addEventListener('click', function(){
+
+ChangePanorama('MainCenter');
+
+});
+
+var infospotMainLeft2 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotMainLeft2.position.set( 2193.29, -1297.01, 4290.54 );
+					MainLeft.add(infospotMainLeft2);
+
+infospotMainLeft2.addEventListener('click', function(){
+
+ChangePanorama('MainLeftColumn');
+
+});
+
+viewer.add( MainLeft );
+
+var MainLeftColumn = new PANOLENS.ImagePanorama( "panoramas/MainLeftColumn.jpg" );
+			MainLeftColumn.addEventListener('progress', onProgress);
+			MainLeftColumn.addEventListener('load', function(e){
+				endLoading();
+			});
+			MainLeftColumn.addEventListener('enter', function(e){
+				endLoading();
+			});
+			MainLeftColumn.addEventListener('click', function(e){
+			});
+
+
+var infospotMainLeftColumn0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotMainLeftColumn0.position.set( 3825.27, -1281.49, -2940.02 );
+					MainLeftColumn.add(infospotMainLeftColumn0);
+
+infospotMainLeftColumn0.addEventListener('click', function(){
+
+ChangePanorama('MainLeft');
+
+});
+
+var infospotMainLeftColumn1 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotMainLeftColumn1.position.set( 4118.52, -911.93, 2665.64 );
+					MainLeftColumn.add(infospotMainLeftColumn1);
+
+infospotMainLeftColumn1.addEventListener('click', function(){
+
+ChangePanorama('MainCenter');
+
+});
+
+var infospotMainLeftColumn2 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotMainLeftColumn2.position.set( 491.64, -825.45, 4904.07 );
+					MainLeftColumn.add(infospotMainLeftColumn2);
+
+infospotMainLeftColumn2.addEventListener('click', function(){
+
+ChangePanorama('MainRightColumn');
+
+});
+
+viewer.add( MainLeftColumn );
+
+var MainRightColumn = new PANOLENS.ImagePanorama( "panoramas/MainRightColumn.jpg" );
+			MainRightColumn.addEventListener('progress', onProgress);
+			MainRightColumn.addEventListener('load', function(e){
+				endLoading();
+			});
+			MainRightColumn.addEventListener('enter', function(e){
+				endLoading();
+			});
+			MainRightColumn.addEventListener('click', function(e){
+			});
+
+
+var infospotMainRightColumn0 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotMainRightColumn0.position.set( 3175.54, -821.38, -3764.35 );
+					MainRightColumn.add(infospotMainRightColumn0);
+
+infospotMainRightColumn0.addEventListener('click', function(){
+
+ChangePanorama('MainLeftColumn');
+
+});
+
+var infospotMainRightColumn1 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotMainRightColumn1.position.set( 4901.95, -929.41, -137.41 );
+					MainRightColumn.add(infospotMainRightColumn1);
+
+infospotMainRightColumn1.addEventListener('click', function(){
+
+ChangePanorama('MainCenter');
+
+});
+
+var infospotMainRightColumn2 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotMainRightColumn2.position.set( 1757.66, -882.02, 4586.59 );
+					MainRightColumn.add(infospotMainRightColumn2);
+
+infospotMainRightColumn2.addEventListener('click', function(){
+
+ChangePanorama('MainRightStairs');
+
+});
+
+viewer.add( MainRightColumn );
+
+var MainRightStairs = new PANOLENS.ImagePanorama( "panoramas/MainRightStairs.jpg" );
+			MainRightStairs.addEventListener('progress', onProgress);
+			MainRightStairs.addEventListener('load', function(e){
+				endLoading();
+			});
+			MainRightStairs.addEventListener('enter', function(e){
+				endLoading();
+			});
+			MainRightStairs.addEventListener('click', function(e){
+			});
+
+
+var infospotMainRightStairs0 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotMainRightStairs0.position.set( 4042.48, -894.56, -2789.07 );
+					MainRightStairs.add(infospotMainRightStairs0);
+
+infospotMainRightStairs0.addEventListener('click', function(){
+
+ChangePanorama('MainRightColumn');
+
+});
+
+var infospotMainRightStairs1 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotMainRightStairs1.position.set( 4669.87, -782.13, 1596.06 );
+					MainRightStairs.add(infospotMainRightStairs1);
+
+infospotMainRightStairs1.addEventListener('click', function(){
+
+ChangePanorama('MainCenter');
+
+});
+
+var infospotMainRightStairs2 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotMainRightStairs2.position.set( -79.92, -1269.67, 4828.77 );
+					MainRightStairs.add(infospotMainRightStairs2);
+
+infospotMainRightStairs2.addEventListener('click', function(){
+
+ChangePanorama('MainRightClose');
+
+});
+
+viewer.add( MainRightStairs );
+
+var MainRightClose = new PANOLENS.ImagePanorama( "panoramas/MainRightClose.jpg" );
+			MainRightClose.addEventListener('progress', onProgress);
+			MainRightClose.addEventListener('load', function(e){
+				endLoading();
+			});
+			MainRightClose.addEventListener('enter', function(e){
+				endLoading();
+			});
+			MainRightClose.addEventListener('click', function(e){
+			});
+
+
+var infospotMainRightClose0 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotMainRightClose0.position.set( 1711.25, -1148.68, -4547.67 );
+					MainRightClose.add(infospotMainRightClose0);
+
+infospotMainRightClose0.addEventListener('click', function(){
+
+ChangePanorama('MainRightStairs');
+
+});
+
+var infospotMainRightClose1 = new PANOLENS.Infospot( 512, hotspotIcons[5].data, true );
+					infospotMainRightClose1.position.set( 3663.82, 558.74, -3347.97 );
+					MainRightClose.add(infospotMainRightClose1);
+
+infospotMainRightClose1.addEventListener('click', function(){
+
+ChangePanorama('MainRightOnStairs');
+
+});
+
+var infospotMainRightClose2 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotMainRightClose2.position.set( 1557.21, -1250.74, 4577.66 );
+					MainRightClose.add(infospotMainRightClose2);
+
+infospotMainRightClose2.addEventListener('click', function(){
+
+ChangePanorama('Main');
+
+});
+
+viewer.add( MainRightClose );
+
+var MainLeftOnStairs = new PANOLENS.ImagePanorama( "panoramas/MainLeftOnStairs.jpg" );
+			MainLeftOnStairs.addEventListener('progress', onProgress);
+			MainLeftOnStairs.addEventListener('load', function(e){
+				endLoading();
+			});
+			MainLeftOnStairs.addEventListener('enter', function(e){
+				endLoading();
+			});
+			MainLeftOnStairs.addEventListener('click', function(e){
+			});
+
+
+var infospotMainLeftOnStairs0 = new PANOLENS.Infospot( 512, hotspotIcons[2].data, true );
+					infospotMainLeftOnStairs0.position.set( 4233.30, -2228.35, -1439.74 );
+					MainLeftOnStairs.add(infospotMainLeftOnStairs0);
+
+infospotMainLeftOnStairs0.addEventListener('click', function(){
+
+ChangePanorama('MainCenter');
+
+});
+
+var infospotMainLeftOnStairs1 = new PANOLENS.Infospot( 512, hotspotIcons[2].data, true );
+					infospotMainLeftOnStairs1.position.set( 527.29, -1936.65, -4576.22 );
+					MainLeftOnStairs.add(infospotMainLeftOnStairs1);
+
+infospotMainLeftOnStairs1.addEventListener('click', function(){
+
+ChangePanorama('Main');
+
+});
+
+var infospotMainLeftOnStairs2 = new PANOLENS.Infospot( 512, hotspotIcons[5].data, true );
+					infospotMainLeftOnStairs2.position.set( 3841.03, 1098.33, 2993.43 );
+					MainLeftOnStairs.add(infospotMainLeftOnStairs2);
+
+infospotMainLeftOnStairs2.addEventListener('click', function(){
+
+ChangePanorama('Left');
+
+});
+
+viewer.add( MainLeftOnStairs );
+
+var MainRightOnStairs = new PANOLENS.ImagePanorama( "panoramas/MainRightOnStairs.jpg" );
+			MainRightOnStairs.addEventListener('progress', onProgress);
+			MainRightOnStairs.addEventListener('load', function(e){
+				endLoading();
+			});
+			MainRightOnStairs.addEventListener('enter', function(e){
+				endLoading();
+			});
+			MainRightOnStairs.addEventListener('click', function(e){
+			});
+
+
+var infospotMainRightOnStairs0 = new PANOLENS.Infospot( 512, hotspotIcons[2].data, true );
+					infospotMainRightOnStairs0.position.set( 1693.98, -2171.34, -4163.81 );
+					MainRightOnStairs.add(infospotMainRightOnStairs0);
+
+infospotMainRightOnStairs0.addEventListener('click', function(){
+
+ChangePanorama('MainCenter');
+
+});
+
+var infospotMainRightOnStairs1 = new PANOLENS.Infospot( 512, hotspotIcons[2].data, true );
+					infospotMainRightOnStairs1.position.set( 4604.53, -1944.92, 6.65 );
+					MainRightOnStairs.add(infospotMainRightOnStairs1);
+
+infospotMainRightOnStairs1.addEventListener('click', function(){
+
+ChangePanorama('Main');
+
+});
+
+var infospotMainRightOnStairs2 = new PANOLENS.Infospot( 512, hotspotIcons[5].data, true );
+					infospotMainRightOnStairs2.position.set( -2846.51, 1123.95, -3950.85 );
+					MainRightOnStairs.add(infospotMainRightOnStairs2);
+
+infospotMainRightOnStairs2.addEventListener('click', function(){
+
+ChangePanorama('Right');
+
+});
+
+viewer.add( MainRightOnStairs );
+
+var Center = new PANOLENS.ImagePanorama( "panoramas/Center.jpg" );
+			Center.addEventListener('progress', onProgress);
+			Center.addEventListener('load', function(e){
+				endLoading();
+			});
+			Center.addEventListener('enter', function(e){
+				endLoading();
+			});
+			Center.addEventListener('click', function(e){
+			});
+
+
+var infospotCenter0 = new PANOLENS.Infospot( 512, hotspotIcons[2].data, true );
+					infospotCenter0.position.set( 4690.33, -1674.47, 328.54 );
+					Center.add(infospotCenter0);
+
+infospotCenter0.addEventListener('click', function(){
+
+ChangePanorama('MainCenter');
+
+});
+
+var infospotCenter1 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotCenter1.position.set( -1946.62, -1294.76, -4414.90 );
+					Center.add(infospotCenter1);
+
+infospotCenter1.addEventListener('click', function(){
+
+ChangePanorama('Left');
+
+});
+
+var infospotCenter2 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotCenter2.position.set( -2506.97, -1370.64, 4092.79 );
+					Center.add(infospotCenter2);
+
+infospotCenter2.addEventListener('click', function(){
+
+ChangePanorama('Right');
+
+});
+
+var infospotCenter3 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotCenter3.position.set( 528.95, -847.72, -4896.19 );
+					Center.add(infospotCenter3);
+
+infospotCenter3.addEventListener('click', function(){
+
+ChangePanorama('LeftTwo');
+
+});
+
+var infospotCenter4 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotCenter4.position.set( -654.48, -951.21, 4855.49 );
+					Center.add(infospotCenter4);
+
+infospotCenter4.addEventListener('click', function(){
+
+ChangePanorama('RightTwo');
+
+});
+
+var infospotCenter5 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
+					infospotCenter5.position.set( 4968.17, -195.17, 461.00 );
+					Center.add(infospotCenter5);
+
+infospotCenter5.addEventListener('click', function(){
+
+ChangePanorama('CoinsEntrance');
+
+});
+
+viewer.add( Center );
+
+var Left = new PANOLENS.ImagePanorama( "panoramas/Left.jpg" );
+			Left.addEventListener('progress', onProgress);
+			Left.addEventListener('load', function(e){
+				endLoading();
+			});
+			Left.addEventListener('enter', function(e){
+				endLoading();
+			});
+			Left.addEventListener('click', function(e){
+			});
+
+
+var infospotLeft0 = new PANOLENS.Infospot( 512, hotspotIcons[2].data, true );
+					infospotLeft0.position.set( 4655.73, -1787.36, 194.05 );
+					Left.add(infospotLeft0);
+
+infospotLeft0.addEventListener('click', function(){
+
+ChangePanorama('MainLeftOnStairs');
+
+});
+
+var infospotLeft1 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLeft1.position.set( 2870.63, -1291.08, 3877.98 );
+					Left.add(infospotLeft1);
+
+infospotLeft1.addEventListener('click', function(){
+
+ChangePanorama('Center');
+
+});
+
+var infospotLeft2 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLeft2.position.set( 168.81, -815.94, 4922.88 );
+					Left.add(infospotLeft2);
+
+infospotLeft2.addEventListener('click', function(){
+
+ChangePanorama('Right');
+
+});
+
+var infospotLeft3 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLeft3.position.set( 2974.75, -1513.43, -3713.09 );
+					Left.add(infospotLeft3);
+
+infospotLeft3.addEventListener('click', function(){
+
+ChangePanorama('LeftTwo');
+
+});
+
+viewer.add( Left );
+
+var LeftTwo = new PANOLENS.ImagePanorama( "panoramas/LeftTwo.jpg" );
+			LeftTwo.addEventListener('progress', onProgress);
+			LeftTwo.addEventListener('load', function(e){
+				endLoading();
+			});
+			LeftTwo.addEventListener('enter', function(e){
+				endLoading();
+			});
+			LeftTwo.addEventListener('click', function(e){
+			});
+
+
+var infospotLeftTwo0 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLeftTwo0.position.set( 500.76, -804.00, -4907.86 );
+					LeftTwo.add(infospotLeftTwo0);
+
+infospotLeftTwo0.addEventListener('click', function(){
+
+ChangePanorama('LineFirstE');
+
+});
+
+var infospotLeftTwo1 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotLeftTwo1.position.set( -4002.09, -1744.50, -2421.53 );
+					LeftTwo.add(infospotLeftTwo1);
+
+infospotLeftTwo1.addEventListener('click', function(){
+
+ChangePanorama('Left');
+
+});
+
+var infospotLeftTwo2 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLeftTwo2.position.set( -4762.66, -889.38, 1197.75 );
+					LeftTwo.add(infospotLeftTwo2);
+
+infospotLeftTwo2.addEventListener('click', function(){
+
+ChangePanorama('Center');
+
+});
+
+var infospotLeftTwo3 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLeftTwo3.position.set( 1403.02, -1283.58, 4616.60 );
+					LeftTwo.add(infospotLeftTwo3);
+
+infospotLeftTwo3.addEventListener('click', function(){
+
+ChangePanorama('LeftThreeDoor');
+
+});
+
+viewer.add( LeftTwo );
+
+var LeftThreeDoor = new PANOLENS.ImagePanorama( "panoramas/LeftThreeDoor.jpg" );
+			LeftThreeDoor.addEventListener('progress', onProgress);
+			LeftThreeDoor.addEventListener('load', function(e){
+				endLoading();
+			});
+			LeftThreeDoor.addEventListener('enter', function(e){
+				endLoading();
+			});
+			LeftThreeDoor.addEventListener('click', function(e){
+			});
+
+
+var infospotLeftThreeDoor0 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLeftThreeDoor0.position.set( 431.39, -1208.71, -4827.54 );
+					LeftThreeDoor.add(infospotLeftThreeDoor0);
+
+infospotLeftThreeDoor0.addEventListener('click', function(){
+
+ChangePanorama('LeftFour');
+
+});
+
+var infospotLeftThreeDoor1 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotLeftThreeDoor1.position.set( -163.97, -1212.56, 4840.47 );
+					LeftThreeDoor.add(infospotLeftThreeDoor1);
+
+infospotLeftThreeDoor1.addEventListener('click', function(){
+
+ChangePanorama('LeftTwo');
+
+});
+
+var infospotLeftThreeDoor2 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLeftThreeDoor2.position.set( -4796.78, -1302.96, -506.51 );
+					LeftThreeDoor.add(infospotLeftThreeDoor2);
+
+infospotLeftThreeDoor2.addEventListener('click', function(){
+
+ChangePanorama('LineThirdE');
+
+});
+
+viewer.add( LeftThreeDoor );
+
+var LeftFour = new PANOLENS.ImagePanorama( "panoramas/LeftFour.jpg" );
+			LeftFour.addEventListener('progress', onProgress);
+			LeftFour.addEventListener('load', function(e){
+				endLoading();
+			});
+			LeftFour.addEventListener('enter', function(e){
+				endLoading();
+			});
+			LeftFour.addEventListener('click', function(e){
+			});
+
+
+var infospotLeftFour0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotLeftFour0.position.set( -332.36, -1277.18, -4813.42 );
+					LeftFour.add(infospotLeftFour0);
+
+infospotLeftFour0.addEventListener('click', function(){
+
+ChangePanorama('LeftThreeDoor');
+
+});
+
+var infospotLeftFour1 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLeftFour1.position.set( 1873.63, -823.60, 4554.50 );
+					LeftFour.add(infospotLeftFour1);
+
+infospotLeftFour1.addEventListener('click', function(){
+
+ChangePanorama('LineFifthE');
+
+});
+
+var infospotLeftFour2 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
+					infospotLeftFour2.position.set( -2114.58, -1516.37, 4261.31 );
+					LeftFour.add(infospotLeftFour2);
+
+infospotLeftFour2.addEventListener('click', function(){
+
+ChangePanorama('LeftFive');
+
+});
+
+viewer.add( LeftFour );
+
+var LeftFive = new PANOLENS.ImagePanorama( "panoramas/LeftFive.jpg" );
+			LeftFive.addEventListener('progress', onProgress);
+			LeftFive.addEventListener('load', function(e){
+				endLoading();
+			});
+			LeftFive.addEventListener('enter', function(e){
+				endLoading();
+			});
+			LeftFive.addEventListener('click', function(e){
+			});
+
+
+var infospotLeftFive0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotLeftFive0.position.set( -2318.98, -1473.20, -4170.81 );
+					LeftFive.add(infospotLeftFive0);
+
+infospotLeftFive0.addEventListener('click', function(){
+
+ChangePanorama('LeftFour');
+
+});
+
+var infospotLeftFive1 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLeftFive1.position.set( 272.15, -1372.68, 4789.64 );
+					LeftFive.add(infospotLeftFive1);
+
+infospotLeftFive1.addEventListener('click', function(){
+
+ChangePanorama('CoinsEntrance');
+
+});
+
+viewer.add( LeftFive );
+
+var CoinsEntrance = new PANOLENS.ImagePanorama( "panoramas/CoinsEntrance.jpg" );
+			CoinsEntrance.addEventListener('progress', onProgress);
+			CoinsEntrance.addEventListener('load', function(e){
+				endLoading();
+			});
+			CoinsEntrance.addEventListener('enter', function(e){
+				endLoading();
+			});
+			CoinsEntrance.addEventListener('click', function(e){
+			});
+
+
+var infospotCoinsEntrance0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotCoinsEntrance0.position.set( -123.61, -1424.80, -4782.73 );
+					CoinsEntrance.add(infospotCoinsEntrance0);
+
+infospotCoinsEntrance0.addEventListener('click', function(){
+
+ChangePanorama('LeftFive');
+
+});
+
+var infospotCoinsEntrance1 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotCoinsEntrance1.position.set( 4758.31, -1464.96, 373.46 );
+					CoinsEntrance.add(infospotCoinsEntrance1);
+
+infospotCoinsEntrance1.addEventListener('click', function(){
+
+ChangePanorama('CoinsEtoRoom');
+
+});
+
+var infospotCoinsEntrance2 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotCoinsEntrance2.position.set( -30.19, -1310.38, 4819.90 );
+					CoinsEntrance.add(infospotCoinsEntrance2);
+
+infospotCoinsEntrance2.addEventListener('click', function(){
+
+ChangePanorama('RightFive');
+
+});
+
+var infospotCoinsEntrance3 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
+					infospotCoinsEntrance3.position.set( -4986.29, -175.39, 130.03 );
+					CoinsEntrance.add(infospotCoinsEntrance3);
+
+infospotCoinsEntrance3.addEventListener('click', function(){
+
+ChangePanorama('Center');
+
+});
+
+viewer.add( CoinsEntrance );
+
+var RightFive = new PANOLENS.ImagePanorama( "panoramas/RightFive.jpg" );
+			RightFive.addEventListener('progress', onProgress);
+			RightFive.addEventListener('load', function(e){
+				endLoading();
+			});
+			RightFive.addEventListener('enter', function(e){
+				endLoading();
+			});
+			RightFive.addEventListener('click', function(e){
+			});
+
+
+var infospotRightFive0 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotRightFive0.position.set( -66.14, -1543.28, -4752.33 );
+					RightFive.add(infospotRightFive0);
+
+infospotRightFive0.addEventListener('click', function(){
+
+ChangePanorama('CoinsEntrance');
+
+});
+
+var infospotRightFive1 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotRightFive1.position.set( -2308.23, -1379.13, 4206.02 );
+					RightFive.add(infospotRightFive1);
+
+infospotRightFive1.addEventListener('click', function(){
+
+ChangePanorama('RightFour');
+
+});
+
+viewer.add( RightFive );
+
+var RightFour = new PANOLENS.ImagePanorama( "panoramas/RightFour.jpg" );
+			RightFour.addEventListener('progress', onProgress);
+			RightFour.addEventListener('load', function(e){
+				endLoading();
+			});
+			RightFour.addEventListener('enter', function(e){
+				endLoading();
+			});
+			RightFour.addEventListener('click', function(e){
+			});
+
+
+var infospotRightFour0 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
+					infospotRightFour0.position.set( -3598.77, -1420.14, -3157.67 );
+					RightFour.add(infospotRightFour0);
+
+infospotRightFour0.addEventListener('click', function(){
+
+ChangePanorama('RightFive');
+
+});
+
+var infospotRightFour1 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotRightFour1.position.set( 1338.37, -1025.56, -4696.98 );
+					RightFour.add(infospotRightFour1);
+
+infospotRightFour1.addEventListener('click', function(){
+
+ChangePanorama('FavEntrance');
+
+});
+
+var infospotRightFour2 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotRightFour2.position.set( 760.63, -1186.65, 4789.70 );
+					RightFour.add(infospotRightFour2);
+
+infospotRightFour2.addEventListener('click', function(){
+
+ChangePanorama('RightThreeDoor');
+
+});
+
+viewer.add( RightFour );
+
+var RightThreeDoor = new PANOLENS.ImagePanorama( "panoramas/RightThreeDoor.jpg" );
+			RightThreeDoor.addEventListener('progress', onProgress);
+			RightThreeDoor.addEventListener('load', function(e){
+				endLoading();
+			});
+			RightThreeDoor.addEventListener('enter', function(e){
+				endLoading();
+			});
+			RightThreeDoor.addEventListener('click', function(e){
+			});
+
+
+var infospotRightThreeDoor0 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotRightThreeDoor0.position.set( 4860.14, -1133.62, -160.09 );
+					RightThreeDoor.add(infospotRightThreeDoor0);
+
+infospotRightThreeDoor0.addEventListener('click', function(){
+
+ChangePanorama('MuslimEntra');
+
+});
+
+var infospotRightThreeDoor1 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotRightThreeDoor1.position.set( -270.86, -1311.96, -4806.84 );
+					RightThreeDoor.add(infospotRightThreeDoor1);
+
+infospotRightThreeDoor1.addEventListener('click', function(){
+
+ChangePanorama('RightFour');
+
+});
+
+var infospotRightThreeDoor2 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotRightThreeDoor2.position.set( 265.55, -1261.48, 4821.35 );
+					RightThreeDoor.add(infospotRightThreeDoor2);
+
+infospotRightThreeDoor2.addEventListener('click', function(){
+
+ChangePanorama('RightTwo');
+
+});
+
+viewer.add( RightThreeDoor );
+
+var RightTwo = new PANOLENS.ImagePanorama( "panoramas/RightTwo.jpg" );
+			RightTwo.addEventListener('progress', onProgress);
+			RightTwo.addEventListener('load', function(e){
+				endLoading();
+			});
+			RightTwo.addEventListener('enter', function(e){
+				endLoading();
+			});
+			RightTwo.addEventListener('click', function(e){
+			});
+
+
+var infospotRightTwo0 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotRightTwo0.position.set( -822.79, -1186.10, -4780.01 );
+					RightTwo.add(infospotRightTwo0);
+
+infospotRightTwo0.addEventListener('click', function(){
+
+ChangePanorama('RightThreeDoor');
+
+});
+
+var infospotRightTwo1 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotRightTwo1.position.set( 2236.70, -918.94, 4364.80 );
+					RightTwo.add(infospotRightTwo1);
+
+infospotRightTwo1.addEventListener('click', function(){
+
+ChangePanorama('OneE');
+
+});
+
+var infospotRightTwo2 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotRightTwo2.position.set( -4885.61, -866.87, 571.43 );
+					RightTwo.add(infospotRightTwo2);
+
+infospotRightTwo2.addEventListener('click', function(){
+
+ChangePanorama('Center');
+
+});
+
+var infospotRightTwo3 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotRightTwo3.position.set( -3427.65, -1581.00, 3269.40 );
+					RightTwo.add(infospotRightTwo3);
+
+infospotRightTwo3.addEventListener('click', function(){
+
+ChangePanorama('Right');
+
+});
+
+viewer.add( RightTwo );
+
+var Right = new PANOLENS.ImagePanorama( "panoramas/Right.jpg" );
+			Right.addEventListener('progress', onProgress);
+			Right.addEventListener('load', function(e){
+				endLoading();
+			});
+			Right.addEventListener('enter', function(e){
+				endLoading();
+			});
+			Right.addEventListener('click', function(e){
+			});
+
+
+var infospotRight0 = new PANOLENS.Infospot( 512, hotspotIcons[2].data, true );
+					infospotRight0.position.set( -4488.56, -2114.40, 557.68 );
+					Right.add(infospotRight0);
+
+infospotRight0.addEventListener('click', function(){
+
+ChangePanorama('MainRightOnStairs');
+
+});
+
+var infospotRight1 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotRight1.position.set( -2117.24, -1360.94, 4309.08 );
+					Right.add(infospotRight1);
+
+infospotRight1.addEventListener('click', function(){
+
+ChangePanorama('Center');
+
+});
+
+var infospotRight2 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotRight2.position.set( 388.68, -828.63, 4908.83 );
+					Right.add(infospotRight2);
+
+infospotRight2.addEventListener('click', function(){
+
+ChangePanorama('Left');
+
+});
+
+var infospotRight3 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotRight3.position.set( -2379.90, -1863.83, -3976.71 );
+					Right.add(infospotRight3);
+
+infospotRight3.addEventListener('click', function(){
+
+ChangePanorama('RightTwo');
+
+});
+
+viewer.add( Right );
+
+var CoinsLeft = new PANOLENS.ImagePanorama( "panoramas/CoinsLeft.jpg" );
+			CoinsLeft.addEventListener('progress', onProgress);
+			CoinsLeft.addEventListener('load', function(e){
+				endLoading();
+			});
+			CoinsLeft.addEventListener('enter', function(e){
+				endLoading();
+			});
+			CoinsLeft.addEventListener('click', function(e){
+			});
+
+
+var infospotCoinsLeft0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotCoinsLeft0.position.set( 3459.30, -1465.85, -3288.03 );
+					CoinsLeft.add(infospotCoinsLeft0);
+
+infospotCoinsLeft0.addEventListener('click', function(){
+
+ChangePanorama('CoinsEtoRoom');
+
+});
+
+var infospotCoinsLeft1 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotCoinsLeft1.position.set( 4603.78, -1562.59, 1141.38 );
+					CoinsLeft.add(infospotCoinsLeft1);
+
+infospotCoinsLeft1.addEventListener('click', function(){
+
+ChangePanorama('CoinsBack');
+
+});
+
+viewer.add( CoinsLeft );
+
+var CoinsBack = new PANOLENS.ImagePanorama( "panoramas/CoinsBack.jpg" );
+			CoinsBack.addEventListener('progress', onProgress);
+			CoinsBack.addEventListener('load', function(e){
+				endLoading();
+			});
+			CoinsBack.addEventListener('enter', function(e){
+				endLoading();
+			});
+			CoinsBack.addEventListener('click', function(e){
+			});
+
+
+var infospotCoinsBack0 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotCoinsBack0.position.set( 1429.85, -1327.53, -4596.59 );
+					CoinsBack.add(infospotCoinsBack0);
+
+infospotCoinsBack0.addEventListener('click', function(){
+
+ChangePanorama('CoinsLeft');
+
+});
+
+var infospotCoinsBack1 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotCoinsBack1.position.set( 3199.59, -1464.51, 3548.27 );
+					CoinsBack.add(infospotCoinsBack1);
+
+infospotCoinsBack1.addEventListener('click', function(){
+
+ChangePanorama('CoinsRight');
+
+});
+
+var infospotCoinsBack2 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotCoinsBack2.position.set( 4653.03, -1543.51, -981.01 );
+					CoinsBack.add(infospotCoinsBack2);
+
+infospotCoinsBack2.addEventListener('click', function(){
+
+ChangePanorama('CoinsEtoRoom');
+
+});
+
+viewer.add( CoinsBack );
+
+var CoinsRight = new PANOLENS.ImagePanorama( "panoramas/CoinsRight.jpg" );
+			CoinsRight.addEventListener('progress', onProgress);
+			CoinsRight.addEventListener('load', function(e){
+				endLoading();
+			});
+			CoinsRight.addEventListener('enter', function(e){
+				endLoading();
+			});
+			CoinsRight.addEventListener('click', function(e){
+			});
+
+
+var infospotCoinsRight0 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotCoinsRight0.position.set( 4397.98, -1521.74, -1812.32 );
+					CoinsRight.add(infospotCoinsRight0);
+
+infospotCoinsRight0.addEventListener('click', function(){
+
+ChangePanorama('CoinsBack');
+
+});
+
+var infospotCoinsRight1 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotCoinsRight1.position.set( 4301.75, -1437.32, 2084.25 );
+					CoinsRight.add(infospotCoinsRight1);
+
+infospotCoinsRight1.addEventListener('click', function(){
+
+ChangePanorama('CoinsEtoRoom');
+
+});
+
+viewer.add( CoinsRight );
+
+var CoinsEtoRoom = new PANOLENS.ImagePanorama( "panoramas/CoinsEtoRoom.jpg" );
+			CoinsEtoRoom.addEventListener('progress', onProgress);
+			CoinsEtoRoom.addEventListener('load', function(e){
+				endLoading();
+			});
+			CoinsEtoRoom.addEventListener('enter', function(e){
+				endLoading();
+			});
+			CoinsEtoRoom.addEventListener('click', function(e){
+			});
+
+
+var infospotCoinsEtoRoom0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotCoinsEtoRoom0.position.set( 4469.52, -1850.30, -1232.90 );
+					CoinsEtoRoom.add(infospotCoinsEtoRoom0);
+
+infospotCoinsEtoRoom0.addEventListener('click', function(){
+
+ChangePanorama('CoinsEntrance');
+
+});
+
+var infospotCoinsEtoRoom1 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotCoinsEtoRoom1.position.set( -2285.27, -1561.11, -4158.63 );
+					CoinsEtoRoom.add(infospotCoinsEtoRoom1);
+
+infospotCoinsEtoRoom1.addEventListener('click', function(){
+
+ChangePanorama('CoinsLeft');
+
+});
+
+var infospotCoinsEtoRoom2 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotCoinsEtoRoom2.position.set( -969.26, -1586.72, 4638.92 );
+					CoinsEtoRoom.add(infospotCoinsEtoRoom2);
+
+infospotCoinsEtoRoom2.addEventListener('click', function(){
+
+ChangePanorama('CoinsRight');
+
+});
+
+var infospotCoinsEtoRoom3 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotCoinsEtoRoom3.position.set( -4651.40, -1677.00, 677.78 );
+					CoinsEtoRoom.add(infospotCoinsEtoRoom3);
+
+infospotCoinsEtoRoom3.addEventListener('click', function(){
+
+ChangePanorama('CoinsBack');
+
+});
+
+viewer.add( CoinsEtoRoom );
+
+var OneE = new PANOLENS.ImagePanorama( "panoramas/OneE.jpg" );
+			OneE.addEventListener('progress', onProgress);
+			OneE.addEventListener('load', function(e){
+				endLoading();
+			});
+			OneE.addEventListener('enter', function(e){
+				endLoading();
+			});
+			OneE.addEventListener('click', function(e){
+			});
+
+
+var infospotOneE0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotOneE0.position.set( -2222.56, -944.23, -4366.37 );
+					OneE.add(infospotOneE0);
+
+infospotOneE0.addEventListener('click', function(){
+
+ChangePanorama('RightTwo');
+
+});
+
+var infospotOneE1 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotOneE1.position.set( 924.08, -928.07, -4817.45 );
+					OneE.add(infospotOneE1);
+
+infospotOneE1.addEventListener('click', function(){
+
+ChangePanorama('OneLeftE');
+
+});
+
+var infospotOneE2 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotOneE2.position.set( 4899.83, -918.50, -219.40 );
+					OneE.add(infospotOneE2);
+
+infospotOneE2.addEventListener('click', function(){
+
+ChangePanorama('OneEnd');
+
+});
+
+viewer.add( OneE );
+
+var OneEnd = new PANOLENS.ImagePanorama( "panoramas/OneEnd.jpg" );
+			OneEnd.addEventListener('progress', onProgress);
+			OneEnd.addEventListener('load', function(e){
+				endLoading();
+			});
+			OneEnd.addEventListener('enter', function(e){
+				endLoading();
+			});
+			OneEnd.addEventListener('click', function(e){
+			});
+
+
+var infospotOneEnd0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotOneEnd0.position.set( -4922.48, -725.24, 433.07 );
+					OneEnd.add(infospotOneEnd0);
+
+infospotOneEnd0.addEventListener('click', function(){
+
+ChangePanorama('OneE');
+
+});
+
+viewer.add( OneEnd );
+
+var OneLeftE = new PANOLENS.ImagePanorama( "panoramas/OneLeftE.jpg" );
+			OneLeftE.addEventListener('progress', onProgress);
+			OneLeftE.addEventListener('load', function(e){
+				endLoading();
+			});
+			OneLeftE.addEventListener('enter', function(e){
+				endLoading();
+			});
+			OneLeftE.addEventListener('click', function(e){
+			});
+
+
+var infospotOneLeftE0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotOneLeftE0.position.set( 2683.88, -936.20, -4100.93 );
+					OneLeftE.add(infospotOneLeftE0);
+
+infospotOneLeftE0.addEventListener('click', function(){
+
+ChangePanorama('OneE');
+
+});
+
+var infospotOneLeftE1 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotOneLeftE1.position.set( -4754.90, -1207.65, 942.49 );
+					OneLeftE.add(infospotOneLeftE1);
+
+infospotOneLeftE1.addEventListener('click', function(){
+
+ChangePanorama('OneLeftEnd');
+
+});
+
+viewer.add( OneLeftE );
+
+var OneLeftEnd = new PANOLENS.ImagePanorama( "panoramas/OneLeftEnd.jpg" );
+			OneLeftEnd.addEventListener('progress', onProgress);
+			OneLeftEnd.addEventListener('load', function(e){
+				endLoading();
+			});
+			OneLeftEnd.addEventListener('enter', function(e){
+				endLoading();
+			});
+			OneLeftEnd.addEventListener('click', function(e){
+			});
+
+
+var infospotOneLeftEnd0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotOneLeftEnd0.position.set( -4864.07, -1138.25, -67.66 );
+					OneLeftEnd.add(infospotOneLeftEnd0);
+
+infospotOneLeftEnd0.addEventListener('click', function(){
+
+ChangePanorama('OneLeftE');
+
+});
+
+viewer.add( OneLeftEnd );
+
+var MuslimEntra = new PANOLENS.ImagePanorama( "panoramas/MuslimEntra.jpg" );
+			MuslimEntra.addEventListener('progress', onProgress);
+			MuslimEntra.addEventListener('load', function(e){
+				endLoading();
+			});
+			MuslimEntra.addEventListener('enter', function(e){
+				endLoading();
+			});
+			MuslimEntra.addEventListener('click', function(e){
+			});
+
+
+var infospotMuslimEntra0 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotMuslimEntra0.position.set( 66.19, -993.61, -4892.91 );
+					MuslimEntra.add(infospotMuslimEntra0);
+
+infospotMuslimEntra0.addEventListener('click', function(){
+
+ChangePanorama('MuslimEnd');
+
+});
+
+var infospotMuslimEntra1 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotMuslimEntra1.position.set( 312.03, -1128.23, 4853.25 );
+					MuslimEntra.add(infospotMuslimEntra1);
+
+infospotMuslimEntra1.addEventListener('click', function(){
+
+ChangePanorama('RightThreeDoor');
+
+});
+
+viewer.add( MuslimEntra );
+
+var MuslimEnd = new PANOLENS.ImagePanorama( "panoramas/MuslimEnd.jpg" );
+			MuslimEnd.addEventListener('progress', onProgress);
+			MuslimEnd.addEventListener('load', function(e){
+				endLoading();
+			});
+			MuslimEnd.addEventListener('enter', function(e){
+				endLoading();
+			});
+			MuslimEnd.addEventListener('click', function(e){
+			});
+
+
+var infospotMuslimEnd0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotMuslimEnd0.position.set( 4842.44, -912.33, -786.28 );
+					MuslimEnd.add(infospotMuslimEnd0);
+
+infospotMuslimEnd0.addEventListener('click', function(){
+
+ChangePanorama('MuslimEntra');
+
+});
+
+viewer.add( MuslimEnd );
+
+var FavEntrance = new PANOLENS.ImagePanorama( "panoramas/FavEntrance.jpg" );
+			FavEntrance.addEventListener('progress', onProgress);
+			FavEntrance.addEventListener('load', function(e){
+				endLoading();
+			});
+			FavEntrance.addEventListener('enter', function(e){
+				endLoading();
+			});
+			FavEntrance.addEventListener('click', function(e){
+			});
+
+
+var infospotFavEntrance0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotFavEntrance0.position.set( 2878.56, -1026.25, -3952.48 );
+					FavEntrance.add(infospotFavEntrance0);
+
+infospotFavEntrance0.addEventListener('click', function(){
+
+ChangePanorama('RightFour');
+
+});
+
+var infospotFavEntrance1 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotFavEntrance1.position.set( -1189.20, -1090.86, -4723.52 );
+					FavEntrance.add(infospotFavEntrance1);
+
+infospotFavEntrance1.addEventListener('click', function(){
+
+ChangePanorama('FavRightEntr');
+
+});
+
+var infospotFavEntrance2 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotFavEntrance2.position.set( -4540.93, -1538.74, 1407.76 );
+					FavEntrance.add(infospotFavEntrance2);
+
+infospotFavEntrance2.addEventListener('click', function(){
+
+ChangePanorama('FavEnd');
+
+});
+
+viewer.add( FavEntrance );
+
+var FavEnd = new PANOLENS.ImagePanorama( "panoramas/FavEnd.jpg" );
+			FavEnd.addEventListener('progress', onProgress);
+			FavEnd.addEventListener('load', function(e){
+				endLoading();
+			});
+			FavEnd.addEventListener('enter', function(e){
+				endLoading();
+			});
+			FavEnd.addEventListener('click', function(e){
+			});
+
+
+var infospotFavEnd0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotFavEnd0.position.set( 1993.89, -1485.81, -4332.46 );
+					FavEnd.add(infospotFavEnd0);
+
+infospotFavEnd0.addEventListener('click', function(){
+
+ChangePanorama('FavEntrance');
+
+});
+
+viewer.add( FavEnd );
+
+var FavRightEntr = new PANOLENS.ImagePanorama( "panoramas/FavRightEntr.jpg" );
+			FavRightEntr.addEventListener('progress', onProgress);
+			FavRightEntr.addEventListener('load', function(e){
+				endLoading();
+			});
+			FavRightEntr.addEventListener('enter', function(e){
+				endLoading();
+			});
+			FavRightEntr.addEventListener('click', function(e){
+			});
+
+
+var infospotFavRightEntr0 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotFavRightEntr0.position.set( 4882.40, -1048.12, 59.98 );
+					FavRightEntr.add(infospotFavRightEntr0);
+
+infospotFavRightEntr0.addEventListener('click', function(){
+
+ChangePanorama('FavRightEnd');
+
+});
+
+var infospotFavRightEntr1 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotFavRightEntr1.position.set( -2358.35, -1090.92, -4264.47 );
+					FavRightEntr.add(infospotFavRightEntr1);
+
+infospotFavRightEntr1.addEventListener('click', function(){
+
+ChangePanorama('FavEntrance');
+
+});
+
+viewer.add( FavRightEntr );
+
+var FavRightEnd = new PANOLENS.ImagePanorama( "panoramas/FavRightEnd.jpg" );
+			FavRightEnd.addEventListener('progress', onProgress);
+			FavRightEnd.addEventListener('load', function(e){
+				endLoading();
+			});
+			FavRightEnd.addEventListener('enter', function(e){
+				endLoading();
+			});
+			FavRightEnd.addEventListener('click', function(e){
+			});
+
+
+var infospotFavRightEnd0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotFavRightEnd0.position.set( 4737.89, -962.16, -1234.33 );
+					FavRightEnd.add(infospotFavRightEnd0);
+
+infospotFavRightEnd0.addEventListener('click', function(){
+
+ChangePanorama('FavRightEntr');
+
+});
+
+viewer.add( FavRightEnd );
+
+var LineFirstE = new PANOLENS.ImagePanorama( "panoramas/LineFirstE.jpg" );
+			LineFirstE.addEventListener('progress', onProgress);
+			LineFirstE.addEventListener('load', function(e){
+				endLoading();
+			});
+			LineFirstE.addEventListener('enter', function(e){
+				endLoading();
+			});
+			LineFirstE.addEventListener('click', function(e){
+			});
+
+
+var infospotLineFirstE0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotLineFirstE0.position.set( 504.36, -822.69, -4903.95 );
+					LineFirstE.add(infospotLineFirstE0);
+
+infospotLineFirstE0.addEventListener('click', function(){
+
+ChangePanorama('LeftTwo');
+
+});
+
+var infospotLineFirstE1 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLineFirstE1.position.set( -4923.35, -590.39, 585.58 );
+					LineFirstE.add(infospotLineFirstE1);
+
+infospotLineFirstE1.addEventListener('click', function(){
+
+ChangePanorama('LineFirstEnd');
+
+});
+
+var infospotLineFirstE2 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLineFirstE2.position.set( -2614.89, -907.90, -4152.44 );
+					LineFirstE.add(infospotLineFirstE2);
+
+infospotLineFirstE2.addEventListener('click', function(){
+
+ChangePanorama('LineSecondE');
+
+});
+
+viewer.add( LineFirstE );
+
+var LineFirstEnd = new PANOLENS.ImagePanorama( "panoramas/LineFirstEnd.jpg" );
+			LineFirstEnd.addEventListener('progress', onProgress);
+			LineFirstEnd.addEventListener('load', function(e){
+				endLoading();
+			});
+			LineFirstEnd.addEventListener('enter', function(e){
+				endLoading();
+			});
+			LineFirstEnd.addEventListener('click', function(e){
+			});
+
+
+var infospotLineFirstEnd0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotLineFirstEnd0.position.set( -4941.83, -634.58, 268.59 );
+					LineFirstEnd.add(infospotLineFirstEnd0);
+
+infospotLineFirstEnd0.addEventListener('click', function(){
+
+ChangePanorama('LineFirstE');
+
+});
+
+viewer.add( LineFirstEnd );
+
+var LineSecondE = new PANOLENS.ImagePanorama( "panoramas/LineSecondE.jpg" );
+			LineSecondE.addEventListener('progress', onProgress);
+			LineSecondE.addEventListener('load', function(e){
+				endLoading();
+			});
+			LineSecondE.addEventListener('enter', function(e){
+				endLoading();
+			});
+			LineSecondE.addEventListener('click', function(e){
+			});
+
+
+var infospotLineSecondE0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotLineSecondE0.position.set( 3834.84, -855.83, 3077.62 );
+					LineSecondE.add(infospotLineSecondE0);
+
+infospotLineSecondE0.addEventListener('click', function(){
+
+ChangePanorama('LineFirstE');
+
+});
+
+var infospotLineSecondE1 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLineSecondE1.position.set( 2198.89, -1537.86, -4211.56 );
+					LineSecondE.add(infospotLineSecondE1);
+
+infospotLineSecondE1.addEventListener('click', function(){
+
+ChangePanorama('LineBSecondThird');
+
+});
+
+var infospotLineSecondE2 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLineSecondE2.position.set( -4720.11, -1173.01, 1137.00 );
+					LineSecondE.add(infospotLineSecondE2);
+
+infospotLineSecondE2.addEventListener('click', function(){
+
+ChangePanorama('LineSecondEnd');
+
+});
+
+viewer.add( LineSecondE );
+
+var LineSecondEnd = new PANOLENS.ImagePanorama( "panoramas/LineSecondEnd.jpg" );
+			LineSecondEnd.addEventListener('progress', onProgress);
+			LineSecondEnd.addEventListener('load', function(e){
+				endLoading();
+			});
+			LineSecondEnd.addEventListener('enter', function(e){
+				endLoading();
+			});
+			LineSecondEnd.addEventListener('click', function(e){
+			});
+
+
+var infospotLineSecondEnd0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotLineSecondEnd0.position.set( -4841.67, -1134.82, 508.11 );
+					LineSecondEnd.add(infospotLineSecondEnd0);
+
+infospotLineSecondEnd0.addEventListener('click', function(){
+
+ChangePanorama('LineSecondE');
+
+});
+
+viewer.add( LineSecondEnd );
+
+var LineBSecondThird = new PANOLENS.ImagePanorama( "panoramas/LineBSecondThird.jpg" );
+			LineBSecondThird.addEventListener('progress', onProgress);
+			LineBSecondThird.addEventListener('load', function(e){
+				endLoading();
+			});
+			LineBSecondThird.addEventListener('enter', function(e){
+				endLoading();
+			});
+			LineBSecondThird.addEventListener('click', function(e){
+			});
+
+
+var infospotLineBSecondThird0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotLineBSecondThird0.position.set( 1315.35, -1795.54, 4468.31 );
+					LineBSecondThird.add(infospotLineBSecondThird0);
+
+infospotLineBSecondThird0.addEventListener('click', function(){
+
+ChangePanorama('LineSecondE');
+
+});
+
+var infospotLineBSecondThird1 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLineBSecondThird1.position.set( -3236.40, -1020.67, -3664.13 );
+					LineBSecondThird.add(infospotLineBSecondThird1);
+
+infospotLineBSecondThird1.addEventListener('click', function(){
+
+ChangePanorama('LineBThirdForth');
+
+});
+
+var infospotLineBSecondThird2 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLineBSecondThird2.position.set( -4495.51, -1714.89, -1328.64 );
+					LineBSecondThird.add(infospotLineBSecondThird2);
+
+infospotLineBSecondThird2.addEventListener('click', function(){
+
+ChangePanorama('LineThirdE');
+
+});
+
+viewer.add( LineBSecondThird );
+
+var LineThirdE = new PANOLENS.ImagePanorama( "panoramas/LineThirdE.jpg" );
+			LineThirdE.addEventListener('progress', onProgress);
+			LineThirdE.addEventListener('load', function(e){
+				endLoading();
+			});
+			LineThirdE.addEventListener('enter', function(e){
+				endLoading();
+			});
+			LineThirdE.addEventListener('click', function(e){
+			});
+
+
+var infospotLineThirdE0 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLineThirdE0.position.set( 2618.46, -1548.57, 3960.27 );
+					LineThirdE.add(infospotLineThirdE0);
+
+infospotLineThirdE0.addEventListener('click', function(){
+
+ChangePanorama('LineBSecondThird');
+
+});
+
+var infospotLineThirdE1 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotLineThirdE1.position.set( 4796.04, -1207.34, 683.31 );
+					LineThirdE.add(infospotLineThirdE1);
+
+infospotLineThirdE1.addEventListener('click', function(){
+
+ChangePanorama('LeftThreeDoor');
+
+});
+
+var infospotLineThirdE2 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLineThirdE2.position.set( 3608.38, -1530.11, -3096.59 );
+					LineThirdE.add(infospotLineThirdE2);
+
+infospotLineThirdE2.addEventListener('click', function(){
+
+ChangePanorama('LineBThirdForth');
+
+});
+
+var infospotLineThirdE3 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLineThirdE3.position.set( -4851.60, -944.96, -686.98 );
+					LineThirdE.add(infospotLineThirdE3);
+
+infospotLineThirdE3.addEventListener('click', function(){
+
+ChangePanorama('LineThirdEnd');
+
+});
+
+viewer.add( LineThirdE );
+
+var LineThirdEnd = new PANOLENS.ImagePanorama( "panoramas/LineThirdEnd.jpg" );
+			LineThirdEnd.addEventListener('progress', onProgress);
+			LineThirdEnd.addEventListener('load', function(e){
+				endLoading();
+			});
+			LineThirdEnd.addEventListener('enter', function(e){
+				endLoading();
+			});
+			LineThirdEnd.addEventListener('click', function(e){
+			});
+
+
+var infospotLineThirdEnd0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotLineThirdEnd0.position.set( 86.04, -791.89, 4932.00 );
+					LineThirdEnd.add(infospotLineThirdEnd0);
+
+infospotLineThirdEnd0.addEventListener('click', function(){
+
+ChangePanorama('LineThirdE');
+
+});
+
+viewer.add( LineThirdEnd );
+
+var LineBThirdForth = new PANOLENS.ImagePanorama( "panoramas/LineBThirdForth.jpg" );
+			LineBThirdForth.addEventListener('progress', onProgress);
+			LineBThirdForth.addEventListener('load', function(e){
+				endLoading();
+			});
+			LineBThirdForth.addEventListener('enter', function(e){
+				endLoading();
+			});
+			LineBThirdForth.addEventListener('click', function(e){
+			});
+
+
+var infospotLineBThirdForth0 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLineBThirdForth0.position.set( 4811.29, -980.56, -896.28 );
+					LineBThirdForth.add(infospotLineBThirdForth0);
+
+infospotLineBThirdForth0.addEventListener('click', function(){
+
+ChangePanorama('LineBSecondThird');
+
+});
+
+var infospotLineBThirdForth1 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotLineBThirdForth1.position.set( 4470.37, -1752.50, 1368.93 );
+					LineBThirdForth.add(infospotLineBThirdForth1);
+
+infospotLineBThirdForth1.addEventListener('click', function(){
+
+ChangePanorama('LineThirdE');
+
+});
+
+var infospotLineBThirdForth2 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLineBThirdForth2.position.set( -3221.84, -1541.11, 3495.51 );
+					LineBThirdForth.add(infospotLineBThirdForth2);
+
+infospotLineBThirdForth2.addEventListener('click', function(){
+
+ChangePanorama('LineForthE');
+
+});
+
+viewer.add( LineBThirdForth );
+
+var LineForthE = new PANOLENS.ImagePanorama( "panoramas/LineForthE.jpg" );
+			LineForthE.addEventListener('progress', onProgress);
+			LineForthE.addEventListener('load', function(e){
+				endLoading();
+			});
+			LineForthE.addEventListener('enter', function(e){
+				endLoading();
+			});
+			LineForthE.addEventListener('click', function(e){
+			});
+
+
+var infospotLineForthE0 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLineForthE0.position.set( 3054.25, -1500.33, 3653.46 );
+					LineForthE.add(infospotLineForthE0);
+
+infospotLineForthE0.addEventListener('click', function(){
+
+ChangePanorama('LineBThirdForth');
+
+});
+
+var infospotLineForthE1 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLineForthE1.position.set( -4870.10, -1086.64, 148.36 );
+					LineForthE.add(infospotLineForthE1);
+
+infospotLineForthE1.addEventListener('click', function(){
+
+ChangePanorama('LineForthEnd');
+
+});
+
+var infospotLineForthE2 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotLineForthE2.position.set( 2546.69, -866.31, -4206.58 );
+					LineForthE.add(infospotLineForthE2);
+
+infospotLineForthE2.addEventListener('click', function(){
+
+ChangePanorama('LineFifthE');
+
+});
+
+viewer.add( LineForthE );
+
+var LineForthEnd = new PANOLENS.ImagePanorama( "panoramas/LineForthEnd.jpg" );
+			LineForthEnd.addEventListener('progress', onProgress);
+			LineForthEnd.addEventListener('load', function(e){
+				endLoading();
+			});
+			LineForthEnd.addEventListener('enter', function(e){
+				endLoading();
+			});
+			LineForthEnd.addEventListener('click', function(e){
+			});
+
+
+var infospotLineForthEnd0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotLineForthEnd0.position.set( -4873.50, -1094.57, -53.46 );
+					LineForthEnd.add(infospotLineForthEnd0);
+
+infospotLineForthEnd0.addEventListener('click', function(){
+
+ChangePanorama('LineForthE');
+
+});
+
+viewer.add( LineForthEnd );
+
+var LineFifthEnd = new PANOLENS.ImagePanorama( "panoramas/LineFifthEnd.jpg" );
+			LineFifthEnd.addEventListener('progress', onProgress);
+			LineFifthEnd.addEventListener('load', function(e){
+				endLoading();
+			});
+			LineFifthEnd.addEventListener('enter', function(e){
+				endLoading();
+			});
+			LineFifthEnd.addEventListener('click', function(e){
+			});
+
+
+var infospotLineFifthEnd0 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotLineFifthEnd0.position.set( 4660.15, -1735.05, 477.99 );
+					LineFifthEnd.add(infospotLineFifthEnd0);
+
+infospotLineFifthEnd0.addEventListener('click', function(){
+
+ChangePanorama('LineFifthE');
+
+});
+
+viewer.add( LineFifthEnd );
+
+var LineFifthE = new PANOLENS.ImagePanorama( "panoramas/LineFifthE.jpg" );
+			LineFifthE.addEventListener('progress', onProgress);
+			LineFifthE.addEventListener('load', function(e){
+				endLoading();
+			});
+			LineFifthE.addEventListener('enter', function(e){
+				endLoading();
+			});
+			LineFifthE.addEventListener('click', function(e){
+			});
+
+
+var infospotLineFifthE0 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLineFifthE0.position.set( -1274.99, -1033.05, 4712.42 );
+					LineFifthE.add(infospotLineFifthE0);
+
+infospotLineFifthE0.addEventListener('click', function(){
+
+ChangePanorama('LineForthE');
+
+});
+
+var infospotLineFifthE1 = new PANOLENS.Infospot( 512, hotspotIcons[1].data, true );
+					infospotLineFifthE1.position.set( 2107.97, -972.61, 4418.43 );
+					LineFifthE.add(infospotLineFifthE1);
+
+infospotLineFifthE1.addEventListener('click', function(){
+
+ChangePanorama('LeftFour');
+
+});
+
+var infospotLineFifthE2 = new PANOLENS.Infospot( 512, hotspotIcons[12].data, true );
+					infospotLineFifthE2.position.set( -4740.67, -1581.40, 23.25 );
+					LineFifthE.add(infospotLineFifthE2);
+
+infospotLineFifthE2.addEventListener('click', function(){
+
+ChangePanorama('LineFifthEnd');
+
+});
+
+viewer.add( LineFifthE );
+
+$(document).ready(function(){ ChangePanorama('Main'); });
+
+
+/*panoramas-end*/
+            
+			var stilloading = true;
+			function onProgress ( event ) {
+				
+				progress = event.progress.loaded / event.progress.total * 100;
+				console.log("Loading panorama: " + progress + " ... ");
+				$("#loadingperc").html(Math.ceil(progress) + "%");
+				if(Math.ceil(progress) >= 100){
+					endLoading();
+					stilloading = false;
+
+				}else{
+				    clearTimeout(elTimer);
+					stilloading = true;
+					$("#loading").show();
+				}
+			}
+			
+			var elTimer;
+			function endLoading(){
+			    clearTimeout(elTimer);
+				if(stilloading == false){
+					elTimer = setTimeout(function(){
+						$("#loading").fadeOut();
+					}, 750);
+					
+				}
+			}
+			
+			function hideTemp(){
+				$("#tmp").fadeOut();
+				setTimeout(function(){
+					$("#tmpcontent").html("");
+				},1000);
+			}
+			
+			function showMedia(type, content){
+				switch(type){
+					case 1 :
+						//Image
+						$("#tmpcontent").html("<img src='"+content+"' style='width: 100%;'>");
+						$("#tmp").fadeIn();
+						break;
+					case 2 :
+						//Video
+						$("#tmpcontent").html("<video id='webvideo' controls autoplay style='width: 100%; height: 100%;'><source src='" +content+ "' type='video/mp4'> Your browser does not support the video tag. </video>");
+						$("#tmp").fadeIn();
+						break;
+					case 3 :
+						//Audio
+						$("#tmpcontent").html("<audio controls style='width: 100%;'><source src='"+content+"' type='audio/ogg'>Your browser does not support the audio tag.</audio>");
+						$("#tmp").fadeIn();
+						break;
+					case 4 :
+						//PDF
+						$("#tmpcontent").html("<iframe src='pdfjs/web/viewer.html?file=../../"+content+"' style='width: 100%; height: 99%;'></iframe>");
+						$("#tmp").fadeIn();
+						break;
+				}
+			}
+			
+			
+			
+			//Update Callback
+			viewer.addUpdateCallback(function(){
+				
+				/*viewerupdatecallback*/
+if(viewer.panorama == Main){
+}
+
+if(viewer.panorama == MainCenter){
+}
+
+if(viewer.panorama == MainLeftClose){
+}
+
+if(viewer.panorama == MainLeft){
+}
+
+if(viewer.panorama == MainLeftColumn){
+}
+
+if(viewer.panorama == MainRightColumn){
+}
+
+if(viewer.panorama == MainRightStairs){
+}
+
+if(viewer.panorama == MainRightClose){
+}
+
+if(viewer.panorama == MainLeftOnStairs){
+}
+
+if(viewer.panorama == MainRightOnStairs){
+}
+
+if(viewer.panorama == Center){
+}
+
+if(viewer.panorama == Left){
+}
+
+if(viewer.panorama == LeftTwo){
+}
+
+if(viewer.panorama == LeftThreeDoor){
+}
+
+if(viewer.panorama == LeftFour){
+}
+
+if(viewer.panorama == LeftFive){
+}
+
+if(viewer.panorama == CoinsEntrance){
+}
+
+if(viewer.panorama == RightFive){
+}
+
+if(viewer.panorama == RightFour){
+}
+
+if(viewer.panorama == RightThreeDoor){
+}
+
+if(viewer.panorama == RightTwo){
+}
+
+if(viewer.panorama == Right){
+}
+
+if(viewer.panorama == CoinsLeft){
+}
+
+if(viewer.panorama == CoinsBack){
+}
+
+if(viewer.panorama == CoinsRight){
+}
+
+if(viewer.panorama == CoinsEtoRoom){
+}
+
+if(viewer.panorama == OneE){
+}
+
+if(viewer.panorama == OneEnd){
+}
+
+if(viewer.panorama == OneLeftE){
+}
+
+if(viewer.panorama == OneLeftEnd){
+}
+
+if(viewer.panorama == MuslimEntra){
+}
+
+if(viewer.panorama == MuslimEnd){
+}
+
+if(viewer.panorama == FavEntrance){
+}
+
+if(viewer.panorama == FavEnd){
+}
+
+if(viewer.panorama == FavRightEntr){
+}
+
+if(viewer.panorama == FavRightEnd){
+}
+
+if(viewer.panorama == LineFirstE){
+}
+
+if(viewer.panorama == LineFirstEnd){
+}
+
+if(viewer.panorama == LineSecondE){
+}
+
+if(viewer.panorama == LineSecondEnd){
+}
+
+if(viewer.panorama == LineBSecondThird){
+}
+
+if(viewer.panorama == LineThirdE){
+}
+
+if(viewer.panorama == LineThirdEnd){
+}
+
+if(viewer.panorama == LineBThirdForth){
+}
+
+if(viewer.panorama == LineForthE){
+}
+
+if(viewer.panorama == LineForthEnd){
+}
+
+if(viewer.panorama == LineFifthEnd){
+}
+
+if(viewer.panorama == LineFifthE){
+}
+/*viewerupdatecallback-end*/
+				
+				
+			});
+			
+			
+			
+			var hotspotsvisible = true;
+			function ShowMyInfospot(hs, elid){
+				var thehs = toScreenPosition(hs);
+				if(thehs.z < 1){
+					$("#" + elid).css({
+						"top" : (thehs.y - ($("#" + elid).height()/2)) + "px",
+						"left" : (thehs.x - ($("#" + elid).width()/2)) + "px",
+					});
+					if(hotspotsvisible)
+						$("#" + elid).show();
+				}else{
+					$("#" + elid).hide();
+				}
+				
+			}
+			
+			function toScreenPosition(obj)
+			{
+				var vector = new THREE.Vector3();
+				var widthHalf = 0.5 * innerWidth;
+				var heightHalf = 0.5 * innerHeight;
+				
+				//obj.updateMatrixWorld();				
+				vector.setFromMatrixPosition(obj.matrixWorld);
+				
+				
+				vector.project(viewer.camera);
+
+				vector.x = ( vector.x * widthHalf ) + widthHalf;
+				vector.y = - ( vector.y * heightHalf ) + heightHalf;
+
+				
+				return { 
+					x: vector.x,
+					y: vector.y,
+					z: vector.z,
+				};
+
+			};
+			
+			var currentPanorama;
+			function ChangePanorama(panorama){
+			if(panorama != currentPanorama){
+				currentPanorama = panorama;
+				HideInfospots(); 
+				$("#loading").fadeIn();
+				//$(".customhotspot").fadeOut();
+				setTimeout(function(){
+					viewer.setPanorama(window[panorama]);
+				}, 100);
+				setTimeout(function(){
+					$("#" + panorama).fadeIn();
+				}, 1000);
+			}
+		}
+			
+			
+			
+			
+			
+			function HideInfospots(){
+				$(".customhotspot").fadeOut();
+			}
+
+			/*customjs*//*customjs-end*/
+        </script>
+	</body>
+</html>

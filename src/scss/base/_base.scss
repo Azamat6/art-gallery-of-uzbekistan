@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');  //logo
+
+:root{
+    --background: #fff;
+    --dark: #000;
+    --almostDark: #333;
+    --almostLight: #e2dbd4;
+    --footerLight: #bababa;
+    --title: "Roboto", sans-serif;
+    --text: "PT Sans", sans-serif;
+    --oldlogo: "Playfair Display SC", serif;
+    --montserrat:"Montserrat", sans-serif;
+    --logo: "Space Grotesk", sans-serif;
+    --inter: "Inter", sans-serif;
+    --nunito: "Nunito Sans", sans-serif;
+    --roboto: "Roboto Slab", serif;
+}
+:root {
+    --container-width: 100%; /* Значение по умолчанию для маленьких экранов */
+  }
+  
+  @media (min-width: 576px) {
+    :root {
+      --container-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    :root {
+      --container-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    :root {
+      --container-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    :root {
+      --container-width: 1140px;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    :root {
+      --container-width: 1320px;
+    }
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.app-container{
+    font-family: var(--font-family);
+    overflow-x: hidden;
+}
+
+
+
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 3px;
+}
+
+html.lenis {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto;
+  }
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
