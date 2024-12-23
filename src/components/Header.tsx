@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useScroll, useMotionValueEvent } from "framer-motion";
+import throttle from "lodash.throttle";
 import { IoCloseSharp } from "react-icons/io5";
 import { VscGlobe } from "react-icons/vsc";
 import { FaTelegramPlane } from "react-icons/fa";
@@ -15,31 +16,26 @@ const Header: React.FC = () => {
   //scroll animation
 
   const { scrollY } = useScroll();
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [scrollPos, setScrollPos] = useState(0); // Храним только текущую прокрутку
 
-  const [scrollClass, setScrollClass] = useState(""); //bg-blur
+  // Обновляем состояние прокрутки с throttle
+  const handleScroll = throttle((latest: number) => {
+    setScrollPos(latest);
+  }, 100);
 
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    if (latest > 30 && !isScrolled) {
-      setIsScrolled(true);
-    } else if (latest <= 30 && isScrolled) {
-      setIsScrolled(false);
-    }
-  });
+  // Слушаем изменения scrollY
+  useMotionValueEvent(scrollY, "change", handleScroll);
 
-  //bg-blur functioning
-
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    if (latest > 160) {
-      setScrollClass("blur-effect");
-    } else if (latest > 100) {
-      setScrollClass("darken-effect-max");
-    } else if (latest > 30) {
-      setScrollClass("darken-effect");
-    } else {
-      setScrollClass("");
-    }
-  });
+  // Вычисляем CSS-классы на основе прокрутки
+  const isScrolled = scrollPos > 30;
+  const scrollClass =
+    scrollPos > 160
+      ? "blur-effect"
+      : scrollPos > 100
+      ? "darken-effect-max"
+      : scrollPos > 30
+      ? "darken-effect"
+      : "";
 
   //getting current working time
 
@@ -84,34 +80,8 @@ const Header: React.FC = () => {
     };
   }, []);
 
-  //Loader
-
-  const [isPageLoaded, setIsPageLoaded] = useState<boolean>(false);
-
-  useEffect(() => {
-    const handleLoad = () => {
-      // Когда сайт загружается
-      setIsPageLoaded(true);
-    };
-
-    // Устанавливаем слушатель события загрузки страницы
-    window.addEventListener("load", handleLoad);
-
-    // Удаляем слушатель при размонтировании компонента
-    return () => window.removeEventListener("load", handleLoad);
-  }, []);
-
   return (
     <header className="header">
-      <div
-        className={isPageLoaded ? "curtains-left loaded-left" : "curtains-left"}
-      ></div>
-      <div
-        className={
-          isPageLoaded ? "curtains-right loaded-right" : "curtains-right"
-        }
-      ></div>
-
       {/* bg-blur */}
       <div className={`headerBg ${scrollClass}`} />
       {/* nav */}

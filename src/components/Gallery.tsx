@@ -75,23 +75,22 @@ const CustomCarousel: React.FC<CustomCarouselProps> = ({ children }) => {
   );
 };
 
-const Box: React.FC<BoxProps> = ({ title, text, year, image }) => {
-  return (
-    <motion.div
-      className="box"
-      initial={{ opacity: 0, scale: 0.9 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
-    >
-      <h4 className="box-title">{title}</h4>
-      <div className="display-flex">
-        <p className="box-text">{text}</p>
-        <p className="year">{year}</p>
-      </div>
-      <img src={image} alt={title} className="box-image" loading="lazy" />
-    </motion.div>
-  );
-};
+// Box Component
+const Box = React.memo(({ title, text, year, image }: BoxProps) => (
+  <motion.div
+    className="box"
+    initial={{ opacity: 0, scale: 0.9 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.5, ease: "easeOut" }}
+  >
+    <h4 className="box-title">{title}</h4>
+    <div className="display-flex">
+      <p className="box-text">{text}</p>
+      <p className="year">{year}</p>
+    </div>
+    <img src={image} alt={title} className="box-image" loading="lazy" />
+  </motion.div>
+));
 
 const Gallery: React.FC = () => {
   const boxesContent: Array<{
@@ -129,9 +128,9 @@ const Gallery: React.FC = () => {
         "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fresized-image%2FLandscape_Vladimir-Rozhdestvensky_1939_500x500.JPG?alt=media&token=e549eea1-371f-482a-ba27-534525a1db95",
     },
     {
-      title: "No info",
-      year: "#",
-      text: "No info",
+      title: "Зимний вечер",
+      year: "1910-е",
+      text: "Сергей Юдин",
       image:
         "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fresized-image%2Fno-info(4)_500x500.JPG?alt=media&token=878a5705-8762-43a4-a536-fe10bb437551",
     },
@@ -143,9 +142,9 @@ const Gallery: React.FC = () => {
         "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fresized-image%2FThe-crazy-artist_Murad-Karabaev_1996_500x500.JPG?alt=media&token=d268d3bc-726b-456c-b998-7aa6b32cdddd",
     },
     {
-      title: "No info",
-      year: "#",
-      text: "Виктор",
+      title: "Гранаты и лепешки",
+      year: "1958",
+      text: "Виктор Уфимцев",
       image:
         "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fresized-image%2Fno-info(5)_500x500.JPG?alt=media&token=8353ef2e-da2b-452e-a50e-ead4ef7ecf13",
     },

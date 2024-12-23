@@ -74,22 +74,13 @@ img{
 }
 
 .app-container{
-    font-family: var(--font-family);
     overflow-x: hidden;
 }
 
 
 
 
-::-webkit-scrollbar {
-    background-color: transparent;
-    width: 0.2rem;
-}
 
-::-webkit-scrollbar-thumb {
-    background-color: #333;
-    border-radius: 3px;
-}
 
 html.lenis {
     height: auto;

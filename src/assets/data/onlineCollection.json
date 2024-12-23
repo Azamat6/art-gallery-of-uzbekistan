@@ -34,9 +34,9 @@
       {
         "id": "5",
         "imageUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fno-info(4).JPG?alt=media&token=6ef75494-689b-4d66-be3b-81cec5c61bd3",
-        "title": "no-info(4)",
-        "author": "-",
-        "year": "-",
+        "title": "Зимний вечер",
+        "author": "Сергей Юдин",
+        "year": "1910-е",
         "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fresized-image%2Fno-info(4)_500x500.JPG?alt=media&token=878a5705-8762-43a4-a536-fe10bb437551"     
       },
       {
@@ -50,9 +50,9 @@
       {
         "id": "7",
         "imageUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fno-info(5).JPG?alt=media&token=44c40cc1-fbf5-45ea-8916-cd2f3eb8a765",
-        "title": "no-info(5)",
-        "author": "Виктор",
-        "year": "-",
+        "title": "Гранаты и лепешки",
+        "author": "Виктор Уфимцев",
+        "year": "1958",
         "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fresized-image%2Fno-info(5)_500x500.JPG?alt=media&token=8353ef2e-da2b-452e-a50e-ead4ef7ecf13"     
       },
       {
@@ -187,7 +187,7 @@
         "id": "24",
         "imageUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2FChoykhona_Tatevosyan-O_1919.JPG?alt=media&token=955b6a3a-8449-4347-8018-70a1d1a72db3",
         "title": "Чайхана",
-        "author": "-",
+        "author": "Оганез Татевосян",
         "year": "1919",
         "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fresized-image%2FChoykhona_Tatevosyan-O_1919_500x500.JPG?alt=media&token=9d8662c8-aab3-4d0c-b699-2059f07f92a9"     
       },
@@ -338,9 +338,9 @@
       {
         "id": "43",
         "imageUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2FLeonard-Bure_(no-info).JPG?alt=media&token=c34844e3-895e-45c0-87b6-118d506cbf0b",
-        "title": "-",
+        "title": "Двор медресе",
         "author": "Леонард Бурэ",
-        "year": "-",
+        "year": "1910",
         "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fresized-image%2FLeonard-Bure_(no-info)_500x500.JPG?alt=media&token=c908d1ea-b172-45a7-8dd2-383217d2aa37"     
       },
       {
@@ -386,7 +386,7 @@
       {
         "id": "49",
         "imageUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2FMuxtarxon-Isanov_1990.JPG?alt=media&token=593d8fc7-b9b2-4573-a79d-b526f49fc1cb",
-        "title": "-",
+        "title": "Прикосновение",
         "author": "Мухтархон Исанов",
         "year": "1990",
         "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fresized-image%2FMuxtarxon-Isanov_1990_500x500.JPG?alt=media&token=f8e945c6-2c8b-4fcf-b196-783245fd138c"     
@@ -402,7 +402,7 @@
       {
         "id": "51",
         "imageUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2FNadejda-Kashina_1958.JPG?alt=media&token=626124d7-e544-40b3-98a8-d79e2fcec70d",
-        "title": "-",
+        "title": "Гур Эмир",
         "author": "Надежда Кашина",
         "year": "1958",
         "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fresized-image%2FNadejda-Kashina_1958_500x500.JPG?alt=media&token=611aa991-af5b-48db-a7c4-cba3b369f563"     
@@ -450,7 +450,7 @@
       {
         "id": "57",
         "imageUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2FRimma-Gagloyeva-2016.JPG?alt=media&token=c06efaed-0f02-42da-a81f-319d38f3601c",
-        "title": "-",
+        "title": "Сукок. Весна",
         "author": "Римма Гаглоева",
         "year": "2016",
         "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fresized-image%2FRimma-Gagloyeva-2016_500x500.JPG?alt=media&token=c4b80f67-06be-4e5b-9b8b-48c011d8098a"     
@@ -866,9 +866,9 @@
       {
         "id": "109",
         "imageUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fno-info(8).JPG?alt=media&token=fac830a0-4f04-422d-8a01-d88d4b19ca68",
-        "title": "no-info(8)",
-        "author": "-",
-        "year": "-",
+        "title": "Портрет учащегося ФЗУ",
+        "author": "Шамсрой Хасанова",
+        "year": "1950",
         "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fresized-image%2Fno-info(8)_500x500.JPG?alt=media&token=6eb7b19d-1735-441a-8d1c-cffe9d851132"     
       },
       {
@@ -898,9 +898,9 @@
       {
         "id": "113",
         "imageUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fno-info(9).JPG?alt=media&token=ace91894-c6b5-4b0c-acd6-e608d1e1bb09",
-        "title": "no-info(9)",
-        "author": "-",
-        "year": "-",
+        "title": "По дороге в Ходжикент",
+        "author": "Надежда Кашина",
+        "year": "1956",
         "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fresized-image%2Fno-info(9)_500x500.JPG?alt=media&token=0b5409b7-e5e0-4acf-b1fa-8cee2380c969"     
       },
       {
@@ -909,15 +909,15 @@
         "title": "no-info(0)",
         "author": "-",
         "year": "-",
-        "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fresized-image%2Fno-info_(Bahtiyor-Nazarov)_500x500.JPG?alt=media&token=b602af56-17af-4ba8-a30e-6b05da6d1afc"     
+        "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fresized-image%2Fno-info_500x500.JPG?alt=media&token=92b90dbc-c4df-4310-9bbd-1e3558d1f2a6"     
       },
       {
         "id": "115",
         "imageUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fno-info_(Bahtiyor-Nazarov).JPG?alt=media&token=ccff0e93-401a-4319-8e7c-30ea662569b6",
-        "title": "-",
+        "title": "Портрет старика",
         "author": "Бахтиер Назаров",
-        "year": "-",
-        "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fresized-image%2Fno-info_500x500.JPG?alt=media&token=92b90dbc-c4df-4310-9bbd-1e3558d1f2a6"     
+        "year": "1971",
+        "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fresized-image%2Fno-info_(Bahtiyor-Nazarov)_500x500.JPG?alt=media&token=b602af56-17af-4ba8-a30e-6b05da6d1afc"     
       },
       {
         "id": "116",

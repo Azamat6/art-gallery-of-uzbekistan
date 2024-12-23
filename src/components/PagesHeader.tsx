@@ -78,36 +78,10 @@ const PagesHeader: React.FC<PagesHeaderProps> = ({
     };
   }, []);
 
-  //Loader
-
-  const [isPageLoaded, setIsPageLoaded] = useState<boolean>(false);
-
-  useEffect(() => {
-    const handleLoad = () => {
-      // Когда сайт загружается
-      setIsPageLoaded(true);
-    };
-
-    // Устанавливаем слушатель события загрузки страницы
-    window.addEventListener("load", handleLoad);
-
-    // Удаляем слушатель при размонтировании компонента
-    return () => window.removeEventListener("load", handleLoad);
-  }, []);
-
   //Content
 
   return (
     <header className="PagesHeader">
-      <div
-        className={isPageLoaded ? "curtains-left loaded-left" : "curtains-left"}
-      ></div>
-      <div
-        className={
-          isPageLoaded ? "curtains-right loaded-right" : "curtains-right"
-        }
-      ></div>
-
       {/* bg-blur */}
       <div
         className={`headerBg ${scrollClass}`}

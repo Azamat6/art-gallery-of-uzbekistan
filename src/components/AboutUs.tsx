@@ -19,7 +19,7 @@ const AboutUs: React.FC = () => {
               искусства Узбекистана.
             </div>
             <a
-              href="/art-gallery-of-uzbekistan/src/About/about.html"
+              href="/art-gallery-of-uzbekistan/src/about/about.html"
               className="read"
             >
               Подробнее <IoIosArrowForward />

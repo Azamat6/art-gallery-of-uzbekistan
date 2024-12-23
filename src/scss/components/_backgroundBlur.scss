@@ -25,34 +25,3 @@
     filter: blur(6px);
     opacity: 0.55;
   }
-
-  .curtains-left{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: #000;
-    z-index: 2000;
-    transition: all 1.2s ease-in-out;
-    transform: translateX(0);
-  }
-  .curtains-right{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background: #000;
-    z-index: 2000;
-    transition: all 1.2s ease-in-out;
-    transform: translateX(0);
-  }
-  .loaded-left{
-    transform: translateX(-100%);
-    opacity: 0.3;
-  }
-  .loaded-right{
-    transform: translateX(100%);
-    opacity: 0.3;
-  }

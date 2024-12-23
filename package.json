@@ -9,7 +9,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-     "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@types/node": "^22.9.0",
@@ -17,6 +17,7 @@
     "framer-motion": "^11.11.11",
     "gh-pages": "^6.2.0",
     "lenis": "^1.1.16",
+    "lodash.throttle": "^4.1.1",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.5",
     "react-dom": "^18.3.1",
@@ -25,6 +26,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
+    "@types/lodash.throttle": "^4.1.9",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
