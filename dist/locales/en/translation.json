@@ -54,21 +54,20 @@
     "read_more": "Show More",
     "box1_title": "Poppies",
     "box1_text": "Inna Vasilievna",
-    "box2_title": "Girl by the tree",
+    "box2_title": "A girl at the tree",
     "box2_text": "Nadezhda Kashina",
     "box3_title": "Ancient Urgench",
     "box3_text": "Yuriy Taldykin",
     "box4_title": "Landscape",
     "box4_text": "Vladimir Rozhdestvensky",
-    "box5_title": "Winter evening",
+    "box5_title": "Twilight",
     "box5_text": "Sergey Yudin",
     "box6_title": "The crazy artist",
     "box6_text": "Murad Karabaev",
-    "box7_title": "Flat Bread and Pomegranates",
-    "box7_text": "Viktor Ufimtsev",
+    "box7_title": "Tortillas and pomegranates",
+    "box7_text": "Victor Ufimtsev",
     "box8_title": "Awakening",
-    "box8_text": "Richcitilla Akramov",
-    "box5_year": "s"
+    "box8_text": "Richcitilla Akramov"
   },
   "virtualConcept": {
     "vr": {
@@ -303,6 +302,10 @@
         "online-collection": "Online Collection"
         },
 
+
+
+
+
     "PageExhibition": {
         "header": {
             "title": "Events"
@@ -320,9 +323,20 @@
             "synapse": "Contemporary Art \"Synapse\"",
             "mirtajiyev": "\"I am an artist of the uzbek people\"",
             "east": "Miniature \"Eastern motifs\"",
-            "memory": "\"Tunnel of memory\""
+            "memory": "\"Tunnel of memory\"",
+
+
+
+            "nbuCollection": "The National Bank's Collection",
+
+
+            "hotira": "\"Memory—an eternal light in hearts\"",
+            "childhood": "Children's art exhibition \"Planet of childhood\""
           }
     },
+
+
+
 
     "Exhibitions": {
       "women": {
@@ -393,7 +407,34 @@
         "text3": "Special focus is placed on the conditions and factors that gave rise to the Jadid movement in Turkestan and on its key leaders. Exhibition sections also highlight the socio-economic situation of the time, the emergence of new-method schools, theatre art, contemporary media, gender equality, and other major aspects of the Jadids’ educational and reformist activities.",
         "text4": "The \"Tunnel of Memory\" exhibition offers a unique opportunity not only to learn more about Uzbekistan’s history but also to experience and immerse oneself in the spirit of the era—understanding the aspirations of that time and drawing parallels with the present.",
         "text5": "The exposition also aims to preserve and popularize our historical heritage."
+      },
+
+
+"nbuCollection": {
+  "text1": "The art collection assembled by the National Bank of Uzbekistan since 1994 laid the foundation for the creation of the gallery. Today, it stands as one of the most significant art collections in the country, uniting the works of leading masters of the 20th and 21st centuries.",
+  "text2": "The permanent collection of the National Bank holds more than 1,900 works of painting and graphic art, as well as around 2,500 unique ancient coins, covering various historical epochs of Uzbekistan — from the ancient civilizations of Sogdiana to the Islamic dynasties and the Timurid era. This collection allows viewers to trace the artistic evolution of Uzbekistan.",
+  "text3": "The exhibition features iconic works by prominent representatives of Uzbekistan’s distinctive artistic tradition — including U. Tansykbaev, Usto Mumin, A. Abdullaev, N. Kuzybaev, M. Yuldashev, R. Gagloeva, B. Djalalov, L. Bure, and P. Benkov, as well as works by young artists whose pieces reflect contemporary life, rich in events that shape the present and future of the republic.",
+  "text4": "Part of the collection is also available in an online format –",
+  "text5": "view collection"
+},
+
+
+        
+
+
+      "hotira": {
+        "text1": "The Art Gallery of Uzbekistan hosted the opening of a graphic art exhibition titled “Memory,” dedicated to the Day of Remembrance and Honor.",
+        "text2": "This artistic project pays tribute to the spirit of peace, courage, and self-sacrifice, awakening the memory of ancestors through powerful visual imagery.",
+        "text3": "The exhibition features 45 graphic works by renowned artists such as Qutlug Bashirow, Lekim Ibragimov, Medat Kagarov, Nuriddin Kalanov, Gennadiy Zhirnov, Georgiy Chiganov, and other masters.",
+        "text4": "These works not only recall the past but are also rich in emotional depth, conveying inner states, moods, and personal memory through striking visual language."
+      },
+      "childhood": {
+       "text1": "The tradition continues! In celebration of International Children's Day, the Art Gallery of Uzbekistan has once again opened its inspiring exhibition of children's creativity, titled “Planet of Childhood.”",
+        "text2": "This year, alongside the studio 'The Beginning of Great Success' (B.G.S.), which has been introducing children to the world of art for over 20 years, more than 20 leading children's art studios from Tashkent took part in the project.",
+        "text3": "The exhibition features works filled with love for the homeland, reflections on the future, and children's interpretations of masterpieces by great artists from around the world.",
+        "text4": "As part of the festive program, there was a concert featuring the ensembles 'Tabassum' and 'Aria,' and the art bureau 'Kolibri' presented a new seasonal clothing collection — original denim jackets designed by the children themselves."
       }
+
     }
     
 

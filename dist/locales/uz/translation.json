@@ -60,15 +60,14 @@
     "box3_text": "Yuriy Taldikin",
     "box4_title": "Manzara",
     "box4_text": "Vladimir Rojdestvenskiy",
-    "box5_title": "Qishki oqshom",
+    "box5_title": "Qish oqshomi",
     "box5_text": "Sergey Yudin",
     "box6_title": "Aqldan ozgan rassom",
     "box6_text": "Murod Qarabayev",
     "box7_title": "Non va anorlar",
     "box7_text": "Viktor Ufimtsev",
     "box8_title": "Uyg‘onish",
-    "box8_text": "Rixsitilla Akramov",
-    "box5_year": "-yillar"
+    "box8_text": "Rixsitilla Akramov"
   },
   "virtualConcept": {
     "vr": {
@@ -299,6 +298,10 @@
 
 
 
+
+
+
+
 "PageExhibition": {
   "header": {
     "title": "Ko‘rgazmalar"
@@ -316,9 +319,22 @@
     "synapse": "Zamonaviy san’at “Sinaps”",
     "mirtajiyev": "“Men – o‘zbek xalqining rassomiman”",
     "east": "Miniatyura “Sharqona ohanglar”",
-    "memory": "“Xotira tunneli”"
+    "memory": "“Xotira tunneli”",
+
+
+    "nbuCollection": "Milliy Bank kolleksiyasi",
+
+
+
+    "hotira": "\"Xotira – qalblarda o‘chmas nur\"",
+    "childhood": "\"Bolalik sayyorasi\" bolalar ijodi ko‘rgazmasi"
   }
 },
+
+
+
+
+
 "Exhibitions": {
   "women": {
     "span1": "Ko‘rgazma O‘zbekiston kino-foto-fono hujjatlari milliy arxivi hamkorligida tashkil etildi.",
@@ -388,7 +404,33 @@
   "text3": "Ko‘rgazmada asosiy e’tibor jadidchilik harakatining Turkistonda shakllanishiga olib kelgan shart-sharoitlar va omillar hamda ushbu harakat yetakchilariga qaratiladi. Shuningdek, o‘sha davrdagi ijtimoiy-iqtisodiy ahvol, yangi usuldagi maktablar tashkiloti va rivoji, teatr san’ati, matbuot, gender tengligi masalalari hamda jadid ma’rifatchilarining asosiy faoliyat yo‘nalishlariga bag‘ishlangan bo‘limlar namoyish etiladi.",
   "text4": "“Xotira tunneli” ko‘rgazmasi – bu nafaqat O‘zbekiston tarixini chuqurroq o‘rganish, balki o‘tmishga yuzlanish, uni his qilish va o‘sha davr ruhini teran anglash, zamonaviylik bilan tarixiy paralellar o‘rnatish uchun noyob imkoniyatdir.",
   "text5": "Ekspozitsiya, shuningdek, tarixiy merosimizni saqlash va targ‘ib qilishga qaratilgan."
-}
+},
+
+
+
+"nbuCollection": {
+  "text1": "O‘zbekiston Milliy banki tomonidan 1994-yildan boshlab yig‘ilgan san’at asarlari to‘plami Tasviriy san’at galereyasining tashkil etilishiga asos bo‘ldi. Bugungi kunda bu to‘plam mamlakatdagi eng yirik badiiy kolleksiyalardan biri bo‘lib, XX–XXI asrlarning yetakchi rassomlari ijodini birlashtiradi.",
+  "text2": "Milliy bankning doimiy fondida 1 900 dan ortiq rangtasvir va grafik asarlar, shuningdek, Sogdiyona davridagi qadimgi sivilizatsiyalardan tortib, islomiy sulolalar va Temuriylar davrigacha bo‘lgan turli tarixiy davrlarni o‘z ichiga olgan 2 500 ga yaqin noyob qadimiy tangalar mavjud. To‘plam O‘zbekistonning badiiy taraqqiyotini kuzatish imkonini beradi.",
+  "text3": "Ko‘rgazmada U. Tansiqboyev, Usto Mumin, A. Abdullayev, N. Kuzibayev, M. Yo‘ldoshev, R. Gagloeva, B. Jalolov, L. Bure, P. Benkov kabi o‘zbek tasviriy san’atining taniqli namoyandalari asarlari hamda zamonaviy hayotni aks ettiruvchi, bugungi kun va kelajagimizni belgilovchi voqealarga boy ijod namunalari bilan yosh rassomlar ijodi namoyish etilgan.",
+  "text4": "To‘plamning bir qismi onlayn formatda ham taqdim etilgan –",
+  "text5": "kolleksiyani ko‘rish"
+},
+
+        
+
+
+        "hotira": {
+            "text1": "O‘zbekiston Tasviriy san’at galereyasida Xotira va qadrlash kuni munosabati bilan grafik asarlardan iborat \"Xotira\" ko‘rgazmasining ochilishi bo'lib o'tdi.",
+            "text2": "Ushbu badiiy loyiha tinchlik, jasorat va fidoyilik ruhiga bag‘ishlanib, ajdodlarimiz xotirasini tasvirlar orqali uyg‘otadi.",
+            "text3": "Ko‘rgazmada Qutlug‘ Basharov, Lekim Ibragimov, Medat Kagarov, Nuriddin Kalanov, Gennadiy Jirnov, Georgiy Chiganov va boshqa mashhur rassomlarning 45 ta grafik asari jamlangan.",
+            "text4": "Asarlar nafaqat tarixni yodga soladi, balki inson ruhiyati, kayfiyati va xotirani ifodalaydigan kuchli vizual obrazlarga boy."
+        },
+        "childhood": {
+            "text1": "O‘zbekiston Tasviriy san’at Galereyasi An’ana davom etmoqda! Xalqaro bolalarni himoya qilish kuni munosabati bilan O‘zbekiston Tasviriy san’at Galereyasida an’anaga muvofiq ilhomlantiruvchi «Bolalik sayyorasi» bolalar ijodi ko‘rgazmasi ochildi.",
+            "text2": "Bu yil loyiha doirasida 20-yildan buyon bolalarni san’at olamiga oshno etib kelayotgan «Ulkan Muvaffaqiyatlar Boshi» («U.M.B.») studiyasi bilan bir qatorda Toshkentning 20 dan ziyod yetakchi bolalar studiyalari ham ishtirok etmoqda.",
+            "text3": "Ekspozitsiyada Vatanga bo‘lgan muhabbat, kelajakka oid o‘ylar va dunyoning buyuk rassomlari asarlariga bolalarcha nigohda qayta nazar solingan ijod namunalari o‘rin olgan.",
+            "text4": "Bayram dasturidan «Tabassum» va «Ariya» ansambllari ishtirokida konsert ham ijro etildi, art-byuro «Kolibri» tomonidan esa bolalar uchun mavsumiy liboslar to‘plami taqdim etildi."
+        }
 }
 
 
