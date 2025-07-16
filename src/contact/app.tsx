@@ -1,42 +1,50 @@
 import "../scss/index.scss";
+import { lazy } from "react";
+import { useTranslation } from "react-i18next";
 
 import PagesHeader from "../components/PagesHeader";
-import Footer from "../components/Footer";
+const Footer = lazy(() => import("../components/Footer"));
 import BgIMage from "../assets/images/Contact.jpg";
 
 function App() {
+  const { t } = useTranslation();
+
   return (
     <div className="app-container">
       <PagesHeader
-        title="Связаться с нами"
+        title={t("PageContact.header.title")}
         subtitle=""
         backgroundImage={BgIMage}
       />
       <section className="PageAbout Contact">
         <div className="container">
           <div className="row">
-            {/* <h3 className="pagesSubtitle">История</h3> */}
-
             <div className="firstColumn col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-              <h4>обращаться по номерам</h4>
+              <h4>{t("PageContact.title1")}</h4>
               <p className="text margintopM">
                 <a href="tel:+998712098015">+998 (71) 209-80-15</a>
                 <a className="margintopM" href="tel:+998712098016">
                   +998 (71) 209-80-16
                 </a>
               </p>
-              <h4 className="margintopS">Электронная почта</h4>
+              <h4 className="margintopS">{t("PageContact.title2")}</h4>
               <p className="text margintopM">
-                <a href="mailto:">azasultanov06@gmail.com</a>
+                <a href="mailto:gmail@mail.ru">gmail@mail.ru</a>
               </p>
-              <h4 className="margintopS">Режим работы</h4>
+              <h4 className="margintopS">{t("PageContact.title3")}</h4>
               <div className="timetable bb margintopM">
-                <p className="text">Вторник - Суббота</p>
+                <p className="text">
+                  {t("PageVisit.visitorInfo.category_text7")}
+                </p>
                 <p className="text">10:00 - 17:00</p>
               </div>
               <div className="timetable margintopM">
-                <p className="text">Воскресенье / Понедельник</p>
-                <p className="text">Выходной</p>
+                <p className="text">
+                  {t("PageVisit.visitorInfo.category_text8")}
+                </p>
+                <p className="text">
+                  {t("PageVisit.visitorInfo.category_text9")}
+                </p>
               </div>
             </div>
             <div className="firstColumn col-xl-6 offset-xl-1 col-lg-6 offset-lg-1 col-md-12 col-sm-12 col-12">
@@ -47,10 +55,7 @@ function App() {
             </div>
             <div className="request firstColumn col-12 margintopS">
               <p className="text">
-                <span>
-                  Мы всегда рады вашим письмам и звонкам! Наши сотрудники готовы
-                  ответить на ваши вопросы в рабочее время.
-                </span>
+                <span>{t("PageContact.text")}</span>
               </p>
             </div>
           </div>

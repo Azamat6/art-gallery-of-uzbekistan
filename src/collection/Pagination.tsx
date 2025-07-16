@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { topRef } from "./app";
 
 interface PaginationProps {
   pages: number;
@@ -31,18 +32,10 @@ const Pagination: React.FC<PaginationProps> = ({ pages, setCurrentPage }) => {
     }
   };
 
-  const handleScrollToTitle = () => {
-    const targetElement = document.querySelector(".startInfo");
-    if (targetElement) {
-      targetElement.scrollIntoView();
-    }
-  };
-
   const handlePageChange = (newPage: number | string) => {
     if (typeof newPage === "number") {
       setCurrentButton(newPage);
       setCurrentPage(newPage);
-      handleScrollToTitle();
     }
   };
 
@@ -57,7 +50,9 @@ const Pagination: React.FC<PaginationProps> = ({ pages, setCurrentPage }) => {
             const newPage = currentButton - 1;
             setCurrentButton(newPage);
             setCurrentPage(newPage);
-            handleScrollToTitle();
+            setTimeout(() => {
+              topRef.current?.scrollIntoView({ behavior: "smooth" });
+            }, 300);
           }
         }}
       >
@@ -71,7 +66,12 @@ const Pagination: React.FC<PaginationProps> = ({ pages, setCurrentPage }) => {
               ? "active paginationNumbers"
               : "paginationNumbers"
           }
-          onClick={() => handlePageChange(item)}
+          onClick={() => {
+            handlePageChange(item);
+            setTimeout(() => {
+              topRef.current?.scrollIntoView({ behavior: "smooth" });
+            }, 300);
+          }}
         >
           {item}
         </a>
@@ -85,7 +85,9 @@ const Pagination: React.FC<PaginationProps> = ({ pages, setCurrentPage }) => {
             const newPage = currentButton + 1;
             setCurrentButton(newPage);
             setCurrentPage(newPage);
-            handleScrollToTitle();
+            setTimeout(() => {
+              topRef.current?.scrollIntoView({ behavior: "smooth" });
+            }, 300);
           }
         }}
       >

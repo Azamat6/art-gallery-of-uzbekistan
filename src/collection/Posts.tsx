@@ -1,11 +1,18 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+
+interface LocalizedText {
+  ru: string;
+  en: string;
+  uz: string;
+}
 
 interface Post {
   id: string;
   imageUrl: string;
-  thumbnailUrl?: string; // Сделаем thumbnailUrl необязательным
-  title: string;
-  author: string;
+  thumbnailUrl?: string;
+  title: LocalizedText;
+  author: LocalizedText;
   year: string;
 }
 
@@ -14,6 +21,9 @@ interface PostsProps {
 }
 
 const Posts: React.FC<PostsProps> = ({ posts }) => {
+  const { i18n } = useTranslation();
+  const lang = i18n.language as "ru" | "en" | "uz";
+
   const [selectedPost, setSelectedPost] = useState<Post | null>(null);
 
   // Блокировка прокрутки при открытии модального окна
@@ -38,14 +48,14 @@ const Posts: React.FC<PostsProps> = ({ posts }) => {
           <div className="post-img-container">
             <img
               src={post.thumbnailUrl || post.imageUrl}
-              alt={post.title}
+              alt={post.title[lang]}
               loading="lazy"
               onClick={() => setSelectedPost(post)}
             />
           </div>
-          <h3>{post.title}</h3>
+          <h3>{post.title[lang]}</h3>
           <div className="post-info">
-            <p>{post.author}</p>
+            <p>{post.author[lang]}</p>
             <p>{post.year}</p>
           </div>
         </div>
@@ -68,7 +78,7 @@ const Posts: React.FC<PostsProps> = ({ posts }) => {
             <div className="modal-img-container">
               <img
                 src={selectedPost.imageUrl}
-                alt={selectedPost.title}
+                alt={selectedPost.title[lang]}
                 loading="lazy"
               />
             </div>

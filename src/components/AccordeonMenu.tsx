@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 
+import { useTranslation } from "react-i18next";
+
 interface AccordionItem {
   title: string;
   content: { name: string; link: string }[]; // Массив объектов для ссылок
 }
 
 const AccordionMenu: React.FC = () => {
+  const { t } = useTranslation();
+
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleItem = (index: number) => {
@@ -15,55 +19,58 @@ const AccordionMenu: React.FC = () => {
 
   const menuItems: AccordionItem[] = [
     {
-      title: "Галерея",
+      title: t("header.menu.nav_title_1"),
       content: [
         {
-          name: "О нас",
+          name: t("header.menu.first.item1"),
           link: "/art-gallery-of-uzbekistan/src/about/about.html",
         },
         {
-          name: "Концепция экспозиции",
+          name: t("header.menu.first.item2"),
           link: "/art-gallery-of-uzbekistan/src/concept/concept.html",
         },
         {
-          name: "Коллекция",
+          name: t("header.menu.first.item3"),
           link: "/art-gallery-of-uzbekistan/src/collection/collection.html",
         },
         {
-          name: "Древние монеты",
+          name: t("header.menu.first.item4"),
           link: "/art-gallery-of-uzbekistan/src/coins/coins.html",
         },
       ],
     },
     {
-      title: "Посетителям",
+      title: t("header.menu.nav_title_2"),
       content: [
         {
-          name: "Спланировать визит",
+          name: t("header.menu.second.item1"),
           link: "/art-gallery-of-uzbekistan/src/planVisit/planVisit.html",
         },
         {
-          name: "Выставки",
+          name: t("header.menu.second.item2"),
           link: "/art-gallery-of-uzbekistan/src/exhibition/exhibition.html",
         },
         {
-          name: "Виртуальный тур",
+          name: t("header.menu.second.item3"),
           link: "https://art-gallery-of-uzbekistan-virtual.netlify.app",
         },
         {
-          name: "История искусств Узбекистана",
+          name: t("header.menu.second.item4"),
           link: "/art-gallery-of-uzbekistan/src/history/history.html",
         },
       ],
     },
     {
-      title: "Контакты",
+      title: t("header.menu.nav_title_3"),
       content: [
         {
-          name: "Связаться с нами",
+          name: t("header.menu.third.item1"),
           link: "/art-gallery-of-uzbekistan/src/contact/contact.html",
         },
-        { name: "Адрес", link: "https://maps.app.goo.gl/bHYkEgAhmko3a8WC8" },
+        {
+          name: t("footer.address"),
+          link: "https://maps.app.goo.gl/bHYkEgAhmko3a8WC8",
+        },
         { name: "NBU.uz", link: "https://nbu.uz" },
       ],
     },

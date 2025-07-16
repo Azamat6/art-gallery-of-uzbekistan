@@ -209,12 +209,12 @@
                 }
             }
             .nav-right{
-                gap: 1.2rem;
+                gap: 2rem;
                 .menu-toggle {
                     gap: 0.9rem;
                 }
-                .language{
-                    gap: 0.9rem;
+                .language-select{
+                    gap: 10px;
                 }
             }
         }
@@ -520,13 +520,13 @@
                         .info-text{
                             .category{
                                 .text{
-                                    font-size: 0.9rem;
+                                    font-size: 1rem;
                                     line-height: 1.5rem;
                                 }
                             }
                             .price{
                                 .text{
-                                    font-size: 0.9rem;
+                                    font-size: 1rem;
                                     line-height: 1.5rem;
                                 }
                             }
@@ -553,7 +553,7 @@
                 }
                 .tourWrapper{
                     .text{
-                        font-size: 0.95rem;
+                        font-size: 1rem;
                         line-height: 1.5rem;
                     }
                 }
@@ -563,7 +563,7 @@
                     .firstrow{
                         margin-bottom: 0.8rem;
                         .text{
-                            font-size: 0.95rem;
+                            font-size: 1rem;
                             line-height: 1.5rem;
                         }
                     }
@@ -575,7 +575,7 @@
                     font-size: 0.8rem;
                 }
                 .text{
-                    font-size: 0.95rem;
+                    font-size: 1rem;
                 line-height: 1.5rem;
                 }
                 .margintop{
@@ -594,7 +594,7 @@
                     font-size: 0.8rem;
                 }
                 .text{
-                    font-size: 0.95rem;
+                    font-size: 1rem;
                     line-height: 1.5rem;
                 }
             }
@@ -663,7 +663,7 @@
                 font-size: 0.8rem;
             }
             .text{
-                font-size: 0.95rem;
+                font-size: 1rem;
                 line-height: 1.5rem;
             }
             .margintop{
@@ -696,7 +696,7 @@
                 margin-bottom: 0.5rem;
             }
             .text{
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
         }
         .museumConcept{
@@ -710,13 +710,16 @@
                 margin-bottom: 0.5rem;
             }
             .text{
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
         }
     }
 
     .fullscreen-menu{
         .menu-overlay{
+            .menu-social-media{
+                display: none;
+            }
             .menu-content{
                 .overlay-content{
                     display: none;
@@ -731,7 +734,6 @@
     }
 
     header{
-        height: 1800px;
         nav{
             .navbar{
                 .logo{
@@ -745,7 +747,7 @@
               
             }
             .nav-right{
-                gap: 1.3rem;
+                gap: 2.2rem;
                 .menu-text{
                     display: none;
                     opacity: 0;
@@ -753,17 +755,15 @@
                 .menu-toggle {
                     gap: 0;
                 }
-                .language{
+                .drop-down-parent{
+                .language-select{
                     gap: 0;
-                    
                 }
-                .dropdown__menu{
-                    top: 100%;
-                    left: -100%;
                 }
             }
         }
         .whatsnew{
+            padding-bottom: 50px;
             a.btext{
                 font-size: 1.9rem;
             }
@@ -771,7 +771,7 @@
                 font-size: 0.8rem;
             }
         }
-        .underHeader{
+        div.underHeader{
             .workingHours{
                 height: 210px;
                 margin-bottom: 5rem;
@@ -821,10 +821,10 @@
             }
             .display-flex{
                 .box-text{
-                    font-size: 0.9rem;
+                    font-size: 1rem;
                 }
                 .year{
-                    font-size: 0.9rem;
+                    font-size: 1rem;
                 }
             }
         }
@@ -919,7 +919,7 @@
         }
         .text{
             a{
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
         }
         .footer-nav{
@@ -980,12 +980,7 @@
         opacity: 0;
       }
 
-    .headerBg{
-        object-fit: contain;
-    }
-    .Parallax{
-        object-fit: contain;
-    }
+   
         
 
 }
@@ -998,11 +993,8 @@
 
 
 
-
 //Main
 @media (max-width: 768px) {
-
-    
 
     section.japan{
         div.order1{
@@ -1064,7 +1056,7 @@
                                     width: 100%;
                                     padding-bottom: 0.7rem;
                                     border-bottom: 1px var(--almostDark) solid;
-                                    font-size: 0.85rem;
+                                    font-size: 1rem;
                                     line-height: 1.4rem;
                                     &:last-child{
                                         border-bottom: 0px var(--almostDark) solid;
@@ -1076,7 +1068,7 @@
                             .price{
                                 width: 30%;
                                 .text{
-                                    font-size: 0.85rem;
+                                    font-size: 1rem;
                                     width: 100%;
                                     padding-bottom: 0.7rem;
                                     border-bottom: 1px var(--almostDark) solid;
@@ -1113,8 +1105,8 @@
             }
             .tourWrapper{
                 .text{
-                    font-size: 0.9rem;
-                    line-height: 1.3rem;
+                    font-size: 1rem;
+                    line-height: 1.4rem;
                 }
             }
             .table{
@@ -1124,7 +1116,7 @@
                 .firstrow{
                     margin-top: 1rem;
                     .text{
-                        font-size: 0.9rem;
+                        font-size: 1rem;
                         line-height: 1.4rem;
                     }
                 }
@@ -1137,7 +1129,7 @@
                 margin-bottom: 0.8rem;
             }
             .text{
-                font-size: 0.9rem;
+                font-size: 1rem;
                 line-height: 1.4rem;
             }
             .margintop{
@@ -1158,7 +1150,7 @@
                 margin-bottom: 0.8rem;
             }
             .text{
-                font-size: 0.9rem;
+                font-size: 1rem;
                 line-height: 1.4rem;
             }
             iframe{
@@ -1263,7 +1255,7 @@
                 font-size: 0.8rem;
             }
             .text{
-                font-size: 0.9rem;
+                font-size: 1rem;
                 line-height: 1.4rem;
             }
             .margintop{
@@ -1288,7 +1280,7 @@
                 margin-bottom: 0.5rem;
             }
             .text{
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
         }
         .museumConcept{
@@ -1299,7 +1291,7 @@
                 margin-bottom: 0.5rem;
             }
             .text{
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
         }
     }
@@ -1333,25 +1325,31 @@
     
 
     header{
-        height: 2150px;
         nav{
             padding: 0.5rem 0;
+            height: 5rem;
+            transition: 0;
             .navbar{
-                height: 5rem;
                 padding: 0.5rem 0 1rem;
+                transition: 0;
                 .logo{
                     width: 10.5rem;
+                    transition: 0;
                     h2{
                         font-size: 1.3rem;
-                        line-height: 1.3rem;
+                        line-height: 1.4rem;
                         letter-spacing: 0;
+                        transition: 0;
                     }
                     .line{
                         width: 0.3rem;
                         height: 2.6rem;
+                        transition: 0;
                     }
                     .logo-h1-scrolled{
                         font-size: 1.3rem;
+                        line-height: 1.3rem;
+                        letter-spacing: 0;
                     }
                     .line-scrolled{
                         width: 0.3rem;
@@ -1363,7 +1361,7 @@
               
             }
             .nav-right{
-                gap: 1.2rem;
+                gap: 1.8rem;
                 .menu-text{
                     display: none;
                     opacity: 0;
@@ -1401,7 +1399,7 @@
         
         }
 
-        .underHeader{
+        div.underHeader{
             .workingHours{
                 height: 200px;
                 margin-bottom: 6rem;
@@ -1412,7 +1410,7 @@
                     font-size: 2.1rem;
                 }
                 .text{
-                    font-size: 0.9rem;
+                    font-size: 1rem;
                 }
                 a.link_cost{
                     width: 250px;
@@ -1476,10 +1474,10 @@
             }
             .display-flex{
                 .box-text{
-                    font-size: 0.9rem;
+                    font-size: 1rem;
                 }
                 .year{
-                    font-size: 0.9rem;
+                    font-size: 1rem;
                 }
             }
         }
@@ -1503,7 +1501,7 @@
             }
             .text{
                 width: 100%;
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
             .read{
                 margin-top: 1.5rem;
@@ -1526,7 +1524,7 @@
             }
             .text{
                 width: 100%;
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
             .read{
                 margin-top: 1.5rem;
@@ -1807,7 +1805,7 @@
                 margin-bottom: 0.5rem;
             }
             .text{
-                font-size: 0.85rem;
+                font-size: 1rem;
             }
         }
         .museumConcept{
@@ -1817,7 +1815,7 @@
                 margin-bottom: 0.5rem;
             }
             .text{
-                font-size: 0.85rem;
+                font-size: 1rem;
             }
         }
     }
@@ -1834,15 +1832,15 @@
             min-width: 235px;
             
             h4.box-title{
-                font-size: 1rem;
+                font-size: 1.05rem;
             }
             .display-flex{
                 margin: 0.1rem 0 0.2rem;
                 .box-text{
-                    font-size: 0.85rem;
+                    font-size: 0.9rem;
                 }
                 .year{
-                    font-size: 0.85rem;
+                    font-size: 0.9rem;
                 }
             }
         }
@@ -1867,7 +1865,7 @@
             }
         }
         .about-info{
-            height: 200px;
+            height: 220px;
             margin-top: 2rem;
             .title{
                 font-size: 0.8rem;
@@ -1877,11 +1875,11 @@
             }
             .text{
                 width: 100%;
-                font-size: 0.85rem;
+                font-size: 1rem;
             }
             .read{
                 margin-top: 1rem;
-                font-size: 0.85rem;
+                font-size: 0.9rem;
             }
         }
         
@@ -1895,7 +1893,7 @@
             }
         }
         .about-info{
-            height: 200px;
+            height: 220px;
             margin-top: 2rem;
             .title{
                 font-size: 0.8rem;
@@ -1905,18 +1903,18 @@
             }
             .text{
                 width: 100%;
-                font-size: 0.85rem;
+                font-size: 1rem;
             }
             .read{
                 margin-top: 1rem;
-                font-size: 0.85rem;
+                font-size: 0.9rem;
             }
         }
         
     }
 
 
-    .underHeader{
+    div.underHeader{
         .workingHours{
             height: 180px;
             margin-bottom: 6rem;
@@ -1924,10 +1922,10 @@
                 font-size: 0.8rem;
             }
             .time{
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
             .text{
-                font-size: 0.85rem;
+                font-size: 1rem;
             }
             a.link_cost{
                 width: 100%;
@@ -1990,7 +1988,7 @@
     header{
         nav{
             .nav-right{
-                gap: 0.9rem;
+                gap: 1.3rem;
             }
         }
 
@@ -2084,7 +2082,7 @@
                             margin-top: 0;
                         }
                         .title{
-                            font-size: 0.7rem;
+                            font-size: 0.75rem;
                             border-bottom: 0;
                         }
                         .info-text{
@@ -2097,7 +2095,7 @@
                                     width: 100%;
                                     padding-bottom: 0.7rem;
                                     border-bottom: 1px var(--almostDark) solid;
-                                    font-size: 0.85rem;
+                                    font-size: 1rem;
                                     line-height: 1.3rem;
                                     &:last-child{
                                         border-bottom: 0px var(--almostDark) solid;
@@ -2109,7 +2107,7 @@
                             .price{
                                 width: 30%;
                                 .text{
-                                    font-size: 0.85rem;
+                                    font-size: 1rem;
                                     width: 100%;
                                     padding-bottom: 0.7rem;
                                     border-bottom: 1px var(--almostDark) solid;
@@ -2131,7 +2129,7 @@
             padding: 3rem 0 2.5rem;
             h3.title{
                 margin-left: 0;
-                font-size: 0.7rem;
+                font-size: 0.75rem;
                 margin-bottom: 0.8rem;
             }
             
@@ -2146,9 +2144,9 @@
             }
             .tourWrapper{
                 .text{
-                    font-size: 0.9rem;
+                    font-size: 1rem;
                     text-indent: 0.9rem;
-                    line-height: 1.3rem;
+                    line-height: 1.4rem;
                 }
             }
             .table{
@@ -2168,13 +2166,13 @@
             padding: 0 0 2.5rem;
             h3.title{
                 margin-left: 0;
-                font-size: 0.7rem;
+                font-size: 0.75rem;
                 margin-bottom: 0.8rem;
             }
             .text{
-                font-size: 0.9rem;
+                font-size: 1rem;
                 text-indent: 0.9rem;
-                line-height: 1.3rem;
+                line-height: 1.4rem;
             }
             .margintop{
                 margin-top: 0rem;
@@ -2191,13 +2189,13 @@
             padding: 2.5rem 0 3rem;
             h3.title{
                 margin-left: 0;
-                font-size: 0.7rem;
+                font-size: 0.75rem;
                 margin-bottom: 0.8rem;
             }
             .text{
-                font-size: 0.9rem;
+                font-size: 1rem;
                 text-indent: 0.9rem;
-                line-height: 1.3rem;
+                line-height: 1.4rem;
             }
             iframe{
                 width: 100%;
@@ -2272,21 +2270,21 @@
         .virtualTour{
             height: 450px;
             .title{
-                font-size: 0.7rem;
+                font-size: 0.75rem;
                 margin-bottom: 0.5rem;
             }
             .text{
-                font-size: 0.85rem;
+                font-size: 1rem;
             }
         }
         .museumConcept{
             height: 450px;
             .title{
-                font-size: 0.7rem;
+                font-size: 0.75rem;
                 margin-bottom: 0.5rem;
             }
             .text{
-                font-size: 0.85rem;
+                font-size: 1rem;
             }
         }
     }
@@ -2307,9 +2305,9 @@
                 margin-bottom: 0.8rem;
             }
             .text{
-                font-size: 0.85rem;
+                font-size: 1rem;
                 text-indent: 0.9rem;
-                line-height: 1.3rem;
+                line-height: 1.4rem;
                 span{
                     text-indent: 0rem;
                 }
@@ -2331,7 +2329,7 @@
         .gallery-up{
             height: 120px;
             .title{
-                font-size: 0.7rem;
+                font-size: 0.75rem;
             }
         }
 
@@ -2340,15 +2338,15 @@
             margin-right: 3%;
             
             h4.box-title{
-                font-size: 1rem;
+                font-size: 1.05rem;
             }
             .display-flex{
                 margin: 0.1rem 0 0.2rem;
                 .box-text{
-                    font-size: 0.85rem;
+                    font-size: 0.9rem;
                 }
                 .year{
-                    font-size: 0.85rem;
+                    font-size: 0.9rem;
                 }
             }
         }
@@ -2368,17 +2366,16 @@
 
     .coin-collection{
         .about-info{
-            height: 200px;
             margin-top: 2rem;
             .title{
-                font-size: 0.7rem;
+                font-size: 0.75rem;
             }
             h4.subtitle{
                 font-size: 1.2rem;
             }
             .text{
                 width: 100%;
-                font-size: 0.85rem;
+                font-size: 0.95rem;
             }
             .read{
                 margin-top: 1rem;
@@ -2391,10 +2388,9 @@
 
     .aboutGallery{
         .about-info{
-            height: 200px;
             margin-top: 2rem;
             .title{
-                font-size: 0.7rem;
+                font-size: 0.75rem;
             }
             h1.subtitle{
                 font-size: 1.2rem;
@@ -2416,57 +2412,44 @@
    
     
     header{
-        height: 2050px;
-        .language-selector{
-            .dropdown__menu{
-                .dropdown__item{
-                    padding: 10px 15px;
-                    font-size: 0.7rem;
-                    font-weight: 450;
-                    &:last-child{
-                        padding-top: 0;
-                    }
-                }
-            }
-        }
         
         
         
         .whatsnew{
             a.btext{
-                font-size: 1.3rem;
+                font-size: 1.4rem;
                 margin-top: 0.5rem;
             }
             .title{
-                font-size: 0.7rem;
+                font-size: 0.75rem;
             }
            
         
         }
 
-        .underHeader{
+        div.underHeader{
             .workingHours{
                 height: 175px;
                 margin-bottom: 6rem;
                 .title{
-                    font-size: 0.7rem;
+                    font-size: 0.75rem;
                 }
                 .time{
-                    font-size: 1.7rem;
+                    font-size: 2rem;
                 }
                 .text{
-                    font-size: 0.85rem;
+                    font-size: 0.95rem;
                 }
                 a.link_cost{
                     width: 100%;
                     font-weight: 700;
-                    font-size: 0.7rem;
+                    font-size: 0.75rem;
                 }
             }
             .events{
                 height: 800px;
                 .title{
-                    font-size: 0.7rem;
+                    font-size: 0.75rem;
                     margin-bottom: 2rem;
                 }
                 .event-cards{
@@ -2485,7 +2468,7 @@
                             justify-content: center;
                             height: 35%;
                             .card-title{
-                                font-size: 0.95rem;
+                                font-size: 1rem;
                                 margin-bottom: 0.7rem;
                             }
                             .text{
@@ -2499,7 +2482,7 @@
                     .readmore{
                         margin-top: 3rem;
                         font-weight: 700;
-                        font-size: 0.7rem;
+                        font-size: 0.75rem;
                     }
                 }
             }
@@ -2563,6 +2546,15 @@
 //Main
 @media (max-width: 376px) {
 
+    .info-content{
+        .info-text{
+                div.width-more{
+                    width: 35% !important;
+                }
+            }
+    }
+                            
+
     section.PageAbout{
     
 
@@ -2604,7 +2596,6 @@
     }
 
     header{
-        height: 2000px;
         
         .whatsnew{
             a.btext{
@@ -2613,7 +2604,7 @@
             }
         }
 
-        .underHeader{
+        div.underHeader{
             .workingHours{
                 height: 185px;
                 margin-bottom: 6rem;
@@ -2632,7 +2623,7 @@
             font-size: 1.5rem;
         }
         h2.title{
-            font-size: 0.7rem;
+            font-size: 0.75rem;
         }
     }
 

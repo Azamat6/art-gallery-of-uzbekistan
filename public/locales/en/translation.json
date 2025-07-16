@@ -1,0 +1,443 @@
+{
+    "Choose_lang": "English",
+    "aboutGallery": {
+        "title": "About",
+        "subtitle": "The art gallery of Uzbekistan",
+        "text": "In the capital of Uzbekistan, on the eve of the nation's most significant and cherished holiday — Independence Day — the doors of a new, unique cultural center, The Art Gallery of Uzbekistan, have opened."
+    },
+    "read_more": "Learn more",
+    "coin_collection": {
+        "title": "Ancient Coins",
+        "subtitle": "The history of the country's first numismatic collection",
+        "text": "The collection includes coins used in Central Asia from antiquity to the present day, representing significant historical, cultural, and scientific value."
+    },
+    "header": {
+    "menu": {
+      "nav": "Menu",
+      "nav_title_1": "Gallery",
+      "nav_title_2": "For Visitors",
+      "nav_title_3": "Contacts",
+      "first": {
+        "item1": "About",
+        "item2": "Exhibition Overview", 
+        "item3": "Collection",
+        "item4": "Ancient Coins"
+      },
+      "second": {
+        "item1": "Plan Your Visit",
+        "item2": "Events",
+        "item3": "Virtual Tour",
+        "item4": "Art History of Uzbekistan"
+      },
+      "third": {
+        "item1": "Contact Us"
+      }
+    },
+    "news": {
+      "title": "Now on view"
+    },
+    "wh": {
+      "title": "Today's hours",
+      "text1": "For pensioners and students, there is a ",
+      "text2": "50% discount",
+      "text3": "on ticket purchase.",
+      "plan": "Plan Your Visit",
+      "closed": "Closed"
+    },
+    "events": {
+      "title": "events",
+      "read_more": "Show More"
+    }
+  },
+  "gallery": {
+    "title": "Online Collection",
+    "read_more": "Show More",
+    "box1_title": "Poppies",
+    "box1_text": "Inna Vasilievna",
+    "box2_title": "A girl at the tree",
+    "box2_text": "Nadezhda Kashina",
+    "box3_title": "Ancient Urgench",
+    "box3_text": "Yuriy Taldykin",
+    "box4_title": "Landscape",
+    "box4_text": "Vladimir Rozhdestvensky",
+    "box5_title": "Twilight",
+    "box5_text": "Sergey Yudin",
+    "box6_title": "The crazy artist",
+    "box6_text": "Murad Karabaev",
+    "box7_title": "Tortillas and pomegranates",
+    "box7_text": "Victor Ufimtsev",
+    "box8_title": "Awakening",
+    "box8_text": "Richcitilla Akramov"
+  },
+  "virtualConcept": {
+    "vr": {
+      "title": "Virtual Tour",
+      "text": "Visit the gallery from your home."
+    },
+    "concept": {
+      "title": "Exhibition Overview",
+      "text": "A two-story exhibition space covering 3,500 square meters."
+    }
+  },
+  "footer": {
+    "location": "Buyuk Turon Street 2, Tashkent",
+    "end": {
+      "usage": "Terms of use of materials on the website",
+      "gov": "The Art Gallery of Uzbekistan",
+      "credits": "Web application development",
+      "me": "A. Sultanov"
+    },
+    "address": "Address"
+  },
+
+
+
+
+  "PageAbout": {
+        "header": {
+            "title": "About The art gallery of Uzbekistan"
+        },
+        "intro": "On the Independence Day, the doors of a new and unique cultural center — The Art Gallery of Uzbekistan — opened in the capital of Uzbekistan.",
+        "buildingTitle": "Gallery Building",
+        "buildingText1": "Constructed in a traditional national style rooted in the architectural masterpieces of ancient cultural centers such as Samarkand, Bukhara, and Khiva, the Art Gallery of Uzbekistan meets all the modern requirements for institutions of this kind.",
+        "buildingText2": "This remarkable structure, which has become an integral part of the newly developed ensemble at the heart of Uzbekistan’s capital, incorporates the rich architectural heritage of Uzbek craftsmanship, along with the use of traditional local building materials. The design and construction drew on the experience of leading museums and exhibition halls in Italy, Germany, the UK, the USA, and Russia. This made it possible to build a unique cultural structure, which today has no equal not only in Central Asia but also in any of the CIS countries.",
+        "buildingText3": "State-of-the-art equipment ensures the Gallery maintains the strictest standards of temperature, humidity, and security for the proper display and preservation of artworks. The building is equipped with a lecture hall, cinema hall, library, masterclass studio, and workshops, enabling the Gallery to function as a center for art history, research, and restoration, and to host prestigious international exhibitions at a high professional level.",
+
+        "treasuresTitle": "Treasures of Art and History",
+        "treasuresText1": "The first exhibition at the Fine Arts Gallery features over 300 paintings — some of the finest examples of 20th-century Uzbek visual art. The collection includes works by distinguished artists such as Usto Mumin, U. Tansykbaev, A. Abdullaev, N. Kuzibayev, M. Yuldashev, R. Gagloeva, B. Jalalov, L. Bure, P. Benkov, and emerging artists whose work reflects the life and spirit of today’s Uzbekistan. This exhibition is based on the collection of the National Bank’s Art Gallery, originally founded in 1994.",
+        "treasuresText2": "A special highlight of the Gallery’s collection is the",
+        "treasuresText3": " numismatic collection ",
+        "treasuresText4": "— a true gem of the National Bank’s artistic holdings. It would not be an exaggeration to note that the bank's coin collection can compete in quality with the famous collections of the largest foreign museums, including the British Museum in London. What makes this collection truly exceptional is its focus on locally minted coins, many of which were previously unknown to global historians. The collection includes coins from Sogdiana, Khwarezm, Chach, Ustrushana, as well as from Central Asian governors of the Umayyad and Abbasid caliphates, and coins minted during the Timurid dynasty and other regional rulers. Spanning over 2,500 years of history, this collection is a testament to Uzbekistan’s deep cultural and state-building traditions. Thanks to the efforts of the National Bank, hundreds of rare and historically significant coins have been preserved and now stand as a national treasure.",
+
+        "missionTitle": "Gallery Mission",
+        "missionText1": "While fulfilling its role as a key financial institution and representing the country on international markets, the National Bank of Uzbekistan has also actively supported the social, cultural, and spiritual life of the Republic. Over the past 20 years, the Bank’s Art Gallery has not only promoted the work of talented Uzbek artists and celebrated the richness of the country’s visual arts, but also played a vital role in preserving cultural heritage. This contribution was personally acknowledged by the First President during his visit to the Fine Arts Gallery. The Bank regularly organizes exhibitions from its collection and curates regional showcases that spotlight the work of local artists. To further promote Uzbekistan’s cultural legacy worldwide, the National Bank publishes art catalogues now housed in museums and galleries across the globe.",
+        "missionText2": "While viewing the Gallery’s collection, the President emphasized that spiritual development is one of the cornerstones of modern Uzbekistan. The establishment of a national fine arts gallery demonstrates the Uzbek people’s deep commitment to cultural growth and the preservation and enrichment of their unique artistic and spiritual heritage — essential foundations for the great future awaiting the nation.",
+
+        "sponsorsTitle": "Sponsors and Partners",
+        "sponsorsText": "In addition to the main sponsor and developer — the National Bank of Uzbekistan — the creation of the Fine Arts Gallery was actively supported by the Academy of Arts of Uzbekistan, the Ministry of Culture, the Directorate of Art Exhibitions, and the State Art Museum."   
+    },
+
+
+    "PageCoins": {
+        "header": {
+            "title": "A collection of ancient coins"
+        },
+        "coinsFormationTitle": "Forming a Unique Coin Collection",
+        "coinsIntro": "The National Bank for Foreign Economic Activity of the Republic of Uzbekistan makes a worthy contribution to the noble cause of preserving the country's historical monuments — its national heritage. Unsurprisingly, due to the nature of its activities, the bank is most interested in numismatic artifacts of the past — coins that circulated in the territory of Uzbekistan over millennia.",
+        "coinsText2": "In this regard, it is no exaggeration to state that among the achievements of the National Bank, a notable place belongs to the creation of the first banking collection of ancient coins in the country.",
+        "coinsText1": "With the attainment of independence, our country began to actively and purposefully create its own national monetary system. The coins and banknotes of sovereign Uzbekistan are full-fledged instruments of monetary circulation and fully reflect the independent financial policy of our state. Their production incorporates the rich historical and cultural values of our people.",
+        "coinsText3": "Forming a collection is a complex and responsible task that requires a proper methodology. Such a methodology has been developed and is successfully applied in building the collection in question. Broadly speaking, this methodology is based on two complementary principles, both derived from the most important one — preserving the national heritage of the country embodied in numismatic artifacts.",
+        "coinsText4": "The first priority, of course, is to save and preserve the rarest pieces. The bank’s numismatic collection already includes many unique coins worthy of any museum in the world. However, a collection of rarities alone does not provide a complete picture of the region's monetary history, thus the second principle becomes essential — striving for the most comprehensive and detailed (down to die varieties) representation of monetary circulation in the territory of Uzbekistan.",
+        "coinsText5": "Thus, it is no coincidence that as the National Bank’s numismatic collection grows, it becomes increasingly complete and cohesive. Gaps in existing sections are being filled step by step, some coins launch new sections, and rarities evoke special pride and admiration. Quantity is gradually transforming into quality.",
+        "coinsHistoricalTitle": "Historical Significance",
+        "coinsText6": "The special value of this collection lies in the fact that it mostly consists of regionally minted coins that are almost completely unknown to global academia. Notable examples include coins from Sogd, Khwarezm, Chach, Ustrushana, and coins of the Central Asian governors of the Umayyads and Abbasids, as well as local Muslim dynasties.",
+        "coinsText7": "Throughout this vast historical period, the spectrum of currency is remarkably diverse. In addition to the dominant local minting, so-called imported coins also circulated. In ancient times, for Central Asia and Uzbekistan in particular, these were primarily coins of Alexander the Great and China. The collection includes a drachma of Alexander and a copper coin from China issued two thousand years ago. However, the greatest interest is sparked by coins from states that once included parts of modern Uzbekistan — from the Seleucid and Greco-Bactrian rulers to Parthia and the Kushan Empire.",
+        "coinsText8": "Particularly notable are the splendid drachmas and copper denominations with highly expressive portraits of ancient Khwarezmian kings. These coins, known to be rare, are prized treasures of the world’s largest numismatic collections. Among medieval coins, the so-called Bukharan Sogd and Chach coins are especially valuable for providing insight into a period barely illuminated by written sources.",
+        "coinsText9": "The coins of Central Asian governors of the Umayyads, Abbasids, and Samanids are also of immense significance and rarity. Much research has been written about their historical value, often serving as the sole sources of information on local rulers.",
+        "coinsText10": "The Bukhara Emirate is represented mainly by gold coins. The excellently preserved tillas, minted relatively recently by historical standards, sometimes hold mysteries — some bear two different minting dates, others feature rhymed inscriptions, and still others appear in series connected by special symbols yet to be deciphered by scholars.",
+        "coinsCulturalTitle": "Cultural Heritage",
+        "coinsText11": "It is well known that any collection is more than just a set of items. A true collection — especially one as significant as the National Bank of Uzbekistan's numismatic collection — is above all a reflection of humanity’s eternal striving for knowledge, in this case, knowledge that is worthy of being preserved and passed on to future generations as part of their homeland's great historical legacy."
+    },
+
+
+    "PageConcept": {
+        "header": {
+          "title": "Exhibition Overview"
+        },
+        "first_floor": {
+          "title": "First Floor",
+          "subtitle1": "Exhibition theme: \"The origins of the formation of the national school of fine arts of Uzbekistan in the early 20th century\"",
+          "text1": "In the early 20th century, within the context of the overall Europeanization of the region's culture, the development of easel painting in Uzbekistan began as one of the forms of European culture. In the works of visiting Russian artists, mostly graduates of the St. Petersburg Academy of Arts—S. Yudin, L. Bure, I. Kazakov, and others—an 'ethnographic' direction developed, portraying Uzbek cities, daily life, material culture, and history primarily as exotic. The fascination of Russian painters with the majestic beauty of architecture and the vivid colors of Eastern life reflected a broader trend: at the turn of the 20th century, European culture as a whole turned its gaze eastward as never before. The traditional East attracted artists with its preserved immediacy and moral purity, harmony with nature, and elevated spiritual traditions. Uzbekistan enriched the palettes of Russian painters and, in the following period, deepened their artistic and conceptual explorations.",
+          "text2": "In the 1920s, the formation of the Uzbek national school of painting began. This coincided with a period in European culture when dominant anthropocentrism in art began to collapse. Artists expressed a rejection of the established bourgeois civilization and culture as a whole. They protested against mercantile relationships, the standardization of life, rationalism, hypocrisy, and superficial beauty that masked the real ugliness of reality. Their creative searches favored irrationality over rationality, subjectivity over objectivity. Artists sought new expressive means to reveal the hidden, the secret, and the more meaningful aspects beyond the visible. In this quest, they turned to dissonance in imagery, color, rhythm, and composition. Their experimentation later came to be known as avant-garde. The works of A. Volkov, A. Nikolaev, N. Karakhan, V. Ufimtsev, N. Kashina, O. Tatevosyan, U. Tansykbaev, P. Benkov, V. Eryomen, Z. Kovalevskaya, M. Kurzin, and A. Podkovyrov from the 1920s reflect a distinctive avant-garde style of the highest professional caliber. However, this was an avant-garde rooted in the enduring traditions of Uzbekistan’s centuries-old culture. The reinterpretation of traditional artistic poetics and the spiritual legacy of past centuries is what distinguishes the avant-garde painting of 1920s Uzbekistan as a unique phenomenon of global significance. These artists drew not only from European movements such as Cubism, Expressionism, and Abstractionism, but also from the traditions of historical monumental painting, miniature art, and traditional decorative-applied art of Uzbekistan.",
+          "subtitle2": "Exhibition theme: \"Fine art of Uzbekistan in the 1930s–1950s\"",
+          "text3": "In the 1930s, with the establishment of the totalitarian regime, the only permitted method—and effectively the only artistic direction—became Socialist Realism, which suppressed the achievements of the preceding decade. A forced breakdown of creative thinking took place, and the concept of artistic freedom was banished from aesthetics. The purpose of art was primitively reduced to serving society. Nevertheless, it would be inaccurate to give a wholly negative assessment of Uzbek art from the 1930s to the 1950s. During this period, genuine masters of art continued to work—A. Volkov, N. Karakhan, N. Kashina, P. Benkov, B. Khamdami, A. Abdullaev, Ch. Akhmarov, Sh. Khasanova, U. Tansykbaev—who tried to circumvent the canons of Socialist aesthetics by emphasizing stylistic elements, embracing national traditions, and seeking to represent individuality during a complex historical era. In the second half of the 1950s, realism gained prominence in Uzbek fine art, invigorated by the creative efforts of academic artists such as R. Akhmedov, N. Kuzybaev, M. Saidov, T. Oganesov, V. Zhmakin, Yu. Elizarov, L. Reznikov, A. Gan, R. Timurov, G. Tkachev, Z. Inogamov, M. Kalantarov, B. Brynskikh, V. Kovinin, and graphic artists V. Kaidalov, K. Cheprakov. While their work is considered part of the golden heritage of Uzbek painting, their creative searches also reflect the spiritual concerns of their time. In their interpretation, the search for national identity was linked with national portrait types, genre scenes, and local landscapes. This interpretation of national identity was officially approved and manifested in various national schools. At the same time, there were also works of a different nature, addressing acute social issues—for example, N. Shin’s works on Stalinist repression and the genocide of the Korean people—which were excluded from the official art culture system.",
+          "subtitle3": "Exhibition Theme: \"The search for new ideas and forms in the visual arts of Uzbekistan in the 1960s\"",
+          "text4": "In the 1960s, there was a search for new forms of artistic generalization and the affirmation of entirely new plastic ideas. This period marked the emergence of a certain pluralism in artistic directions in Uzbek painting. The realist school continued to develop in the works of R. Akhmedov, V. Zhmakin, Z. Inogamov, M. Saidov, Yu. Elizarov, D. Imamov, V. Zorkin, L. Salimdjanova, Yu. Strelnikov, B. Tokmin, A. Baymatov, A. Rakhmatullav, Kh. Khusnitdinkhodjaev, K. Basharov, M. Kagarov, and others. With the formation of national art schools in the region, the issue of national identity in art gained new significance. This understanding encompassed not only the reflection of everyday life but also the expression of universal human values and a deep rethinking of traditional artistic heritage. This gave impetus to a renewed interest in decorative style as a continuation of centuries-old cultural traditions. This trend is reflected in the works of Ch. Akhmarov, N. Kashina, G. Ulko, R. Chariyev, V. Burmakin, Yu. Taldykin, E. Melnikov, R. Timurov, T. Pirmatov, A. Mirsagatov, N. Shin, and others."
+        },
+         "second_floor": {
+            "title": "Second Floor",
+            "subtitle1": "Exhibition theme: \"Diversity of artistic languages in the 1970s\"",
+            "text1": "Uzbek painting of the 1970s is characterized by a diversity and mutual influence of artistic and stylistic trends, a turn to a wide range of traditions, an evolution of genre structure, a broad thematic scope, and the diversity of creative personalities. The decorative trend is developed in the works of Sh. Abdurashidov, A. Mirzaev, R. Shadiev, R. Gagloeva, Yu. Taldykin, and E. Melnikov. At the same time, it should be noted that associative-metaphorical artistic thinking, becoming increasingly prominent, reveals its inner potential in the work of various artists, each reflecting their individual vision of the world and their specific painterly and plastic pursuits. Examples include the works of Dzh. Umarbekov, B. Dzhalalov, M. Tokhtaev, V. Akhunov, A. Isaev, I. Izentayev, and T. Mukhamedov.",
+            "subtitle2": "Exhibition theme: \"Uzbek art of the 1980s in the context of the search for national identity\"",
+            "text2": "During this period, the academic direction develops in the works of S. Abdullaev, A. Ikramdzhanov, S. Rakhmetov, M. Nuridinov, T. Mirdzhalilov, Kh. Mirzaakhmedov, Dzh. Rakhmanov, S. Rakhmanov, M. Tashmuradov, A. Yusupov, A. Yunusov, A. Khatamov, I. Vakhitov, A. Ponomarev, M. Sadykova, and others, acquiring a somewhat chamber or more decorative character. Generational continuity, deep spiritual searches, and reflection on the artistic achievements of the previous stage are also characteristic of the generation of Uzbek artists who entered or found their style in art in the late 1980s and early 1990s. In the works of L. Ibragimov, A. Nur, G. Kadyrov, N. Imamov, M. Isanov, F. Akhmadaliev, B. Makhamov, Sh. Kuziyeva, and O. Kozokov, tradition is addressed not only as certain stylistic features, but also as a moral and spiritual connection to their homeland, people, culture, psychology, and mentality. At the same time, the avant-garde direction continues to develop in the works of A. Krikis; the creation of a personal, chamber world with a specific genre-thematic and stylistic focus distinguishes the search of I. Shin.",
+            "subtitle3": "Exhibition theme: \"Contemporary visual art of Uzbekistan in the independence period\"",
+            "text3": "In the 1990s, the achievements of previous stages in Uzbek painting continued to develop. The establishment of the Academy of Arts of Uzbekistan in 1997 played a significant role in energizing the artistic scene, elevating the status of the creative intelligentsia, promoting Uzbek visual art abroad, integrating it into the global cultural space, and supporting diverse artistic directions and styles in contemporary art. Alongside established and mid-career artists, new names of young painters emerged, representing and developing a wide range of creative directions: realism, decorativism, associative-metaphorical, avant-garde, and postmodernist approaches. Among them are: D. Ruzybaev, K. Norkhurazov, U. Urakov, N. Imamov, Dzh. Umarbekov, B. Dzhalalov, A. Mirzaev, L. Ibragimov, A. Nur, G. Abdurakhmanova, A. Allabergenov, V. Apukhtin, Dzh. Usmanov, A. Nikolaev, B. Yuldashev, B. Ismailov, Sh. Abdulayeva, N. Shoabdurakhimov, G. Sultanova, Sh. Pirmatov, S. Kurdzhemil, M. Karabaev, V. Yenin, B. Obidov, T. Karimov, V. Nechaeva, A. Ligai, B. Mukhtarov, T. Tadzhikhodzhaev, and others.",
+            "text4": "During this period, the art of photography in Uzbekistan also saw significant development. This hall will also showcase the works of Uzbek photographers: T. Kuziyev, V. Sokolov, U. Akhmedova, V. An, V. Vyatkin, A. Shepelin, E. Kurtveliev, and others.",
+            "subtitle4": "Exhibition theme: \"The art of numismatics in Central Asia as an important part of historical and cultural heritage\"",
+            "text5": "Uzbekistan is among the few regions of the world where, due to a high level of civilization, monetary relations emerged very early. As early as the 4th–3rd centuries BCE, Seleucid and Greco-Bactrian coins circulated here, and from the beginning of the 3rd century BCE, the first locally minted coins began to appear in Sogdiana. Thus, the history of coinage in Uzbekistan spans more than 2,300 years. Its early stages are marked by Bactrian and Sogdian coins, while its present is reflected in the paper and metal currency of the Republic of Uzbekistan. Throughout this extensive period, coins of various denominations—copper, silver, and gold—were minted in the historical-cultural regions and ancient and medieval cities of Uzbekistan.",
+            "text6": "These coins tell us not only about the level of monetary relations in a given historical period, but also offer insights into unknown pages of our country’s history and forgotten dynasties, as well as the outstanding craftsmanship of portrait artists and calligraphers who inscribed elegant scripts on the coins. They reveal that as early as before our era, regions of Uzbekistan such as Bactria, Sogdiana, and Khorezm had their own writing systems, which were used in coin inscriptions.",
+            "text7": "The numismatic collection of the Art Gallery of Uzbekistan",
+            "text8": "features coin samples from Central Asia dating from the 4th century BCE to the early 20th century, covering various historical periods: antiquity, early medieval period, the Timurid era, the late medieval period, and the 19th to early 20th centuries.",
+            "text9": "The walls feature photographs of archaeological excavations during which these coins were discovered."
+            },
+            "author": "Kamola Akilova",
+            "author_role": "Doctor of Art History"
+    },
+
+
+
+
+    "PageHistory": {
+    "header": {
+      "title": "Art History of Uzbekistan"
+    },
+    "text1": "In the 19th century, visual art in Central Asia was particularly expressed through the work of miniaturists in Tashkent, Samarkand, Bukhara, and Kokand. It is known that the prominent 19th-century educator Ahmad Donish (1827–1897)—a poet, philosopher, calligrapher, and astronomer—also possessed artistic talent, as evidenced by his surviving drawings: the miniature \"The Poet and the Artist\" created for a manuscript edition of Abdulqadir Bedil’s \"The Four Elements\" and a satirical miniature depicting a mirshab, the city police chief. His miniatures are marked by precise, refined drawing, local color tones, a clear continuous contour line, and graphic style. His student, Abdulhalik-Mahmum, also gained recognition as a talented painter of insects and flowers.",
+    "text2": "The aspiration of the peoples of Central Asia to the artistic representation of reality is also evidenced by the fact that, at the Turkestan Exhibition in 1886, a Tashkent resident named Tokhta-Sadyk Khodjaev presented sculptural representations of a horse and a deer, hand-carved from alabaster using only a small knife and no sculpting tools. Also exhibited were house models crafted by Tashkent artisans—one of a two-story European-style house made of ganch, and two Uzbek houses—skillfully and accurately rendered.",
+    "text3": "Renowned Uzbek ganch carver Tashpulat Arslankulov (1882–1962) created ganch portrait bas-relief medallions of A.V. Suvorov and M.I. Kutuzov in the building of the Military Assembly (ODO) in Tashkent, using photographs as references.",
+    "text4": "In 1915, a Tashkent lithography published the epic poem \"Gör-Ogly\" with illustrations by Sirojiddin Mahsum Siddiqi, a draftsman-artist. He was the only Uzbek artist of the late 19th and early 20th centuries whose work was associated with typographic printing.",
+    "text5": "The visual art of Turkestan in the late 19th and early 20th centuries was represented by Russian artists, mainly graduates of the St. Petersburg Academy of Arts. Their work reflected the history and contemporary life, nature, and everyday culture of Central Asia.",
+    "Vasiliy_title": "Vasily Vasilyevich Vereshchagin",
+    "Vasiliy_text1": "The first and most significant artist to portray the life and customs of Turkestan was V.V. Vereshchagin. His Turkestan paintings were a genuine artistic revelation of the region for many countries and peoples. In these cycles, the artist created a comprehensive and humanistic depiction of the cultural and everyday life of the region. He highlighted the region’s rich architectural traditions and the astonishing decorative craftsmanship of Central Asian architects and artisans.",
+    "Vasiliy_text2": "With the arrival of artist-teachers in Turkestan in the early 20th century—who taught drawing and drafting in secondary schools—one can speak of the first sprouts of visual art and artistic literacy in the region. This helped form an emerging artistic environment in Turkestan.",
+    "Sergey_title": "Sergey Petrovich Yudin",
+    "Sergey_text": "Popular Tashkent landscape painter Sergey Petrovich Yudin (1858–1933) led a theater circle of railway workers and painted sets for amateur theaters in Tashkent. After graduating from the St. Petersburg Academy of Arts, he came to Tashkent in 1902. Yudin was a master of sunlit plein air studies. He became best known for his landscape paintings in the tradition of academic landscape art. In his 1910 painting \"Winter Evening\", one feels his direct connection with nature and his skill in conveying atmospheric perspective. His mountain and plain landscapes clearly depict spatial depth and the play of light and shadow.",
+    "Leonard_title": "Leonard Leonardovich Bure",
+    "Leonard_text": "A native of Samarkand, Leonard Leonardovich Bure (1887–1943) showed interest in painting from a young age. In 1904, he went to Moscow to study painting, later continuing his studies at the Academy of Arts in St. Petersburg. After completing his education, he returned to his homeland, where he not only worked as an artist but also taught at the Samarkand Art School until his death. In landscape painting, Bure focused on plein air studies. His architectural landscapes are notable for their true-to-life color and subtle use of color. He avoided cliché perspectives, always seeking fresh viewpoints on architectural monuments. The collection features three of his architectural landscapes: \"Lyabi-Khauz\" (1907), \"Courtyard of a Madrasa\" (1910), and the recently acquired \"Samarkand\" (1929), all painted in the artist’s beloved cities—Bukhara and Samarkand.",
+    "Alex_title": "Alexander Nikolaevich Volkov",
+    "Alex_text1": "The life and work of one of Uzbekistan’s most renowned artists—painter and poet Alexander Nikolaevich Volkov (1886–1957)—were closely tied to Fergana. A People's Artist of Uzbekistan, he was born in Fergana, studied at the St. Petersburg Academy of Arts, and taught at the Tashkent Art College.",
+    "Alex_text2": "Volkov followed the traditions of Russian artists but was also influenced by French Cubism. He was passionately searching for his own style in painting. Volkov sought to combine the unique visual rhythm and rich coloration of the East with techniques of the \"Paris School\" of the early 20th century. According to his autobiography, from 1916 to 1928, the themes of his paintings included teahouses, camel caravans, and old city scenes, all interpreted through Cubist and Expressionist lenses.",
+    "Alex_text3": "The painting \"Pomegranate Teahouse\", housed in the Tretyakov Gallery, was painted in 1924 during Volkov’s Cubist phase. In 1968, it was exhibited in Paris, receiving significant attention in the French press and coverage on French television.",
+    "Alex_text4": "The painting \"Autumn Landscape\", held in the bank’s collection, was painted in 1931 in the Impressionist style. It demonstrates masterful use of complex gradations of color and light.",
+    "Mumin_title": "Usto Mumin",
+    "Mumin_text1": "Deeply inspired by ancient culture and the rich folk art of Central Asia was Alexander Vladimirovich Nikolaev—known in the history of Uzbek visual art as Usto Mumin (1897–1957). A student of K. Malevich, Usto Mumin came to Samarkand in 1921. He was captivated by the region’s magnificent architecture, decorative clothing, and jewelry. As he immersed himself in the local culture, he studied not only the art of folk craftsmen but also the legacy of classical Central Asian miniature painting. In 1925, he moved to Tashkent. A highly gifted artist and a major figure in both graphic and painting arts, he was deeply influenced by Uzbek folk culture and sought to fuse Italian and Russian artistic traditions with Uzbek visual heritage into a unified whole.",
+    "Mumin_text2": "The bank’s collection includes his ink drawing \"Embroiderers\" from 1930.",
+    "Fergana_title": "Great Fergana Canal",
+    "Fergana_text1": "An artist whose creative work is similar in spirit to that of S. Yudin is Maksim Yevstafyevich Novikov (1886–1982). He graduated from the St. Petersburg Academy of Arts. Novikov entered the history of Uzbek visual art as a lyrical landscape painter and storyteller. The collection includes two of his paintings — \"Canal Construction\" and \"Tent City\" — in which he depicts the building of the Great Fergana Canal.",
+    "Fergana_text2": "Many artists made sketches and studies during the construction of the Great Fergana Canal and the Chirchik Chemical Plant. Among them were Konstantin Pavlovich Cheprakov (1907–1972), a graduate of the Tashkent Painting Studio, and Aleksey Fyodorovich Podkovyrov (1889–1957), a graduate of the Penza Art School.",
+    "Fergana_text3": "The most notable works in the collection are two portraits of leading builders — Nurnapasov and Sultanov (both from 1947). These portrait sketches by Cheprakov were drawn from life. With confident and expressive line work, the artist portrays typical representatives of that era.",
+    "Fergana_text4": "A sketch by A. Podkovyrov titled \"Builders of the Fergana Canal\", created in 1939, represents another chapter in the history of Uzbekistan’s great construction projects.",
+    "Graphics_title": "Development of Graphic Art",
+    "Graphics_text1": "Graphic art in Uzbekistan began to develop with the spread of typography and book printing.",
+    "Graphics_text2": "In the 1920s, artists such as L. Bure, M. Kurzin, V. Rozhdestvensky, A. Volkov, Usto Mumin (A. Nikolaev), and V. Eremyan were actively engaged in poster design and satirical magazine graphics.",
+    "Graphics_text3": "Mikhail Ivanovich Kurzin (1888–1957) was a complex and intriguing figure in the painting and graphic art of Uzbekistan during the 1920s–1930s. He arrived in the republic in 1923 and settled in Tashkent. Kurzin received his professional education at the Kazan and Moscow Schools of Painting, Sculpture and Architecture. Upon arriving in Tashkent, he became actively involved in the city’s artistic life, working as a theater set designer, contributing to newspapers, and teaching at an art studio.",
+    "Ural_title": "Ural Tansykbaev",
+    "Ural_text1": "The name of Ural Tansykbaev (1904–1974) first appeared in the Uzbek press in 1924. A newspaper reviewer, reporting on a local club exhibition, highlighted the remarkable talent of the young worker U. Tansykbaev. The article noted that his works revealed a desire to reflect national life, the nature of Turkestan, and a strong artistic sensibility. He portrayed village life with attention to detail and authenticity: yurts with their inhabitants, camel caravans, views of mountains and valleys. Tansykbaev's early works were primarily done in charcoal and pencil.",
+    "Ural_text2": "He received his professional training first in Tashkent, and later at the Penza Art School.",
+    "Ural_text3": "A master of epic landscape, Ural Tansykbaev considered nature an endless source of inspiration throughout his career. He constantly refined his approach, striving for expressive simplicity in his studies and compositions, and achieving a coloristic harmony that conveyed the poetic essence of landscape with depth and clarity. For this reason, critics referred to him as \"the leader of Uzbek colorists\".",
+    "Nikolay_title": "Nikolai Georgievich Karakhan",
+    "Nikolay_text": "Contemporary with A. Volkov and U. Tansykbaev, Nikolai Georgievich Karakhan (1900–1970) was a student of S. Yudin. Karakhan was captivated by the mountainous landscapes of Uzbekistan. In his studies and paintings, he developed themes related to the seasonal field work of rural laborers, varying motifs of spring and autumn, morning and evening, combining plein air technique and genre painting into a cohesive pictorial whole. He skillfully conveyed the sun-drenched state of nature.",
+    "Shamsira_title": "Shamsira Khasanova",
+    "Shamsira_text": "A student of A. Volkov and one of the first female artists in Uzbekistan, Shamsira Khasanova (1917–1956) is represented in the exhibition by a portrait of a vocational school student. Khasanova showed deep interest in historical themes, the lives of notable figures in science and culture, and her contemporaries. She made a significant contribution to the development of historical portraiture in Uzbekistan."
+  },
+
+
+
+
+    "PageVisit": {
+      "header": {
+        "title": "Plan Your Visit"
+      },
+      "tour": {
+        "title": "Guided Tour",
+        "text": "To fully immerse yourself in the atmosphere of the gallery and explore our unique collection of paintings, graphics, and ancient coins, we recommend using the services of our professional guide. They will explain the significance, history, and cultural value of each exhibit.",
+        "table_text1": "Group Size",
+        "table_text2": "1 to 25 people",
+        "table_text3": "Price",
+        "table_text4": "25 000 UZS per person",
+        "table_text5": "Duration",
+        "table_text6": "1 hour",
+        "table_text7": "Language",
+        "table_text8": "Uzbek, Russian"
+      },
+      "prices": {
+        "title": "Our Services",
+        "text1": "Single-day official events, including exhibitions, presentations, concerts, and other significant occasions — 2,400,000 UZS. Minimum booking — 3 hours. Up to 50 participants per event.",
+        "text2": "Photo and video shoots for commercial purposes — 300,000 UZS per hour, with a minimum of 2 hours. Maximum number of participants — 25.",
+        "text3": "Temporary official events, exhibitions, presentations, etc. — 20,000 UZS per m",
+        "text4": "per day."
+      },
+      "visitorInfo": {
+        "title1": "Ticket Prices",
+        "category_text1": "Adults",
+        "category_text2": "Students",
+        "category_text3": "Pensioners",
+        "category_text4": "Foreigners",
+        "category_text5": "Children",
+        "category_text6": "Students of Art Schools / Members of the Creative Association of Artists of Uzbekistan",
+        "price": "UZS",
+        "noprice": "Free",
+        "title2": "Opening Hours",
+        "category_text7": "Tuesday – Saturday",
+        "category_text8": "Sunday / Monday",
+        "category_text9": "Closed"
+      },
+      
+      "map": {
+        "title": "Address",
+        "text": "2 Buyuk Turon Street, Tashkent, Uzbekistan. Landmark — Mustaqillik Metro Station."
+      }
+    },
+
+
+    
+    "PageContact": {
+        "header": {
+            "title": "Contact Us"
+        },
+        "title1": "call the numbers",
+        "title2": "E-Mail",
+        "title3": "work schedule",
+        "text": "We’re always happy to hear from you! Our staff is ready to answer your questions during working hours."
+    },
+
+     "PageTerms": {
+        "header": {
+            "title": "Terms of use of materials on the website"
+        },
+            "intro": "According to the current legislation of the Republic of Uzbekistan, the Art Gallery of Uzbekistan holds the rights to images and textual information (results of intellectual and creative activity) published on the gallery's official website.",
+    "text": "The content of this website may be used for non-commercial purposes under the following general conditions:",
+    "text1": "1) Use of textual information and multimedia products is permitted with a reference to the relevant page.",
+    "text2": "2) Use of images of artworks from the gallery’s collection requires the attribution: \"From the collection of the Art Gallery of Uzbekistan.\"",
+    "text3": "3) Use of photographs requires the author's name to be mentioned if specified on the website.",
+    "text4": "For commercial use of the website materials, prior written permission must be obtained by sending a request addressed to the Director of the Art Gallery of Uzbekistan via email with the note “Use of Website Materials”."
+    },
+
+        "PageCollection": {
+        "header": {
+            "title": "Over 1,900 paintings and about 2,500 unique ancient coins",
+            "title2": "Gallery Collection"
+        },
+        "subtitle": "The newly created online collection features over 100 exhibits, and every month it is enriched with new masterpieces from the gallery's holdings.",
+        "text": "Click on the image to open it in full screen.",
+        "online-collection": "Online Collection"
+        },
+
+
+
+
+
+    "PageExhibition": {
+        "header": {
+            "title": "Events"
+        },
+        "button_now": "Current",
+        "button_future": "Future",
+        "button_past": "Past",
+        "empty": "There's nothing here yet.",
+        "exhibition_photo" : "Photo exhibition",
+        "exhibition" : "Exhibition",
+        "cards": {
+            "women": "\"Women of Uzbekistan: Transformation\"",
+            "umar": "Personal exhibition of Umar Radjabov \"Contemplation\"",
+            "devonov": "\"Khudaybergan Devonov and his era\"",
+            "synapse": "Contemporary Art \"Synapse\"",
+            "mirtajiyev": "\"I am an artist of the uzbek people\"",
+            "east": "Miniature \"Eastern motifs\"",
+            "memory": "\"Tunnel of memory\"",
+
+
+
+            "nbuCollection": "The National Bank's Collection",
+
+
+            "hotira": "\"Memory—an eternal light in hearts\"",
+            "childhood": "Children's art exhibition \"Planet of childhood\""
+          }
+    },
+
+
+
+
+    "Exhibitions": {
+      "women": {
+      "span1": "The exhibition was made possible through the partnership with the National Archive of Cinema, Photo, and Sound Documents of Uzbekistan.",
+      "text1": "Through the lens of archival photos and film materials, we invite you on a fascinating journey into the history and culture of Uzbekistan, highlighting women's strength, creativity, and inspiration. The exhibition “Women of Uzbekistan: Transformation” is a unique project that explores the multifaceted lives of women and their influence on society across different historical periods.",
+      "text2": "In the 1920s, women removed the paranja as a symbol of lack of freedom and total dependence, marking the beginning of women's emancipation and laying the foundation for gender equality. Prominent educators of the time – M. Kori, M. Behbudi, A. Qodiriy, Kh. Niyoziy, A. Fitrat, and A. Chulpan – advocated for women’s rights and raised the issue of their education, recognizing that women are the ‘nurturers of the nation,’ and the future of the nation depends on their level of education. A campaign called ‘Hujum’ was later organized to remove the paranja and improve women's lives. While continuing to maintain their traditional role in the household, women also began actively participating in the country’s social and political life.",
+      "text3": "The 20th-century history of Uzbekistan is full of remarkable women who played an important role in shaping modern society and proved their strength and dedication.",
+      "text4": "Over the past century, the image of Uzbek women has gradually changed, and in just the last few years, their role and status in society have significantly grown. The independence of Uzbekistan marked a new and important chapter in women's lives, enhancing their status in public and political life. Under the leadership of President Shavkat Mirziyoyev, women began holding important positions in the parliament, government, and local authorities. Furthermore, legal measures were adopted to protect women’s rights and to prevent discrimination and domestic violence.",
+      "span2": "The exhibition invites you to reflect on the path that Uzbek women have taken, to recognize their contributions in different spheres of public life, and to inspire future generations!"
+    },
+    "devonov": {
+      "text1": "The earliest known photographic images of Turkestan were taken by chance in the Khanate of Khiva. The Peter the Great Museum of Anthropology and Ethnography (Kunstkamera) of the Russian Academy of Sciences in St. Petersburg holds a photo album titled “Views and Types of the Khanate of Khiva.”",
+      "text2": "Initially, the photographers documenting Turkestan were not of local origin. In the traditional mentality of the East, where Sharia law strongly discouraged depictions of living beings, portrait photography was considered unheard of. But in 1903, in New Urgench of the Khanate of Khiva, Khudaybergen Devonov founded his own photo studio. His work has attracted increasing attention from researchers studying the history of photography in Uzbekistan.",
+      "text3": "Khudaybergen Devonov, the first Uzbek photographer and cinematographer, was born in 1879 in Khiva into the family of court secretary Nurmuhammad Devon, a close associate of the enlightened Khivan khan Sayyid Muhammad Rahim II.",
+      "text4": "It happened that young, curious Khudaybergen once took part in a photo session held on the streets of Khiva by Wilhelm Penner, a Mennonite elder from a German settler village. Locals affectionately called him ‘Ponar-buva’ (Grandpa Lantern). Penner introduced the boy to the art of photography, including developing glass negatives and printing. The boy quickly learned the craft and began taking his own photos using a German camera – a ZOT – gifted to him by his teacher.",
+      "text5": "Thus emerged the first native photographer in Central Asia, who would go on to become the founder of Uzbek photography and the country's first national cinematographer.",
+      "text6": "Devonov’s early photographs were ethnographic in nature, filled with genuine love for his people and Khorezm's history – images of tightrope walkers by city walls, hunters with birds of prey, distinctive Khivan carts, and irrigation workers cleaning canals. His works show a blend of ethnographic documentation and artistic approach. This is visible even in his photographs of architectural landmarks. In terms of quality, Devonov’s early works are on par with those of his contemporary masters. Many of his prints feature Arabic-script annotations and dates made by the author himself, indicating that he began his creative photography as early as the 1890s.",
+      "text7": "In the early 20th century, photographs were widely used for printing on postcards, which helped popularize this new art form. However, images of the Khanate of Khiva were rarely seen on such mass-produced items. The reason is that the main publisher of photo postcards in pre-revolutionary Russia was the Suvorin Agency, which had exclusive rights to sell postcards at all railway stations in the empire. As a result, even small towns along railway lines were depicted on postcards – but Khiva had no rail connection.",
+      "text8": "Only in the 1920s–30s did large collections of photographs begin to appear, documenting the architecture, ethnography, and natural landscapes of the Khiva oasis. These were mostly taken by participants of various scientific expeditions to this remote region. Particularly notable are the many photographs from the famous Khorezm Expedition led by Professor S.P. Tolstov, which began in 1936 and continued for several years.",
+      "text9": "Most of the popular images of Khorezm were taken in the postwar years, when the region rightfully earned the title of the country's ‘tourist Mecca.’ This became especially evident in the late 1990s, when Uzbekistan celebrated the 2500th anniversary of Khorezm. Today, beautifully published photo albums and books continue to convey the unique charm of Khiva, rightly called an open-air museum of architecture and ethnography."
+    },
+    "umar": {
+      "text1": "Umar Rajabov can be considered one of the most progressive contemporary artists. What began as a childhood passion grew into a lifelong calling. His continuous self-improvement and innovative spirit are among his most distinctive traits.",
+      "text2": "For Umar, creativity is a source of life. In his works, he strives to capture not only the ancient historical monuments of our unique country but also the everyday life of ordinary people and the pressing issues of modern society.",
+      "text3": "The architectural landscapes of historic monuments created by the artist are unique — they embody the spirit of antiquity fused with modern artistic trends.",
+      "text4": "Another distinctive feature of the artist is his curiosity. He doesn’t confine himself to a single style or genre. With each new work, he seeks to experiment with new techniques and approaches, always aiming for the best artistic solution.",
+      "text5": "The artist travels extensively and translates his impressions, emotions, and experiences onto canvas. Umar is a highly observant artist who doesn’t want his art to merely decorate interiors — he aims to embed deeper meaning into every piece. Looking at his paintings, the viewer is drawn to explore and reflect on their meaning.",
+      "text6": "This exhibition presents the result of Umar Rajabov’s creative explorations in recent years, clearly showing that he puts his heart and soul into every work. Each piece reflects his personal artistic search and his perspective on today’s world."
+    },
+    "east": {
+      "text1": "The Gallery of Fine Arts of Uzbekistan is hosting an exhibition of miniature artworks titled “Eastern Motifs,” dedicated to the 583rd anniversary of the birth of the great poet and thinker Alisher Navoi. The exhibition was initiated by Dr. Kamola Akilova, Director of the Gallery of Fine Arts of Uzbekistan and Doctor of Art History, and organized by B. Khadjimetov, Chairman of the Miniature Section of the Creative Artists’ Union under the Academy of Arts of Uzbekistan.",
+      "text2": "The works on display represent various directions and styles of miniature painting, ranging from the classical traditions of the 15th–16th centuries to unconventional contemporary approaches. The artists’ pieces explore historical, lyrical, and even modern themes. Their choice of materials is diverse: alongside traditional media such as paper, cardboard, and leather, miniatures are also presented on lacquered wood panels, dishes, and boxes of various shapes and sizes.",
+      "text3": "The exhibition features the works of leading miniature artists of Uzbekistan who not only strive to preserve the traditions of classical miniature painting but have also developed their own unique styles. Among them are N. Kholmatov, Sh. Shoakhmedov, U. Kasimov, K. Amonov, M. Sabirov, B. Khadjimetov, K. Mirzaev, K. Abdullaev, K. Shoislamov, Z. Khakimov, B. Khadjimetov, R. Tokhtaev, G. Atabayev, D. Polatova, as well as emerging artists such as R. Aliboev, B. Dedashev, Sh. Arifboev, S. Jalilova, D. Khoshimova, and N. Akhmadalieva.",
+      "text4": "“Eastern Motifs” introduces viewers both to examples of classical miniatures and the results of modern creative explorations. The exhibition also includes multimedia projects using computer technologies—animated miniature works by animators N. Juraev and J. Kayumov, as well as video tutorials by B. Khadjimetov and his student N. Akhmadalieva."
+    },
+    "mirtajiyev": {
+      "span1": "This exhibition is dedicated to the 70th anniversary and the memory of the renowned Uzbek sculptor Jalaliddin Mirtajiyev.",
+      "text1": "People’s Artist of Uzbekistan, sculptor Jalaliddin Tursunovich Mirtajiyev was born in 1954 in Tashkent. From 1968 to 1972, he studied sculpture at the Republican Art School named after P.P. Benkov under the guidance of F.I. Grishchenko. He graduated from the Tashkent Institute of Theatre and Art named after A. Ostrovsky in 1977. A member of the Union of Artists of Uzbekistan since 1983, and of the Creative Artists’ Union under the Academy of Arts of Uzbekistan since 1997, he participated in numerous national and international exhibitions. From 2005 to 2015, Mirtajiyev served as Deputy Chairman of the Academy of Arts of Uzbekistan. His easel works are preserved in museum collections in Uzbekistan and private collections abroad.",
+      "text2": "Through his art, Jalaliddin Mirtajiyev made a significant contribution to the development and promotion of national spiritual culture both in Uzbekistan and internationally. Across the country, monuments dedicated to national heroes, prominent scholars, thinkers of the East, writers, and cultural figures have been erected. Among them are: Zahiriddin Muhammad Babur (Andijan), Cholpon, Abdurauf Fitrat (Bukhara), Abdulla Qodiriy (Tashkent), Gafur Gulyam (Tashkent), Zulfiya (Tashkent), Elbek (Tashkent Region), “El-yurt tayanchi” (Karshi), and “Motherhood” (Andijan, Fergana)—all of which are integral parts of Uzbekistan’s cultural heritage.",
+      "text3": "Over the last decade, the artist erected many monuments beyond Uzbekistan as well. In Moscow (2002), Baku (2008), and Tokyo (2004), monuments to the great Eastern poet Alisher Navoi were installed; in China, a monument to Kamoliddin Behzod (2003); in Riga, monuments to astronomer and thinker Mirzo Ulugbek (2004) and to scholar and public figure Abu Ali Ibn Sina (2006); and in Cairo, a monument to the great scientist Al-Farghani (2007).",
+      "span2": "During the years of Independence, Mirtajiyev earned wide respect and recognition both at home and abroad. For his contributions to the arts, Jalaliddin (Ravshan) Mirtajiyev received the following awards:",
+      "list1": "1998 – Laureate of the Zahiriddin Muhammad Babur International Prize.",
+      "list2": "1998 – Honored Cultural Worker of the Republic of Uzbekistan.",
+      "list3": "2003 – People’s Artist of Uzbekistan.",
+      "list4": "2004 – Awarded the Gold Medal of the Fuji Art Museum (Tokyo, Japan) for outstanding contributions to art.",
+      "list5": "2009 – Recognized as Sculptor of the Year in Uzbekistan.",
+      "list6": "2009 – Honorary Professor of Shanghai University (China).",
+      "list7": "2011 – Honorary Professor of Harbin University (China).",
+      "list8": "2013 – Laureate of the Medal of the Russian Academy of Arts (for the monument to Alisher Navoi).",
+      "list9": "2013 – Awarded the Badge of Honor by the Moscow City Duma (for the monument to Alisher Navoi).",
+      "span3": "By decree of the President of the Republic of Uzbekistan Sh.M. Mirziyoyev, in recognition of his service to Uzbek art and in memory of Jalaliddin (Ravshan) Mirtajiyev, he was posthumously awarded:",
+      "list10": "2018 – The \"E’tirof\" Prize.",
+      "list11": "2021 – The Order \"For Selfless Service\".",
+      "list12": "2022 – Laureate of the State Prize of the 2nd Degree in the field of art and architecture."
+      },
+      "synapse": {
+        "text1": "The \"5+1\" group was founded in 2008 by staff members of the Uzbek National Bank’s Gallery. Members include: Diyor Razikov, Sanjar Jabbarov, Sharifa and Daniyar Sharafkhodjaev, Nuriddin Rasulov, and Uktam Saidov. This year, Yakub Beknazarov also joined the project.",
+        "text2": "For over 15 years, the group has successfully presented their projects to the public. These include: \"5+1\" (2008), \"Vertical\" (2009), \"SENSUS\" (2010), \"Silentium\" (2010), \"Magnet\" (2013), \"Spectrum\" (2015), \"White Light\" (2018), and \"Mobilization\" (2022).",
+        "text3": "At the IX Tashkent International Biennale of Contemporary Art in 2022, the \"5+1\" group was awarded the Grand Prix.",
+        "text4": "A healthy human brain contains about 200 billion neurons, which are interconnected through hundreds of trillions of synapses. Each neuron can form tens of thousands of synaptic connections.",
+        "text5": "The synapse (from Greek σύναψις, meaning ‘connection’ or ‘link’) is a specialized structure essential for transmitting nerve impulses in the nervous system. It forms the junction between neurons and enables the transfer of information through electrical and chemical signals. The importance of synapses in brain and nervous system function cannot be overstated—they are fundamental to neural communication.",
+        "text6": "Within the framework of the exhibition theme, the artists of the \"5+1\" group aim to succinctly and expressively convey the 'neural' currents that have connected them for over 15 years, capturing the stream of emotions and thoughts that flow through their consciousness, while maintaining their individuality and finding resonance with each other.",
+        "text7": "Just as synaptic transmission can regulate signal amplitude and frequency, the internal dynamics of the \"5+1\"' group allow each artist to integrate their personal perceptions into a shared stream of consciousness, enabling effective thematic exploration and coordinated collaboration. This synergy helps them adapt to changing conditions and respond meaningfully to diverse events."
+      },
+      "memory": {
+        "text1": "The exhibition is organized by the Public Foundation for the Support and Development of National Mass Media, the State Museum of the Memory of Victims of Repression under the Cabinet of Ministers of the Republic of Uzbekistan, the Institute of History of the Academy of Sciences of the Republic of Uzbekistan, and the Gallery of Fine Arts of Uzbekistan.",
+        "text2": "The exposition offers a multifaceted exploration of Jadidism—a movement aimed at modernizing society, promoting enlightenment, and establishing a democratic rule-of-law state in Turkestan in the early 20th century. Through official documents, photographs, and personal belongings of the Jadids, the “Tunnel of Memory” guides visitors through historical milestones, revealing the influence of the Jadids on the formation of national identity, independence, and statehood in the region.",
+        "text3": "Special focus is placed on the conditions and factors that gave rise to the Jadid movement in Turkestan and on its key leaders. Exhibition sections also highlight the socio-economic situation of the time, the emergence of new-method schools, theatre art, contemporary media, gender equality, and other major aspects of the Jadids’ educational and reformist activities.",
+        "text4": "The \"Tunnel of Memory\" exhibition offers a unique opportunity not only to learn more about Uzbekistan’s history but also to experience and immerse oneself in the spirit of the era—understanding the aspirations of that time and drawing parallels with the present.",
+        "text5": "The exposition also aims to preserve and popularize our historical heritage."
+      },
+
+
+"nbuCollection": {
+  "text1": "The art collection assembled by the National Bank of Uzbekistan since 1994 laid the foundation for the creation of the gallery. Today, it stands as one of the most significant art collections in the country, uniting the works of leading masters of the 20th and 21st centuries.",
+  "text2": "The permanent collection of the National Bank holds more than 1,900 works of painting and graphic art, as well as around 2,500 unique ancient coins, covering various historical epochs of Uzbekistan — from the ancient civilizations of Sogdiana to the Islamic dynasties and the Timurid era. This collection allows viewers to trace the artistic evolution of Uzbekistan.",
+  "text3": "The exhibition features iconic works by prominent representatives of Uzbekistan’s distinctive artistic tradition — including U. Tansykbaev, Usto Mumin, A. Abdullaev, N. Kuzybaev, M. Yuldashev, R. Gagloeva, B. Djalalov, L. Bure, and P. Benkov, as well as works by young artists whose pieces reflect contemporary life, rich in events that shape the present and future of the republic.",
+  "text4": "Part of the collection is also available in an online format –",
+  "text5": "view collection"
+},
+
+
+        
+
+
+      "hotira": {
+        "text1": "The Art Gallery of Uzbekistan hosted the opening of a graphic art exhibition titled “Memory,” dedicated to the Day of Remembrance and Honor.",
+        "text2": "This artistic project pays tribute to the spirit of peace, courage, and self-sacrifice, awakening the memory of ancestors through powerful visual imagery.",
+        "text3": "The exhibition features 45 graphic works by renowned artists such as Qutlug Bashirow, Lekim Ibragimov, Medat Kagarov, Nuriddin Kalanov, Gennadiy Zhirnov, Georgiy Chiganov, and other masters.",
+        "text4": "These works not only recall the past but are also rich in emotional depth, conveying inner states, moods, and personal memory through striking visual language."
+      },
+      "childhood": {
+       "text1": "The tradition continues! In celebration of International Children's Day, the Art Gallery of Uzbekistan has once again opened its inspiring exhibition of children's creativity, titled “Planet of Childhood.”",
+        "text2": "This year, alongside the studio 'The Beginning of Great Success' (B.G.S.), which has been introducing children to the world of art for over 20 years, more than 20 leading children's art studios from Tashkent took part in the project.",
+        "text3": "The exhibition features works filled with love for the homeland, reflections on the future, and children's interpretations of masterpieces by great artists from around the world.",
+        "text4": "As part of the festive program, there was a concert featuring the ensembles 'Tabassum' and 'Aria,' and the art bureau 'Kolibri' presented a new seasonal clothing collection — original denim jackets designed by the children themselves."
+      }
+
+    }
+    
+
+
+              
+}

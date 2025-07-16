@@ -1,0 +1,439 @@
+{
+  "Choose_lang": "O‘zbek",
+  "aboutGallery": {
+    "title": "Biz haqimizda",
+    "subtitle": "O‘zbekiston Tasviriy san’at galereyasi",
+    "text": "O‘zbekiston poytaxtida, xalqning eng ulug‘ va qadrli bayrami – Mustaqillik kuni arafasida, yangi, noyob madaniyat markazi — O‘zbekiston Tasviriy san’at galereyasi o‘z eshiklarini ochdi."
+  },
+  "read_more": "Batafsil",
+  "coin_collection": {
+    "title": "Qadimiy tangalar",
+    "subtitle": "Mamlakatdagi birinchi numizmatika kolleksiyasi tarixi",
+    "text": "Kolleksiya qadim zamonlardan to hozirgi kungacha Markaziy Osiyoda muomalada bo‘lgan tangalarni o‘z ichiga oladi va ular katta tarixiy, madaniy va ilmiy ahamiyatga ega."
+  },
+  "header": {
+    "menu": {
+      "nav": "Menyu",
+      "nav_title_1": "Galereya",
+      "nav_title_2": "Tashrif Buyurganlar",
+      "nav_title_3": "Kontaktlar",
+      "first": {
+        "item1": "Biz haqimizda",
+        "item2": "Ko‘rgazma konsepsiyasi",
+        "item3": "Kolleksiya",
+        "item4": "Qadimiy tangalar"
+      },
+      "second": {
+        "item1": "Tashrifni rejalashtirish",
+        "item2": "Ko‘rgazmalar",
+        "item3": "Virtual sayohat",
+        "item4": "O‘zbekiston san’ati tarixi"
+      },
+      "third": {
+        "item1": "Biz bilan bog‘laning"
+      }
+    },
+    "news": {
+      "title": "Bugun galereyada"
+    },
+    "wh": {
+      "title": "Bugungi ish vaqti",
+      "text1": "Pensionerlar va talabalar uchun ",
+      "text2": "50% chegirma ",
+      "text3": "chiptalar xaridida amal qiladi.",
+      "plan": "Tashrif",
+      "closed": "Yopiq"
+    },
+    "events": {
+      "title": "Ko‘rgazmalar",
+      "read_more": "Batafsil"
+    }
+  },
+  "gallery": {
+    "title": "Onlayn kolleksiya",
+    "read_more": "Kolleksiya",
+    "box1_title": "Lolaqizg'aldoqlar",
+    "box1_text": "Inna Vasilievna",
+    "box2_title": "Daraxt yonidagi qiz",
+    "box2_text": "Nadejda Kashina",
+    "box3_title": "Qadimgi Urganch",
+    "box3_text": "Yuriy Taldikin",
+    "box4_title": "Manzara",
+    "box4_text": "Vladimir Rojdestvenskiy",
+    "box5_title": "Qish oqshomi",
+    "box5_text": "Sergey Yudin",
+    "box6_title": "Aqldan ozgan rassom",
+    "box6_text": "Murod Qarabayev",
+    "box7_title": "Non va anorlar",
+    "box7_text": "Viktor Ufimtsev",
+    "box8_title": "Uyg‘onish",
+    "box8_text": "Rixsitilla Akramov"
+  },
+  "virtualConcept": {
+    "vr": {
+      "title": "Virtual sayohat",
+      "text": "Uyda o‘tirgan holda galereyani tomosha qiling."
+    },
+    "concept": {
+      "title": "Ko‘rgazma konsepsiyasi",
+      "text": "3 500 kv.m maydonli ikki qavatli ekspozitsion-ko‘rgazma maydoni."
+    }
+  },
+  "footer": {
+    "location": "Buyuk Turon ko‘chasi 2, Toshkent",
+    "end": {
+      "usage": "Sayt materiallaridan foydalanish shartlari",
+      "gov": "O‘zbekiston tasviriy san’at galereyasi",
+      "credits": "Veb-ilova ishlab chiqish",
+      "me": "A. Sultanov"
+    },
+    "address": "Manzil"
+  },
+
+
+
+
+
+   "PageAbout": {
+    "header": {
+      "title": "O'zbekiston Tasviriy San'at Galereyasi haqida"
+    },
+    "intro": "Mustaqillik kuni poytaxtimizda yangi va noyob madaniy markaz — O'zbekiston Tasviriy San'at Galereyasi eshiklarini ochdi.",
+    "buildingTitle": "Galereya binosi",
+    "buildingText1": "Samarqand, Buxoro va Xiva kabi qadimiy madaniy markazlarning me'moriy durdonalariga asoslangan milliy uslubda qurilgan O'zbekiston Tasviriy San'at Galereyasi shunga o'xshash zamonaviy muassasalarning barcha talablari va standartlariga javob beradi.",
+    "buildingText2": "Poytaxtimizning markazida yangi ansamblning ajralmas qismi bo'lgan ushbu ajoyib inshoot mahalliy hunarmandchilikning boy me'moriy an'analari va milliy qurilish materiallaridan foydalanish bilan yaratilgan. Galereya loyihasi va qurilishi Italiya, Germaniya, Buyuk Britaniya, AQSh va Rossiyadagi yetakchi muzeylar va ko'rgazma zallari tajribasidan foydalangan holda amalga oshirilgan. Shu tufayli, Markaziy Osiyo va MDH mamlakatlarida tengi yo'q noyob madaniy markaz barpo etildi.",
+    "buildingText3": "Zamonaviy texnik jihozlar galereyada asarlarni to‘g‘ri namoyish etish va saqlash uchun harorat, namlik va xavfsizlikning qat'iy me'yorlariga amal qilish imkonini beradi. Binoda ma'ruza zali, kino zali, kutubxona, mahorat darslari uchun studiyalar va ustaxonalar mavjud bo‘lib, galereya san'at tarixi, ilmiy izlanishlar va restavratsiya markazi sifatida faoliyat yuritadi, shuningdek, yirik xalqaro ko'rgazmalarni professional darajada qabul qilishi mumkin.",
+
+    "treasuresTitle": "San'at va tarix xazinalari",
+    "treasuresText1": "San'at Galereyasining ilk ko'rgazmasida 20-asr O'zbekiston tasviriy san'atining eng yaxshi namunalaridan bo'lgan 300 dan ortiq asar namoyish etilgan. Bu to'plamda Usto Mumin, U. Tansiqboyev, A. Abdullaev, N. Kuziboyev, M. Yuldashev, R. Gagloeva, B. Jalolov, L. Bure, P. Benkov kabi mashhur rassomlarning asarlari va hozirgi O'zbekistonning hayoti va ruhiyatini aks ettirgan yosh rassomlarning ishlari o'rin olgan. Ushbu ko'rgazma 1994 yilda tashkil etilgan Milliy bankning San'at galereyasi to'plamiga asoslangan.",
+    "treasuresText2": "Galereya to'plamining alohida e'tiborga molik qismi —",
+    "treasuresText3": " numizmatik to'plam ",
+    "treasuresText4": "bo'lib, bu Milliy bankning san'at asarlari orasidagi haqiqiy durdona hisoblanadi. Shuni bemalol ta'kidlash mumkinki, bankning tangalar to'plami dunyoning eng yirik muzeylaridagi — jumladan, London Britaniya muzeyi bilan — bellasha oladigan darajada boy va noyobdir. Uning o'ziga xosligi shundaki, bu to'plam O'zbekiston hududida zarb etilgan tangalarni o'z ichiga oladi, ko'plab tangalar esa jahon tarixchilari uchun ilgari noma'lum bo'lgan. Bu to'plam Sog'diyona, Xorazm, Choch, Ustrushona, Umaviylar va Abbosiylar xalifaligining markaziy osiyolik hokimlari, shuningdek, Temuriylar davlati va boshqa mintaqaviy hukmdorlarning tangalarini o'z ichiga oladi. 2500 yildan ortiq tarixni qamrab olgan bu to'plam O'zbekistonning chuqur madaniy va davlat barpo etish an'analarini aks ettiradi. Milliy bankning sa'y-harakatlari tufayli yuzlab noyob va tarixiy ahamiyatga ega tangalar saqlanib qolgan va bugun milliy boylik sifatida qadrlanadi.",
+
+    "missionTitle": "Galereya vazifasi",
+    "missionText1": "Davlatning asosiy moliyaviy muassasasi sifatida xalqaro moliya bozorida faoliyat yuritish bilan birga, O'zbekiston Milliy banki respublikada ijtimoiy, madaniy va ma'naviy hayotni rivojlantirishni ham faol qo'llab-quvvatlab kelmoqda. So'nggi 20 yil ichida bankning San'at galereyasi nafaqat iste'dodli o'zbek rassomlarining ijodini targ'ib qilib, milliy san'atning boy merosini dunyoga namoyish qildi, balki madaniy merosni asrab-avaylashda muhim rol o'ynadi. Bu hissani birinchi Prezidentimiz San'at galereyasiga tashrifi chog'ida alohida e'tirof etgan edi. Bank o'z to'plamidan ko'rgazmalar tashkil etib, mintaqaviy rassomlarning asarlarini targ'ib qilish uchun ham maxsus ko'rgazmalar uyushtirib keladi. Shuningdek, O'zbekistonning madaniy merosini butun dunyoga tanitish uchun Milliy bank san'at kataloglarini nashr etib, ularni turli mamlakatlardagi muzey va galereyalarga yetkazmoqda.",
+    "missionText2": "Galereya to'plamiga tashrif buyurganida Prezident ma'naviy taraqqiyot zamonaviy O'zbekistonning asosiy tayanchlaridan biri ekanligini ta'kidladi. Milliy tasviriy san'at galereyasining tashkil etilishi o'zbek xalqining madaniy yuksalishga bo'lgan sadoqati va boy san'at hamda ma'naviy merosini asrab-avaylashga intilishining yorqin ifodasi bo'lib, bu esa millatning buyuk kelajagini ta'minlaydi.",
+
+    "sponsorsTitle": "Homiylar va hamkorlar",
+    "sponsorsText": "San'at galereyasini yaratishda asosiy homiy va tashabbuskor — O'zbekiston Milliy banki bo'lib, shu bilan birga O'zbekiston Badiiy akademiyasi, Madaniyat vazirligi, Ko'rgazmalar direksiyasi va Davlat san'at muzeyi ham faol yordam ko'rsatdi."
+  },
+
+  "PageCoins": {
+  "header": {
+    "title": "Qadimiy tangalar to‘plami"
+  },
+  "coinsIntro": "O‘zbekiston Respublikasi Tashqi iqtisodiy faoliyat milliy banki mamlakatimiz o‘tmishining yodgorliklarini — milliy boyligimizni saqlab qolishdek olijanob ishga munosib hissa qo‘shib kelmoqda. Bank faoliyatining o‘ziga xos xususiyatidan kelib chiqqan holda, uning uchun eng qiziqarli sohalardan biri — O‘zbekiston hududida ming yillar davomida muomalada bo‘lgan numizmatik yodgorliklar — tangalardir.",
+  "coinsFormationTitle": "Noyob tangalar to‘plamini shakllantirish",
+  "coinsText1": "Mustaqillikka erishganimizdan so‘ng, mamlakatimiz o‘z milliy pul muomalasi tizimini faol va maqsadli ravishda shakllantira boshladi. Suveren O‘zbekistonning tangalari va banknotlari to‘laqonli pul muomalasi vositalari bo‘lib, davlatimizning mustaqil moliyaviy siyosatini ifodalaydi. Ularning ishlab chiqarilishida xalqimizning boy tarixiy va madaniy qadriyatlari inobatga olingan.",
+  "coinsText2": "Shu munosabat bilan, Milliy bank yutuqlari qatorida mamlakatimizda ilk bor bank tangalar to‘plamini yaratish alohida o‘rin egallaydi, deb aytish mubolag‘a bo‘lmaydi.",
+  "coinsText3": "To‘plamni shakllantirish — bu oddiy emas, mas’uliyatli ish bo‘lib, ma’lum metodikani talab etadi. Mazkur to‘plamni shakllantirish jarayonida bunday metodika ishlab chiqilgan va muvaffaqiyatli qo‘llanilmoqda. Umuman olganda, bu metodikani ikki o‘zaro to‘ldiruvchi tamoyilga keltirish mumkin, ular barchasidan ustun bo‘lgan yagona tamoyildan — numizmatik yodgorliklar shaklida ifodalangan milliy boylikni saqlab qolish g‘oyasidan kelib chiqadi.",
+  "coinsText4": "Avvalo, albatta, eng noyob yodgorliklarni saqlash va asrash kerak. Milliy bank numizmatik to‘plamida allaqachon dunyoning istalgan muzeyini bezab qo‘yishga qodir bo‘lgan noyob tangalar mavjud. Ammo faqat noyobliklarni yig‘ish hududning pul muomalasining to‘liq manzarasini bera olmaydi, shu bois, ikkinchi tamoyilni — Bank to‘plamida O‘zbekiston hududidagi pul muomalasini imkon qadar to‘liq va batafsil (hatto shtempel xilma-xilligigacha) aks ettirishga intilishni — amalga oshirish zarurati yuzaga keladi.",
+  "coinsText5": "Shu tariqa, Milliy bank numizmatik to‘plami to‘ldirilishi davomida to‘plam tobora mukammal va yaxlit ko‘rinishga ega bo‘lib bormoqda. Mavjud bo‘limlardagi bo‘shliqlar asta-sekin to‘ldirilmoqda, ayrim tangalar yangi bo‘limlar asosiga aylanmoqda, noyob namunalar esa faxr va qoyil qolish hissini uyg‘otadi. Miqdor sifatga aylanmoqda.",
+  "coinsHistoricalTitle": "Tarixiy ahamiyati",
+  "coinsText6": "Mazkur to‘plamning alohida ahamiyati shundaki, uning katta qismi jahon ilm-faniga deyarli noma’lum bo‘lgan mintaqaviy zarb tangalardan iborat. Ular orasida So‘g‘d, Xorazm, Choch, Ustrushona, Umaviylar va Abbosiylarning Markaziy Osiyodagi noiblari hamda mahalliy musulmon sulolalarining tangalarini tilga olish mumkin.",
+  "coinsText7": "Ushbu ulkan tarixiy davrning har bir bosqichida pul muomalasining manzarasi nihoyatda rang-barang. Mahalliy zarb tangalar ustunlik qilgan bo‘lsa-da, ayrim davrlarda chetdan keltirilgan tangalar ham muomalada bo‘lgan. Qadimda Markaziy Osiyo, xususan, O‘zbekiston hududida Aleksandr Makedonskiy va Xitoy tangalari muhim rol o‘ynagan. To‘plamda Aleksandr draxmasi va ikki ming yil avval chiqarilgan Xitoy mis tangasi mavjud. Ammo eng katta qiziqish uyg‘otadigan tangalar bu zamonaviy O‘zbekiston hududi kirgan davlatlar tangalaridir. Dastlabki davrda bu Selevkiylar, yunon-baqtriya podshohlari, Parfiya va Kushonlar podsholigi tangalaridir.",
+  "coinsText8": "Ayniqsa, qadimgi xorazmiy podshohlarning go‘zal portretlari tushirilgan draxmalar va mis tangalarni alohida qayd etish lozim. Bu tangalar juda kam uchraydi va dunyoning eng yirik numizmatik to‘plamlarining faxridir. O‘rta asr tangalari orasida Buxoro So‘g‘di va Choch tangalari ajralib turadi. Ular yozma manbalarda deyarli yoritilmagan davr haqida juda qimmatli ma’lumot beradi.",
+  "coinsText9": "Umaviylar, Abbosiylar va Somoniylarning Markaziy Osiyodagi noiblari zarb qilgan tangalarning ahamiyatini ortiqcha baholab bo‘lmaydi. Ular nafaqat juda noyob, balki tarixiy ahamiyati jihatidan ham katta qimmatga ega. Ko‘pincha, ular mahalliy hokimlar haqida yagona manba sifatida xizmat qiladi va ular haqida ko‘plab tadqiqotlar yozilgan.",
+  "coinsText10": "Buxoro amirligi, asosan, oltin tangalar orqali taqdim etilgan. Tarixiy me’yorlarga ko‘ra unchalik ham qadimiy bo‘lmagan, ammo saqlanish holati juda yaxshi bo‘lgan tillalar ba’zan sirli bo‘lib chiqadi — ayrimlarida ikki xil zarb sanasi bor, ba’zilari esa qofiyalangan yozuvlarga ega bo‘ladi. Yana boshqa hollarda bu davlatning oltin tangalari o‘ziga xos belgilar bilan bog‘liq bo‘lib, ularni hali ilm-fan tomonidan yechish talab etiladi.",
+  "coinsCulturalTitle": "Madaniy meros",
+  "coinsText11": "Yaxshi ma’lumki — har qanday to‘plam uning tarkibidagi buyumlar yig‘indisidan ko‘ra ko‘proq narsani anglatadi. Ayniqsa, O‘zbekiston Milliy bankining numizmatik to‘plami kabi muhim to‘plam — bu, avvalo, insonning o‘z o‘tmishini anglashga, uni saqlab qolish va kelajak avlodlarga yetkazishga bo‘lgan abadiy intilishining ifodasidir."
+},
+
+"PageConcept": {
+  "header": {
+    "title": "Ko‘rgazma kontseptsiyasi"
+  },
+  "first_floor": {
+    "title": "Birinchi qavat",
+    "subtitle1": "Ko‘rgazma mavzusi: \"XX asr boshlarida O‘zbekiston tasviriy san’ati milliy maktabining shakllanishi\"",
+    "text1": "XX asr boshlarida, mintaqada madaniyatning umumiy yevropalashtirilishi jarayonida, O‘zbekistonda molbertli rassomlik Yevropa madaniyatining bir ko‘rinishi sifatida rivojlana boshladi. Asosan Sankt-Peterburg Badiiyat akademiyasi bitiruvchilari bo‘lgan S. Yudin, L. Bure, I. Kazakov kabi rus rassomlarining asarlarida 'etnografik' yo‘nalish shakllanib, unda O‘zbekiston shaharlarining manzaralari, kundalik hayoti, moddiy madaniyati va tarixi ekzotik tarzda tasvirlandi. Rus rassomlarining sharqona hayotning yorqin ranglari va arxitektura go‘zalligiga bo‘lgan hayratlari, Yevropa madaniyatining XX asr boshida Sharqqa bo‘lgan kuchli qiziqishini aks ettiradi. An’anaviy Sharq rassomlar uchun tabiiylik va ma’naviy poklik, tabiat bilan uyg‘unlik va yuksak ma’naviy qadriyatlarni ifodalovchi manba bo‘ldi. O‘zbekiston rus rassomlarining rangtasvir palitrasini boyitdi va ularning ijodiy izlanishlariga chuqur ta’sir ko‘rsatdi.",
+    "text2": "1920-yillarda O‘zbek tasviriy san’atining milliy maktabi shakllana boshladi. Bu davr Yevropa madaniyatida antropotsentrizmning inqirozi bilan uyg‘un keladi. Rassomlar mavjud burjua sivilizatsiyasi va madaniyatiga qarshi chiqib, hayotning standartlashuvi, riyo, va yolg‘on go‘zallik kabi hodisalarga norozilik bildirdilar. Ular rasionallik o‘rniga irratsionallikni, ob’ektivlik o‘rniga sub’ektivlikni afzal ko‘rdilar. Bu izlanishlar rang, ritm va kompozitsiyadagi dissonans orqali yashirin ma’nolarni izohlashga olib keldi. Bu eksperimentlar keyinchalik avangard san’at sifatida tan olindi. 1920-yillarda ijod qilgan A. Volkov, A. Nikolaev, N. Karaxon, V. Ufimtsev, N. Kashina, O. Tatevosyan, U. Tansiqboyev, P. Benkov, V. Eryomen, Z. Kovalevskaya, M. Kurzin va A. Podkovyrov kabi rassomlarning asarlarida yuqori darajadagi avangard uslub ko‘rinadi. Biroq bu avangard mahalliy madaniyatning ko‘p asrlik an’analariga asoslangan edi. An’anaviy poetika va ruhiy merosning qayta talqini O‘zbekiston avangard rassomligini jahon miqyosida noyob fenomen sifatida ajratib turadi. Bu rassomlar kubizm, ekspressionizm va abstraksionizm kabi Yevropa oqimlaridan ilhom olish bilan birga, O‘zbekistondagi monumental san’at, miniatyura va amaliy bezak san’ati an’analariga tayandilar.",
+    "subtitle2": "Ko‘rgazma mavzusi: \"1930–1950-yillardagi O‘zbekiston tasviriy san’ati\"",
+    "text3": "1930-yillarda totalitar rejim o‘rnatilishi bilan yagona ruxsat etilgan san’at yo‘nalishi Sotsialistik realizmga aylandi. Bu holat o‘tgan davrdagi ijodiy yutuqlarning bostirilishiga olib keldi. Badiiy erkinlik tushunchasi estetika sohasidan chiqarildi. San’atning vazifasi jamiyatga xizmat qilish darajasiga tushirildi. Shunga qaramay, 1930–1950-yillardagi O‘zbek san’atini butunlay salbiy baholash noto‘g‘ri bo‘ladi. Bu davrda A. Volkov, N. Karaxon, N. Kashina, P. Benkov, B. Xamdamiy, A. Abdullayev, Ch. Axmarov, Sh. Xasanova, U. Tansiqboyev kabi mohir rassomlar ijod qildi. Ular sotsialistik estetika qoidalarini chetlab o‘tishga harakat qilib, uslubiy izlanishlar, milliy an’analarni saqlash va shaxsiy ifodani qidirishga e’tibor qaratdilar. 1950-yillarning ikkinchi yarmida realizm yana kuchayib, akademik rassomlar R. Ahmedov, N. Kuzybaev, M. Saidov, T. Oganesov, V. Jmakin, Yu. Elizarov, L. Reznikov, A. Gan, R. Timurov, G. Tkachev, Z. Inogamov, M. Kalantarov, B. Brinskix, V. Kovinin va grafik rassomlar V. Kaydalov, K. Cheprakov ijodlarida aks etdi. Ularning asarlari O‘zbekiston tasviriy san’atining oltin fondi sifatida qadrlansa-da, ular o‘z zamonasining ruhiy izlanishlarini ham aks ettiradi. Bu davrda milliylikni ifodalash portretlar, janrli sahnalar va mahalliy manzaralar orqali amalga oshirildi. Shu bilan birga, ayrim rassomlar, masalan, N. Shin, Stalin repressiyasi va koreys xalqi genotsidi kabi ijtimoiy og‘riqli mavzularni ko‘targan, biroq bu asarlar rasmiy san’at tizimiga kiritilmagan.",
+    "subtitle3": "Ko‘rgazma mavzusi: \"1960-yillarda O‘zbekiston tasviriy san’atida yangi g‘oya va shakllarni izlash\"",
+    "text4": "1960-yillarda yangi badiiy umumlashtirish shakllari va butunlay yangi plastik g‘oyalarning tasdig‘i yuzaga keldi. Bu davr O‘zbekiston rassomligida san’at yo‘nalishlari orasidagi ma’lum pluralizmning paydo bo‘lishi bilan ajralib turadi. Realistik maktab R. Ahmedov, V. Jmakin, Z. Inogamov, M. Saidov, Yu. Elizarov, D. Imamov, V. Zorkin, L. Salimdjanova, Yu. Strelnikov, B. Tokmin, A. Baymatov, A. Raxmatullaev, X. Xusnitdinhodjayev, K. Basharov, M. Kagarov va boshqalar ijodida rivojlanishda davom etdi. Mintaqada milliy san’at maktablarining shakllanishi bilan milliylik masalasi san’atda yangi mazmun kasb etdi. Bu nafaqat hayotni aks ettirish, balki umuminsoniy qadriyatlar va an’anaviy merosga yangicha qarash edi. Shu bilan birga, bezak uslubiga qaytish, qadimiy madaniyat an’analarining davomchiligini anglatdi. Bu tendentsiya Ch. Axmarov, N. Kashina, G. Ulko, R. Chariyev, V. Burmakin, Yu. Taldykin, E. Melnikov, R. Timurov, T. Pirmatov, A. Mirsagatov, N. Shin va boshqa rassomlar ijodida aks etadi."
+  },
+  "second_floor": {
+    "title": "Ikkinchi qavat",
+    "subtitle1": "Ko‘rgazma mavzusi: \"1970-yillardagi badiiy ifoda xilma-xilligi\"",
+    "text1": "1970-yillardagi O‘zbekiston rassomligi badiiy va uslubiy yo‘nalishlarning xilma-xilligi, an’anaviy maktablarga murojaat, janrlar evolyutsiyasi, mavzular kengligi va ijodkor shaxsiyatlarning boyligi bilan ajralib turadi. Bezak yo‘nalishi Sh. Abdurashidov, A. Mirzayev, R. Shadiyev, R. Gagloeva, Yu. Taldykin va E. Melnikov asarlarida rivojlanadi. Shu bilan birga, assotsiativ-metaforik tafakkur kuchayib, rassomlarning dunyoqarashi va individual tasviriy ifodasi orqali ochiladi. Dzh. Umarbekov, B. Jalolov, M. To‘xtayev, V. Axunov, A. Isaev, I. Izentayev, T. Muhammadov asarlari bunga misoldir.",
+    "subtitle2": "Ko‘rgazma mavzusi: \"1980-yillarda milliy o‘zlikni izlash jarayonidagi O‘zbekiston san’ati\"",
+    "text2": "Bu davrda akademik yo‘nalish S. Abdullayev, A. Ikramjonov, S. Raxmetov, M. Nuriddinov, T. Mirdjalilov, X. Mirzaxmedov, Dzh. Raxmanov, S. Raxmanov, M. Tashmurodov, A. Yusupov, A. Yunusov, A. Xatamov, I. Vaxitov, A. Ponomarev, M. Sodiqova va boshqalar ijodida rivojlanib, kamerallik va bezaklilik xarakterini oladi. Avlodlar davomiyligi, ma’naviy izlanishlar va avvalgi bosqich badiiy yutuqlari tahlili 1980-yillarning oxiri va 1990-yillar boshida ijodga kirib kelgan rassomlarga xosdir. L. Ibragimov, A. Nur, G. Qodirov, N. Imomov, M. Isanov, F. Ahmadaliyev, B. Maxamov, Sh. Quziyeva, O. Qozoqov asarlarida an’ana nafaqat uslubiy element, balki vatan, xalq, madaniyat va mentalitet bilan ma’naviy bog‘liqlik sifatida namoyon bo‘ladi. Ayni paytda A. Krikising avangard yo‘nalishdagi izlanishlari, I. Shinning o‘ziga xos kameral dunyosini yaratishi bu davrning muhim badiiy yo‘nalishlaridir.",
+    "subtitle3": "Ko‘rgazma mavzusi: \"Mustaqillik davridagi zamonaviy O‘zbekiston tasviriy san’ati\"",
+    "text3": "1990-yillarda O‘zbekiston rassomligi avvalgi bosqichlar yutuqlari asosida rivojlanishda davom etdi. 1997 yilda O‘zbekiston Badiiy Akademiyasi tashkil etilishi badiiy muhitga ijobiy ta’sir ko‘rsatdi: san’atkorlar maqomini oshirdi, O‘zbekiston san’atini xorijda targ‘ib qildi, jahon madaniy makoniga integratsiyani kuchaytirdi hamda zamonaviy san’atda turli yo‘nalishlarni qo‘llab-quvvatladi. Shu bilan birga, yosh rassomlar nomlari paydo bo‘lib, realizm, bezaklik, assotsiativ-metaforik, avangard va postmodernistik yo‘nalishlarda ijod qila boshladilar. Ular orasida D. Ro‘ziyev, K. Norkhurazov, U. Uraquv, N. Imomov, Dzh. Umarbekov, B. Jalolov, A. Mirzayev, L. Ibragimov, A. Nur, G. Abdurahmonova, A. Allabergenov, V. Apukhtin, Dzh. Usmonov, A. Nikolaev, B. Yo‘ldoshev, B. Ismoilov, Sh. Abdulayeva, N. Shoabdurahimov, G. Sultonova, Sh. Pirmatov, S. Kurdjemil, M. Qaraboyev, V. Yening, B. Obidov, T. Karimov, V. Nechayeva, A. Ligai, B. Muxtarov, T. Tojixodjayev va boshqalarni eslatib o‘tish mumkin.",
+    "text4": "Shu davrda O‘zbekiston fotografiya san’ati ham rivojlanadi. Bu zalda quyidagi rassom-fotograflarning asarlari namoyish etiladi: T. Quziyev, V. Sokolov, U. Ahmedova, V. An, V. Vyatkin, A. Shepelin, E. Kurtveliyev va boshqalar.",
+    "subtitle4": "Ko‘rgazma mavzusi: \"Markaziy Osiyo numizmatikasi san’ati — tarixiy va madaniy merosning muhim qismi sifatida\"",
+    "text5": "O‘zbekiston – dunyodagi eng qadimiy pul munosabatlari shakllangan hududlardan biridir. Bu yerda miloddan avvalgi IV–III asrlarda allaqachon selevklar va grek-baqtriya tangalari muomalada bo‘lgan. Miloddan avvalgi III asrdan boshlab Sug‘diyona hududida ilk mahalliy zarb tangalar paydo bo‘lgan. Shu tariqa, O‘zbekistondagi numizmatikaning tarixi 2300 yildan ortiq davrni qamrab oladi. Uning dastlabki bosqichlari Bactriya va Sug‘d tangalari bilan bog‘liq bo‘lsa, hozirgi bosqichi O‘zbekiston Respublikasi qog‘oz va metall pullarida ifodalanadi.",
+    "text6": "Tangalar o‘z davrining pul munosabatlarini aks ettirish bilan birga, mamlakatimiz tarixining hali o‘rganilmagan sahifalari, unutilgan sulolalar, tangalardagi nafis yozuvlar bilan mashhur xattotlar va portret san’atining yuksak darajasi haqida ma’lumot beradi. Ular miloddan avvalgi davrlardayoq Bactriya, Sug‘diyona va Xorazm hududlarida o‘z yozuv tizimlari mavjud bo‘lganini ko‘rsatadi.",
+    "text7": "O‘zbekiston Badiiy Galereyasi numizmatika to‘plami",
+    "text8": "miloddan avvalgi IV asrdan XX asr boshlarigacha Markaziy Osiyo tangalarini o‘z ichiga olgan bo‘lib, qadimgi davr, ilk o‘rta asrlar, Temuriylar davri, kech o‘rta asrlar hamda XIX–XX asr boshlarini qamrab oladi.",
+    "text9": "Galereya devorlarida ushbu tangalar topilgan arxeologik qazilmalar jarayonining suratlari namoyish etiladi."
+  },
+  "author": "Kamola Akilova",
+  "author_role": "San’atshunoslik fanlari doktori"
+},
+
+
+
+"PageHistory": {
+  "header": {
+    "title": "Oʻzbekiston tasviriy sanʼati tarixi"
+  },
+  "text1": "XIX asrda Markaziy Osiyoda tasviriy sanʼat, xususan, Toshkent, Samarqand, Buxoro va Qo‘qon miniatyurachilarining ijodida o‘z aksini topdi. XIX asrning mashhur maʼrifatchisi Ahmad Donish (1827–1897) – shoir, faylasuf, xattot, astronom – rassomlik isteʼdodiga ega boʻlgan. Buni uning saqlanib qolgan rasmlari isbotlaydi: Abduqodir Bedilning qoʻlyozma nashriga ishlangan “Shoir va rassom” miniatyurasi hamda shaharning politsiya boshligʻini tasvirlovchi hajviy miniatyura. Uning miniatyuralarida aniq chizma, lokal ranglar, tiniq kontur chizigʻi va grafiklik ustunlik qiladi. Uning shogirdi Abdulxoliq-Mahmum hasharotlar va gullar tasviri bo‘yicha iqtidorli rassom sifatida tanilgan.",
+  "text2": "Markaziy Osiyo xalqlarining sanʼat orqali borliqni ifodalashga intilgani shundan ham ayonki, 1886-yilgi Turkiston koʻrgazmasida toshkentlik Toʻxta-Sodiq Xoʻjayev hech qanday haykaltaroshlik asbob-uskunalarsiz, oddiy pichoq bilan alabastrdan ot va kiyik haykallarini yasagan. Koʻrgazmada shuningdek, toshkentlik hunarmandlar tomonidan ganchdan yasalgan ikki qavatli yevropa uyi hamda juda mahorat bilan ishlangan ikki o‘zbekcha uy maketlari namoyish etilgan.",
+  "text3": "Toshkentdagi Harbiy majlis (ODO) binosida oʻzbek ganch oʻymakorligi ustasi Toshpulot Arslonqulov (1882–1962) Suvorov va Kutuzovning portret barelf-medalyonlarini fotosuratlar asosida ganchdan ishlagan.",
+  "text4": "1915-yilda Toshkent litografiyasida rassom-chizuvchi Sirojidin Mahsum Siddiqiy tomonidan bezatilgan “Gʻor-Ogʻli” dostoni nashr etilgan. Bu XIX – XX asr boshlarida matbaa bilan bogʻlangan yagona oʻzbek rassomi hisoblanadi.",
+  "text5": "XIX asrning oxiri va XX asr boshidagi Turkiston tasviriy sanʼatida asosan Peterburg Badiiy akademiyasida tahsil olgan rus rassomlari faoliyat koʻrsatgan. Ularning ijodi Markaziy Osiyo tarixini, tabiati va hayotini aks ettirgan.",
+  "Vasiliy_title": "Vasiliy Vasilyevich Vereshchagin",
+  "Vasiliy_text1": "Oʻz ijodida Turkiston hayotini aks ettirgan birinchi va eng muhim rassom bu – V.V. Vereshchagin edi. Uning Turkiston manzaralari koʻplab mamlakatlar uchun bu mintaqaning sanʼat orqali kashfiyoti boʻldi. Rassomning insonparvarlik ruhidagi Turkiston sykluslari bu yerda madaniy va maishiy hayotni har tomonlama tasvirlagan. U oʻz asarlarida mahalliy meʼmor va hunarmandlarning ajoyib bezak sanʼatini ham namoyish qilgan.",
+  "Vasiliy_text2": "XX asr boshlarida Turkistonga rasm va chizmachilikni maktablarda oʻrgatgan rassom-oʻqituvchilar kelishi bu yerdagi tasviriy savodxonlik va sanʼat muhitining shakllanishiga turtki boʻldi.",
+  "Sergey_title": "Sergey Petrovich Yudin",
+  "Sergey_text": "Mashhur toshkentlik landshaft rassomi Sergey Petrovich Yudin (1858–1933) temiryo‘l ishchilari teatrlari uchun dekoratsiyalar chizgan va teatrlarda yetakchi boʻlgan. 1902-yilda Peterburg badiiy akademiyasini tugatgach, Toshkentga kelgan. Yudin quyoshli ochiq havodagi etyud ustasi sifatida tanilgan. Uning “Qishki kech” (1910) asarida tabiat bilan bevosita muloqot va nur-havo perspektivasini mohirona ifodalay olish koʻrinadi.",
+  "Leonard_title": "Leonard Leonardovich Buré",
+  "Leonard_text": "Samarqandlik Leonard Leonardovich Buré (1887–1943) yoshlikdan rassomchilikka qiziqqan. U 1904-yilda Moskvaga, keyin Peterburgga borib sanʼat tahsilini oladi. So‘ng yurti Samarqandga qaytib, umrining oxirigacha shu yerda ijod va taʼlim bilan shug‘ullangan. Uning meʼmoriy manzaralarida rang toʻgʻriligini va nozik rang sezgirligini koʻrish mumkin. Buré obidalarni doimo yangi nuqtai nazardan tasvirlashga harakat qilgan.",
+  "Alex_title": "Aleksandr Nikolaevich Volkov",
+  "Alex_text1": "Farg‘ona shahrida tug‘ilib voyaga yetgan, mashhur oʻzbek rassomi va shoiri Aleksandr Nikolaevich Volkov (1886–1957) Oʻzbekiston xalq rassomi boʻlib, Peterburg badiiy akademiyasida oʻqigan, Toshkentdagi sanʼat texnikumida dars bergan.",
+  "Alex_text2": "A.Volkov rus rassomlik anʼanalariga rioya qilgan holda, fransuz kubistlarining tajribasini oʻzlashtirgan. U sharqona rang-baranglik va ritmikani “parij maktabi” uslublari bilan uygʻunlashtirishga intilgan. 1916–1928 yillarda uning asarlari choyxonalar, tuya karvonlari, eski shahar manzaralari kabi mavzularni kubizm va ekspressionizm uslubida aks ettirgan.",
+  "Alex_text3": "1924-yilda kubizmga qiziqgan paytida yaratilgan “Anorli choyxona” asari hozirgi kunda Tretyakov galereyasida saqlanadi. 1968-yilda Parijda namoyish etilib, fransuz matbuoti va televideniyesida keng yoritilgan.",
+  "Alex_text4": "1931-yilda impresionizm uslubida yaratilgan “Kuzgi manzara” kartinasi rang va yorugʻlikni murakkab, mohirona uygʻunlashtirgan.",
+  "Mumin_title": "Usto Mumin",
+  "Mumin_text1": "Oʻzbek tasviriy sanʼati tarixiga Usto Mumin nomi bilan kirgan Aleksandr Vladimirovich Nikolaev (1897–1957) qadimiy madaniyat va boy xalq amaliy sanʼatiga oshufta boʻlgan. K.Malevichning shogirdi, u 1921-yilda Samarqandga kelgan. U mahalliy meʼmoriy yodgorliklar va xalq sanʼatidan ilhomlanib, klassik miniatyura va xalq urf-odatlarini chuqur oʻrgangan. 1925-yilda Toshkentga koʻchib, oʻz ijodida oʻzbek, rus va italyan anʼanalarini yagona yaxlit uslubda uygʻunlashtirishga intilgan.",
+  "Mumin_text2": "Bank kolleksiyasida uning 1930-yilda siyohda bajarilgan “Tikuvchi qizlar” nomli grafik asari mavjud.",
+  "Fergana_title": "Katta Fargʻona kanali",
+  "Fergana_text1": "S.Yudinga yaqin ijod uslubiga ega rassom Maksim Yevstafyevich Novikov (1886–1982) Peterburg Badiiy akademiyasini tamomlagan. U Oʻzbekiston tasviriy sanʼatiga lirik landshaft rassomi sifatida kirgan. Uning “Kanal qurilishi” va “Palatka shaharchasi” asarlarida Katta Fargʻona kanali qurilishi aks etgan.",
+  "Fergana_text2": "Katta Fargʻona kanali va Chirchiq kimyo zavodi qurilishida koʻplab rassomlar chizmalar, etyudlar yaratgan. Ulardan biri Toshkent rasm studiyasining bitiruvchisi Konstantin Pavlovich Cheprakov (1907–1972) hamda Penza sanʼat maktabi bitiruvchisi Aleksey Fyodorovich Podkovyrov (1889–1957) boʻlgan.",
+  "Fergana_text3": "Kolleksiyadagi eng muhim asarlar – qurilish oldingi ishchilari Nurnapasov va Sultonovning 1947-yilda chizilgan portretlaridir. Bu portretlar Cheprakov tomonidan hayotdan ko‘chirilgan.",
+  "Fergana_text4": "Podkovyrovning 1939-yilgi “Fargʻona kanali quruvchilari” nomli eskizi – Oʻzbekistondagi yirik qurilishlar tarixining yana bir sahifasidir.",
+  "Graphics_title": "Grafika rivoji",
+  "Graphics_text1": "Grafika sanʼati Oʻzbekistonda tipografik shrift va kitob bosma ishlarining rivojlanishi bilan shakllandi.",
+  "Graphics_text2": "Yigirmanchi yillarda plakat va jurnal hajviy grafikasi sohasida L.Buré, M.Kurzin, V.Rojdestvenskiy, A.Volkov, Usto Mumin (A.Nikolaev), V.Yeremyan faol ishlaganlar.",
+  "Graphics_text3": "Mixail Ivanovich Kurzin (1888–1957) – 1920–1930-yillarda Oʻzbekiston sanʼatida murakkab va qiziqarli shaxs. U 1923-yilda respublikaga kelib, Toshkentda yashay boshlagan. Kazan va Moskva sanʼat maktablarida taʼlim olgan. Toshkentga kelgach, teatrda dekorator, gazeta bilan hamkorlikda rassom, studiyada oʻqituvchi sifatida faoliyat yuritgan.",
+  "Ural_title": "Ural Tansiqboyev",
+  "Ural_text1": "1924-yilda Oʻzbekiston matbuotida ilk bor Ural Tansiqboyev (1904–1974) nomi tilga olinadi. Gazeta sharhlovchisi klub koʻrgazmasi haqida yozar ekan, yosh ishchi Tansiqboyevning sanʼatga isteʼdodini taʼkidlaydi. U asarlarida milliy turmush, Turkiston tabiati va kishloq hayotini tafsilotlari bilan aks ettira olgan. Uning ilk ishlari koʻproq koʻmir va qalamda chizilgan.",
+  "Ural_text2": "Tansiqboyev sanʼat tahsilini avval Toshkentda, soʻng Penza sanʼat bilim yurtida olgan.",
+  "Ural_text3": "Epik landshaft ustasi Ural Tansiqboyev tabiatni ilhom manbai sifatida koʻrgan. U oʻz etyud va kompozitsiyalarida rang va shaklni oddiy, ammo chuqur poetik ifoda bilan yetkazishga intilgan. Tanqidchilar uni “oʻzbek koloristlarining sardori” deb ataganlari bejiz emas.",
+  "Nikolay_title": "Nikolay Georgiyevich Karaxon",
+  "Nikolay_text": "A.Volkov va U.Tansiqboyevga yaqin rassom Nikolay Georgiyevich Karaxon (1900–1970), S.Yudinning shogirdi boʻlgan. U togʻli Oʻzbekiston tabiatiga oshiq. Uning bahor va kuz, tong va kech motivlaridagi etyud va asarlari landshaft va janrni bir butun qilib uygʻunlashtiradi. Quyosh nuri ostidagi tabiat holatini mohirona ifodalagan.",
+  "Shamsira_title": "Shamsira Hasanova",
+  "Shamsira_text": "A.Volkovning shogirdi, oʻzbek sanʼatidagi ilk ayol rassomlardan biri Shamsira Xasanova (1917–1956) koʻrgazmada texnik bilim yurti oʻquvchisi portreti bilan ishtirok etadi. U oʻzining tarixiy oʻtmishga, ilm-fan va madaniyat arboblariga va zamondoshlariga boʻlgan qiziqishi bilan ajralib turardi. U Oʻzbekistonda tarixiy portret janrining rivojiga katta hissa qoʻshgan."
+},
+
+
+"PageVisit": {
+    "header": {
+        "title": "Tashrifni rejalashtirish"
+    },
+    "tour": {
+        "title": "Ekskursiya",
+        "text": "Galereya muhitiga chuqurroq sho‘ng‘ish va bizning noyob rassomlik, grafika va qadimiy tangalar kolleksiyamizni o‘rganish uchun professional gid xizmatlaridan foydalanishni tavsiya qilamiz. U sizga har bir ekspozitsiya ob'ekti, uning tarixi va madaniy ahamiyati haqida hikoya qiladi.",
+        "table_text1": "Guruhlar",
+        "table_text2": "1 dan 25 kishigacha",
+        "table_text3": "Narxi",
+        "table_text4": "Har bir kishi uchun 25 000 so'm",
+        "table_text5": "Davomiyligi",
+        "table_text6": "1 soat",
+        "table_text7": "Til",
+        "table_text8": "O‘zbek, Rus"
+    },
+    "prices": {
+        "title": "Xizmatlarimiz",
+        "text1": "Rasmiy bir kunlik tadbirlarni — ko‘rgazmalar, taqdimotlar, kontsertlar va boshqa muhim voqealarni — o‘tkazish narxi 2 400 000 so‘mni tashkil etadi. Minimal buyurtma — 3 soat. Bitta tadbirda 50 kishigacha ishtirok etishi mumkin.",
+        "text2": "Tijorat maqsadlaridagi foto va video suratga olish — 1 soat uchun 300 000 so‘m, minimal buyurtma — 2 soat. Suratga olish jarayonida maksimal ishtirokchilar soni — 25 kishi.",
+        "text3": "Vaqtinchalik rasmiy tadbirlar, ko‘rgazmalar, taqdimotlar va shunga o‘xshash tadbirlarni o‘tkazish xizmati — 1 m² uchun",
+        "text4": "kuniga 20 000 so‘m."
+    },
+    "visitorInfo": {
+        "title1": "Chiptalar narxi",
+        "category_text1": "Kattalar uchun",
+        "category_text2": "Talabalar uchun",
+        "category_text3": "Nafaqaxo‘rlar uchun",
+        "category_text4": "Chet elliklar uchun",
+        "category_text5": "Bolalar uchun",
+        "category_text6": "San’at maktablari talabalari / O‘zbekiston Rassomlar ijodiy uyushmasi a’zolari uchun",
+        "price": "so'm",
+        "noprice": "Bepul",
+        "title2": "Ish vaqti",
+        "category_text7": "Seshanba - Shanba",
+        "category_text8": "Yakshanba / Dushanba",
+        "category_text9": "Dam olish kuni"
+    },
+    "map": {
+        "title": "Manzil",
+        "text": "Buyuk Turon ko‘chasi 2, Toshkent, O‘zbekiston. Mo‘ljal — Mustaqillik metro bekati."
+    }
+},
+
+"PageContact": {
+    "header": {
+        "title": "Biz bilan bog‘laning"
+    },
+    "title1": "Telefon raqamlari orqali murojaat qiling",
+    "title2": "Elektron pochta",
+    "title3": "Ish vaqti",
+    "text": "Sizning xat va qo‘ng‘iroqlaringizdan har doim mamnunmiz! Xodimlarimiz ish vaqtida sizning savollaringizga javob berishga tayyor."
+},
+
+ "PageTerms": {
+        "header": {
+            "title": "Sayt materiallaridan foydalanish shartlari"
+        },
+        "intro": "O‘zbekiston Respublikasi amaldagi qonunchiligiga muvofiq, Davlat Tasviriy san’at galereyasi rasmiy veb-saytida joylashtirilgan tasvirlar va matnli axborot (intellektual va ijodiy faoliyat natijalari) ustidan mualliflik huquqiga ega.",
+    "text": "Ushbu veb-sayt mazmuni quyidagi umumiy shartlarga rioya qilingan holda notijorat maqsadlarda foydalanish uchun ruxsat etiladi:",
+    "text1": "1) Matnli axborot va multimedia mahsulotlaridan foydalanishda – tegishli sahifaga havola berilishi lozim.",
+    "text2": "2) Galereya kolleksiyasiga oid san’at asarlari tasvirlaridan foydalanishda – \"O‘zbekiston Tasviriy san’at galereyasi to‘plamidan\" degan yozuv keltirilishi kerak.",
+    "text3": "3) Fotosuratlardan foydalanishda – agar saytida ko‘rsatilgan bo‘lsa, muallif nomi ko‘rsatilishi zarur.",
+    "text4": "Agar materiallardan tijorat maqsadida foydalanilsa, bu uchun yozma ruxsat olinishi lozim. Buning uchun Galereya direktorining nomiga “Sayt materiallaridan foydalanish” degan belgi bilan elektron pochta orqali so‘rov yuborish talab etiladi."
+    },
+
+"PageCollection": {
+    "header": {
+        "title": "1 900 dan ortiq rasmlar va 2 500 ga yaqin noyob qadimiy tangalar",
+        "title2": "galereya kolleksiyasi"
+    },
+    "subtitle": "Yaqinda yaratilgan onlayn kolleksiyada 100 dan ortiq eksponatlar taqdim etilgan va har oy galereya fondidan yangi asarlar bilan to‘ldirib boriladi.",
+    "text": "Rasmni to‘liq ekranda ko‘rish uchun ustiga bosing.",
+    "online-collection": "Onlayn Kolleksiya"
+},
+
+
+
+
+
+
+
+
+"PageExhibition": {
+  "header": {
+    "title": "Ko‘rgazmalar"
+  },
+  "button_now": "Joriy",
+  "button_future": "Bo‘lajak",
+  "button_past": "O‘tgan",
+  "empty": "Hozircha bu yerda hech narsa yo‘q",
+  "exhibition_photo": "Fotoko‘rgazma",
+  "exhibition": "Ko‘rgazma",
+  "cards": {
+    "women": "“O‘zbekiston ayollari. Evrilish”",
+    "umar": "Umar Rajabovning shaxsiy ko‘rgazmasi “Muloqaza”",
+    "devonov": "“Xudoybergan Devonov va uning davri”",
+    "synapse": "Zamonaviy san’at “Sinaps”",
+    "mirtajiyev": "“Men – o‘zbek xalqining rassomiman”",
+    "east": "Miniatyura “Sharqona ohanglar”",
+    "memory": "“Xotira tunneli”",
+
+
+    "nbuCollection": "Milliy Bank kolleksiyasi",
+
+
+
+    "hotira": "\"Xotira – qalblarda o‘chmas nur\"",
+    "childhood": "\"Bolalik sayyorasi\" bolalar ijodi ko‘rgazmasi"
+  }
+},
+
+
+
+
+
+"Exhibitions": {
+  "women": {
+    "span1": "Ko‘rgazma O‘zbekiston kino-foto-fono hujjatlari milliy arxivi hamkorligida tashkil etildi.",
+    "text1": "Arxiv fotosuratlari va kinomateriallari orqali sizni o‘zbek ayollarining kuchi, ijodi va ilhomi prizmasidan mamlakat tarixiga va madaniyatiga sayohat qilishga chorlaymiz. “O‘zbekiston ayollari. O‘zgarishlar” ko‘rgazmasi — ayollar hayotining ko‘p qirrali jihatlari va jamiyatdagi o‘rnini turli tarixiy davrlar kesimida ochib beruvchi noyob loyiha.",
+    "text2": "O‘tgan asrning 1920-yillarida ayollar erkinlik va mustaqillik timsoli bo‘lgan paranjini tark etib, emansipatsiya davrini boshlab berdilar hamda gender tengligi uchun asos yaratdilar. O‘sha davrning ma’rifatchilari — M. Qoriy, M. Behbudiy, A. Qodiriy, X. Niyoziy, A. Fitrat, A. Cho‘lpon — ayollar huquqlarini himoya qilish, ularning ta’lim olishini ta’minlash zarurligini ilgari surganlar. Chunki ayol — millat tarbiyachisi, xalq kelajagi ularning ma’lumot darajasiga bog‘liq. Shu sabab, “Hujum” nomli paranjidan voz kechish harakati boshlandi. Ayollar nafaqat oila boshpanasini saqladilar, balki ijtimoiy-siyosiy hayotda faol ishtirok eta boshladilar.",
+    "text3": "XX asr o‘zbek tarixi jamiyat taraqqiyotiga ulkan hissa qo‘shgan yorqin ayol siymolari bilan boyitilgan. Ular o‘z jasorati va fidoyiligi bilan zamonaviy jamiyat shakllanishida muhim rol o‘ynadilar.",
+    "text4": "O‘tgan asr davomida o‘zbek ayolining qiyofasi asta-sekin o‘zgardi. So‘nggi yillarda esa mamlakatda ayollarning roli va maqomi sezilarli darajada oshdi. O‘zbekiston mustaqillikka erishgach, bu jarayon yangi bosqichga o‘tdi. Prezidentimiz Sh.M. Mirziyoyev davrida ayollar parlament, hukumat va mahalliy hokimiyat organlarida muhim lavozimlarni egallab kelmoqdalar. Bundan tashqari, ayollarni kamsitish va maishiy zo‘ravonlikdan himoya qilish qonuniy darajada mustahkamlangan.",
+    "span2": "Mazkur ko‘rgazma sizni yana bir bor O‘zbekiston ayollarining tarixiy yo‘lini ko‘zdan kechirishga, ularning turli sohalardagi hissasini qadrlashga va kelajak avlodni ilhomlantirishga chorlaydi!"
+  },
+  "devonov": {
+    "text1": "Turkistonning ilk suratlari tasodifan Xiva xonligida olingan. Rossiya Fanlar akademiyasining Sankt-Peterburgdagi Antropologiya va etnografiya muzeyida (Kunstkamera) “Xiva xonligining manzaralari va tiplari” nomli fotoalbom saqlanadi.",
+    "text2": "Dastlab Turkistonni suratga olganlar orasida mahalliy millat vakillari bo‘lmagan. Sharq mintaqasida tirik mavjudotni tasvirlash shariatda man etilganligi sababli, fotografiya yot tushuncha edi. Ammo 1903 yilda Xiva xonligining Yangi Urganch shahrida Xudoybergan Devonov o‘zining fotoatelierini ochdi. So‘nggi yillarda u o‘zbek fotografiyasi tarixida alohida o‘rganilmoqda.",
+    "text3": "Xudoybergan Devonov — birinchi o‘zbek fotografi va operatori. U 1879 yilda Xiva shahrida saroy kotibi Nurmuhammad Devonning oilasida tug‘ilgan. Otasi ma’rifatli Xiva xoni Sayid Muhammad Rahim II saroyiga yaqin bo‘lgan.",
+    "text4": "Bir kuni yosh Xudoybergan Xivada fotosessiya o‘tkazayotgan mennonitlar qishlog‘i oqsoqoli, fotografiya ishqibozi Vilgelm Penner bilan tanishadi. Uni xalq “Panar bobo” (Chiroq bobo) deb atardi. Penner fotosuratlar olish, negativlarni chiqarish va bosib chiqarish jarayonlari bilan bolani qiziqtirib qo‘yadi. U tez orada bu san’atni o‘rganib, Penner tomonidan hadya etilgan “ZOT” markali nemis apparati yordamida suratlar ola boshlaydi.",
+    "text5": "Shunday qilib, Markaziy Osiyodagi ilk milliy fotograf, o‘zbek fotosan’ati va kinosining asoschisi maydonga keladi.",
+    "text6": "Devonovning ilk suratlari — xalq hayoti va Xorazm tarixiga bo‘lgan samimiy muhabbat bilan sug‘orilgan etnografik tasvirlar (shahar devorlari yonidagi arqonchi yurishlar, qush ovchilari, aravalar, ariq tozalovchilar). U etnografiyani badiiy yondashuv bilan uyg‘unlashtirishga harakat qilgan. Hatto me’moriy yodgorliklar suratida ham bu seziladi. Suratlarining sifati davrdosh fotograflar darajasida bo‘lgan. Ba’zi suratlar arab yozuvida izohlar bilan bezatilgan bo‘lib, Devonov ijodga XIX asr 1890-yillarda kirishganini ko‘rsatadi.",
+    "text7": "XX asr boshlarida fotosuratlar pochta ochiqchalarida keng qo‘llanilgan. Ammo Xiva manzaralari bunday ochiqchalarda kamdan-kam uchraydi. Sababi, asosiy nashriyot — Suvorin agentligi — faqat temiryo‘l stansiyalarida ochiqchalarni sotish huquqiga ega bo‘lgan. Xiva xonligida esa temiryo‘l yo‘q edi.",
+    "text8": "Faqat XX asrning 20–30 yillarida Xiva vohasiga bag‘ishlangan fotografik materiallar ko‘plab yaratiladi. Bu asosan ekspeditsiyalarda qatnashgan olimlar tomonidan olingan. Xususan, 1936 yildan boshlab S.P. Tolstov boshchiligidagi Xorazm ekspeditsiyasi juda mashhur bo‘lgan.",
+    "text9": "Urushdan keyingi yillarda, Xorazm “turistik Makka”ga aylangan davrda, ko‘plab mashhur suratlar yaratiladi. Ayniqsa, 1990-yillarda — O‘zbekiston mustaqillikka erishgan va Xorazmning 2500 yilligi nishonlangan davrda bu ancha kuchaydi. Bugungi kunda Xiva haqidagi nashrlar va fotoalbomlar ochiq osmon ostidagi me’moriy-etnografik muzey sifatidagi qadrini oshirmoqda."
+  },
+  "umar": {
+    "text1": "Umar Rajabovni zamonaviy san’atning eng ilg‘or rassomlaridan biri deb atash mumkin. Bolalikdagi san’atga bo‘lgan qiziqish uning hayot tarziga aylandi. U doimiy o‘z ustida ishlaydi va ijodda yangilikka intiladi — bu uning o‘ziga xos jihatlaridan biridir.",
+    "text2": "Ijod — Umar uchun hayot manbai. U o‘z asarlarida nafaqat mamlakatimizdagi qadimiy yodgorliklarni, balki oddiy xalq hayotini, jamiyatdagi dolzarb muammolarni ham aks ettirishga intiladi.",
+    "text3": "Rassom tomonidan yaratilgan me’moriy landshaftlar betakror — ular qadimiy ruh va zamonaviy san’at yo‘nalishlari uyg‘unligini o‘zida mujassam etadi.",
+    "text4": "Rassomning yana bir o‘ziga xos jihati — qiziquvchanligi. U bir yo‘nalish va janrda qolib ketmaydi. Har bir yangi asarida yangi usullar va uslublarni qo‘llashga intiladi, bu esa eng to‘g‘ri badiiy yechimlarni topish imkonini beradi.",
+    "text5": "Rassom ko‘p sayohat qiladi va u yerda ko‘rgan taassurotlarini, his-tuyg‘ularini, xotiralarini o‘z asarlarida aks ettiradi. Umar kuzatuvchan rassom, u asarlarining faqatgina interyer bezagi bo‘lishini istamaydi — har bir asariga chuqur ma’no yuklaydi. Uning asarlari tomoshabinni befarq qoldirmaydi, balki ulardagi ma’noni anglashga undaydi.",
+    "text6": "Ushbu ko‘rgazma ekspozitsiyasi — Umar Rajabovning so‘nggi yillarda yaratgan ijodiy izlanishlarining natijasi bo‘lib, har bir asarga rassom qalbini qo‘shgan. Har bir asar — muallifning bugungi davr muammolariga bo‘lgan qarashlari va badiiy izlanishlarining ifodasi."
+  },
+  "east": {
+    "text1": "O‘zbekiston Tasviriy san’at galereyasida buyuk shoir va mutafakkir Alisher Navoiy tavalludining 583 yilligiga bag‘ishlangan “Sharqona ohanglar” nomli miniatyura ko‘rgazmasi tashkil etildi. Ko‘rgazma g‘oyasi Galereya direktori, san’atshunoslik fanlari doktori Kamola Akilovaga tegishli. Ko‘rgazmani O‘zbekiston Badiiy akademiyasi Rassomlar ijodiy birlashmasining miniatyura bo‘limi raisi B. Xadjimetov tashkil etdi.",
+    "text2": "Taqdim etilgan asarlar XV–XVI asrlar klassik miniatyura an’analari hamda zamonaviy izlanishlarda turli uslub va yo‘nalishlarda yaratilgan. Asarlarda tarixiy, lirik va zamonaviy mavzular aks etgan. Rassomlar turli materiallardan foydalangan — qog‘oz, karton, teri bilan bir qatorda turli hajmdagi kompozitsiyalar, yog‘ochli lakli panellar, patnislar va sandiqlarda ham ishlangan.",
+    "text3": "Bu ko‘rgazmada miniatyura san’ati ustalari — N. Xolmatov, Sh. Shoahmedov, U. Qosimov, K. Amonov, M. Sabirov, B. Xodjimetov, K. Mirzayev, K. Abdullayev, K. Shoislamov, Z. Hakimov, B. Xadjimetov, R. To‘xtayev, G. Atabayev, D. Polatova hamda yosh rassomlar — R. Aliboyev, B. Dedashev, Sh. Arifboyev, S. Jalilova, D. Xoshimova, N. Ahmadaliyeva kabi ijodkorlarning asarlari namoyish etilmoqda. Ular an’anaviy miniatyura xususiyatlarini saqlab qolish bilan birga, o‘ziga xos ijodiy uslubni yaratganlar.",
+    "text4": "“Sharqona ohanglar” ko‘rgazmasi tomoshabinlarni klassik miniatyura namunalaridan tashqari, ijodiy izlanishlar mahsullari bilan ham tanishtiradi. Bundan tashqari, ko‘rgazma raqamli texnologiyalar imkoniyatlaridan foydalangan videoloyihalar bilan boyitilgan — N. Juraev va J. Qayumovning animatsion miniatyuralari, shuningdek B. Xadjimetov va uning shogirdi N. Ahmadaliyevaning video-darslari namoyish etilgan."
+  },
+  "mirtajiyev": {
+  "span1": "Ushbu ko‘rgazma taniqli o‘zbek haykaltaroshi Jaloliddin Mirtajievning tavalludining 70 yilligiga va xotirasiga bag‘ishlanadi.",
+  "text1": "O‘zbekiston xalq rassomi, haykaltarosh Jaloliddin Tursunovich Mirtajiev 1954-yilda Toshkent shahrida tug‘ilgan. 1968–1972-yillarda P.P. Benkov nomidagi Respublika rassomchilik bilim yurti haykaltaroshlik bo‘limida F.I. Grishchenko rahbarligida tahsil olgan. 1977-yilda A. Ostrovskiy nomidagi Toshkent teatr va rassomchilik institutini tamomlagan. 1983-yildan – O‘zbekiston Rassomlar uyushmasi a’zosi, 1997-yildan – O‘zbekiston Badiiy akademiyasi huzuridagi Ijodkor rassomlar birlashmasi a’zosi. Ko‘plab respublika va xalqaro ko‘rgazmalar ishtirokchisi. 2005–2015-yillarda Jaloliddin Mirtajiev O‘zbekiston Badiiy akademiyasi raisining o‘rinbosari lavozimida faoliyat yuritgan. Haykaltaroshning dastgoh asarlari O‘zbekiston muzeylarida va xorijdagi xususiy kollektsiyalarda saqlanmoqda.",
+  "text2": "Jaloliddin Mirtajiev o‘z asarlari orqali O‘zbekiston va undan tashqarida milliy ma’naviy madaniyatni rivojlantirish va targ‘ib etishga katta hissa qo‘shgan. Mamlakatimizda milliy qahramonlar, Sharqning buyuk olim va mutafakkirlari, yozuvchilar va madaniyat arboblariga haykallar o‘rnatilgan. Ular orasida Zahiriddin Muhammad Bobur (Andijon shahri), Cho‘lpon, Abdurauf Fitrat (Buxoro shahri), Abdulla Qodiriy (Toshkent shahri), G‘afur G‘ulom (Toshkent shahri), Zulfiya (Toshkent shahri), Elbek (Toshkent viloyati), “El-yurt tayanchi” (Qarshi shahri), “Onalik” (Andijon, Farg‘ona) kabi haykallar O‘zbekistonning madaniy boyligidir.",
+  "text3": "So‘nggi o‘n yillikda ustoz chet ellarda ham ko‘plab haykallarni o‘rnatdi: Moskvada (2002), Bokuda (2008), Tokioda (2004) Sharqning buyuk shoiri Alisher Navoiyga haykallar, Xitoyda Kamoliddin Behzodga (2003), Rigada Mirzo Ulug‘bek (2004) hamda Abu Ali Ibn Sino (2006), Qohirada buyuk olim Al-Fargoniy (2007) sharafiga haykallar o‘rnatildi.",
+  "span2": "Mustaqillik yillarida Jaloliddin Mirtajiev ijodiy faoliyati bilan nafaqat yurtimizda, balki xorijda ham hurmat va e’tirofga sazovor bo‘ldi. Jaloliddin (Ravshan) Mirtajiev san’atga qo‘shgan hissasi uchun quyidagi davlat mukofotlari bilan taqdirlangan:",
+  "list1": "1998-yil – Zahiriddin Muhammad Bobur nomidagi xalqaro mukofot laureati.",
+  "list2": "1998-yil – “O‘zbekiston Respublikasida xizmat ko‘rsatgan madaniyat xodimi”.",
+  "list3": "2003-yil – “O‘zbekiston xalq rassomi”.",
+  "list4": "2004-yil – Yaponiyadagi Fuji Tasviriy san’at muzeyining oltin medali bilan taqdirlangan.",
+  "list5": "2009-yil – O‘zbekistonning eng yaxshi haykaltaroshi deb e’tirof etilgan.",
+  "list6": "2009-yil – Shanxay universitetining faxriy professori (Xitoy).",
+  "list7": "2011-yil – Xarbin universitetining faxriy professori (Xitoy).",
+  "list8": "2013-yil – Rossiya Badiiy akademiyasining medali laureati (A. Navoiy haykali uchun).",
+  "list9": "2013-yil – Moskva shahar Dumasi Faxriy nishoni bilan taqdirlangan (A. Navoiy haykali uchun).",
+  "span3": "O‘zbekiston Respublikasi Prezidenti Sh. M. Mirziyoyevning tegishli farmoni bilan Jaloliddin (Ravshan) Mirtajiev san’atdagi xizmatlari va yorqin xotirasi uchun taqdirlandi:",
+  "list10": "2018-yil – “E’tirof” mukofoti bilan.",
+  "list11": "2021-yil – “Fidokorona xizmatlari uchun” ordeni bilan.",
+  "list12": "2022-yil – II darajali San’at va me’morchilik sohasida Davlat mukofoti laureati."
+},
+"synapse": {
+  "text1": "“5+1” guruhi 2008-yilda UzNatsbank Galereyasi xodimlari tomonidan tashkil etilgan. Guruh a’zolari: Diyor Razikov, Sanjar Jabborov, Sharifa va Daniyor Sharafxo‘jayevlar, Nuriddin Rasulov, O‘ktam Saidov. Ushbu yildagi loyiha doirasida ularga Yakub Beknazarov qo‘shildi.",
+  "text2": "Guruh 15 yildan buyon o‘z loyihalarini tomoshabinlar e’tiboriga muvaffaqiyatli havola qilib kelmoqda. Ularning loyihalari: “5+1” (2008), “Vertikal” (2009), “SENSUS” (2010), “Silentium” (2010), “Magnit” (2013), “Spektr” (2015), “Oq nur” (2018), “Mobilizatsiya” (2022).",
+  "text3": "2022-yilgi IX Toshkent xalqaro zamonaviy san’at biennalesida “5+1” guruhi Gran-priga sazovor bo‘ldi.",
+  "text4": "Sog‘lom inson miyasi 200 milliardga yaqin nerv hujayralarini o‘z ichiga oladi, ular yuzlab trillion sinapslar orqali o‘zaro bog‘langan. Har bir nerv hujayrasi o‘n minglab sinapslarga ega bo‘lishi mumkin.",
+  "text5": "Sinaps (yunoncha σύναψις – ulanish, bog‘lanish) – bu nerv tizimida nerv impulslarini uzatishda muhim rol o‘ynaydigan ixtisoslashgan tuzilma. Sinaps neyronlar o‘rtasidagi aloqani ta’minlaydi va ma’lumotlarni elektr va kimyoviy signallar orqali uzatishga imkon beradi. Sinaps miyaning va butun nerv tizimining ishlashida asosiy mexanizm bo‘lib, unda nerv impulslarining bir hujayradan boshqasiga o‘tishi sodir bo‘ladi.",
+  "text6": "“5+1” guruhi rassomlari ushbu mavzu doirasida, ularni 15 yildan buyon birlashtirib kelayotgan “neyron” oqimlarni ixcham va ta’sirchan tarzda ifodalash, o‘z onglarida kechayotgan his-tuyg‘ular oqimini tasvirlash, o‘zlari va bir-birlari bilan uyg‘unlik nuqtalarini topishga harakat qiladilar.",
+  "text7": "Qandayki sinaptik uzatishda signalning kuchi va chastotasi boshqarilishi mumkin bo‘lsa, “5+1” guruhi ichidagi o‘zaro aloqalar ham shaxsiy idrokni umumiy ong oqimiga uyg‘unlashtirish, mavzuni ochishda to‘g‘ri qarorni qabul qilish, o‘zaro hamkorlikdagi birlikda ishlash koordinatsiyasini ta’minlaydi. Bu ishtirokchilarga o‘zgaruvchan sharoitlarga moslashishga va turli voqealarga samarali javob berishga imkon beradi."
+},
+"memory": {
+  "text1": "Ko‘rgazma tashkilotchilari: Milliy ommaviy axborot vositalarini qo‘llab-quvvatlash va rivojlantirish jamoat fondi, O‘zbekiston Respublikasi Vazirlar Mahkamasi huzuridagi Repressiya qurbonlari xotirasi davlat muzeyi, O‘zbekiston Respublikasi Fanlar akademiyasi Tarix instituti hamda O‘zbekiston tasviriy san’ati galereyasi.",
+  "text2": "Ekspozitsiya jadidchilik harakatini – jamiyatni modernizatsiya qilish, ma’rifatli qilish va XX asr boshlarida Turkistonda huquqiy demokratik davlat qurishga intilgan harakatni har tomonlama tadqiq qiladi. Rasmiy hujjatlar, fotosuratlar va jadidlarning shaxsiy buyumlari orqali \"Xotira tunneli\" mehmonlarni tarixiy bosqichlar bo‘ylab olib o‘tadi va ularning milliy o‘zlik, mustaqillik va davlatlilik shakllanishiga ta’sirini ochib beradi.",
+  "text3": "Ko‘rgazmada asosiy e’tibor jadidchilik harakatining Turkistonda shakllanishiga olib kelgan shart-sharoitlar va omillar hamda ushbu harakat yetakchilariga qaratiladi. Shuningdek, o‘sha davrdagi ijtimoiy-iqtisodiy ahvol, yangi usuldagi maktablar tashkiloti va rivoji, teatr san’ati, matbuot, gender tengligi masalalari hamda jadid ma’rifatchilarining asosiy faoliyat yo‘nalishlariga bag‘ishlangan bo‘limlar namoyish etiladi.",
+  "text4": "“Xotira tunneli” ko‘rgazmasi – bu nafaqat O‘zbekiston tarixini chuqurroq o‘rganish, balki o‘tmishga yuzlanish, uni his qilish va o‘sha davr ruhini teran anglash, zamonaviylik bilan tarixiy paralellar o‘rnatish uchun noyob imkoniyatdir.",
+  "text5": "Ekspozitsiya, shuningdek, tarixiy merosimizni saqlash va targ‘ib qilishga qaratilgan."
+},
+
+
+
+"nbuCollection": {
+  "text1": "O‘zbekiston Milliy banki tomonidan 1994-yildan boshlab yig‘ilgan san’at asarlari to‘plami Tasviriy san’at galereyasining tashkil etilishiga asos bo‘ldi. Bugungi kunda bu to‘plam mamlakatdagi eng yirik badiiy kolleksiyalardan biri bo‘lib, XX–XXI asrlarning yetakchi rassomlari ijodini birlashtiradi.",
+  "text2": "Milliy bankning doimiy fondida 1 900 dan ortiq rangtasvir va grafik asarlar, shuningdek, Sogdiyona davridagi qadimgi sivilizatsiyalardan tortib, islomiy sulolalar va Temuriylar davrigacha bo‘lgan turli tarixiy davrlarni o‘z ichiga olgan 2 500 ga yaqin noyob qadimiy tangalar mavjud. To‘plam O‘zbekistonning badiiy taraqqiyotini kuzatish imkonini beradi.",
+  "text3": "Ko‘rgazmada U. Tansiqboyev, Usto Mumin, A. Abdullayev, N. Kuzibayev, M. Yo‘ldoshev, R. Gagloeva, B. Jalolov, L. Bure, P. Benkov kabi o‘zbek tasviriy san’atining taniqli namoyandalari asarlari hamda zamonaviy hayotni aks ettiruvchi, bugungi kun va kelajagimizni belgilovchi voqealarga boy ijod namunalari bilan yosh rassomlar ijodi namoyish etilgan.",
+  "text4": "To‘plamning bir qismi onlayn formatda ham taqdim etilgan –",
+  "text5": "kolleksiyani ko‘rish"
+},
+
+        
+
+
+        "hotira": {
+            "text1": "O‘zbekiston Tasviriy san’at galereyasida Xotira va qadrlash kuni munosabati bilan grafik asarlardan iborat \"Xotira\" ko‘rgazmasining ochilishi bo'lib o'tdi.",
+            "text2": "Ushbu badiiy loyiha tinchlik, jasorat va fidoyilik ruhiga bag‘ishlanib, ajdodlarimiz xotirasini tasvirlar orqali uyg‘otadi.",
+            "text3": "Ko‘rgazmada Qutlug‘ Basharov, Lekim Ibragimov, Medat Kagarov, Nuriddin Kalanov, Gennadiy Jirnov, Georgiy Chiganov va boshqa mashhur rassomlarning 45 ta grafik asari jamlangan.",
+            "text4": "Asarlar nafaqat tarixni yodga soladi, balki inson ruhiyati, kayfiyati va xotirani ifodalaydigan kuchli vizual obrazlarga boy."
+        },
+        "childhood": {
+            "text1": "O‘zbekiston Tasviriy san’at Galereyasi An’ana davom etmoqda! Xalqaro bolalarni himoya qilish kuni munosabati bilan O‘zbekiston Tasviriy san’at Galereyasida an’anaga muvofiq ilhomlantiruvchi «Bolalik sayyorasi» bolalar ijodi ko‘rgazmasi ochildi.",
+            "text2": "Bu yil loyiha doirasida 20-yildan buyon bolalarni san’at olamiga oshno etib kelayotgan «Ulkan Muvaffaqiyatlar Boshi» («U.M.B.») studiyasi bilan bir qatorda Toshkentning 20 dan ziyod yetakchi bolalar studiyalari ham ishtirok etmoqda.",
+            "text3": "Ekspozitsiyada Vatanga bo‘lgan muhabbat, kelajakka oid o‘ylar va dunyoning buyuk rassomlari asarlariga bolalarcha nigohda qayta nazar solingan ijod namunalari o‘rin olgan.",
+            "text4": "Bayram dasturidan «Tabassum» va «Ariya» ansambllari ishtirokida konsert ham ijro etildi, art-byuro «Kolibri» tomonidan esa bolalar uchun mavsumiy liboslar to‘plami taqdim etildi."
+        }
+}
+
+
+
+
+}

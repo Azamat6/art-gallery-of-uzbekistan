@@ -1,17 +1,42 @@
+
+
+.headerBgWrapper{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.PagesheaderBgWrapper{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.PagesheaderBg{
+  width: 100%;
+    height: 100vh;
+    width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s linear;
+}
+
 .headerBg {
-    // position: fixed;
-    background-attachment: fixed;
+   position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.7), rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 40%, rgba(34, 34, 34, 0.7)), url('');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1; 
-    background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.7), rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 40%, rgba(34, 34, 34, 0.7)), url('/src/assets/images/onlineGallery/no-info(4).JPG');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all 0.1s linear;
+    transition: 0.2s linear;
   }
+
 
    div.darken-effect{
     opacity: 0.8;

@@ -5,7 +5,10 @@
     justify-content: space-between;
     background: var(--background);
     padding: 70px 0;
+    position: relative;
+    z-index: 2;
 
+    
     .container{
         position: relative;
 

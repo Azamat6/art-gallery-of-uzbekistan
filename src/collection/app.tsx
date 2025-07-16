@@ -1,30 +1,39 @@
 import "../scss/index.scss";
+import { useTranslation } from "react-i18next";
+import React, { useState, useEffect, lazy, createRef } from "react";
 
 import PagesHeader from "../components/PagesHeader";
-import Footer from "../components/Footer";
-import BgIMage from "../assets/images/onlineGallery/Daraxt-yonidagi-qiz_Nadejda-Kashina_1930.jpg";
+const Footer = lazy(() => import("../components/Footer"));
+import BgIMage from "../assets/images/Daraxt-yonidagi-qiz_Nadejda-Kashina_1930.jpg";
 
-import React, { useState, useEffect } from "react";
 import Pagination from "./Pagination";
 import Posts from "./Posts";
 import data from "../assets/data/onlineCollection.json"; // Импорт JSON
 
+interface LocalizedText {
+  ru: string;
+  en: string;
+  uz: string;
+}
+
 interface Post {
   id: string;
   imageUrl: string;
-  title: string;
-  author: string;
+  thumbnailUrl?: string;
+  title: LocalizedText;
+  author: LocalizedText;
   year: string;
 }
 
 const App: React.FC = () => {
+  const { t } = useTranslation();
+
   const [posts, setPosts] = useState<Post[]>([]);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [postsPerPage] = useState<number>(12);
 
   useEffect(() => {
-    // Simulate fetching data
-    setPosts(data); // Assign data from JSON file to state
+    setPosts(data as Post[]); // типизируем вручную
   }, []);
 
   // Get current posts
@@ -36,26 +45,24 @@ const App: React.FC = () => {
   return (
     <div className="app-container">
       <PagesHeader
-        title="более 1 900 картин и около 2500 уникальных древних монет"
-        subtitle="коллекция галереи"
+        title={t("PageCollection.header.title")}
+        subtitle={t("PageCollection.header.title2")}
         backgroundImage={BgIMage}
       />
       <section className="CollectionPage">
         <div className="container">
           <div className="row">
-            {/* <h3 className="pagesSubtitle">История</h3> */}
-            <div className="startInfo col-xl-8 offset-xl-4 col-lg-9 offset-lg-3 col-12 offset-0">
-              <h4>
-                В недавно созданной онлайн-коллекции представлено более 100
-                экспонатов, и каждый месяц она пополняется новыми шедеврами из
-                фондов галереи.
-              </h4>
+            <div
+              className="startInfo col-xl-8 offset-xl-4 col-lg-9 offset-lg-3 col-12 offset-0"
+              ref={topRef}
+            >
+              <h4>{t("PageCollection.subtitle")}</h4>
             </div>
             <div className="gallery">
-              <h2 className="paginationTitle"> Онлайн Коллекция</h2>
-              <p className="text">
-                Нажмите на изображение чтобы открыть его на весь экран
-              </p>
+              <h2 className="paginationTitle">
+                {t("PageCollection.online-collection")}
+              </h2>
+              <p className="text">{t("PageCollection.text")}</p>
               <Posts posts={currentPosts} />
               <Pagination
                 pages={howManyPages}
@@ -71,4 +78,6 @@ const App: React.FC = () => {
   );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
+export const topRef = createRef<HTMLDivElement>();
 export default App;

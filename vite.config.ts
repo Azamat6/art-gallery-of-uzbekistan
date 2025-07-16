@@ -11,10 +11,10 @@ export default defineConfig({
     react(),
     ViteImageOptimizer({
       png: {
-        quality: 20,
+        quality: 30,
       },
       jpg: {
-        quality: 15,
+        quality: 65,
       },
     }),
   ],
@@ -28,18 +28,29 @@ export default defineConfig({
         coins: resolve(__dirname, 'src/coins/coins.html'),
         concept: resolve(__dirname, 'src/concept/concept.html'),
         history: resolve(__dirname, 'src/history/history.html'),
-        japan: resolve(__dirname, 'src/japan/japan.html'),
         collection: resolve(__dirname, 'src/collection/collection.html'),
         contact: resolve(__dirname, 'src/contact/contact.html'),
         exhibition: resolve(__dirname, 'src/exhibition/exhibition.html'),
+        terms: resolve(__dirname, 'src/terms/terms.html'),
 
-        womenOfUzbekistan: resolve(__dirname, 'src/exhibition/women-of-uzbekistan/women.html'),
-        eastMotives: resolve(__dirname, 'src/exhibition/east-motives/east.html'),
-        mirtajiyev: resolve(__dirname, 'src/exhibition/mirtajiyev/mirtajiyev.html'),
-        synapse: resolve(__dirname, 'src/exhibition/synapse/synapse.html'),
-        tunnelOfMemory: resolve(__dirname, 'src/exhibition/tunnel-of-memory/memory.html'),
-        umarRadjabov: resolve(__dirname, 'src/exhibition/umar-radjabov/umar.html'),
-        xudoyberganDevonov: resolve(__dirname, 'src/exhibition/xudoybergan-devonov/devonov.html'),
+
+        //Выставки
+        //2024
+        womenOfUzbekistan: resolve(__dirname, 'src/exhibition/2024/women-of-uzbekistan/women.html'),
+        eastMotives: resolve(__dirname, 'src/exhibition/2024/east-motives/east.html'),
+        mirtajiyev: resolve(__dirname, 'src/exhibition/2024/mirtajiyev/mirtajiyev.html'),
+        synapse: resolve(__dirname, 'src/exhibition/2024/synapse/synapse.html'),
+        tunnelOfMemory: resolve(__dirname, 'src/exhibition/2024/tunnel-of-memory/memory.html'),
+        umarRadjabov: resolve(__dirname, 'src/exhibition/2024/umar-radjabov/umar.html'),
+        xudoyberganDevonov: resolve(__dirname, 'src/exhibition/2024/xudoybergan-devonov/devonov.html'),
+
+        //nbu collection
+        nbuCollection: resolve(__dirname, 'src/exhibition/2025/nbu-collection/nbu.html'),
+
+
+        //2025
+        hotira: resolve(__dirname, 'src/exhibition/2025/memory/memory.html'),
+        childhood: resolve(__dirname, 'src/exhibition/2025/planet-of-childhood/childhood.html'),
 
       }
     }

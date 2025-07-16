@@ -1,11 +1,14 @@
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import { useScroll, useMotionValueEvent } from "framer-motion";
 import { IoCloseSharp } from "react-icons/io5";
-import { VscGlobe } from "react-icons/vsc";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import AccordionMenuM from "./AccordeonMenuM";
+import { VscGlobe } from "react-icons/vsc";
+import Dropdown from "react-bootstrap/Dropdown";
+
+import { useTranslation } from "react-i18next";
 
 type PagesHeaderProps = {
   title: string;
@@ -53,48 +56,40 @@ const PagesHeader: React.FC<PagesHeaderProps> = ({
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  //dropdown-menu functioning
+  //language functioning
 
-  const [Open, setOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
-
-  const toggleDropdown = () => {
-    setOpen((prev) => !prev);
-  };
-
-  const handleClickOutside = (event: MouseEvent) => {
-    if (
-      dropdownRef.current &&
-      !dropdownRef.current.contains(event.target as Node)
-    ) {
-      setOpen(false);
+  const { t, i18n } = useTranslation();
+  const handleSelect = (lang: string | null) => {
+    if (lang && lang !== i18n.language) {
+      i18n.changeLanguage(lang);
     }
   };
 
-  useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+  const languageMap: Record<string, string> = {
+    en: "English",
+    ru: "Русский",
+    uz: "O‘zbek",
+  };
 
   //Content
 
   return (
     <header className="PagesHeader">
       {/* bg-blur */}
-      <div
-        className={`headerBg ${scrollClass}`}
-        style={{
-          backgroundImage: `linear-gradient(
+      <div className="PagesheaderBgWrapper">
+        <div
+          className={`PagesheaderBg ${scrollClass}`}
+          style={{
+            backgroundImage: `linear-gradient(
               to bottom,
               rgba(34, 34, 34, 0.7),
               rgba(0, 0, 0, 0) 35%,
               rgba(0, 0, 0, 0) 50%,
               rgba(34, 34, 34, 0.7)
             ), url(${backgroundImage})`,
-        }}
-      />
+          }}
+        />
+      </div>
       {/* nav */}
       <nav className={isScrolled ? "nav-scrolled" : ""}>
         <div className="container">
@@ -112,31 +107,51 @@ const PagesHeader: React.FC<PagesHeaderProps> = ({
             <div className="nav-right col-xl-3 col-lg-4 col-md-2 col-sm-4 col-4">
               {/* language-selector */}
 
-              <div className="language-selector" ref={dropdownRef}>
-                <div onClick={toggleDropdown} className="language">
-                  <span
+              <div className="language-selector">
+                <Dropdown onSelect={handleSelect} className="drop-down-parent">
+                  <Dropdown.Toggle
+                    as="button"
+                    id="language-dropdown"
                     className={
-                      isScrolled ? "menu-text menu-text-scrolled" : "menu-text"
+                      isScrolled
+                        ? "language-select language-select-scrolled "
+                        : "language-select"
                     }
                   >
-                    Русский
-                  </span>
-                  <VscGlobe
-                    className={
-                      isScrolled ? "nav-icon nav-icon-scrolled" : "nav-icon"
-                    }
-                  />
-                </div>
-                {Open && (
-                  <div className="dropdown__menu">
-                    <div className="dropdown__item">
-                      <a href="#">English</a>{" "}
+                    <div
+                      className={
+                        isScrolled
+                          ? "menu-text menu-text-scrolled"
+                          : "menu-text"
+                      }
+                    >
+                      {languageMap[
+                        i18n.resolvedLanguage as "en" | "ru" | "uz"
+                      ] || t("Choose_lang")}
                     </div>
-                    <div className="dropdown__item pt">
-                      <a href="#">Oʻzbekcha</a>{" "}
-                    </div>
-                  </div>
-                )}
+                    <VscGlobe
+                      className={
+                        isScrolled ? "nav-icon nav-icon-scrolled " : "nav-icon"
+                      }
+                    />
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu className="l-menu-dropdown">
+                    {Object.entries(languageMap)
+                      .filter(
+                        ([langCode]) => langCode !== i18n.resolvedLanguage
+                      )
+                      .map(([langCode, label]) => (
+                        <Dropdown.Item
+                          key={langCode}
+                          eventKey={langCode}
+                          className="l-menu-text"
+                        >
+                          {label}
+                        </Dropdown.Item>
+                      ))}
+                  </Dropdown.Menu>
+                </Dropdown>
               </div>
 
               {/* Hamburger-menu */}
@@ -151,7 +166,7 @@ const PagesHeader: React.FC<PagesHeaderProps> = ({
                       isScrolled ? "menu-text menu-text-scrolled" : "menu-text"
                     }
                   >
-                    меню
+                    {t("header.menu.nav")}
                   </span>
                   <button className="menu-icon">
                     <span className={isScrolled ? "span-scrolled" : ""}></span>
@@ -203,29 +218,21 @@ const PagesHeader: React.FC<PagesHeaderProps> = ({
                                 </h2>
                                 <div className="line"></div>
                               </a>
-                              <div className="overlay-language  col-3">
-                                <a href="" className="overlay-language-text">
-                                  Oʻzbekcha
-                                </a>
-                                <a
-                                  href=""
-                                  className="overlay-language-text active"
-                                >
-                                  Русский
-                                </a>
-                                <a href="" className="overlay-language-text">
-                                  English
-                                </a>
-                              </div>
                             </div>
                           </div>
                         </div>
                         <div className="overlay-content">
                           <div className="overlay-content-title col-12">
                             {/* <div className="overlay-content-wrapper"> */}
-                            <h4 className="col-4">Галерея</h4>
-                            <h4 className="col-4">Посетителям</h4>
-                            <h4 className="col-4">Контакты</h4>
+                            <h4 className="col-4">
+                              {t("header.menu.nav_title_1")}
+                            </h4>
+                            <h4 className="col-4">
+                              {t("header.menu.nav_title_2")}
+                            </h4>
+                            <h4 className="col-4">
+                              {t("header.menu.nav_title_3")}
+                            </h4>
                             <div className="overlay-line"></div>
                             {/* </div> */}
                           </div>
@@ -233,34 +240,34 @@ const PagesHeader: React.FC<PagesHeaderProps> = ({
                             <div className="overlay-gallery overlay-l col-4">
                               <div className="overlay-link">
                                 <a href="/art-gallery-of-uzbekistan/src/about/about.html">
-                                  О нас
+                                  {t("header.menu.first.item1")}
                                 </a>
                               </div>
                               <div className="overlay-link">
                                 <a href="/art-gallery-of-uzbekistan/src/concept/concept.html">
-                                  Концепция экспозиции
+                                  {t("header.menu.first.item2")}
                                 </a>
                               </div>
                               <div className="overlay-link">
                                 <a href="/art-gallery-of-uzbekistan/src/collection/collection.html">
-                                  Коллекция
+                                  {t("header.menu.first.item3")}
                                 </a>
                               </div>
                               <div className="overlay-link">
                                 <a href="/art-gallery-of-uzbekistan/src/coins/coins.html">
-                                  Древние монеты
+                                  {t("header.menu.first.item4")}
                                 </a>
                               </div>
                             </div>
                             <div className="overlay-visitors overlay-l col-4">
                               <div className="overlay-link">
                                 <a href="/art-gallery-of-uzbekistan/src/planVisit/planVisit.html">
-                                  Спланировать визит
+                                  {t("header.menu.second.item1")}
                                 </a>
                               </div>
                               <div className="overlay-link">
                                 <a href="/art-gallery-of-uzbekistan/src/exhibition/exhibition.html">
-                                  Выставки
+                                  {t("header.menu.second.item2")}
                                 </a>
                               </div>
                               <div className="overlay-link">
@@ -269,25 +276,20 @@ const PagesHeader: React.FC<PagesHeaderProps> = ({
                                   href="https://art-gallery-of-uzbekistan-virtual.netlify.app"
                                   target="_blank"
                                 >
-                                  Виртуальный тур
+                                  {t("header.menu.second.item3")}
                                 </a>
                               </div>
                               <div className="overlay-link">
                                 <a href="/art-gallery-of-uzbekistan/src/history/history.html">
-                                  История искусств Узбекистана
+                                  {t("header.menu.second.item4")}
                                 </a>
                               </div>
                             </div>
                             <div className="overlay-contacts overlay-l col-4">
                               <div className="overlay-link">
                                 <a href="/art-gallery-of-uzbekistan/src/contact/contact.html">
-                                  Связаться с нами
+                                  {t("header.menu.third.item1")}
                                 </a>
-                                <div className="overlay-link">
-                                  <a href="/art-gallery-of-uzbekistan/src/japan/japan.html">
-                                    Контакты общества дружбы «Узбекистан-Япония»
-                                  </a>
-                                </div>
                               </div>
                             </div>
                           </div>

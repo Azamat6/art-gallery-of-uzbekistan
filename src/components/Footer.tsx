@@ -8,18 +8,21 @@ import { FaFacebook } from "react-icons/fa";
 import FooterLogo from "../assets/images/logo.png";
 import AccordionMenu from "./AccordeonMenu";
 
+import { useTranslation } from "react-i18next";
+
 const Footer: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <footer className="Footer">
       <div className="container">
         <div className="row">
           <div className="footer-nav col-12">
             <div className="contacts">
-              <h3 className="title">Контакты</h3>
+              <h3 className="title">{t("header.menu.nav_title_3")}</h3>
               <div className="text">
-                <a href="mailto:azasultanov06@gmail.com">
+                <a href="mailto:gmail@mail.ru">
                   {" "}
-                  <MdOutlineEmail className="icon" /> azasultanov06@gmail.com
+                  <MdOutlineEmail className="icon" /> gmail@mail.ru
                 </a>
               </div>
               <div className="text">
@@ -34,7 +37,8 @@ const Footer: React.FC = () => {
                   target="_blank"
                 >
                   {" "}
-                  <FaLocationDot className="icon" /> улица Буюк Турон 2, Ташкент
+                  <FaLocationDot className="icon" />
+                  {t("footer.location")}
                 </a>
               </div>
               <div className="text">
@@ -46,25 +50,25 @@ const Footer: React.FC = () => {
             </div>
 
             <div className="about-footer">
-              <h3 className="title">Галерея</h3>
+              <h3 className="title">{t("header.menu.nav_title_1")}</h3>
               <div className="text">
                 <a href="/art-gallery-of-uzbekistan/src/about/about.html">
-                  О нас
+                  {t("header.menu.first.item1")}
                 </a>
               </div>
               <div className="text">
                 <a href="/art-gallery-of-uzbekistan/src/concept/concept.html">
-                  Концепция экспозиции
+                  {t("header.menu.first.item2")}
                 </a>
               </div>
               <div className="text">
                 <a href="/art-gallery-of-uzbekistan/src/collection/collection.html">
-                  Коллекция
+                  {t("header.menu.first.item3")}
                 </a>
               </div>
               <div className="text">
                 <a href="/art-gallery-of-uzbekistan/src/coins/coins.html">
-                  Древние монеты
+                  {t("header.menu.first.item4")}
                 </a>
               </div>
             </div>
@@ -73,15 +77,15 @@ const Footer: React.FC = () => {
 
             <div className="visitors">
               <div className="visitors-left">
-                <h3 className="title">Посетителям</h3>
+                <h3 className="title">{t("header.menu.nav_title_2")}</h3>
                 <div className="text">
                   <a href="/art-gallery-of-uzbekistan/src/planVisit/planVisit.html">
-                    Спланировать визит
+                    {t("header.menu.second.item1")}
                   </a>
                 </div>
                 <div className="text">
                   <a href="/art-gallery-of-uzbekistan/src/exhibition/exhibition.html">
-                    Выставки
+                    {t("header.menu.second.item2")}
                   </a>
                 </div>
                 <div className="text">
@@ -90,18 +94,18 @@ const Footer: React.FC = () => {
                     href="https://art-gallery-of-uzbekistan-virtual.netlify.app"
                     target="_blank"
                   >
-                    Виртуальный тур
+                    {t("header.menu.second.item3")}
                   </a>
                 </div>
                 <div className="text">
                   <a href="/art-gallery-of-uzbekistan/src/history/history.html">
-                    История искусств Узбекистана
+                    {t("header.menu.second.item4")}
                   </a>
                 </div>
               </div>
               <div className="footer-logo">
                 <div className="logo">
-                  <img src={FooterLogo} alt="" loading="lazy" />
+                  <img src={FooterLogo} alt="NBU logo" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -133,18 +137,18 @@ const Footer: React.FC = () => {
             <div className="row">
               <div className="footer-end col-12">
                 <div className="usage">
-                  <a href="">Условие использования материалов сайта</a>
+                  <a href="/art-gallery-of-uzbekistan/src/terms/terms.html">
+                    {t("footer.end.usage")}
+                  </a>
                 </div>
-                <div className="gov ">
-                  2024 © Галерея изобразительного искусства Узбекистана
-                </div>
+                <div className="gov ">2025 © {t("footer.end.gov")}</div>
                 <div className="credits">
-                  Разработка сайта -&nbsp;
+                  {t("footer.end.credits")} -&nbsp;
                   <a
                     href="https://www.linkedin.com/in/azamatbek-sultanov-485311310"
                     target="_blank"
                   >
-                    А. Султанов
+                    {t("footer.end.me")}
                   </a>
                 </div>
               </div>

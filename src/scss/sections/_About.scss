@@ -1,18 +1,15 @@
 .PagesHeader{
-    z-index: 100;
     height: 100svh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    position: relative;
     background-color: #000;
     overflow: hidden;
-    
+    position: relative;
 }
 
 .PagesWhatsnew{
-    z-index: 10;
     position: absolute;
     bottom: 7%;
     transition: all 0.4s linear;
@@ -43,6 +40,8 @@ section.PageAbout{
     width: 100%;
     background-color: #fff;
     padding: 4rem 0;
+    z-index: 1;
+    position: relative;
     .pagesSubtitle{
         font-size: 1.8rem;
         line-height: 1.15;
@@ -121,17 +120,36 @@ section.PageAbout{
     .photoConceptRoom{
         width: 100%;
         height: 20svh;
-        background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.3), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%, rgba(34, 34, 34, 0.3)), url("/src/assets/images/Room.png");
-        background-position: center;
+        background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.3), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%, rgba(34, 34, 34, 0.3)), url("/src/assets/images/Room.jpg");
+        background-position: 0;
         background-repeat: no-repeat;
         background-size: cover;
         margin: 1.5rem 0 3rem;
+        
     }
     .creditsKamola{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: end;
+    }
+    .nbuCollection-image1{
+        width: 100%;
+        height: 30svh;
+        background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.3), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%, rgba(34, 34, 34, 0.3)), url("/src/assets/images/exhibitions/2025/nbuCollection/IMG_1634.JPG");
+        background-position: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 1.5rem 0 3rem;
+    }
+        .nbuCollection-image2{
+        width: 100%;
+        height: 30svh;
+        background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.3), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%, rgba(34, 34, 34, 0.3)), url("/src/assets/images/exhibitions/2025/nbuCollection/IMG_1643.JPG");
+        background-position: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 1.5rem 0 3rem;
     }
 }
 

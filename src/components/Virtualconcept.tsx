@@ -1,6 +1,9 @@
 import { IoIosArrowForward } from "react-icons/io";
+import { useTranslation } from "react-i18next";
 
 const VirtualConcept: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="virtualConcept">
       <a
@@ -11,9 +14,10 @@ const VirtualConcept: React.FC = () => {
         <div className="container">
           <div className="row">
             <h3 className="title">
-              Виртуальный тур <IoIosArrowForward className="arrow" />
+              {t("virtualConcept.vr.title")}
+              <IoIosArrowForward className="arrow" />
             </h3>
-            <div className="text">Посетите галерею, не выходя из дома.</div>
+            <div className="text">{t("virtualConcept.vr.text")}</div>
           </div>
         </div>
       </a>
@@ -24,12 +28,10 @@ const VirtualConcept: React.FC = () => {
         <div className="container">
           <div className="row">
             <h3 className="title">
-              Концепция экспозиции галереи{" "}
+              {t("virtualConcept.concept.title")}
               <IoIosArrowForward className="arrow" />
             </h3>
-            <div className="text">
-              2-этажная экспозиционно-выставочная площадь в 3 500 кв. м.
-            </div>
+            <div className="text">{t("virtualConcept.concept.text")}</div>
           </div>
         </div>
       </a>
