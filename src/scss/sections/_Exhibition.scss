@@ -37,6 +37,15 @@ section.Ex{
             }
           }
         }
+
+        .category-tabs{
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          transition: all 0.4s;
+          padding-left: 0;
+          margin-bottom: 25px;
+        }
       
         .cards {
         display: flex;

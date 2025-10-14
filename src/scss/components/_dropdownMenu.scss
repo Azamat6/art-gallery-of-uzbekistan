@@ -26,6 +26,7 @@
     margin: 0;
     padding: 0;
 
+
   .menu-text{
     position: relative;
       margin: 0;
@@ -47,12 +48,10 @@
         &:hover::after {
           transform: scaleX(1);
         }
+
   }
 
-      &:hover .menu-text-h::after,
-      &:hover .menu-text-h {
-        transform: scaleX(1);
-      }
+     
 
   .nav-icon{
     display: flex;
@@ -73,6 +72,10 @@
     padding: 0;
   }
 
+      &:hover .menu-text::after,
+      &:hover .menu-text {
+        transform: scaleX(1);
+      }
 }
 
 .l-menu-dropdown{
@@ -96,6 +99,7 @@
             justify-content: center;
             &:hover{
               text-decoration: underline;
+              background-color: #fff;
             }
   }
 

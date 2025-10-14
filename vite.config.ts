@@ -35,6 +35,11 @@ export default defineConfig({
 
 
         //Выставки
+        //2023
+        aleksey: resolve(__dirname, 'src/exhibition/2023/schusev-aleksey/aleksey.html'),
+        shawl: resolve(__dirname, 'src/exhibition/2023/shawl/shawl.html'),
+        amulet: resolve(__dirname, 'src/exhibition/2023/amulet/amulet.html'),
+
         //2024
         womenOfUzbekistan: resolve(__dirname, 'src/exhibition/2024/women-of-uzbekistan/women.html'),
         eastMotives: resolve(__dirname, 'src/exhibition/2024/east-motives/east.html'),
@@ -43,6 +48,9 @@ export default defineConfig({
         tunnelOfMemory: resolve(__dirname, 'src/exhibition/2024/tunnel-of-memory/memory.html'),
         umarRadjabov: resolve(__dirname, 'src/exhibition/2024/umar-radjabov/umar.html'),
         xudoyberganDevonov: resolve(__dirname, 'src/exhibition/2024/xudoybergan-devonov/devonov.html'),
+        helgaParis: resolve(__dirname, 'src/exhibition/2024/helga-paris/helga.html'),
+        turkicArtists: resolve(__dirname, 'src/exhibition/2024/turkic-artists-meeting/turkic-artists.html'),
+        azerheritage: resolve(__dirname, 'src/exhibition/2024/azerbaijan-heritage/azerheritage.html'),
 
         //nbu collection
         nbuCollection: resolve(__dirname, 'src/exhibition/2025/nbu-collection/nbu.html'),
@@ -51,6 +59,7 @@ export default defineConfig({
         //2025
         hotira: resolve(__dirname, 'src/exhibition/2025/memory/memory.html'),
         childhood: resolve(__dirname, 'src/exhibition/2025/planet-of-childhood/childhood.html'),
+        artmosfera: resolve(__dirname, 'src/exhibition/2025/artmosfera/artmosfera.html'),
 
       }
     }

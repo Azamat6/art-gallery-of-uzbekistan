@@ -10,10 +10,18 @@ import { exhibitionsData } from "./data";
 
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<number>(1);
+  const [activeCategory, setActiveCategory] = useState<string>("all");
 
-  const filteredExhibitions = exhibitionsData.filter(
-    (exhibition) => exhibition.id === activeTab
-  );
+  const filteredExhibitions = exhibitionsData.filter((exhibition) => {
+    if (activeTab === 3) {
+      return (
+        exhibition.category.includes(activeCategory) &&
+        exhibition.id === activeTab
+      );
+    }
+
+    return exhibition.id === activeTab;
+  });
 
   const { t } = useTranslation();
 
@@ -47,6 +55,44 @@ const App: React.FC = () => {
                 {t("PageExhibition.button_past")}
               </button>
             </div>
+
+            {activeTab === 3 ? (
+              <div className="category-tabs col-12">
+                <p className="filter">{t("PageExhibition.filter")}:</p>
+                <button
+                  className={activeCategory === "all" ? "active" : ""}
+                  onClick={() => setActiveCategory("all")}
+                >
+                  {t("PageExhibition.filter_all")}
+                </button>
+                <button
+                  className={activeCategory === "p" ? "active" : ""}
+                  onClick={() => setActiveCategory("a")}
+                >
+                  {t("PageExhibition.filter_a")}
+                </button>
+                <button
+                  className={activeCategory === "p" ? "active" : ""}
+                  onClick={() => setActiveCategory("b")}
+                >
+                  {t("PageExhibition.filter_b")}
+                </button>
+                <button
+                  className={activeCategory === "p" ? "active" : ""}
+                  onClick={() => setActiveCategory("c")}
+                >
+                  {t("PageExhibition.filter_c")}
+                </button>
+                <button
+                  className={activeCategory === "p" ? "active" : ""}
+                  onClick={() => setActiveCategory("d")}
+                >
+                  {t("PageExhibition.filter_d")}
+                </button>
+              </div>
+            ) : (
+              " "
+            )}
           </div>
         </div>
         <div className="cards">
