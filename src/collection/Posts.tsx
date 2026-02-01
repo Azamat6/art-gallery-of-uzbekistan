@@ -14,7 +14,9 @@ interface Post {
   title: LocalizedText;
   author: LocalizedText;
   year: string;
+  category: string;
 }
+
 
 interface PostsProps {
   posts: Post[];

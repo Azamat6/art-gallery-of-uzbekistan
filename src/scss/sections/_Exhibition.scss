@@ -5,31 +5,28 @@ section.Ex{
 
         .tabs {
           display: flex;
-          justify-content: center;
+          justify-content: start;
           width: 100%;
           transition: all 0.4s;
           // border-bottom: 1px var(--footerLight) solid;
           padding-left: 0;
-          margin-bottom: 25px;
+          margin-bottom: 70px;
+          gap: 80px;
       
           button {
             margin-left: 0;
             border: none;
             cursor: pointer;
-            color: #646464;
+            color: #7e7e7e;
             letter-spacing: 0;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             line-height: 1.15;
-            font-weight: 500;
+            font-weight: 400;
             font-family: var(--nunito);
-            width: 160px;
-            padding-bottom: 12px;
-            border-bottom: 5px transparent solid;
             background-color: #fff;
       
             &.active {
                 color: var(--dark);
-                border-bottom: 5px var(--almostDark) solid;
             }
       
             &:hover {
@@ -133,6 +130,31 @@ section.Ex{
         text-indent: 20px;
         line-height: 1.6rem;
         margin-top: 1rem;
+    }
+
+    .category-tabs{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 50px;
+      button{
+        text-decoration: none;
+        border: none;
+        background-color: transparent;
+        color: #7e7e7e;
+        font-size: 1.2rem;
+        font-weight: 400;
+        font-family: var(--nunito);
+        letter-spacing: 0;
+        line-height: 1.6rem;
+        border-bottom: 1px transparent solid;
+      }
+      button.active{
+        color: #000;
+        border-bottom: 1px #000 solid;
+      }
     }
 }
 

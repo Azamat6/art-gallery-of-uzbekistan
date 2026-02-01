@@ -1,0 +1,112 @@
+section.virtualConcept{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    border: none;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background-color: #000;
+    
+    .virtualTour{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.6), rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgba(34, 34, 34, 0.6)), url(/src/assets/images/VirtualTour-min.jpg);
+        height: 100%;
+        width: 50%;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 0 5% 3%;
+        transition: all 0.3s linear;
+        &:hover {
+            filter: brightness(90%)
+        }
+        &:hover .title{
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+        .title{
+            display: inline;
+            width: auto;
+            font-family: var(--nunito);
+            color: #fff;
+            font-size: 0.9rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.4s linear;
+            margin-bottom: 0.3rem;
+            position: relative;
+            .arrow{
+                position: absolute;
+                right: -1%;   
+            }
+        }
+        .text{
+            color: var(--almostLight);
+            font-size: 1rem;
+            font-weight: 300;
+            font-family: var(--inter);
+            letter-spacing: 0;
+            margin: 0;
+        }
+    }
+    .museumConcept{
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        background: linear-gradient(to bottom, rgba(34, 34, 34, 0.6), rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgba(34, 34, 34, 0.6)), url(/src/assets/images/ConceptOfGallery-min.jpg);
+        height: 100%;
+        width: 50%;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 0 5% 3%;
+        transition: all 0.3s ease;
+        &:hover {
+            filter: brightness(90%)
+        }
+        &:hover .title{
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+        .title{
+            display: inline;
+            width: auto;
+            font-family: var(--nunito);
+            color: #fff;
+            font-size: 0.9rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.4s linear;
+            position: relative;
+            margin-bottom: 0.3rem;
+            .arrow{
+                position: absolute;
+                right: -1%;   
+            }
+            
+        }
+        .text{
+            color: var(--almostLight);
+            font-size: 1rem;
+            font-weight: 300;
+            font-family: var(--inter);
+            letter-spacing: 0;
+            margin: 0;
+        }
+    }
+}

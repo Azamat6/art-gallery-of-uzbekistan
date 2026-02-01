@@ -23,6 +23,7 @@ interface Post {
   title: LocalizedText;
   author: LocalizedText;
   year: string;
+  category: string;
 }
 
 const App: React.FC = () => {
@@ -32,6 +33,13 @@ const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [postsPerPage] = useState<number>(12);
 
+  const [activeCategory, setActiveCategory] = useState<string>("all");
+  const filteredPosts = posts.filter((post) => {
+    if (activeCategory === "all") return true;
+    return post.category === activeCategory;
+  });
+
+
   useEffect(() => {
     setPosts(data as Post[]); // типизируем вручную
   }, []);
@@ -39,8 +47,21 @@ const App: React.FC = () => {
   // Get current posts
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
-  const howManyPages = Math.ceil(posts.length / postsPerPage);
+  
+  const currentPosts = filteredPosts.slice(
+    indexOfFirstPost,
+    indexOfLastPost
+  );
+  
+  const howManyPages = Math.ceil(
+    filteredPosts.length / postsPerPage
+  );
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [activeCategory]);
+
+
 
   return (
     <div className="app-container">
@@ -62,12 +83,44 @@ const App: React.FC = () => {
               <h2 className="paginationTitle">
                 {t("PageCollection.online-collection")}
               </h2>
-              <p className="text">{t("PageCollection.text")}</p>
+              {/* <p className="text">{t("PageCollection.text")}</p> */}
+              <div className="category-tabs">
+                <button
+                  className={activeCategory === "all" ? "active" : ""}
+                  onClick={() => setActiveCategory("all")}
+                >
+                  {t("PageCollection.filter_all")}
+                </button>
+                
+                <button
+                  className={activeCategory === "painting" ? "active" : ""}
+                  onClick={() => setActiveCategory("painting")}
+                >
+                  {t("PageCollection.filter_painting")}
+                </button>
+                
+                <button
+                  className={activeCategory === "graphics" ? "active" : ""}
+                  onClick={() => setActiveCategory("graphics")}
+                >
+                  {t("PageCollection.filter_graphics")}
+                </button>
+                
+                <button
+                  className={activeCategory === "photo" ? "active" : ""}
+                  onClick={() => setActiveCategory("photo")}
+                >
+                  {t("PageCollection.filter_photo")}
+                </button>
+              </div>
+
               <Posts posts={currentPosts} />
               <Pagination
                 pages={howManyPages}
+                currentPage={currentPage}
                 setCurrentPage={setCurrentPage}
               />
+
             </div>
           </div>
         </div>

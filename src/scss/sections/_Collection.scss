@@ -16,6 +16,32 @@ section.CollectionPage{
    .gallery{
     margin-top: 7rem;
 
+      .category-tabs{
+      display: flex;
+      justify-content: start;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+      margin-top: 40px;
+      margin-bottom: 10px;
+
+      button{
+        text-decoration: none;
+        border: none;
+        background-color: transparent;
+        color: #7e7e7e;
+        font-size: 1.2rem;
+        font-weight: 400;
+        font-family: var(--nunito);
+        letter-spacing: 0;
+        line-height: 1.6rem;
+        border-bottom: 1px transparent solid;
+      }
+      button.active{
+        color: #000;
+        border-bottom: 1px #000 solid;
+      }
+    }
     .paginationTitle{
       display: block;
       font-family: var(--montserrat);
@@ -40,7 +66,7 @@ section.CollectionPage{
     .posts {
       display: grid;
       gap: 2rem;
-      margin-top: 3rem;
+      margin-top: 2rem;
       grid-template-columns: repeat(3, 1fr);
     }
     

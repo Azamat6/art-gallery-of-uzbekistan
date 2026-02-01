@@ -1,0 +1,1976 @@
+@media (max-width: 1400px) {
+  header .underHeader .events .event-cards {
+    gap: 4rem;
+  }
+  .nav-right {
+    gap: 1.5rem;
+  }
+  .whatsnew a.btext {
+    font-size: 2.3rem;
+  }
+  .aboutGallery .about-info {
+    height: 350px;
+  }
+  .aboutGallery .about-info .text {
+    width: 100%;
+  }
+  .coin-collection .about-info {
+    height: 330px;
+  }
+  .coin-collection .about-info .text {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .app-container section.PlanVisit .VisitorInfo {
+    height: 650px;
+    align-items: center;
+  }
+  .app-container section.PlanVisit .VisitorInfo .img {
+    width: 40%;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info {
+    width: 60%;
+    padding: 5rem 4rem;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content .info-text .category .text {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    width: 90%;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content .info-text .price .text {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  .app-container section.Tour .margintop {
+    margin-top: 2rem;
+  }
+  .app-container section.Tour .margintopS {
+    margin-top: 3rem;
+  }
+  .app-container section.Tour .margintopM {
+    margin-top: 1rem;
+  }
+  .app-container section.Tour .tourWrapper .text {
+    font-size: 1rem;
+  }
+  .app-container section.Tour .table .firstrow .text {
+    font-size: 1rem;
+  }
+  .app-container section.Prices .text {
+    font-size: 1rem;
+  }
+  .app-container section.Prices .margintop {
+    margin-top: 2rem;
+  }
+  .app-container section.Prices .margintopS {
+    margin-top: 3rem;
+  }
+  .app-container section.Prices .margintopM {
+    margin-top: 1rem;
+  }
+  section.PageAbout .firstColumn h4 {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+  }
+  section.PageAbout .firstColumn h3 {
+    font-size: 0.9rem;
+  }
+  section.PageAbout .firstColumn .text {
+    font-size: 1rem;
+  }
+  section.PageAbout .firstColumn .margintop {
+    margin-top: 2rem;
+  }
+  section.PageAbout .firstColumn .margintopS {
+    margin-top: 3rem;
+  }
+  section.PageAbout .firstColumn .margintopM {
+    margin-top: 1rem;
+  }
+  .fullscreen-menu .menu-overlay .menu-content .navbar .logo {
+    width: 19rem;
+  }
+  .fullscreen-menu .menu-overlay .menu-content .navbar .logo h2 {
+    font-size: 2.3rem;
+  }
+  .fullscreen-menu .menu-overlay .menu-content .overlay-content .overlay-content-title {
+    height: 100px;
+  }
+  .fullscreen-menu .menu-overlay .menu-content .overlay-content .overlay-content-title h4 {
+    font-size: 1.8rem;
+  }
+  .fullscreen-menu .menu-overlay .menu-content .overlay-content .overlay-content-links .overlay-l .overlay-link a {
+    font-size: 1.1rem;
+  }
+  header nav .navbar .logo {
+    width: 19rem;
+  }
+  header nav .navbar .logo h2 {
+    font-size: 2.3rem;
+  }
+  header nav .navbar .logo .logo-h1-scrolled {
+    font-size: 1.35rem;
+  }
+  header nav .navbar .logo .line-scrolled {
+    width: 0.3rem;
+  }
+  header nav .navbar .logo-scrolled {
+    width: 11rem;
+  }
+  header nav .nav-right {
+    gap: 1.2rem;
+  }
+  header nav .nav-right .menu-toggle {
+    gap: 0.9rem;
+  }
+  header nav .nav-right .language {
+    gap: 0.9rem;
+  }
+  header .underHeader .workingHours .time {
+    font-size: 2.4rem;
+  }
+  header .underHeader .events .event-cards {
+    gap: 2rem;
+  }
+  header .underHeader .events .event-cards a .card .text-wrapper {
+    padding: 0.8rem 1.3rem;
+  }
+  header .underHeader .events .event-cards a .card .text-wrapper .card-title {
+    font-size: 1rem;
+  }
+  .whatsnew a.btext {
+    font-size: 2.2rem;
+  }
+  .PagesWhatsnew h1.titleBig {
+    font-weight: 400;
+    font-size: 2.8rem;
+    width: 100%;
+  }
+  .PagesWhatsnew h2.title {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+  }
+  section.CollectionPage .startInfo h4 {
+    font-size: 1.7rem;
+    text-indent: 5rem;
+  }
+  section.CollectionPage .gallery {
+    margin-top: 6rem;
+  }
+  section.CollectionPage .gallery .paginationTitle {
+    font-size: 2.8rem;
+  }
+  section.CollectionPage .gallery .text {
+    font-size: 1.1rem;
+  }
+  section.CollectionPage .gallery .pagination-container {
+    gap: 4rem;
+  }
+  section.CollectionPage .gallery .pagination-container .paginationNumbers {
+    font-size: 1.4rem;
+  }
+  section.CollectionPage .gallery .post {
+    margin-bottom: 4rem;
+  }
+  section.CollectionPage .gallery .post h3 {
+    font-size: 1.1rem;
+  }
+  section.CollectionPage .gallery .post .post-info p {
+    font-size: 1.2rem;
+  }
+  section.CollectionPage .close-button {
+    right: 1.3rem;
+  }
+  .coin-collection .about-info {
+    height: 330px;
+    padding-left: 1.5rem;
+  }
+  .coin-collection .about-info h4.subtitle {
+    font-size: 1.7rem;
+  }
+  .coin-collection .about-info .text {
+    width: 100%;
+  }
+  .coin-collection .about-img img {
+    height: 100%;
+  }
+  .aboutGallery .about-info {
+    height: 350px;
+  }
+  .aboutGallery .about-info h1.subtitle {
+    font-size: 1.7rem;
+  }
+  .aboutGallery .about-info .text {
+    width: 90%;
+  }
+  section.Gallery .box {
+    min-width: 360px;
+  }
+  section.Gallery .box h4.box-title {
+    font-size: 1.2rem;
+  }
+  section.Gallery .box .display-flex .box-text {
+    font-size: 0.95rem;
+  }
+  section.Gallery .box .display-flex .year {
+    font-size: 0.95rem;
+  }
+  section.Gallery .link a.readmore {
+    font-weight: 800;
+    font-size: 0.8rem;
+  }
+  section.virtualConcept .virtualTour .text {
+    font-size: 0.95rem;
+  }
+  section.virtualConcept .museumConcept .text {
+    font-size: 0.95rem;
+  }
+  section.Ex .tabs button {
+    font-size: 1.3rem;
+    width: 160px;
+    padding-bottom: 12px;
+    border-bottom: 5px transparent solid;
+  }
+  section.Ex .empty-message {
+    font-size: 1.1rem;
+  }
+  section.Ex .info-for-previous p {
+    font-size: 0.95rem;
+  }
+  section.Ex .cards .card .img {
+    height: 450px;
+  }
+  section.Ex .cards .card .info {
+    padding: 1rem 0 1.5rem;
+  }
+  section.Ex .cards .card .info .info-content .title {
+    font-size: 0.8rem;
+    margin: 0 0 8px 0;
+  }
+  section.Ex .cards .card .info .info-content .info-title {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+  }
+  section.Ex .cards .card .info .info-content span {
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+    margin-top: 10px;
+  }
+  .info-for-previous p {
+    font-size: 0.95rem;
+    line-height: 1.4rem;
+  }
+}
+@media (max-width: 1025px) {
+  section.CollectionPage .gallery .posts {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+@media (max-width: 992px) {
+  section.Contact .firstColumn h4 {
+    margin-left: 0;
+  }
+  section.Contact .firstColumn .text a {
+    text-indent: 0px;
+  }
+  section.Contact .firstColumn .timetable {
+    width: 60%;
+  }
+  section.Contact .firstColumn .timetable .text {
+    text-indent: 0px;
+  }
+  section.Contact .firstColumn .bb {
+    border-bottom: 1px solid #000;
+  }
+  section.Contact .firstColumn iframe {
+    margin-top: 3rem;
+    height: 200px;
+  }
+  .app-container section.PlanVisit .VisitorInfo {
+    height: 600px;
+  }
+  .app-container section.PlanVisit .VisitorInfo .img {
+    width: 20%;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info {
+    padding: 4rem 3rem;
+    width: 80%;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content .title {
+    font-size: 0.8rem;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content .info-text .category .text {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content .info-text .price .text {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  .app-container section.Tour {
+    padding: 4rem 0;
+  }
+  .app-container section.Tour h3.title {
+    font-size: 0.8rem;
+  }
+  .app-container section.Tour .margintop {
+    margin-top: 1.5rem;
+  }
+  .app-container section.Tour .margintopS {
+    margin-top: 2.5rem;
+  }
+  .app-container section.Tour .margintopM {
+    margin-top: 1rem;
+  }
+  .app-container section.Tour .tourWrapper .text {
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+  }
+  .app-container section.Tour .table {
+    margin: 2rem 0 0;
+  }
+  .app-container section.Tour .table .firstrow {
+    margin-bottom: 0.8rem;
+  }
+  .app-container section.Tour .table .firstrow .text {
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+  }
+  .app-container section.Prices {
+    padding: 0 0 4rem;
+  }
+  .app-container section.Prices h3.title {
+    font-size: 0.8rem;
+  }
+  .app-container section.Prices .text {
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+  }
+  .app-container section.Prices .margintop {
+    margin-top: 0rem;
+  }
+  .app-container section.Prices .margintopS {
+    margin-top: 2.5rem;
+  }
+  .app-container section.Prices .margintopM {
+    margin-top: 1rem;
+  }
+  .app-container section.map {
+    padding: 4rem 0;
+  }
+  .app-container section.map h3.title {
+    font-size: 0.8rem;
+  }
+  .app-container section.map .text {
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+  }
+  section.Ex .tabs button {
+    font-size: 1.2rem;
+    width: 160px;
+    padding-bottom: 12px;
+    border-bottom: 5px transparent solid;
+  }
+  section.Ex .empty-message {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+  section.Ex .cards {
+    margin-bottom: 3rem;
+  }
+  section.Ex .cards .card {
+    width: 100%;
+  }
+  section.Ex .cards .card .img {
+    height: 400px;
+  }
+  section.Ex .cards .card .info {
+    padding: 1rem 0 1.5rem;
+  }
+  section.Ex .cards .card .info .info-content .title {
+    font-size: 0.8rem;
+    margin: 0 0 6px 0;
+  }
+  section.Ex .cards .card .info .info-content .info-title {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+  section.Ex .cards .card .info .info-content span {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    margin-top: 8px;
+  }
+  .info-for-previous p {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+  section.PageAbout {
+    padding: 3rem 0;
+  }
+  section.PageAbout .firstColumn h4 {
+    font-size: 0.8rem;
+  }
+  section.PageAbout .firstColumn h3 {
+    font-size: 0.8rem;
+  }
+  section.PageAbout .firstColumn .text {
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+  }
+  section.PageAbout .firstColumn .margintop {
+    margin-top: 1.5rem;
+  }
+  section.PageAbout .firstColumn .margintopS {
+    margin-top: 2.5rem;
+  }
+  section.PageAbout .firstColumn .margintopM {
+    margin-top: 1rem;
+  }
+  section.virtualConcept {
+    height: 1000px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  section.virtualConcept .virtualTour {
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 500px;
+    padding: 0 5% 3rem;
+  }
+  section.virtualConcept .virtualTour .title {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+  section.virtualConcept .virtualTour .text {
+    font-size: 0.9rem;
+  }
+  section.virtualConcept .museumConcept {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 500px;
+    padding: 0 5% 3rem;
+  }
+  section.virtualConcept .museumConcept .title {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+  section.virtualConcept .museumConcept .text {
+    font-size: 0.9rem;
+  }
+  .fullscreen-menu .menu-overlay .menu-content .overlay-content {
+    display: none;
+    opacity: 0;
+  }
+  .fullscreen-menu .menu-overlay .menu-content .accordion-menu {
+    display: block;
+    opacity: 1;
+  }
+  header nav .navbar .logo .logo-h1-scrolled {
+    font-size: 1.35rem;
+  }
+  header nav .navbar .logo .line-scrolled {
+    width: 0.3rem;
+  }
+  header nav .nav-right {
+    gap: 1.3rem;
+  }
+  header nav .nav-right .menu-text {
+    display: none;
+    opacity: 0;
+  }
+  header nav .nav-right .menu-toggle {
+    gap: 0;
+  }
+  header nav .nav-right .language {
+    gap: 0;
+  }
+  header nav .nav-right .dropdown__menu {
+    top: 100%;
+    left: -100%;
+  }
+  header .whatsnew {
+    padding-bottom: 50px;
+  }
+  header .whatsnew a.btext {
+    font-size: 1.9rem;
+  }
+  header .whatsnew .title {
+    font-size: 0.8rem;
+  }
+  header div.underHeader .workingHours {
+    height: 210px;
+    margin-bottom: 5rem;
+  }
+  header div.underHeader .workingHours .title {
+    font-size: 0.8rem;
+  }
+  header div.underHeader .workingHours .time {
+    font-size: 2.4rem;
+  }
+  header div.underHeader .workingHours a.link_cost {
+    width: 65%;
+  }
+  header div.underHeader .events .title {
+    font-size: 0.8rem;
+  }
+  header div.underHeader .events .event-cards {
+    gap: 2rem;
+  }
+  header div.underHeader .events .event-cards a .card .text-wrapper {
+    padding: 0.8rem 1.3rem;
+  }
+  header div.underHeader .events .event-cards a .card .text-wrapper .card-title {
+    font-size: 1rem;
+  }
+  section.Gallery .gallery-up .title {
+    font-size: 0.8rem;
+  }
+  section.Gallery .box {
+    min-width: 330px;
+  }
+  section.Gallery .box h4.box-title {
+    font-size: 1.15rem;
+  }
+  section.Gallery .box .display-flex .box-text {
+    font-size: 0.9rem;
+  }
+  section.Gallery .box .display-flex .year {
+    font-size: 0.9rem;
+  }
+  section.Gallery .link a.readmore {
+    font-weight: 800;
+    font-size: 0.8rem;
+  }
+  .PagesWhatsnew h1.titleBig {
+    font-weight: 400;
+    font-size: 2.3rem;
+    width: 100%;
+  }
+  .PagesWhatsnew h2.title {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+  }
+  .coin-collection .about-info {
+    height: 210px;
+    margin-top: 2rem;
+  }
+  .coin-collection .about-info .title {
+    font-size: 0.8rem;
+  }
+  .coin-collection .about-info h4.subtitle {
+    font-size: 1.7rem;
+  }
+  .coin-collection .about-info .text {
+    width: 100%;
+  }
+  .coin-collection .about-info .read {
+    margin-top: 1rem;
+  }
+  .coin-collection .about-img {
+    order: -1;
+    justify-content: center;
+  }
+  .coin-collection .about-img img {
+    height: 100%;
+  }
+  .aboutGallery .about-info {
+    height: 210px;
+    margin-top: 2rem;
+  }
+  .aboutGallery .about-info .title {
+    font-size: 0.8rem;
+  }
+  .aboutGallery .about-info h1.subtitle {
+    font-size: 1.7rem;
+  }
+  .aboutGallery .about-info .text {
+    width: 100%;
+  }
+  .aboutGallery .about-info .read {
+    margin-top: 1rem;
+  }
+  .aboutGallery .about-img {
+    order: -1;
+    justify-content: center;
+  }
+  .aboutGallery .about-img img {
+    height: 100%;
+  }
+  footer.Footer .title {
+    font-size: 0.8rem;
+  }
+  footer.Footer .text a {
+    font-size: 0.9rem;
+  }
+  footer.Footer .footer-nav {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    padding: 4rem 0;
+  }
+  footer.Footer .footer-nav .visitors {
+    margin-top: 4rem;
+    width: 76%;
+    justify-content: space-between;
+  }
+  footer.Footer .footer-nav .visitors .footer-logo {
+    margin-right: 10%;
+  }
+  footer.Footer .footer-end {
+    height: 70px;
+    flex-wrap: wrap;
+    align-items: start;
+  }
+  footer.Footer .footer-end .usage {
+    width: 50%;
+    height: 45%;
+  }
+  footer.Footer .footer-end .gov {
+    width: 100%;
+    justify-content: center;
+    height: 45%;
+    order: 1;
+  }
+  footer.Footer .footer-end .credits {
+    width: 50%;
+    height: 45%;
+    justify-content: end;
+  }
+  .curtains-left {
+    display: none;
+    opacity: 0;
+    left: -100%;
+  }
+  .curtains-right {
+    display: none;
+    opacity: 0;
+    right: -100%;
+  }
+  .loaded-left {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  .loaded-right {
+    transform: translateX(0);
+    opacity: 0;
+  }
+}
+@media (max-width: 768px) {
+  section.japan div.order1 {
+    order: -1;
+  }
+  section.japan div.order2 {
+    margin-top: 1.5rem;
+  }
+  section.japan .margintopS {
+    margin-top: 1.5rem !important;
+  }
+  section.Contact .firstColumn .timetable {
+    width: 80%;
+  }
+  section.Contact .firstColumn .bb {
+    border-bottom: 1px solid #000;
+  }
+  section.Contact .firstColumn iframe {
+    margin-top: 3rem;
+    height: 200px;
+  }
+  .app-container section.PlanVisit .VisitorInfo {
+    height: 720px;
+  }
+  .app-container section.PlanVisit .VisitorInfo .img {
+    width: 0%;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info {
+    width: 100%;
+    padding: 4rem 0 2rem 0;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content {
+    margin-top: 4rem;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content:first-child {
+    margin-top: 0;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content .title {
+    font-size: 0.8rem;
+    border-bottom: 0;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content .info-text {
+    width: 100%;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content .info-text .category {
+    width: 70%;
+    border-right: 0px var(--almostDark) solid;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content .info-text .category .text {
+    width: 100%;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px var(--almostDark) solid;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content .info-text .category .text:last-child {
+    border-bottom: 0px var(--almostDark) solid;
+    width: 80%;
+    padding-bottom: 0rem;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content .info-text .price {
+    width: 30%;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content .info-text .price .text {
+    font-size: 0.9rem;
+    width: 100%;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px var(--almostDark) solid;
+    line-height: 1.4rem;
+    justify-content: end;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content .info-text .price .text:last-child {
+    border-bottom: 0px var(--almostDark) solid;
+    margin-bottom: 2rem;
+    padding-bottom: 0rem;
+  }
+  .app-container section.Tour {
+    padding: 4rem 0 3rem;
+  }
+  .app-container section.Tour h3.title {
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  .app-container section.Tour .margintop {
+    margin-top: 1.5rem;
+  }
+  .app-container section.Tour .margintopS {
+    margin-top: 2.5rem;
+  }
+  .app-container section.Tour .margintopM {
+    margin-top: 1rem;
+  }
+  .app-container section.Tour .tourWrapper .text {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+  .app-container section.Tour .table {
+    width: 100%;
+    margin: 1rem 0 0;
+  }
+  .app-container section.Tour .table .firstrow {
+    margin-top: 1rem;
+  }
+  .app-container section.Tour .table .firstrow .text {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+  .app-container section.Prices {
+    padding: 0 0 3rem;
+  }
+  .app-container section.Prices h3.title {
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  .app-container section.Prices .text {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+  .app-container section.Prices .margintop {
+    margin-top: 0rem;
+  }
+  .app-container section.Prices .margintopS {
+    margin-top: 2.5rem;
+  }
+  .app-container section.Prices .margintopM {
+    margin-top: 1rem;
+  }
+  .app-container section.map {
+    padding: 3rem 0 4rem;
+  }
+  .app-container section.map h3.title {
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  .app-container section.map .text {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+  .app-container section.map iframe {
+    width: 100%;
+    height: 350px;
+  }
+  footer.Footer .footer-nav {
+    padding: 5rem 0 0 0;
+  }
+  footer.Footer .footer-nav .contacts {
+    display: none;
+    opacity: 0;
+  }
+  footer.Footer .footer-nav .about-footer {
+    display: none;
+    opacity: 0;
+  }
+  footer.Footer .footer-nav .visitors {
+    width: 100%;
+    padding: 0;
+    margin: 2rem 0 0;
+  }
+  footer.Footer .footer-nav .visitors .visitors-left {
+    display: none;
+    opacity: 0;
+  }
+  footer.Footer .footer-nav .visitors .footer-logo {
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+    display: flex;
+    height: 100%;
+    margin: 0 0 1rem 0;
+  }
+  footer.Footer .footer-nav .visitors .footer-logo .logo {
+    height: auto;
+    width: 5rem;
+  }
+  footer.Footer .accordion-menu {
+    display: block;
+    opacity: 1;
+  }
+  footer.Footer .social-media {
+    position: absolute;
+    left: 0;
+    bottom: 3%;
+  }
+  footer.Footer .footer-end {
+    height: 100px;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    align-items: start;
+  }
+  footer.Footer .footer-end .usage {
+    width: 100%;
+    height: 33%;
+    justify-content: start;
+  }
+  footer.Footer .footer-end .usage a {
+    font-size: 0.7rem;
+  }
+  footer.Footer .footer-end .gov {
+    width: 100%;
+    justify-content: start;
+    height: 33%;
+    order: -1;
+    font-size: 0.7rem;
+  }
+  footer.Footer .footer-end .credits {
+    width: 100%;
+    height: 33%;
+    justify-content: start;
+    order: 1;
+    font-size: 0.7rem;
+  }
+  footer.Footer .footer-end .credits a {
+    font-size: 0.7rem;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  section.PageAbout {
+    padding: 3rem 0;
+  }
+  section.PageAbout .firstColumn h4 {
+    font-size: 0.8rem;
+  }
+  section.PageAbout .firstColumn h3 {
+    font-size: 0.8rem;
+  }
+  section.PageAbout .firstColumn .text {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+  section.PageAbout .firstColumn .margintop {
+    margin-top: 1.5rem;
+  }
+  section.PageAbout .firstColumn .margintopS {
+    margin-top: 2rem;
+  }
+  section.PageAbout .firstColumn .margintopM {
+    margin-top: 1rem;
+  }
+  section.virtualConcept {
+    height: 900px;
+  }
+  section.virtualConcept .virtualTour {
+    height: 450px;
+    padding: 0 5% 2rem;
+  }
+  section.virtualConcept .virtualTour .title {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+  section.virtualConcept .virtualTour .text {
+    font-size: 0.9rem;
+  }
+  section.virtualConcept .museumConcept {
+    padding: 0 5% 2rem;
+    height: 450px;
+  }
+  section.virtualConcept .museumConcept .title {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+  section.virtualConcept .museumConcept .text {
+    font-size: 0.9rem;
+  }
+  .fullscreen-menu .menu-overlay .close-icon {
+    width: 1.9rem;
+    height: 1.9rem;
+    font-size: 1.3rem;
+  }
+  .fullscreen-menu .menu-overlay .menu-content .navbar {
+    height: 5rem;
+  }
+  .fullscreen-menu .menu-overlay .menu-content .navbar .logo {
+    width: 10.5rem;
+  }
+  .fullscreen-menu .menu-overlay .menu-content .navbar .logo h2 {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    letter-spacing: 0;
+  }
+  .fullscreen-menu .menu-overlay .menu-content .navbar .logo .line {
+    width: 0.3rem;
+    height: 2.6rem;
+  }
+  header nav {
+    padding: 0.5rem 0;
+    height: 5rem;
+    transition: 0;
+  }
+  header nav .navbar {
+    padding: 0.5rem 0 1rem;
+    transition: 0;
+  }
+  header nav .navbar .logo {
+    width: 10.5rem;
+    transition: 0;
+  }
+  header nav .navbar .logo h2 {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    letter-spacing: 0;
+    transition: 0;
+  }
+  header nav .navbar .logo .line {
+    width: 0.3rem;
+    height: 2.6rem;
+    transition: 0;
+  }
+  header nav .navbar .logo .logo-h1-scrolled {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    letter-spacing: 0;
+  }
+  header nav .navbar .logo .line-scrolled {
+    width: 0.3rem;
+  }
+  header nav .navbar a.logo-scrolled {
+    width: 10.5rem;
+  }
+  header nav .nav-right {
+    gap: 1.2rem;
+  }
+  header nav .nav-right .menu-text {
+    display: none;
+    opacity: 0;
+  }
+  header nav .nav-right .menu-toggle {
+    gap: 0;
+  }
+  header nav .nav-right .menu-toggle .menu-icon {
+    width: 22px;
+    height: 14px;
+  }
+  header nav .nav-right .menu-toggle .menu-icon span {
+    height: 2px;
+  }
+  header nav .nav-right .language {
+    gap: 0;
+  }
+  header nav .nav-right .language .nav-icon {
+    font-size: 1.45rem;
+    font-weight: 300;
+  }
+  header .nav-scrolled {
+    height: 4.2rem;
+    padding: 0;
+  }
+  header .whatsnew a.btext {
+    font-weight: 500;
+    font-size: 1.7rem;
+    margin-top: 0.5rem;
+  }
+  header div.underHeader .workingHours {
+    height: 200px;
+    margin-bottom: 6rem;
+  }
+  header div.underHeader .workingHours .title {
+    font-size: 0.8rem;
+  }
+  header div.underHeader .workingHours .time {
+    font-size: 2.1rem;
+  }
+  header div.underHeader .workingHours .text {
+    font-size: 0.9rem;
+  }
+  header div.underHeader .workingHours a.link_cost {
+    width: 250px;
+    font-weight: 700;
+  }
+  header div.underHeader .events {
+    height: 850px;
+  }
+  header div.underHeader .events .title {
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+  }
+  header div.underHeader .events .event-cards {
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  header div.underHeader .events .event-cards a {
+    width: 100%;
+  }
+  header div.underHeader .events .event-cards a .card {
+    margin-bottom: 1rem;
+    height: 350px;
+  }
+  header div.underHeader .events .event-cards a .card .card-img-wrapper {
+    height: 65%;
+  }
+  header div.underHeader .events .event-cards a .card .text-wrapper {
+    padding: 0 1.5rem;
+    justify-content: center;
+    height: 35%;
+  }
+  header div.underHeader .events .event-cards a .card .text-wrapper .card-title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  header div.underHeader .events .event-cards a .card .text-wrapper .text {
+    font-size: 1rem;
+  }
+  header div.underHeader .events .right .readmore {
+    margin-top: 0.5rem;
+    font-weight: 700;
+  }
+  section.Gallery .gallery-up .title {
+    font-size: 0.8rem;
+  }
+  section.Gallery .box {
+    min-width: 280px;
+  }
+  section.Gallery .box h4.box-title {
+    font-size: 1.1rem;
+  }
+  section.Gallery .box .display-flex .box-text {
+    font-size: 0.9rem;
+  }
+  section.Gallery .box .display-flex .year {
+    font-size: 0.9rem;
+  }
+  section.Gallery .link a.readmore {
+    font-weight: 700;
+    font-size: 0.8rem;
+  }
+  .coin-collection .about-info {
+    height: 200px;
+    margin-top: 1.5rem;
+  }
+  .coin-collection .about-info .title {
+    font-size: 0.8rem;
+  }
+  .coin-collection .about-info h4.subtitle {
+    font-size: 1.5rem;
+  }
+  .coin-collection .about-info .text {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .coin-collection .about-info .read {
+    margin-top: 1.5rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+  .aboutGallery .about-info {
+    height: 200px;
+    margin-top: 1.5rem;
+  }
+  .aboutGallery .about-info .title {
+    font-size: 0.8rem;
+  }
+  .aboutGallery .about-info h1.subtitle {
+    font-size: 1.5rem;
+  }
+  .aboutGallery .about-info .text {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .aboutGallery .about-info .read {
+    margin-top: 1.5rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+  .PagesWhatsnew {
+    bottom: 3%;
+  }
+  .PagesWhatsnew h1.titleBig {
+    font-weight: 400;
+    font-size: 1.8rem;
+    width: 100%;
+  }
+  .PagesWhatsnew h2.title {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+  }
+  section.CollectionPage {
+    padding: 5rem 0;
+  }
+  section.CollectionPage .startInfo h4 {
+    font-size: 1.5rem;
+    text-indent: 3rem;
+  }
+  section.CollectionPage .gallery {
+    margin-top: 5rem;
+  }
+  section.CollectionPage .gallery .paginationTitle {
+    font-size: 2.3rem;
+    font-weight: 400;
+  }
+  section.CollectionPage .gallery .text {
+    font-size: 1.1rem;
+  }
+  section.CollectionPage .gallery .pagination-container {
+    margin-top: 3rem;
+    gap: 2.5rem;
+  }
+  section.CollectionPage .gallery .pagination-container .paginationNumbers {
+    font-size: 1.3rem;
+  }
+  section.CollectionPage .gallery .pagination-container .arrow {
+    padding: 4px;
+  }
+  section.CollectionPage .gallery .post {
+    margin-bottom: 3rem;
+  }
+  section.CollectionPage .gallery .post h3 {
+    font-size: 1.1rem;
+  }
+  section.CollectionPage .gallery .post .post-info p {
+    font-size: 1.1rem;
+  }
+  section.CollectionPage .close-button {
+    top: 1.2rem;
+    right: 1.2rem;
+    font-size: 1.8rem;
+  }
+  section.Ex .tabs button {
+    font-size: 1.2rem;
+    width: 33.33%;
+    padding-bottom: 12px;
+    border-bottom: 5px transparent solid;
+  }
+  section.Ex .empty-message {
+    font-size: 1.1rem;
+  }
+  section.Ex .cards .card .img {
+    height: 380px;
+  }
+  section.Ex .cards .card .info {
+    padding: 1rem 0 1.5rem;
+  }
+  section.Ex .cards .card .info .info-content .title {
+    font-size: 0.8rem;
+    margin: 0 0 6px 0;
+  }
+  section.Ex .cards .card .info .info-content .info-title {
+    font-size: 1.15rem;
+    line-height: 1.3rem;
+  }
+  section.Ex .cards .card .info .info-content span {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    margin-top: 8px;
+  }
+  .info-for-previous p {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+}
+@media (max-width: 576px) {
+  section.Contact .firstColumn .timetable {
+    width: 100%;
+  }
+  .fullscreen-menu .menu-overlay .menu-content .accordion-menu .accordion-item {
+    margin-bottom: 1.2rem;
+  }
+  .fullscreen-menu .menu-overlay .menu-content .accordion-menu .accordion-item .accordion-title {
+    font-size: 0.9rem;
+  }
+  .fullscreen-menu .menu-overlay .menu-content .accordion-menu .accordion-item .accordion-title .icon {
+    font-size: 1.3rem;
+  }
+  .fullscreen-menu .menu-overlay .menu-content .accordion-menu .accordion-item .accordion-item .accordion-content ul a.text {
+    font-size: 1rem;
+  }
+  footer.Footer .accordion-menu {
+    margin: 0 1rem;
+  }
+  footer.Footer .accordion-menu .accordion-item .accordion-title {
+    font-size: 0.8rem;
+  }
+  footer.Footer .footer-nav {
+    padding: 5rem 0 0 0;
+  }
+  footer.Footer .footer-nav .contacts {
+    display: none;
+    opacity: 0;
+  }
+  footer.Footer .footer-nav .about-footer {
+    display: none;
+    opacity: 0;
+  }
+  footer.Footer .footer-nav .visitors {
+    width: 100%;
+    padding: 0;
+    margin: 2rem 0 0;
+  }
+  footer.Footer .footer-nav .visitors .visitors-left {
+    display: none;
+    opacity: 0;
+  }
+  footer.Footer .footer-nav .visitors .footer-logo {
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+    display: flex;
+    height: 100%;
+    margin: 0 1rem 1rem 0;
+  }
+  footer.Footer .footer-nav .visitors .footer-logo .logo {
+    height: auto;
+    width: 5rem;
+  }
+  footer.Footer .accordion-menu {
+    display: block;
+    opacity: 1;
+  }
+  footer.Footer .social-media {
+    position: absolute;
+    left: 1rem;
+    bottom: 3%;
+  }
+  footer.Footer .footer-end {
+    height: 100px;
+    padding: 10px 1rem;
+    flex-wrap: wrap;
+    align-items: start;
+  }
+  footer.Footer .footer-end .usage {
+    width: 100%;
+    height: 33%;
+    justify-content: start;
+  }
+  footer.Footer .footer-end .usage a {
+    font-size: 0.7rem;
+  }
+  footer.Footer .footer-end .gov {
+    width: 100%;
+    justify-content: start;
+    height: 33%;
+    order: -1;
+    font-size: 0.7rem;
+  }
+  footer.Footer .footer-end .credits {
+    width: 100%;
+    height: 33%;
+    justify-content: start;
+    order: 1;
+    font-size: 0.7rem;
+  }
+  footer.Footer .footer-end .credits a {
+    font-size: 0.7rem;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  section.virtualConcept {
+    height: 900px;
+  }
+  section.virtualConcept .virtualTour {
+    height: 450px;
+  }
+  section.virtualConcept .virtualTour .title {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+  section.virtualConcept .virtualTour .text {
+    font-size: 0.9rem;
+  }
+  section.virtualConcept .museumConcept {
+    height: 450px;
+  }
+  section.virtualConcept .museumConcept .title {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+  section.virtualConcept .museumConcept .text {
+    font-size: 0.9rem;
+  }
+  section.Gallery .gallery-up {
+    height: 130px;
+  }
+  section.Gallery .gallery-up .title {
+    font-size: 0.8rem;
+  }
+  section.Gallery .box {
+    min-width: 235px;
+  }
+  section.Gallery .box h4.box-title {
+    font-size: 1rem;
+  }
+  section.Gallery .box .display-flex {
+    margin: 0.1rem 0 0.2rem;
+  }
+  section.Gallery .box .display-flex .box-text {
+    font-size: 0.9rem;
+  }
+  section.Gallery .box .display-flex .year {
+    font-size: 0.9rem;
+  }
+  section.Gallery .link a.readmore {
+    width: 200px;
+    font-weight: 700;
+    font-size: 0.8rem;
+  }
+  section.Gallery .box:first-child {
+    margin-left: 2%;
+  }
+  .coin-collection {
+    padding: 50px 0;
+  }
+  .coin-collection .container .line {
+    bottom: -50px;
+  }
+  .coin-collection .about-info {
+    height: 200px;
+    margin-top: 2rem;
+  }
+  .coin-collection .about-info .title {
+    font-size: 0.8rem;
+  }
+  .coin-collection .about-info h4.subtitle {
+    font-size: 1.35rem;
+  }
+  .coin-collection .about-info .text {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .coin-collection .about-info .read {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  .aboutGallery {
+    padding: 50px 0;
+  }
+  .aboutGallery .container .line {
+    bottom: -50px;
+  }
+  .aboutGallery .about-info {
+    height: 200px;
+    margin-top: 2rem;
+  }
+  .aboutGallery .about-info .title {
+    font-size: 0.8rem;
+  }
+  .aboutGallery .about-info h1.subtitle {
+    font-size: 1.35rem;
+  }
+  .aboutGallery .about-info .text {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .aboutGallery .about-info .read {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  div.underHeader .workingHours {
+    height: 180px;
+    margin-bottom: 6rem;
+  }
+  div.underHeader .workingHours .title {
+    font-size: 0.8rem;
+  }
+  div.underHeader .workingHours .time {
+    font-size: 1.8rem;
+  }
+  div.underHeader .workingHours .text {
+    font-size: 0.9rem;
+  }
+  div.underHeader .workingHours a.link_cost {
+    width: 100%;
+    font-weight: 700;
+  }
+  div.underHeader .events {
+    height: 850px;
+  }
+  div.underHeader .events .title {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  div.underHeader .events .event-cards {
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  div.underHeader .events .event-cards a {
+    width: 100%;
+    height: 350px;
+  }
+  div.underHeader .events .event-cards a .card {
+    margin-bottom: 1rem;
+  }
+  div.underHeader .events .event-cards a .card .card-img-wrapper {
+    height: 65%;
+  }
+  div.underHeader .events .event-cards a .card .text-wrapper {
+    padding: 0 1.5rem;
+    justify-content: center;
+    height: 35%;
+  }
+  div.underHeader .events .event-cards a .card .text-wrapper .card-title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  div.underHeader .events .event-cards a .card .text-wrapper .text {
+    font-size: 1rem;
+  }
+  div.underHeader .events .right .readmore {
+    margin-top: 0.5rem;
+    font-weight: 700;
+  }
+}
+@media (max-width: 499px) {
+  header nav .nav-right {
+    gap: 0.9rem;
+  }
+  header .whatsnew a.btext {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  .PagesWhatsnew h1.titleBig {
+    font-size: 1.6rem;
+  }
+  .PagesWhatsnew h2.title {
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+  }
+  section.CollectionPage .startInfo h4 {
+    font-size: 1.4rem;
+    text-indent: 3rem;
+  }
+  section.CollectionPage .gallery .paginationTitle {
+    font-size: 2.1rem;
+    padding-bottom: 15px;
+  }
+  section.CollectionPage .gallery .pagination-container {
+    margin-top: 2rem;
+    border-top: none;
+  }
+}
+@media (max-width: 426px) {
+  section.japan .firstColumn .text {
+    text-indent: 0 !important;
+  }
+  section.Contact div.firstColumn p.margintopM {
+    margin-top: 0.5rem;
+  }
+  .app-container section.PlanVisit .VisitorInfo {
+    height: auto;
+  }
+  .app-container section.PlanVisit .VisitorInfo .img {
+    width: 0%;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info {
+    width: 100%;
+    padding: 5rem 0 5rem 0;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content {
+    margin-top: 4rem;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content:first-child {
+    margin-top: 0;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content .title {
+    font-size: 0.7rem;
+    border-bottom: 0;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content .info-text {
+    width: 100%;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content .info-text .category {
+    width: 70%;
+    border-right: 0px var(--almostDark) solid;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content .info-text .category .text {
+    width: 100%;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px var(--almostDark) solid;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content .info-text .category .text:last-child {
+    border-bottom: 0px var(--almostDark) solid;
+    width: 90%;
+    padding-bottom: 0rem;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content .info-text .price {
+    width: 30%;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content .info-text .price .text {
+    font-size: 0.9rem;
+    width: 100%;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px var(--almostDark) solid;
+    line-height: 1.3rem;
+    justify-content: end;
+  }
+  .app-container section.PlanVisit .VisitorInfo .info .info-content .info-text .price .text:last-child {
+    border-bottom: 0px var(--almostDark) solid;
+    margin-bottom: 2rem;
+    padding-bottom: 0rem;
+  }
+  .app-container section.Tour {
+    padding: 3rem 0 2.5rem;
+  }
+  .app-container section.Tour h3.title {
+    margin-left: 0;
+    font-size: 0.7rem;
+    margin-bottom: 0.8rem;
+  }
+  .app-container section.Tour .margintop {
+    margin-top: 1.5rem;
+  }
+  .app-container section.Tour .margintopS {
+    margin-top: 2.5rem;
+  }
+  .app-container section.Tour .margintopM {
+    margin-top: 1rem;
+  }
+  .app-container section.Tour .tourWrapper .text {
+    font-size: 0.9rem;
+    text-indent: 0.9rem;
+    line-height: 1.3rem;
+  }
+  .app-container section.Tour .table {
+    width: 100%;
+    margin: 0.5rem 0 0;
+  }
+  .app-container section.Tour .table .firstrow {
+    margin-top: 0.9rem;
+  }
+  .app-container section.Tour .table .firstrow .text {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+  .app-container section.Prices {
+    padding: 0 0 2.5rem;
+  }
+  .app-container section.Prices h3.title {
+    margin-left: 0;
+    font-size: 0.7rem;
+    margin-bottom: 0.8rem;
+  }
+  .app-container section.Prices .text {
+    font-size: 0.9rem;
+    text-indent: 0.9rem;
+    line-height: 1.3rem;
+  }
+  .app-container section.Prices .margintop {
+    margin-top: 0rem;
+  }
+  .app-container section.Prices .margintopS {
+    margin-top: 2.5rem;
+  }
+  .app-container section.Prices .margintopM {
+    margin-top: 1rem;
+  }
+  .app-container section.map {
+    padding: 2.5rem 0 3rem;
+  }
+  .app-container section.map h3.title {
+    margin-left: 0;
+    font-size: 0.7rem;
+    margin-bottom: 0.8rem;
+  }
+  .app-container section.map .text {
+    font-size: 0.9rem;
+    text-indent: 0.9rem;
+    line-height: 1.3rem;
+  }
+  .app-container section.map iframe {
+    width: 100%;
+    height: 300px;
+  }
+  section.Ex .tabs button {
+    font-size: 1.1rem;
+    width: 33.33%;
+    padding-bottom: 12px;
+    border-bottom: 5px transparent solid;
+  }
+  section.Ex .empty-message {
+    font-size: 1rem;
+  }
+  section.Ex .cards .card .img {
+    height: 300px;
+  }
+  section.Ex .cards .card .info {
+    padding: 1rem 0 1.5rem;
+  }
+  section.Ex .cards .card .info .info-content .title {
+    font-size: 0.7rem;
+    margin: 0 0 6px 0;
+  }
+  section.Ex .cards .card .info .info-content .info-title {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+  }
+  section.Ex .cards .card .info .info-content span {
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+    margin-top: 8px;
+  }
+  .info-for-previous p {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+  footer.Footer .accordion-menu .accordion-item .accordion-title {
+    font-size: 0.75rem;
+  }
+  footer.Footer .accordion-menu .accordion-item .accordion-title .icon {
+    font-size: 1.2rem;
+  }
+  section.virtualConcept {
+    height: 900px;
+  }
+  section.virtualConcept .virtualTour {
+    height: 450px;
+  }
+  section.virtualConcept .virtualTour .title {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+  section.virtualConcept .virtualTour .text {
+    font-size: 0.85rem;
+  }
+  section.virtualConcept .museumConcept {
+    height: 450px;
+  }
+  section.virtualConcept .museumConcept .title {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+  section.virtualConcept .museumConcept .text {
+    font-size: 0.85rem;
+  }
+  section.PageAbout {
+    padding: 2.5rem 0;
+  }
+  section.PageAbout .firstColumn h4 {
+    font-size: 0.7rem;
+    margin-left: 0;
+    margin-bottom: 0.8rem;
+  }
+  section.PageAbout .firstColumn h3 {
+    font-size: 0.7rem;
+    margin-left: 0;
+    margin-bottom: 0.8rem;
+  }
+  section.PageAbout .firstColumn .text {
+    font-size: 0.85rem;
+    text-indent: 0.9rem;
+    line-height: 1.3rem;
+  }
+  section.PageAbout .firstColumn .text span {
+    text-indent: 0rem;
+  }
+  section.PageAbout .firstColumn .margintop {
+    margin-top: 1rem;
+  }
+  section.PageAbout .firstColumn .margintopS {
+    margin-top: 1.5rem;
+  }
+  section.PageAbout .firstColumn .margintopM {
+    margin-top: 1rem;
+  }
+  section.Gallery .gallery-up {
+    height: 120px;
+  }
+  section.Gallery .gallery-up .title {
+    font-size: 0.7rem;
+  }
+  section.Gallery .box {
+    min-width: 210px;
+    margin-right: 3%;
+  }
+  section.Gallery .box h4.box-title {
+    font-size: 1rem;
+  }
+  section.Gallery .box .display-flex {
+    margin: 0.1rem 0 0.2rem;
+  }
+  section.Gallery .box .display-flex .box-text {
+    font-size: 0.85rem;
+  }
+  section.Gallery .box .display-flex .year {
+    font-size: 0.85rem;
+  }
+  section.Gallery .link a.readmore {
+    width: 190px;
+    font-weight: 700;
+    font-size: 0.7rem;
+  }
+  section.Gallery .box:first-child {
+    margin-left: 3%;
+  }
+  .coin-collection .about-info {
+    height: 200px;
+    margin-top: 2rem;
+  }
+  .coin-collection .about-info .title {
+    font-size: 0.7rem;
+  }
+  .coin-collection .about-info h4.subtitle {
+    font-size: 1.2rem;
+  }
+  .coin-collection .about-info .text {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+  .coin-collection .about-info .read {
+    margin-top: 1rem;
+    font-weight: 700;
+  }
+  .aboutGallery .about-info {
+    height: 200px;
+    margin-top: 2rem;
+  }
+  .aboutGallery .about-info .title {
+    font-size: 0.7rem;
+  }
+  .aboutGallery .about-info h1.subtitle {
+    font-size: 1.2rem;
+  }
+  .aboutGallery .about-info .text {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+  .aboutGallery .about-info .read {
+    margin-top: 1rem;
+    font-weight: 700;
+  }
+  header .language-selector .dropdown__menu .dropdown__item {
+    padding: 10px 15px;
+    font-size: 0.7rem;
+    font-weight: 450;
+  }
+  header .language-selector .dropdown__menu .dropdown__item:last-child {
+    padding-top: 0;
+  }
+  header .whatsnew a.btext {
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+  }
+  header .whatsnew .title {
+    font-size: 0.7rem;
+  }
+  header div.underHeader .workingHours {
+    height: 175px;
+    margin-bottom: 6rem;
+  }
+  header div.underHeader .workingHours .title {
+    font-size: 0.7rem;
+  }
+  header div.underHeader .workingHours .time {
+    font-size: 1.7rem;
+  }
+  header div.underHeader .workingHours .text {
+    font-size: 0.85rem;
+  }
+  header div.underHeader .workingHours a.link_cost {
+    width: 100%;
+    font-weight: 700;
+    font-size: 0.7rem;
+  }
+  header div.underHeader .events {
+    height: 800px;
+  }
+  header div.underHeader .events .title {
+    font-size: 0.7rem;
+    margin-bottom: 2rem;
+  }
+  header div.underHeader .events .event-cards {
+    gap: 4rem;
+    flex-wrap: wrap;
+  }
+  header div.underHeader .events .event-cards a {
+    width: 100%;
+    height: 330px;
+  }
+  header div.underHeader .events .event-cards a .card {
+    margin-bottom: 1rem;
+  }
+  header div.underHeader .events .event-cards a .card .card-img-wrapper {
+    height: 65%;
+  }
+  header div.underHeader .events .event-cards a .card .text-wrapper {
+    padding: 0 1.5rem;
+    justify-content: center;
+    height: 35%;
+  }
+  header div.underHeader .events .event-cards a .card .text-wrapper .card-title {
+    font-size: 0.95rem;
+    margin-bottom: 0.7rem;
+  }
+  header div.underHeader .events .event-cards a .card .text-wrapper .text {
+    font-size: 0.95rem;
+  }
+  header div.underHeader .events .right .readmore {
+    margin-top: 3rem;
+    font-weight: 700;
+    font-size: 0.7rem;
+  }
+  section.CollectionPage {
+    padding: 4rem 0;
+  }
+  section.CollectionPage .startInfo h4 {
+    font-size: 1.2rem;
+    text-indent: 2rem;
+  }
+  section.CollectionPage .gallery {
+    margin-top: 4rem;
+  }
+  section.CollectionPage .gallery .paginationTitle {
+    font-size: 1.8rem;
+  }
+  section.CollectionPage .gallery .text {
+    font-size: 1.1rem;
+  }
+  section.CollectionPage .gallery .pagination-container {
+    margin-top: 1.5rem;
+    gap: 2rem;
+  }
+  section.CollectionPage .gallery .pagination-container .paginationNumbers {
+    font-size: 1.25rem;
+  }
+  section.CollectionPage .gallery .pagination-container .arrow {
+    padding: 4px;
+  }
+  section.CollectionPage .gallery .post {
+    margin-bottom: 3rem;
+  }
+  section.CollectionPage .gallery .post h3 {
+    font-size: 1.1rem;
+  }
+  section.CollectionPage .gallery .post .post-info p {
+    font-size: 1.1rem;
+  }
+  section.CollectionPage .close-button {
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 376px) {
+  section.PageAbout .firstColumn .text {
+    text-indent: 0.8rem;
+  }
+  .coin-collection {
+    padding: 55px 0;
+  }
+  .coin-collection .about-info {
+    height: 200px;
+    margin-top: 2rem;
+  }
+  .coin-collection .container .line {
+    bottom: -55px;
+  }
+  .aboutGallery {
+    padding: 55px 0;
+  }
+  .aboutGallery .about-info {
+    height: 200px;
+    margin-top: 2rem;
+  }
+  .aboutGallery .container .line {
+    bottom: -55px;
+  }
+  header .whatsnew a.btext {
+    font-size: 1.15rem;
+    margin-top: 0.7rem;
+  }
+  header div.underHeader .workingHours {
+    height: 185px;
+    margin-bottom: 6rem;
+  }
+  header div.underHeader .workingHours .time {
+    font-size: 1.65rem;
+  }
+  .PagesWhatsnew h1.titleBig {
+    font-size: 1.5rem;
+  }
+  .PagesWhatsnew h2.title {
+    font-size: 0.7rem;
+  }
+  section.CollectionPage {
+    padding: 3rem 0;
+  }
+  section.CollectionPage .startInfo h4 {
+    font-size: 1.1rem;
+    text-indent: 2rem;
+  }
+  section.CollectionPage .gallery {
+    margin-top: 3rem;
+  }
+  section.CollectionPage .gallery .paginationTitle {
+    font-size: 1.6rem;
+    padding-bottom: 15px;
+  }
+  section.CollectionPage .gallery .pagination-container {
+    gap: 1.6rem;
+  }
+  section.CollectionPage .gallery .pagination-container .paginationNumbers {
+    font-size: 1.15rem;
+  }
+}
+@media (max-width: 335px) {
+  section.virtualConcept .virtualTour .title {
+    letter-spacing: 1px;
+  }
+  section.virtualConcept .museumConcept .title {
+    letter-spacing: 1px;
+  }
+  .PagesWhatsnew h1.titleBig {
+    font-size: 1.45rem;
+  }
+  section.CollectionPage .startInfo h4 {
+    font-size: 1rem;
+    text-indent: 2rem;
+  }
+  section.CollectionPage .gallery .paginationTitle {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=media.css.map */

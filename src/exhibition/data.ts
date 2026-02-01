@@ -60,7 +60,7 @@ export const exhibitionsData = [
   },
   {
     id: 3,
-    category: ["all"],
+    category: ["all", "photoExhibition"],
     image: WomenOfUzb,
     description: "PageExhibition.exhibition_photo",
     title: "PageExhibition.cards.women",
@@ -87,7 +87,7 @@ export const exhibitionsData = [
   },
   {
     id: 3,
-    category: ["all"],
+    category: ["all", "photoExhibition"],
     image: Devonov,
     description: "PageExhibition.exhibition_photo",
     title: "PageExhibition.cards.devonov",
@@ -96,7 +96,7 @@ export const exhibitionsData = [
   },
     {
     id: 3,
-    category: ["all"],
+    category: ["all", "photoExhibition"],
     image: Helga,
     description: "PageExhibition.exhibition_photo",
     title: "PageExhibition.cards.helga",

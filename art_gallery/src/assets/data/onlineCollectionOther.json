@@ -1,0 +1,50 @@
+[
+         {
+        "id": "27",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2FDva-gvozdya_1993.JPG?alt=media&token=05f8d035-0d63-4a84-a43a-5358ec464fc2",
+    "title": {
+      "ru": "Два гвоздя вбитые в голову",
+      "en": "Two Nails Driven into the Head",
+      "uz": "Boshlikka qadalgan ikkita mix"
+    },
+    "author": {
+      "ru": "-",
+      "en": "-",
+      "uz": "-"
+    },
+        "year": "1993",
+        "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fresized-image%2FDva-gvozdya_1993_500x500.JPG?alt=media&token=475530ea-929a-40c5-ad92-fac677586e17"     
+      },
+    {
+        "id": "93",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fno-info%20(Muslim).JPG?alt=media&token=b8e08655-1bf6-4c7c-b875-781fda7f328f",
+        "title": "muslim",
+        "author": "-",
+        "year": "-",
+        "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fresized-image%2Fno-info%20(Muslim)_500x500.JPG?alt=media&token=1df8063a-4bf9-408c-8437-7c81a779329e"     
+      },
+            {
+        "id": "106",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fno-info(21).JPG?alt=media&token=d52b8bb2-d915-425e-8ed4-1f2f5f9fcbea",
+        "title": "no-info(21)",
+        "author": "-",
+        "year": "-",
+        "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fresized-image%2Fno-info(21)_500x500.JPG?alt=media&token=bfabb698-4e59-4bf4-90ac-4f224e8187ed"     
+      },
+      {
+        "id": "107",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fno-info(22).JPG?alt=media&token=41d78d34-cb89-49fa-a177-506dbac3b56c",
+        "title": "no-info(22)",
+        "author": "-",
+        "year": "-",
+        "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fresized-image%2Fno-info(22)_500x500.JPG?alt=media&token=638a7011-692a-4dea-a065-0ff9dc8d5c3c"     
+      },
+            {
+        "id": "108",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fno-info(23).JPG?alt=media&token=5d62327b-7bee-4f4f-99a9-aa64ff16a814",
+        "title": "no-info(23)",
+        "author": "-",
+        "year": "-",
+        "thumbnailUrl": "https://firebasestorage.googleapis.com/v0/b/art-gallery-of-uzbekistan.firebasestorage.app/o/OnlineCollection%2Fresized-image%2Fno-info(23)_500x500.JPG?alt=media&token=b6b70dc6-e71e-4b55-9355-70c2bc68b202"     
+      }
+]

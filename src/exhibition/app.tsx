@@ -36,7 +36,7 @@ const App: React.FC = () => {
         <div className="container">
           <div className="row">
             <div className="tabs col-12">
-              <button
+              <button 
                 className={activeTab === 1 ? "active" : ""}
                 onClick={() => setActiveTab(1)}
               >
@@ -56,43 +56,45 @@ const App: React.FC = () => {
               </button>
             </div>
 
-            {activeTab === 3 ? (
-              <div className="category-tabs col-12">
-                <p className="filter">{t("PageExhibition.filter")}:</p>
-                <button
-                  className={activeCategory === "all" ? "active" : ""}
-                  onClick={() => setActiveCategory("all")}
-                >
-                  {t("PageExhibition.filter_all")}
-                </button>
-                <button
-                  className={activeCategory === "p" ? "active" : ""}
-                  onClick={() => setActiveCategory("a")}
-                >
-                  {t("PageExhibition.filter_a")}
-                </button>
-                <button
-                  className={activeCategory === "p" ? "active" : ""}
-                  onClick={() => setActiveCategory("b")}
-                >
-                  {t("PageExhibition.filter_b")}
-                </button>
-                <button
-                  className={activeCategory === "p" ? "active" : ""}
-                  onClick={() => setActiveCategory("c")}
-                >
-                  {t("PageExhibition.filter_c")}
-                </button>
-                <button
-                  className={activeCategory === "p" ? "active" : ""}
-                  onClick={() => setActiveCategory("d")}
-                >
-                  {t("PageExhibition.filter_d")}
-                </button>
-              </div>
-            ) : (
-              " "
-            )}
+           {activeTab === 3 && (
+            <div className="category-tabs col-12">
+              <button
+                className={activeCategory === "all" ? "active" : ""} 
+                onClick={() => setActiveCategory("all")}
+              >
+                {t("PageExhibition.filter_all")}
+              </button>          
+
+              <button
+                className={activeCategory === "photoExhibition" ? "active" : ""}
+                onClick={() => setActiveCategory("photoExhibition")}
+              >
+                {t("PageExhibition.filter_photoExhibition")}
+              </button>          
+
+              <button
+                className={activeCategory === "goethe" ? "active" : ""}
+                onClick={() => setActiveCategory("goethe")}
+              >
+                {t("PageExhibition.filter_Goethe")}
+              </button>          
+
+              <button
+                className={activeCategory === "c" ? "active" : ""}
+                onClick={() => setActiveCategory("c")}
+              >
+                {t("PageExhibition.filter_c")}
+              </button>            
+
+              <button
+                className={activeCategory === "d" ? "active" : ""}
+                onClick={() => setActiveCategory("d")}
+              >
+                {t("PageExhibition.filter_d")}
+              </button>
+            </div>
+          )}
+
           </div>
         </div>
         <div className="cards">

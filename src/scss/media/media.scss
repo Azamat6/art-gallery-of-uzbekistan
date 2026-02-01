@@ -375,10 +375,7 @@
     section.Ex{
         .tabs{
             button{
-                font-size: 1.3rem;
-                width: 160px;
-                padding-bottom: 12px;
-                border-bottom: 5px transparent solid;
+                font-size: 1.5rem;
             }
         }
         .empty-message{
@@ -601,13 +598,20 @@
             
     }
 
+
+
     section.Ex{
-        .tabs{
+        .category-tabs{
+            gap: 30px;
             button{
-                font-size: 1.2rem;
-                width: 160px;
-                padding-bottom: 12px;
-                border-bottom: 5px transparent solid;
+                font-size: 1.1rem;
+            }
+        }
+        .tabs{
+            margin-bottom: 50px;
+            button{
+                font-size: 1.3rem;
+                gap: 60px;
             }
         }
         .empty-message{
@@ -1607,15 +1611,29 @@
         
     }
 
+        section.CollectionPage{
 
+        .gallery{
+            .category-tabs{
+                margin-top: 30px;
+                button{
+                    font-size: 1.1rem;
+                }
+            }
+        }}
     section.Ex{
         .tabs{
+            margin-bottom: 50px;
+            padding-left: 0;
+            gap: 0;
+            justify-content: space-evenly;
             button{
                 font-size: 1.2rem;
-                width: 33.33%;
-                padding-bottom: 12px;
-                border-bottom: 5px transparent solid;
+                gap: 0;
             }
+        }
+        .category-tabs{
+            margin-bottom: 30px;
         }
         .empty-message{
             font-size: 1.1rem;
@@ -2206,12 +2224,17 @@
 
 
     section.Ex{
+        .category-tabs{
+            gap: 18px;
+            button{
+                font-size: 1rem;
+            }
+        }
         .tabs{
+            margin-bottom: 35px;
             button{
                 font-size: 1.1rem;
-                width: 33.33%;
-                padding-bottom: 12px;
-                border-bottom: 5px transparent solid;
+                max-width: 30%;
             }
         }
         .empty-message{
@@ -2503,6 +2526,12 @@
 
         .gallery{
             margin-top: 4rem;
+            .category-tabs{
+                gap: 18px;
+                button{
+                    font-size: 1rem;
+                }
+            }
             .paginationTitle{
                 font-size: 1.8rem;
                 

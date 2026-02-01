@@ -1,29 +1,32 @@
-import React, { useState } from "react";
+import React from "react";
 import { topRef } from "./app";
 
 interface PaginationProps {
   pages: number;
+  currentPage: number;
   setCurrentPage: (page: number) => void;
 }
 
-const Pagination: React.FC<PaginationProps> = ({ pages, setCurrentPage }) => {
-  const [currentButton, setCurrentButton] = useState<number>(1);
-
+const Pagination: React.FC<PaginationProps> = ({
+  pages,
+  currentPage,
+  setCurrentPage,
+}) => {
   const generatePaginationButtons = (): (number | string)[] => {
     const numberOfPages = Array.from({ length: pages }, (_, i) => i + 1);
     const dots = "...";
 
     if (pages < 6) {
       return numberOfPages;
-    } else if (currentButton <= 3) {
+    } else if (currentPage <= 3) {
       return [1, 2, 3, 4, dots, pages];
-    } else if (currentButton > 3 && currentButton < pages - 2) {
+    } else if (currentPage > 3 && currentPage < pages - 2) {
       return [
         1,
         dots,
-        currentButton - 1,
-        currentButton,
-        currentButton + 1,
+        currentPage - 1,
+        currentPage,
+        currentPage + 1,
         dots,
         pages,
       ];
@@ -32,24 +35,16 @@ const Pagination: React.FC<PaginationProps> = ({ pages, setCurrentPage }) => {
     }
   };
 
-  const handlePageChange = (newPage: number | string) => {
-    if (typeof newPage === "number") {
-      setCurrentButton(newPage);
-      setCurrentPage(newPage);
-    }
-  };
-
   const arrOfCurrButtons = generatePaginationButtons();
 
   return (
     <div className="pagination-container">
+      {/* LEFT ARROW */}
       <a
-        className={currentButton === 1 ? "disabled arrowLeft" : "arrowLeft"}
+        className={currentPage === 1 ? "disabled arrowLeft" : "arrowLeft"}
         onClick={() => {
-          if (currentButton > 1) {
-            const newPage = currentButton - 1;
-            setCurrentButton(newPage);
-            setCurrentPage(newPage);
+          if (currentPage > 1) {
+            setCurrentPage(currentPage - 1);
             setTimeout(() => {
               topRef.current?.scrollIntoView({ behavior: "smooth" });
             }, 300);
@@ -58,33 +53,37 @@ const Pagination: React.FC<PaginationProps> = ({ pages, setCurrentPage }) => {
       >
         <div className="arrow left" />
       </a>
+
+      {/* PAGE NUMBERS */}
       {arrOfCurrButtons.map((item, index) => (
         <a
           key={index}
           className={
-            currentButton === item
+            currentPage === item
               ? "active paginationNumbers"
               : "paginationNumbers"
           }
           onClick={() => {
-            handlePageChange(item);
-            setTimeout(() => {
-              topRef.current?.scrollIntoView({ behavior: "smooth" });
-            }, 300);
+            if (typeof item === "number") {
+              setCurrentPage(item);
+              setTimeout(() => {
+                topRef.current?.scrollIntoView({ behavior: "smooth" });
+              }, 300);
+            }
           }}
         >
           {item}
         </a>
       ))}
+
+      {/* RIGHT ARROW */}
       <a
         className={
-          currentButton === pages ? "disabled arrowRight" : "arrowRight"
+          currentPage === pages ? "disabled arrowRight" : "arrowRight"
         }
         onClick={() => {
-          if (currentButton < pages) {
-            const newPage = currentButton + 1;
-            setCurrentButton(newPage);
-            setCurrentPage(newPage);
+          if (currentPage < pages) {
+            setCurrentPage(currentPage + 1);
             setTimeout(() => {
               topRef.current?.scrollIntoView({ behavior: "smooth" });
             }, 300);
@@ -96,5 +95,6 @@ const Pagination: React.FC<PaginationProps> = ({ pages, setCurrentPage }) => {
     </div>
   );
 };
+
 
 export default Pagination;

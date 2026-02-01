@@ -1,0 +1,56 @@
+section.Coins{
+    width: 100%;
+    padding: 5rem 0;
+    .pagesSubtitle{
+        font-size: 1.8rem;
+        line-height: 1.15;
+        font-weight: 700;
+        font-family: var(--nunito);
+    }
+    h4{
+        display: block;
+        font-family: var(--nunito);
+        color: var(--almostDark);
+        font-size: 0.9rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 1rem;
+        margin-left: 20px;
+    }
+    .margintop{
+        margin-top: 2rem;
+    }
+    .margintopS{
+        margin-top: 3rem;
+    }
+    .text{
+        color: var(--almostDark);
+        font-size: 1.1rem;
+        font-weight: 300;
+        font-family: var(--inter);
+        letter-spacing: 0;
+        text-indent: 20px;
+        line-height: 1.6rem;
+        span{
+            font-weight: 500;
+        }
+        a{
+            color: var(--almostDark);
+            text-underline-offset: 3px;
+        }
+    }
+    .firstColumn{
+        display: flex;
+        flex-direction: column;
+    }
+    .photoGal{
+        width: 100%;
+        height: 250px;
+        background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.3), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 50%, rgba(34, 34, 34, 0.3)), url("/src/assets/images/CoinsRow-min.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 1.5rem 0 4rem;
+    }
+}
