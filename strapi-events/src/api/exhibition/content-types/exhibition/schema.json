@@ -1,0 +1,98 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exhibitions",
+  "info": {
+    "singularName": "exhibition",
+    "pluralName": "exhibitions",
+    "displayName": "Exhibition"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "exhibition_type": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "default": "Выставка",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "date": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "activeStatus": {
+      "type": "integer",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "required": true,
+      "min": 1,
+      "max": 3
+    },
+    "filterCategory": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "required": false
+    },
+    "image": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "targetField": "title"
+    }
+  }
+}

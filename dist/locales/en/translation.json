@@ -312,11 +312,15 @@
         },
         "button_now": "Current",
         "button_future": "Future",
-        "button_past": "Past",
+        "button_past": "Exhibition Archive",
         "empty": "There's nothing here yet.",
         "exhibition_photo" : "Photo exhibition",
         "exhibition" : "Exhibition",
         "cards": {
+            "aleksey": "\"Aleksey Schusev. 150. Master architect\"",
+            "shawl": "\"Mama's shawl\"",
+            "amulet": "\"Amulet\"",
+
             "women": "\"Women of Uzbekistan: Transformation\"",
             "umar": "Personal exhibition of Umar Radjabov \"Contemplation\"",
             "devonov": "\"Khudaybergan Devonov and his era\"",
@@ -324,14 +328,17 @@
             "mirtajiyev": "\"I am an artist of the uzbek people\"",
             "east": "Miniature \"Eastern motifs\"",
             "memory": "\"Tunnel of memory\"",
-
+            "helga": "\"Helga Paris. Photography\"",    
+            "turkic-artists": "\"Meeting of artists of the turkic world\"",
+            "azerheritage": "\"Azerbaijan’s national heritage living in the pearls of art\"",
 
 
             "nbuCollection": "The National Bank's Collection",
 
 
             "hotira": "\"Memory—an eternal light in hearts\"",
-            "childhood": "Children's art exhibition \"Planet of childhood\""
+            "childhood": "Children's art exhibition \"Planet of childhood\"",
+            "artmosfera": "Youth exhibition \"ARTmosfera\""
           }
     },
 
@@ -339,6 +346,11 @@
 
 
     "Exhibitions": {
+      "aleksey": {
+        "text1": "The exhibition occupies two halls of the Art Gallery of Uzbekistan: the first part showcases the entire creative path of the master, while the second part is dedicated to the architect’s work in the Soviet republics, including Uzbekistan. A. Shchusev was an architect of unique talent who brilliantly expressed himself in various architectural styles and movements of the late 19th and first half of the 20th centuries.",
+        "text2": "Divided into two thematic sections, the exhibition 'Alexey Shchusev. 150. Master Architect' presents to the public around 50 architectural projects created over more than half a century of Shchusev’s career. The exhibition includes 350 items: architectural drawings are complemented by the master's student and artistic works, archival photographs, documents, and film footage. The exhibition offers a comprehensive view of Shchusev as a great architect who was in demand throughout his career."
+      },
+
       "women": {
       "span1": "The exhibition was made possible through the partnership with the National Archive of Cinema, Photo, and Sound Documents of Uzbekistan.",
       "text1": "Through the lens of archival photos and film materials, we invite you on a fascinating journey into the history and culture of Uzbekistan, highlighting women's strength, creativity, and inspiration. The exhibition “Women of Uzbekistan: Transformation” is a unique project that explores the multifaceted lives of women and their influence on society across different historical periods.",
@@ -408,6 +420,31 @@
         "text4": "The \"Tunnel of Memory\" exhibition offers a unique opportunity not only to learn more about Uzbekistan’s history but also to experience and immerse oneself in the spirit of the era—understanding the aspirations of that time and drawing parallels with the present.",
         "text5": "The exposition also aims to preserve and popularize our historical heritage."
       },
+      "helga": {
+      "text1": "German art historian and documentary photographer Helga Paris, a member of the Berlin Academy of Arts, passed away in February this year. During her lifetime, she gained recognition for her photographs of everyday life in East Germany — a socialist state that existed in Central Europe from 1949 to 1990, when it was unified with West Germany. The archive of Paris, which she donated to the Berlin Academy of Arts, contains 230,000 negatives and 6,300 films.",
+      "text2": "The exhibition at the NBU Gallery, organized by the Goethe-Institut in Tashkent in cooperation with the Institute for Foreign Cultural Relations (IfA) in Berlin, presents 130 photographs. Monochrome and melancholic, they tell the story of how East German citizens lived from the early 1970s to the late 1990s. The exhibition features well-known retrospective series such as 'Berlin Youth', 'Houses and Faces, Halle 1983–85', and 'VEB Treffmodelle', as well as individual works by the self-taught photographer who went on to become a classic of German photography.",
+      "text3": "Helga Paris was born in 1938 into a working-class family. Her childhood coincided with the war years. She turned seven the year World War II ended. Paris spent most of her life in the former GDR, founded in 1949. In 1966, she moved to East Berlin with her husband and two children, where she began to study photography on her own.",
+      "text4": "For over 30 years, Helga Paris documented life in East Germany and Berlin. Her photographs are now regarded as historical documents. 'Helga Paris occupies a special place among German photographers. Her work stands out because she paid close attention to people and everyday objects and wasn’t afraid to depict life as it truly was,' says art historian Saiyora Nazarova.",
+      "text5": "Her creative work extended beyond the GDR and its territories. Many of the photographs in her personal archive were taken during travels through former Soviet republics, Italy, and the United States.",
+      "text6": "'Helga Paris was kind, courageous, and open to new things. She photographed what was close to her heart and sought simplicity in her work. She was drawn to images of factory and farm workers, especially women. One of her series was shot at the Treffmodelle sewing factory, where she worked as an intern while a student. As she later admitted, she saw spiritual strength and resilience in the faces of the women featured in the series,' says Harf Zimmermann, IfA curator and close friend of the photographer.",
+      "text7": "The exhibition 'Helga Paris. Photography' is the first posthumous showcase of her work. In memory of the photographer, the organizers have prepared a biographical film in English. Both the film and the photographs will be available for viewing until May 16."
+    },
+    "turkic-artists": {
+      "text1": "At the initiative of the Academy of Arts of Uzbekistan, the International Exhibition of Artists from Member States of the International Organization TURKSOY has been held for the second year in a row as part of the International Festival of Fine and Applied Arts. This exhibition features works by 22 artists from all TURKSOY member countries — Azerbaijan, Turkey, Turkmenistan, Kazakhstan, Kyrgyzstan — and 18 artists from Uzbekistan. The exhibition 'Meeting of Artists of the Turkic World', held at the Gallery of Fine Arts of Uzbekistan and showcasing over 70 works, also serves to promote our shared culture, strengthen creative ties between our artists, and foster solidarity and communication."
+    },
+    "shawl": {
+      "text1": "The Art Gallery of Uzbekistan is hosting the international exhibition project 'Mother’s shawl', organized by the Academy of Arts of Uzbekistan as part of the 4th International Applied Arts Biennale.",
+      "text2": "The project’s author is Leila Mahat (Kazakhstan)."
+    },
+    "amulet": {
+      "text1": "The halls of the Art Gallery of Uzbekistan hosted the opening of the solo exhibition 'Amulet' by Kazakh artist Leila Mahat. The exhibition featured over 30 graphic works and around 10 paintings. The artist’s graphic sheets reflect various symbols and sacred signs commonly found in amulets, characteristic of the mythopoetic worldview of the Kazakh people."
+    },
+    "azerheritage": {
+      "text1": "On June 12, the exhibition 'Azerbaijan’s national heritage living in the pearls of art' opened at the Art Gallery of Uzbekistan as part of the Days of Azerbaijani Culture in Uzbekistan.",
+      "text2": "The context of the exhibition lies in the idea that Azerbaijan's national heritage is rooted in a rich history and artistic traditions. The artworks on display bring selected areas of Azerbaijan's cultural heritage to life through the lens of time, highlighting how their classically recognizable forms resonate with contemporary artistic thinking."
+    },
+
+
 
 
 "nbuCollection": {
@@ -433,7 +470,14 @@
         "text2": "This year, alongside the studio 'The Beginning of Great Success' (B.G.S.), which has been introducing children to the world of art for over 20 years, more than 20 leading children's art studios from Tashkent took part in the project.",
         "text3": "The exhibition features works filled with love for the homeland, reflections on the future, and children's interpretations of masterpieces by great artists from around the world.",
         "text4": "As part of the festive program, there was a concert featuring the ensembles 'Tabassum' and 'Aria,' and the art bureau 'Kolibri' presented a new seasonal clothing collection — original denim jackets designed by the children themselves."
+      },
+      "artmosfera": {
+        "text1": "In celebration of Youth Day, the youth exhibition ARTmosfera has opened at the Art Gallery of Uzbekistan. Participants include students from the Kamoliddin Bekhzod National Institute of Arts and Design, interns from the Academy of Arts of Uzbekistan, as well as representatives from Kimyo International University.",
+        "text2": "The exhibition features painting, graphics, sculpture, installation, photography, and video art.",
+        "text3": "Themes include: human and nature, memory and time, urban life, traditions and their modern interpretations, the inner world and dreams, social changes, and a look into the future.",
+        "text4": "On the opening day, a ceremony was held to award active and talented participants with diplomas and special prizes in support of their creative paths. We invite you to discover a new generation of Uzbek artists and enjoy an inspiring atmosphere of contemporary art!"
       }
+
 
     }
     

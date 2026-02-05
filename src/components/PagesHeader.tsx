@@ -13,7 +13,7 @@ import { useTranslation } from "react-i18next";
 type PagesHeaderProps = {
   title: string;
   subtitle: string;
-  backgroundImage: string;
+  backgroundImage?: string;
 };
 
 //Images
