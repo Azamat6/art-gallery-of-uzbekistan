@@ -308,11 +308,15 @@
   },
   "button_now": "Joriy",
   "button_future": "Bo‘lajak",
-  "button_past": "O‘tgan",
+  "button_past": "Ko‘rgazmalar arxivi",
   "empty": "Hozircha bu yerda hech narsa yo‘q",
   "exhibition_photo": "Fotoko‘rgazma",
   "exhibition": "Ko‘rgazma",
   "cards": {
+    "aleksey": "“Aleksey Schusev. 150. Usto me’mor”",
+    "shawl": "“Onamning ro‘moli”",
+    "amulet": "“Tumor”",
+    
     "women": "“O‘zbekiston ayollari. Evrilish”",
     "umar": "Umar Rajabovning shaxsiy ko‘rgazmasi “Muloqaza”",
     "devonov": "“Xudoybergan Devonov va uning davri”",
@@ -320,6 +324,9 @@
     "mirtajiyev": "“Men – o‘zbek xalqining rassomiman”",
     "east": "Miniatyura “Sharqona ohanglar”",
     "memory": "“Xotira tunneli”",
+    "helga": "“Helga Paris. Fotografiya”",
+    "turkic-artists": "“Turk dunyosi rassomlarining uchrashuvi”",
+    "azerheritage": "“San'at marvaridlarida yashovchi Ozarbayjonning milliy merosi”",
 
 
     "nbuCollection": "Milliy Bank kolleksiyasi",
@@ -327,7 +334,8 @@
 
 
     "hotira": "\"Xotira – qalblarda o‘chmas nur\"",
-    "childhood": "\"Bolalik sayyorasi\" bolalar ijodi ko‘rgazmasi"
+    "childhood": "\"Bolalik sayyorasi\" bolalar ijodi ko‘rgazmasi",
+    "artmosfera": "Yoshlar ko‘rgazmasi \"ARTmosfera\""
   }
 },
 
@@ -336,6 +344,12 @@
 
 
 "Exhibitions": {
+  "aleksey": {
+    "text1": "Ko‘rgazma O‘zbekiston Tasviriy san’at galereyasining ikki zalida joylashgan: birinchi qismda ustoz me’morning butun ijodiy yo‘li ko‘rsatilgan, ikkinchi qism esa uning ittifoqdosh respublikalarda, jumladan, O‘zbekistonda olib borgan faoliyatiga bag‘ishlangan. A. Shchyusev — XIX asr oxiri va XX asr birinchi yarmidagi turli me’moriy uslub va yo‘nalishlarda o‘zini porloq namoyon etgan noyob iste’dod egasi edi.",
+    "text2": "Ikki mavzuli bo‘limdan iborat \"Aleksey Shchyusev. 150. Usto me’mor\" ko‘rgazmasida ustoz me’morning yarim asrdan ortiq davom etgan faoliyati davomida yaratgan qariyb 50 ta me’moriy loyihasi namoyish etiladi. Ekspozitsiyaga 350 ta eksponat kiritilgan: loyihaviy grafikalar bilan birga me’morning talabalik va badiiy ishlari, arxiv fotosuratlari, hujjatlar hamda kinoxronikalar ham taqdim etilgan. Bu ko‘rgazma Shchyusevni butun faoliyati davomida talabgir bo‘lgan buyuk me’mor sifatida yanada chuqurroq anglash imkonini beradi."
+  },
+
+
   "women": {
     "span1": "Ko‘rgazma O‘zbekiston kino-foto-fono hujjatlari milliy arxivi hamkorligida tashkil etildi.",
     "text1": "Arxiv fotosuratlari va kinomateriallari orqali sizni o‘zbek ayollarining kuchi, ijodi va ilhomi prizmasidan mamlakat tarixiga va madaniyatiga sayohat qilishga chorlaymiz. “O‘zbekiston ayollari. O‘zgarishlar” ko‘rgazmasi — ayollar hayotining ko‘p qirrali jihatlari va jamiyatdagi o‘rnini turli tarixiy davrlar kesimida ochib beruvchi noyob loyiha.",
@@ -405,7 +419,29 @@
   "text4": "“Xotira tunneli” ko‘rgazmasi – bu nafaqat O‘zbekiston tarixini chuqurroq o‘rganish, balki o‘tmishga yuzlanish, uni his qilish va o‘sha davr ruhini teran anglash, zamonaviylik bilan tarixiy paralellar o‘rnatish uchun noyob imkoniyatdir.",
   "text5": "Ekspozitsiya, shuningdek, tarixiy merosimizni saqlash va targ‘ib qilishga qaratilgan."
 },
-
+"helga": {
+  "text1": "Germaniyalik san’atshunos va hujjatli fotosuratchi, Berlin san’at akademiyasi a’zosi Helga Paris joriy yil fevral oyida vafot etdi. U hayoti davomida Sharqiy Germaniyadagi kundalik hayotni aks ettirgan suratlari bilan tanilgan edi — bu davlat 1949 yildan 1990 yilgacha Markaziy Yevropada mavjud bo‘lgan va Germaniyaning birlashuvi bilan tugagan. Paris o‘zining arxivini Berlin san’at akademiyasiga topshirgan bo‘lib, u 230 mingta negativ va 6300 ta filmni o‘z ichiga oladi.",
+  "text2": "NBU galereyasidagi ko‘rgazma Toshkentdagi Gyote instituti va Berlindagi IfA – Xalqaro madaniy aloqalar instituti hamkorligida tashkil etildi. Unda 130 ta surat namoyish etilmoqda. Monoxrom va g‘amgin ohangdagi bu suratlar 1970-yillar boshidan 1990-yillar oxirigacha Sharqiy Germaniya fuqarolari qanday yashagani haqida hikoya qiladi. Ekspozitsiyada mashhur retrospektiv seriyalar — “Berlin yoshlari”, “Uylar va yuzlar, Halle 1983–85” hamda “VEB Treffmodelle” bilan birga, o‘zini o‘zi o‘rgatgan va nemis fotosan’ati klassigiga aylangan muallifning alohida ishlari ham taqdim etilgan.",
+  "text3": "Helga Paris 1938 yilda oddiy ishchilar oilasida tug‘ilgan. Uning bolaligi urush yillariga to‘g‘ri kelgan. Ikkinchi jahon urushi tugagan yili unga yetti yosh to‘lgan edi. U umrining katta qismini 1949 yilda tashkil topgan sobiq GDRda o‘tkazgan. 1966 yilda turmush o‘rtog‘i va ikki farzandi bilan Sharqiy Berlinda yashay boshlagan va u yerda mustaqil ravishda fotosan’atni o‘rgangan.",
+  "text4": "30 yildan ortiq vaqt davomida Helga Paris Sharqiy Germaniya va Berlin hayotini hujjatlashtirib bordi. Bugun uning suratlari tarixiy hujjatlar sifatida qabul qilinmoqda. “Helga Paris nemis fotosuratchilari orasida alohida o‘ringa ega. Uning ijodi odamlar va kundalik hayotdagi buyumlarga e’tibor qaratgani bilan ajralib turadi. U hayotni qanday bo‘lsa, shundayligicha ko‘rsatishdan cho‘chimagan,” — deydi san’atshunos Sayyora Nazarova.",
+  "text5": "Fotosuratchining ijodi faqat GDR hududi bilan cheklanmagan. U o‘zining shaxsiy arxiviga kirgan ko‘plab suratlarni sobiq Sovet Ittifoqi respublalari, Italiya va Amerikadagi sayohatlaridan olib kelgan.",
+  "text6": "“Helga Paris mehribon, jasur va yangiliklarga ochiq inson edi. U yuragiga yaqin bo‘lgan mavzularni suratga olar, o‘z ijodida soddalikni izlar edi. Uni zavod va fermer xo‘jaliklari ishchilarining, ayniqsa, ayollarning obrazlari o‘ziga tortardi. Shunday seriyalardan birini u talabalik davrida amaliyot o‘tagan Treffmodelle tikuv fabrikasida suratga olgan. Keyinroq u shu ishchilarning yuzlarida ma’naviy kuch va matonatni ko‘rganini aytgan,” — deydi IfA kuratori va suratkashning yaqin do‘sti Harf Zimmermann.",
+  "text7": "“Helga Paris. Fotografiya” ko‘rgazmasi — uning birinchi vafotidan keyingi yodgorlik ko‘rgazmasidir. Suratkash xotirasiga bag‘ishlab, tashkilotchilar ingliz tilidagi biografik film tayyorlashdi. U va suratlar 16-maygacha tomosha qilish uchun ochiq."
+},
+"turkic-artists": {
+    "text1": "O‘zbekiston Tasviriy san’at galereyasi zallarida O‘zbekiston Badiiy akademiyasi tashabbusi bilan Xalqaro an’anaviy Tasviriy va amaliy san’at festivali doirasida mana ikkinchi yildirki, Xalqaro turkiy madaniyat – TURKSOY tashkilotiga  a’zo mamlakatlar rassomlarining “Turk dunyosi rassomlarining uchrashuvi” nomli xalqaro  ko‘rgazmasi ochildi. Ushbu ko‘rgazmada tashkilotga a’zo barcha davlatlar - Ozarbayjon, Turkiya, Turkmaniston, Qozog‘iston, Qirg‘izistondan 22 nafar, O‘zbekistondan 18 nafar rassomlar o‘z asarlari bilan ishtirok etmoqdalar. Ular ichida Sakit Mametov, Refik Aziz, Gurban Babatyadjov, Mezaxir Rustamov, Selin Gyoksel, Amantur Kubanchikov, Umirbek Jubaniyazov, Babayev Zakirdjan va boshqa bir qator iste’dodli rassomlarning 70 dan ortiq asarlari o‘rin egallagan. “Turk dunyosi rassomlarining uchrashuvi” ko‘rgazmasi umumiy madaniyatimizni targ‘ib etish, rassomlarimiz o‘rtasidagi ijodiy aloqalarni yanada kuchaytirish, hamjihatlikni ta’minlash, muloqot yuritishga xizmat qiladi."
+},
+"shawl": {
+    "text1": "O`zbekiston Tasviriy san’at galereyasida IV Xalqaro amaliy san’at biennalesi doirasida O‘zbekiston Badiiy akademiyasi tomonidan tashkil etilgan “Onamning ro‘moli” xalqaro ko‘rgazma loyihasi bo‘lib o‘tmoqda.",
+    "text2": "Loyiha muallifi Leyla Mahat (Qozog‘iston)"
+},
+"amulet": {
+    "text1": "Oʼzbekiston Tasviriy sanʼat Galereyasi zallarida Qozogʼistonlik grafikachi rassom Leyla Maxatning “Tumor” nomli koʼrgazmasi oʼz ishini boshladi. Koʼrgazmada muallif tomonidan yaratilgan 30 dan ortiq grafika va 10 ga yaqin rangtasvir asarlari namoyish etilgan. Rassomning grafika asarlarida turli ramzlar va unsurlar hamda sakral belgilarning uygʼunligi aks etgan."
+},
+"azerheritage": {
+    "text1": "12 iyun kuni O'zbekiston tasviriy san'at galereyasida Ozarbayjon madaniyati kunlari doirasida “San'at marvaridlarida yashovchi Ozarbayjonning milliy merosi” ko'rgazmasi ochildi.",
+    "text2": "Ozarbayjonning milliy merosi boy tarix va badiiy an'analarga asoslangan. Ko'rgazmada namoyish etilgan san'at namunalari Ozarbayjon madaniy merosining tanlangan sohalarini vaqt prizmasi orqali jonlantiradi, ularning klassik shakllarining zamonaviy badiiy tafakkurga muvofiqligini ta'kidlaydi"
+},
 
 
 "nbuCollection": {
@@ -430,6 +466,12 @@
             "text2": "Bu yil loyiha doirasida 20-yildan buyon bolalarni san’at olamiga oshno etib kelayotgan «Ulkan Muvaffaqiyatlar Boshi» («U.M.B.») studiyasi bilan bir qatorda Toshkentning 20 dan ziyod yetakchi bolalar studiyalari ham ishtirok etmoqda.",
             "text3": "Ekspozitsiyada Vatanga bo‘lgan muhabbat, kelajakka oid o‘ylar va dunyoning buyuk rassomlari asarlariga bolalarcha nigohda qayta nazar solingan ijod namunalari o‘rin olgan.",
             "text4": "Bayram dasturidan «Tabassum» va «Ariya» ansambllari ishtirokida konsert ham ijro etildi, art-byuro «Kolibri» tomonidan esa bolalar uchun mavsumiy liboslar to‘plami taqdim etildi."
+        },
+        "artmosfera": {
+            "text1": "Yoshlar kuni munosabati bilan tashkil etilgan ushbu ko‘rgazmada K. Behzod nomidagi MRDI, O‘zBA stajorlari, «Kimyo» Xalqaro universiteti, Toshkent VGIK filiali va TAQI instituti talabalarining asarlari namoyish etilmoqda.",
+            "text2": "Ko‘rgazmada rangtasvir, grafika, haykaltaroshlik, installyatsiya, foto san’ati va video-art kabi turli yo‘nalishlar o‘rin olgan.",
+            "text3": "Yoshlar inson va tabiat, xotira va vaqt, shahar hayoti, an’analar, ichki olam, orzular va jamiyatdagi o‘zgarishlar haqidagi mavzularni san’at orqali yoritishga intilgan.",
+            "text4": "Ochilish marosimida faol va iqtidorli ishtirokchilar maxsus nominatsiyalar va diplomlar bilan taqdirlandi. Sizlarni ham ko‘rgazmamizga tashrif buyurib, O‘zbekistonning yangi avlod rassomlari bilan tanishishga taklif qilamiz!"
         }
 }
 
