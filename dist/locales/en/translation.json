@@ -299,7 +299,12 @@
         },
         "subtitle": "The newly created online collection features over 100 exhibits, and every month it is enriched with new masterpieces from the gallery's holdings.",
         "text": "Click on the image to open it in full screen.",
-        "online-collection": "Online Collection"
+        "online-collection": "Online Collection",
+        "filter_all" : "#All",
+        "filter_painting": "#Painting",
+        "filter_sculpture": "#Sculpture",
+        "filter_graphics": "#Graphics",
+        "filter_coins": "#Numismatics"
         },
 
 

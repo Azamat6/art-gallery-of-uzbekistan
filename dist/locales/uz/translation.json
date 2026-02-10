@@ -292,7 +292,12 @@
     },
     "subtitle": "Yaqinda yaratilgan onlayn kolleksiyada 100 dan ortiq eksponatlar taqdim etilgan va har oy galereya fondidan yangi asarlar bilan to‘ldirib boriladi.",
     "text": "Rasmni to‘liq ekranda ko‘rish uchun ustiga bosing.",
-    "online-collection": "Onlayn Kolleksiya"
+    "online-collection": "Onlayn Kolleksiya",
+    "filter_all" : "#Barchasi",
+    "filter_painting": "#Rangtasvir",
+    "filter_sculpture": "#Haykaltaroshlik",
+    "filter_graphics": "#Grafika",
+    "filter_coins": "#Numizmatika"
 },
 
 
