@@ -217,31 +217,41 @@
       "title": "Tashrifni rejalashtirish"
     },
     "tour": {
-      "title": "Ekskursiya",
-      "text": "Galereya muhitiga chuqurroq sho‘ng‘ish va bizning noyob rassomlik, grafika va qadimiy tangalar kolleksiyamizni o‘rganish uchun professional gid xizmatlaridan foydalanishni tavsiya qilamiz. U sizga har bir ekspozitsiya ob'ekti, uning tarixi va madaniy ahamiyati haqida hikoya qiladi.",
-      "table_text1": "Guruhlar",
-      "table_text2": "1 dan 25 kishigacha",
-      "table_text3": "Narxi",
-      "table_text4": "Har bir kishi uchun 25 000 so'm",
-      "table_text5": "Davomiyligi",
-      "table_text6": "1 soat",
-      "table_text7": "Til",
-      "table_text8": "O‘zbek, Rus"
+      "title": "Ekskursiyalar (1 soat)",
+      "text": "Galereya atmosferasiga yaxshiroq sho'ng'ish hamda rangtasvir, grafika va qadimiy tangalarning noyob to'plamini o'rganish uchun professional gidimiz xizmatlaridan foydalanishni maslahat beramiz. U har bir eksponatning ahamiyati, tarixi va madaniy qimmati haqida so'zlab beradi.",
+      "standard_tour": "Ekskursiya xizmati (25 kishigacha / rus, o'zb)",
+      "standard_price": "200 000 so'm",
+      "individual_tour": "Yakka tartibdagi ekskursiyalar (1-2 kishi)",
+      "individual_price": "600 000 so'm",
+      "fund_tour": "Galereya fondlariga ekskursiya (10 kishigacha)",
+      "fund_price": "600 000 so'm",
+      "director_tour": "Direktor ekskursiyasi",
+      "director_price": "1 000 000 so'm"
+    },
+    "lectures": {
+      "title": "Ma'ruzalar va Studiya",
+      "text1": "San'at bo'yicha mavzuli ma'ruzalar (1 soat) — 500 000 so'm.",
+      "text2": "Kino lektoriysi (1 soat) — 300 000 so'm.",
+      "text3": "Bolalar uchun ma'ruzalar (1 kishi / 1 soat) — 15 000 so'm.",
+      "text4": "Badiiy studiyadagi mashg'ulotlar: kattalar uchun (1 kishi / 1,5 soat) — 200 000 so'm.",
+      "text5": "Badiiy studiyadagi mashg'ulotlar: o'quvchilar va pensionerlar uchun (1 kishi / 1,5 soat) — 50 000 so'm."
     },
     "prices": {
-      "title": "Xizmatlarimiz",
-      "text1": "Rasmiy bir kunlik tadbirlarni — ko‘rgazmalar, taqdimotlar, kontsertlar va boshqa muhim voqealarni — o‘tkazish narxi 2 400 000 so‘mni tashkil etadi. Minimal buyurtma — 3 soat. Bitta tadbirda 50 kishigacha ishtirok etishi mumkin.",
-      "text2": "Tijorat maqsadlaridagi foto va video suratga olish — 1 soat uchun 300 000 so‘m, minimal buyurtma — 2 soat. Suratga olish jarayonida maksimal ishtirokchilar soni — 25 kishi.",
-      "text3": "Vaqtinchalik rasmiy tadbirlar, ko‘rgazmalar, taqdimotlar va shunga o‘xshash tadbirlarni o‘tkazish xizmati — 1 m² uchun",
-      "text4": "kuniga 20 000 so‘m."
+      "title": "Tadbirlar va Suratga olish",
+      "text1": "Bir martalik, bir kunlik rasmiy tadbirlarni, jumladan ko'rgazmalar, taqdimotlar, konsertlar va boshqa muhim voqealarni o'tkazish — 2 400 000 so'm. Eng kam buyurtma — 3 soat. Bitta tadbirda 50 kishigacha ishtirok etishi mumkin.",
+      "text2": "Tijorat maqsadida foto va video tasvirga olish — suratga olishning 1 soati uchun 300 000 so'm, eng kam buyurtma 2 soat. Suratga olish jarayoni qatnashchilarining maksimal soni — 25 kishi.",
+      "text3": "Vaqtinchalik rasmiy tadbirlar, ko'rgazmalar, taqdimotlar va boshqalarni o'tkazish xizmatlari — har 1 kv. m uchun 20 000 so'm ",
+      "text4": "kuniga.",
+      "text5": "Konferensiyalar, simpoziumlarni tashkil etish xizmatlari (1 soat, 65 kishigacha) — 500 000 so'm."
     },
     "visitorInfo": {
       "title1": "Chiptalar narxi",
       "category_text1": "Kattalar uchun",
+      "category_textnew": "Bolalar uchun (7 - 16 yoshdagi)",
       "category_text2": "Talabalar uchun",
-      "category_text3": "Nafaqaxo‘rlar uchun",
+      "category_text3": "O‘quvchilar / Pensionerlar",
       "category_text4": "Chet elliklar uchun",
-      "category_text5": "Bolalar uchun",
+      "category_text5": "7 yoshgacha bo‘lgan bolalar / Nogironligi bo‘lgan shaxslar / Faxriylar / «Mehribonlik» uylari tarbiyalanuvchilari",
       "category_text6": "San’at maktablari talabalari / O‘zbekiston Rassomlar ijodiy uyushmasi a’zolari uchun",
       "price": "so'm",
       "noprice": "Bepul",
