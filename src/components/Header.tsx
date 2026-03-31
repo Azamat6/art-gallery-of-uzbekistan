@@ -11,13 +11,52 @@ import AccordionMenuM from "./AccordeonMenuM";
 import { VscGlobe } from "react-icons/vsc";
 import { useTranslation } from "react-i18next";
 import Dropdown from "react-bootstrap/Dropdown";
+import useFetch from "../exhibition/hooks/useFetch";
 
-import { exhibitionsData } from "../exhibition/data";
+const API_BASE =
+  "https://strapi-cloud-template-blog-386fd08964-production.up.railway.app";
+
+type StrapiImage = {
+  url?: string;
+  data?: { attributes?: { url?: string } };
+};
+
+type ExhibitionApi = {
+  id: number;
+  documentId?: string;
+  slug?: string;
+  title: string;
+  date?: string;
+  activeStatus: 1 | 2 | 3;
+  image?: string | StrapiImage;
+};
+
+type ApiResponse<T> = { data: T[] };
+
+const getImageUrl = (image: ExhibitionApi["image"]): string | undefined => {
+  const raw =
+    typeof image === "string"
+      ? image
+      : image?.url ?? image?.data?.attributes?.url;
+  if (!raw) return undefined;
+  return raw.startsWith("http") ? raw : `${API_BASE}${raw}`;
+};
 
 const Header: React.FC = () => {
-  const currentExhibitions = exhibitionsData.filter((ex) => ex.id === 1);
-  const latestExhibition = currentExhibitions[0];
-  const latestTwo = exhibitionsData.slice(1, 3);
+  const { t, i18n } = useTranslation();
+  const lang = (i18n.resolvedLanguage ?? i18n.language).split("-")[0];
+
+  const apiUrl = `${API_BASE}/api/exhibitions?fields[0]=title&fields[1]=slug&fields[2]=date&fields[3]=activeStatus&populate[image][fields][0]=url&locale=${lang}`;
+  const { data } = useFetch<ApiResponse<ExhibitionApi>>(apiUrl);
+  const exhibitions = data?.data ?? [];
+
+  const mainExhibition = exhibitions.find((e) => e.activeStatus === 1);
+  const eventCards = exhibitions
+    .filter((e) => e.activeStatus === 3)
+    .slice(-2)
+    .reverse();
+
+  const mainImage = getImageUrl(mainExhibition?.image);
   // new animation
 
   //scroll animation
@@ -63,7 +102,6 @@ const Header: React.FC = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   //language-selector
-  const { t, i18n } = useTranslation();
   const handleSelect = (lang: string | null) => {
     if (lang && lang !== i18n.language) {
       i18n.changeLanguage(lang);
@@ -83,7 +121,7 @@ const Header: React.FC = () => {
         <div
           className={`headerBg ${scrollClass}`}
           style={{
-            backgroundImage: `linear-gradient(to bottom, rgba(34, 34, 34, 0.7), rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 40%, rgba(34, 34, 34, 0.7)), url('${latestExhibition?.image}')`,
+            backgroundImage: `linear-gradient(to bottom, rgba(34, 34, 34, 0.7), rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 40%, rgba(34, 34, 34, 0.7)), url('${mainImage}')`,
           }}
         />
       </div>
@@ -137,7 +175,7 @@ const Header: React.FC = () => {
                   <Dropdown.Menu className="l-menu-dropdown">
                     {Object.entries(languageMap)
                       .filter(
-                        ([langCode]) => langCode !== i18n.resolvedLanguage
+                        ([langCode]) => langCode !== i18n.resolvedLanguage,
                       )
                       .map(([langCode, label]) => (
                         <Dropdown.Item
@@ -314,12 +352,11 @@ const Header: React.FC = () => {
             <div className="title">{t("header.news.title")}</div>
             <a
               className="btext col-12"
-              href={`/art-gallery-of-uzbekistan/src/exhibition/${latestExhibition?.url.replace(
-                "./",
-                ""
-              )}`}
+              href={`/art-gallery-of-uzbekistan/src/exhibition/exhibition.html#/${
+                mainExhibition?.slug ?? ""
+              }`}
             >
-              {t(latestExhibition?.title)}
+              {mainExhibition?.title}
             </a>
           </div>
         </div>
@@ -351,25 +388,24 @@ const Header: React.FC = () => {
             <div className="events col-xl-7 offset-xl-2 col-lg-7 offset-lg-1 col-md-12">
               <h3 className="title">{t("header.events.title")}</h3>
               <div className="event-cards col-12">
-                {latestTwo.map((exhibition, index) => (
+                {eventCards.map((exhibition) => (
                   <a
-                    key={index}
-                    href={`/art-gallery-of-uzbekistan/src/exhibition/${exhibition.url.replace(
-                      "./",
-                      ""
-                    )}`}
+                    key={exhibition.documentId ?? exhibition.id}
+                    href={`/art-gallery-of-uzbekistan/src/exhibition/exhibition.html#/${
+                      exhibition.slug ?? ""
+                    }`}
                   >
                     <div className="card">
                       <div className="card-img-wrapper">
                         <img
-                          src={exhibition.image}
-                          alt={t(exhibition.title)}
+                          src={getImageUrl(exhibition.image)}
+                          alt={exhibition.title}
                           className="card-img"
                           loading="lazy"
                         />
                       </div>
                       <div className="text-wrapper">
-                        <div className="card-title">{t(exhibition.title)}</div>
+                        <div className="card-title">{exhibition.title}</div>
                         <div className="text">{exhibition.date}</div>
                       </div>
                     </div>

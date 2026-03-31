@@ -20,31 +20,50 @@ function App() {
       <section className="Tour">
         <div className="container">
           <div className="row">
-            <div className="tourWrapper col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-              <h3 className="title ">{t("PageVisit.tour.title")}</h3>
-              <p className="text">{t("PageVisit.tour.text")}</p>
-            </div>
-            <div className="table col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+            <h3 className="title ">{t("PageVisit.tour.title")}</h3>
+            <div className="table col-12">
               <div className="firstrow">
-                <p className="text">{t("PageVisit.tour.table_text1")}</p>
-                <p className="text">{t("PageVisit.tour.table_text2")}</p>
+                <p className="text">{t("PageVisit.tour.standard_tour")}</p>
+                <p className="text">{t("PageVisit.tour.standard_price")}</p>
               </div>
               <div className="firstrow">
-                <p className="text">{t("PageVisit.tour.table_text3")}</p>
-                <p className="text">{t("PageVisit.tour.table_text4")}</p>
+                <p className="text">{t("PageVisit.tour.individual_tour")}</p>
+                <p className="text">{t("PageVisit.tour.individual_price")}</p>
               </div>
               <div className="firstrow">
-                <p className="text">{t("PageVisit.tour.table_text5")}</p>
-                <p className="text">{t("PageVisit.tour.table_text6")}</p>
+                <p className="text">{t("PageVisit.tour.fund_tour")}</p>
+                <p className="text">{t("PageVisit.tour.fund_price")}</p>
               </div>
               <div className="firstrow">
-                <p className="text">{t("PageVisit.tour.table_text7")}</p>
-                <p className="text">{t("PageVisit.tour.table_text8")}</p>
+                <p className="text">{t("PageVisit.tour.director_tour")}</p>
+                <p className="text">{t("PageVisit.tour.director_price")}</p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section className="Prices">
+        <div className="container">
+          <div className="row">
+            <h3 className="title col-12">{t("PageVisit.lectures.title")}</h3>
+
+            {/* Левая колонка */}
+            <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+              <p className="text">{t("PageVisit.lectures.text1")}</p>
+              <p className="text">{t("PageVisit.lectures.text3")}</p>
+              <p className="text">{t("PageVisit.lectures.text5")}</p>
+            </div>
+
+            {/* Правая колонка */}
+            <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+              <p className="text">{t("PageVisit.lectures.text2")} </p>
+              <p className="text">{t("PageVisit.lectures.text4")}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="Prices">
         <div className="container">
           <div className="row">
@@ -58,6 +77,9 @@ function App() {
             <p className="text col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 margintop">
               {t("PageVisit.prices.text3")}
               <sup>2</sup> {t("PageVisit.prices.text4")}
+            </p>
+            <p className="text col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 margintop">
+              {t("PageVisit.prices.text5")}
             </p>
           </div>
         </div>
@@ -78,6 +100,9 @@ function App() {
                         {t("PageVisit.visitorInfo.category_text1")}
                       </p>
                       <p className="text">
+                        {t("PageVisit.visitorInfo.category_textnew")}
+                      </p>
+                      <p className="text">
                         {t("PageVisit.visitorInfo.category_text2")}
                       </p>
                       <p className="text">
@@ -86,7 +111,7 @@ function App() {
                       <p className="text">
                         {t("PageVisit.visitorInfo.category_text4")}
                       </p>
-                      <p className="text">
+                      <p className="text special">
                         {t("PageVisit.visitorInfo.category_text5")}
                       </p>
                       <p className="text">
@@ -95,18 +120,21 @@ function App() {
                     </div>
                     <div className="price">
                       <p className="text">
+                        30.000 {t("PageVisit.visitorInfo.price")}
+                      </p>
+                      <p className="text">
+                        25.000 {t("PageVisit.visitorInfo.price")}
+                      </p>
+                      <p className="text">
+                        15.000 {t("PageVisit.visitorInfo.price")}
+                      </p>
+                      <p className="text">
                         10.000 {t("PageVisit.visitorInfo.price")}
-                      </p>
-                      <p className="text">
-                        5.000 {t("PageVisit.visitorInfo.price")}
-                      </p>
-                      <p className="text">
-                        5.000 {t("PageVisit.visitorInfo.price")}
                       </p>
                       <p className="text">
                         50.000 {t("PageVisit.visitorInfo.price")}
                       </p>
-                      <p className="text">
+                      <p className="text special">
                         {t("PageVisit.visitorInfo.noprice")}
                       </p>
                       <div className="text margintopL">

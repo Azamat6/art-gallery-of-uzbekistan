@@ -52,8 +52,9 @@
     box-sizing: border-box;
 }
 
-html{
+html, body{
     scroll-behavior: smooth;
+     overscroll-behavior-y: none;
 }
 
 img{

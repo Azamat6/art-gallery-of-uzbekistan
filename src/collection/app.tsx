@@ -102,15 +102,22 @@ const App: React.FC = () => {
                 <button
                   className={activeCategory === "graphics" ? "active" : ""}
                   onClick={() => setActiveCategory("graphics")}
-                >
+                > 
                   {t("PageCollection.filter_graphics")}
                 </button>
                 
                 <button
-                  className={activeCategory === "photo" ? "active" : ""}
-                  onClick={() => setActiveCategory("photo")}
+                  className={activeCategory === "sculpture" ? "active" : ""}
+                  onClick={() => setActiveCategory("sculpture")}
                 >
-                  {t("PageCollection.filter_photo")}
+                  {t("PageCollection.filter_sculpture")}
+                </button>
+
+                <button
+                  className={activeCategory === "coins" ? "active" : ""}
+                  onClick={() => setActiveCategory("coins")}
+                >
+                  {t("PageCollection.filter_coins")}
                 </button>
               </div>
 

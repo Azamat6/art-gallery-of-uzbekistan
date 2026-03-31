@@ -24,7 +24,7 @@ interface PostsProps {
 
 const Posts: React.FC<PostsProps> = ({ posts }) => {
   const { i18n } = useTranslation();
-  const lang = i18n.language as "ru" | "en" | "uz";
+  const lang = (i18n.resolvedLanguage ?? i18n.language)?.split("-")[0] as "ru" | "en" | "uz";
 
   const [selectedPost, setSelectedPost] = useState<Post | null>(null);
 
@@ -45,7 +45,7 @@ const Posts: React.FC<PostsProps> = ({ posts }) => {
   return (
     <div className="posts">
       {posts.map((post) => (
-        <div key={post.id} className="post">
+        <div key={`${post.id}-${post.imageUrl}`} className="post">
           {/* Перенос обработчика клика на изображение */}
           <div className="post-img-container">
             <img

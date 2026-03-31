@@ -87,6 +87,7 @@ section.PageAbout{
         letter-spacing: 0;
         text-indent: 20px;
         line-height: 1.6rem;
+
         span{
             font-weight: 500;
         }
@@ -94,6 +95,9 @@ section.PageAbout{
             color: var(--almostDark);
             text-underline-offset: 3px;
         }
+    }
+    .preline{
+        white-space: pre-line;
     }
     .firstColumn{
         display: flex;

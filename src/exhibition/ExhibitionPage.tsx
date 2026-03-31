@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 import PagesHeader from "../components/PagesHeader";
 const Footer = lazy(() => import("../components/Footer"));
-import BgIMage from "../assets/images/Exhibitions.jpg";
+const BgIMage = "/art-gallery-of-uzbekistan/img/Exhibitions.JPG";
 
-import useFetch from "./hooks/useFetch"; 
+import useFetch from "./hooks/useFetch";
 
 type StrapiImage = {
   url?: string;
@@ -31,12 +31,12 @@ type ExhibitionApi = {
   image?: string | StrapiImage;
 };
 
-
 type ApiResponse<T> = {
   data: T[];
 };
 
-const API_BASE = import.meta.env.VITE_API_URL ?? "http://localhost:1337";
+const API_BASE =
+  "https://strapi-cloud-template-blog-386fd08964-production.up.railway.app";
 
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<number>(1);
@@ -44,8 +44,10 @@ const App: React.FC = () => {
 
   const { t, i18n } = useTranslation();
 
+  const rawLanguage = i18n.resolvedLanguage ?? i18n.language;
+  const language = rawLanguage ? rawLanguage.split("-")[0] : "en";
 
-  const apiUrl = `${API_BASE}/api/exhibitions?populate=*&locale=${i18n.language}`;
+  const apiUrl = `${API_BASE}/api/exhibitions?fields[0]=title&fields[1]=slug&fields[2]=date&fields[3]=exhibition_type&fields[4]=activeStatus&fields[5]=filterCategory&populate[image][fields][0]=url&locale=${language}`;
 
   const { data, loading, error } = useFetch<ApiResponse<ExhibitionApi>>(apiUrl);
   const exhibitions = data?.data ?? [];
@@ -60,15 +62,16 @@ const App: React.FC = () => {
       if (activeCategory === "all") return true;
 
       const categories = Array.isArray(exhibition.filterCategory)
-        ? exhibition.filterCategory
+        ? exhibition.filterCategory.flatMap((c) =>
+            c.split(",").map((s) => s.trim()),
+          )
         : exhibition.filterCategory
-        ? [exhibition.filterCategory]
+        ? exhibition.filterCategory.split(",").map((s) => s.trim())
         : [];
 
       return categories.includes(activeCategory);
     });
   }, [exhibitions, activeTab, activeCategory]);
-
 
   return (
     <div className="app-container">
@@ -112,33 +115,17 @@ const App: React.FC = () => {
                 </button>
 
                 <button
-                  className={
-                    activeCategory === "photoExhibition" ? "active" : ""
-                  }
-                  onClick={() => setActiveCategory("photoExhibition")}
+                  className={activeCategory === "national" ? "active" : ""}
+                  onClick={() => setActiveCategory("national")}
                 >
-                  {t("PageExhibition.filter_photoExhibition")}
+                  {t("PageExhibition.filter_domestic")}
                 </button>
 
                 <button
-                  className={activeCategory === "goethe" ? "active" : ""}
-                  onClick={() => setActiveCategory("goethe")}
+                  className={activeCategory === "international" ? "active" : ""}
+                  onClick={() => setActiveCategory("international")}
                 >
-                  {t("PageExhibition.filter_Goethe")}
-                </button>
-
-                <button
-                  className={activeCategory === "c" ? "active" : ""}
-                  onClick={() => setActiveCategory("c")}
-                >
-                  {t("PageExhibition.filter_c")}
-                </button>
-
-                <button
-                  className={activeCategory === "d" ? "active" : ""}
-                  onClick={() => setActiveCategory("d")}
-                >
-                  {t("PageExhibition.filter_d")}
+                  {t("PageExhibition.filter_international")}
                 </button>
               </div>
             )}
@@ -181,8 +168,9 @@ const App: React.FC = () => {
                   ? `${API_BASE}${imageUrlRaw}`
                   : undefined;
 
-              const detailsPath = `/${exhibition.slug ?? exhibition.documentId ?? exhibition.id}`;
-
+              const detailsPath = `/${
+                exhibition.slug ?? exhibition.documentId ?? exhibition.id
+              }`;
 
               return (
                 <div
@@ -211,9 +199,7 @@ const App: React.FC = () => {
           ) : !loading && !error ? (
             <div className="container">
               <div className="row">
-                <div className="empty-message">
-                  {t("PageExhibition.empty")}
-                </div>
+                <div className="empty-message">{t("PageExhibition.empty")}</div>
               </div>
             </div>
           ) : null}

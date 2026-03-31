@@ -1,23 +1,37 @@
 import { IoIosArrowForward } from "react-icons/io";
-import { motion } from "framer-motion";
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 
 const Gallery: React.FC = () => {
-  const [width, setWidth] = useState(0);
-  const carousel = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    if (carousel.current) {
-      setWidth(
-        carousel.current.scrollWidth -
-          window.innerWidth +
-          window.innerWidth / 50
-      );
-    }
-  }, []);
+  const itemsRef = useRef<HTMLDivElement | null>(null);
+  const isDragging = useRef(false);
+  const startX = useRef(0);
+  const scrollLeft = useRef(0);
 
   const { t } = useTranslation();
+
+  const collectionRef = useRef<HTMLDivElement | null>(null);
+
+  const onPointerDown = useCallback((e: React.PointerEvent) => {
+    if (!itemsRef.current) return;
+    isDragging.current = true;
+    startX.current = e.clientX;
+    scrollLeft.current = itemsRef.current.scrollLeft;
+    itemsRef.current.setPointerCapture(e.pointerId);
+    itemsRef.current.style.userSelect = "none";
+  }, []);
+
+  const onPointerMove = useCallback((e: React.PointerEvent) => {
+    if (!isDragging.current || !itemsRef.current) return;
+    const dx = e.clientX - startX.current;
+    itemsRef.current.scrollLeft = scrollLeft.current - dx;
+  }, []);
+
+  const onPointerUp = useCallback(() => {
+    if (!itemsRef.current) return;
+    isDragging.current = false;
+    itemsRef.current.style.userSelect = "";
+  }, []);
 
   return (
     <section className="Gallery">
@@ -28,11 +42,18 @@ const Gallery: React.FC = () => {
         </div>
       </div>
 
-      <motion.div ref={carousel} className="collection">
-        <motion.div
-          drag="x"
-          dragConstraints={{ right: 0, left: -width }}
+      <div className="collection" ref={collectionRef}>
+        <div
+          ref={itemsRef}
           className="items"
+          onPointerDown={onPointerDown}
+          onPointerMove={onPointerMove}
+          onPointerUp={onPointerUp}
+          onPointerLeave={onPointerUp}
+          style={{
+            overflowX: "scroll",
+            scrollbarWidth: "none",
+          }}
         >
           <div className="box">
             <h4 className="box-title">{t("gallery.box1_title")}</h4>
@@ -145,8 +166,9 @@ const Gallery: React.FC = () => {
               alt="Probujdeniye Richsitilla Akramov"
             />
           </div>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
+
       <div className="link">
         <a
           href="/art-gallery-of-uzbekistan/src/collection/collection.html"
