@@ -217,31 +217,41 @@
       "title": "Plan Your Visit"
     },
     "tour": {
-      "title": "Guided Tour",
+      "title": "Guided Tours (1 hour)",
       "text": "To fully immerse yourself in the atmosphere of the gallery and explore our unique collection of paintings, graphics, and ancient coins, we recommend using the services of our professional guide. They will explain the significance, history, and cultural value of each exhibit.",
-      "table_text1": "Group Size",
-      "table_text2": "1 to 25 people",
-      "table_text3": "Price",
-      "table_text4": "25 000 UZS per person",
-      "table_text5": "Duration",
-      "table_text6": "1 hour",
-      "table_text7": "Language",
-      "table_text8": "Uzbek, Russian"
+      "standard_tour": "Standard Guided Tour (up to 25 people / Rus, Uzb)",
+      "standard_price": "200,000 UZS",
+      "individual_tour": "Individual Tour (1-2 people)",
+      "individual_price": "600,000 UZS",
+      "fund_tour": "Gallery Vaults Tour (up to 10 people)",
+      "fund_price": "600,000 UZS",
+      "director_tour": "Director's Tour",
+      "director_price": "1,000,000 UZS"
+    },
+    "lectures": {
+      "title": "Lectures and Art Studio",
+      "text1": "Thematic art lectures (1 hour) — 500,000 UZS.",
+      "text2": "Cinema lecture hall (1 hour) — 300,000 UZS.",
+      "text3": "Lectures for children (1 person / 1 hour) — 15,000 UZS.",
+      "text4": "Art studio classes: adults (1 person / 1.5 hours) — 200,000 UZS.",
+      "text5": "Art studio classes: students and seniors (1 person / 1.5 hours) — 50,000 UZS."
     },
     "prices": {
-      "title": "Our Services",
-      "text1": "Single-day official events, including exhibitions, presentations, concerts, and other significant occasions — 2,400,000 UZS. Minimum booking — 3 hours. Up to 50 participants per event.",
-      "text2": "Photo and video shoots for commercial purposes — 300,000 UZS per hour, with a minimum of 2 hours. Maximum number of participants — 25.",
-      "text3": "Temporary official events, exhibitions, presentations, etc. — 20,000 UZS per m",
-      "text4": "per day."
+      "title": "Events and Filming",
+      "text1": "Hosting of single-day official events, including exhibitions, presentations, concerts, and other significant occasions — 2,400,000 UZS. Minimum booking — 3 hours. Up to 50 participants per event.",
+      "text2": "Photo and video shoots for commercial purposes — 300,000 UZS per hour, with a minimum of 2 hours. Maximum number of participants in the shooting process — 25 people.",
+      "text3": "Services for hosting temporary official events, exhibitions, presentations, etc. — 20,000 UZS per sq. m ",
+      "text4": "per day.",
+      "text5": "Services for organizing conferences and symposiums (per 1 hour, up to 65 people) — 500,000 UZS."
     },
     "visitorInfo": {
       "title1": "Ticket Prices",
       "category_text1": "Adults",
+      "category_textnew": "Children aged 7 to 16",
       "category_text2": "Students",
-      "category_text3": "Pensioners",
+      "category_text3": "Students at School / Pensioners",
       "category_text4": "Foreigners",
-      "category_text5": "Children",
+      "category_text5": "Children under 7 / Persons with disabilities / Veterans / Residents of “Mehribonlik” orphanages",
       "category_text6": "Students of Art Schools / Members of the Creative Association of Artists of Uzbekistan",
       "price": "UZS",
       "noprice": "Free",
